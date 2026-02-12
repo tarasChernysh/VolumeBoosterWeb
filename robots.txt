@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR_USERNAME.github.io/volume-booster/sitemap.xml
+Sitemap: https://taraschernysh.github.io/VolumeBoosterWeb/sitemap.xml
