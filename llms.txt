@@ -1,0 +1,37 @@
+# EQfy - Louder Volume
+
+> EQfy - Louder Volume (on the US App Store as "Volume Booster Sound Amplifier") is an iPhone app that makes music and audio files louder and better: a volume booster up to 200% (+12 dB), a bass booster, a 7-band equalizer with 9 presets, 3D audio, left/right balance, a haptic player and AI Studio tools (music generator, sound effects, text to speech, noise reducer).
+
+Key facts:
+- Platform: iPhone, iOS 16 or later. Free to download; optional Premium subscription. Rated 4.5 on the US App Store.
+- EQfy boosts audio played inside EQfy (imported songs, Files, discovered tracks). iOS does not allow it to boost other apps, calls or system sounds.
+- iPhone Duo support (full inner display, sidebar and side-by-side layouts) is coming in v2.2.23.
+- Support: support@eqfy.app · App Store: https://apps.apple.com/app/id6550912161
+
+## Main pages
+- [Home](https://eqfy.app/): features overview
+- [FAQ](https://eqfy.app/faq/): pricing, compatibility, how the tools work
+- [Blog](https://eqfy.app/blog/): guides and news
+
+## Articles
+- [iPhone Duo Support Is Coming to EQfy in v2.2.23](https://eqfy.app/blog/iphone-duo-support/): iPhone Duo apps, upgraded: EQfy - Louder Volume v2.2.23 will use the full inner display with a sidebar and two-column screens. See what the next update brings.
+- [AI Song Generator on iPhone: Make a Song with AI](https://eqfy.app/blog/ai-song-generator-iphone/): Use an AI song generator on iPhone: describe a track in EQfy's AI Studio, name it, choose Force instrumental and compose. Plus prompt tips for better songs.
+- [How to Make AirPods Louder When Max Isn't Enough](https://eqfy.app/blog/make-airpods-louder/): How to make AirPods louder: lift Reduce Loud Audio, clean the mesh, test ear-tip fit, tame Conversation Awareness, then boost songs up to +12 dB for free.
+- [How to Boost Bass on iPhone Speakers and Headphones](https://eqfy.app/blog/boost-bass-on-iphone-speakers/): How to boost bass on iPhone: why tiny speakers lose deep notes, the 200 Hz trick that works, Apple Music's free preset and EQ tips for punchier sound.
+- [Best EQ Settings for iPhone: Presets by Genre](https://eqfy.app/blog/best-iphone-eq-settings-by-genre/): The best EQ settings for iPhone by genre: exact 7-band presets for rock, rap, jazz and more, plus easy recipes for deeper bass and clearer vocals.
+- [Left-Right Audio Balance on iPhone: How to Fix It](https://eqfy.app/blog/left-right-headphone-balance/): Fix left-right audio balance on iPhone: find the Balance slider, use Mono Audio, and solve one AirPod louder than the other with simple, safe steps.
+- [How to Make iPhone Louder Than Max Volume](https://eqfy.app/blog/make-iphone-louder-than-max-volume/): How to make iPhone louder than max: remove hidden volume limits, turn off Sound Check, clean the speaker, then add up to +12 dB to songs with a free booster.
+- [Is a Volume Booster Safe for Ears and Speakers?](https://eqfy.app/blog/is-volume-boosting-safe/): Is a volume booster safe? See WHO safe listening limits for headphones, why extra gain can distort speakers, and the iPhone tools that help you boost wisely.
+- [3D Audio on iPhone, Explained: Spatial vs. Reverb](https://eqfy.app/blog/3d-spatial-audio-iphone-explained/): 3D audio on iPhone explained: how Apple's Spatial Audio and Dolby Atmos work, and how EQfy's in-app 3D Audio adds reverb rooms and moving sound to your songs.
+- [iPhone Volume Too Low? 12 Quick Fixes to Try](https://eqfy.app/blog/iphone-volume-too-low-fixes/): iPhone volume too low? Work through 12 fixes: ringer vs media volume, Headphone Safety, Bluetooth, Balance, dirty speaker grilles and a hardware check.
+
+## Other languages
+- [Español](https://eqfy.app/es/)
+- [Deutsch](https://eqfy.app/de/)
+- [Türkçe](https://eqfy.app/tr/)
+- [简体中文](https://eqfy.app/zh/)
+- [Dansk](https://eqfy.app/da/)
+
+## Legal
+- [Privacy Policy](https://eqfy.app/privacy)
+- [Terms of Use](https://eqfy.app/terms)

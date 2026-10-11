@@ -1,0 +1,20 @@
+# Cloudflare Pages response headers (https://developers.cloudflare.com/pages/configuration/headers/)
+
+# Keep the *.pages.dev preview hostname out of search results (eqfy.app is canonical)
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Source, tooling and notes are deployed with the site but must not be indexed
+/src/*
+  X-Robots-Tag: noindex
+/tasks/*
+  X-Robots-Tag: noindex
+/README.md
+  X-Robots-Tag: noindex
+/build.mjs
+  X-Robots-Tag: noindex
+/check.mjs
+  X-Robots-Tag: noindex
+
+/assets/images/*
+  Cache-Control: public, max-age=2592000

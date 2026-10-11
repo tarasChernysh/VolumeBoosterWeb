@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- 1200×630 share image for the iPhone Duo post. Render: see README "Regenerating share images". -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=block" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: 'Outfit', -apple-system, 'Helvetica Neue', sans-serif;
+    color: #F0FDF4;
+    background:
+      radial-gradient(circle at 75% 45%, rgba(0, 255, 102, 0.25), transparent 50%),
+      #0A1A0A;
+    display: flex; align-items: center; padding: 0 64px; gap: 40px;
+  }
+  .text { flex: 1; }
+  .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+  .brand img { width: 64px; height: 64px; border-radius: 16px; }
+  .brand span { font-size: 28px; font-weight: 600; color: #86EFAC; }
+  .tag { display: inline-block; font-size: 22px; font-weight: 600; color: #0A1A0A; background: #00FF66;
+    padding: 8px 18px; border-radius: 999px; margin-bottom: 24px; }
+  h1 { font-size: 68px; line-height: 1.04; font-weight: 800; letter-spacing: -1.5px; margin-bottom: 22px; }
+  p { font-size: 27px; color: #86EFAC; }
+  .phones { display: flex; gap: 20px; flex-shrink: 0; }
+  .phones img { width: 230px; height: 335px; object-fit: cover; object-position: 50% 70%; border-radius: 24px;
+    border: 2px solid rgba(240, 253, 244, 0.16); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55); }
+  .phones img:last-child { margin-top: 90px; }
+</style>
+</head>
+<body>
+  <div class="text">
+    <div class="brand"><img src="../../assets/images/app-icon.png" alt=""><span>EQfy - Louder Volume</span></div>
+    <span class="tag">Coming in v2.2.23</span>
+    <h1>Built for iPhone&nbsp;Duo</h1>
+    <p>Full inner display, sidebar navigation and a side-by-side player</p>
+  </div>
+  <div class="phones">
+    <img src="../../assets/images/blog/iphone-duo/05-volume-booster.webp" alt="">
+    <img src="../../assets/images/blog/iphone-duo/03-equalizer.webp" alt="">
+  </div>
+</body>
+</html>

@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Louder Volume — Lydforstaerker & Basforstaerker til iPhone</title>
-    <meta name="description" content="Goer din iPhone hoejere. Gratis lydforstaerker med basforstaerker, professionel equalizer, 3D rumlig lyd, AI-lydforbedring, haptisk musikafspiller og offline afspilning. Download nu.">
-    <meta name="keywords" content="lydforstaerker, basforstaerker, equalizer, lydforstaerker, iPhone, lydforbedring, hoejere, musikafspiller, 3D lyd, hoereapparat, AI musikgenerator">
-    <meta name="author" content="Volume Booster">
+    <!-- Old GitHub Pages copy → canonical domain -->
+    <script>if(/\.github\.io$/.test(location.hostname))location.replace('https://eqfy.app'+location.pathname.replace(/^\/VolumeBoosterWeb/,'')+location.search+location.hash)</script>
+    <title>EQfy - Louder Volume: Lydforstærker &amp; basboost til iPhone</title>
+    <meta name="description" content="Skru op for lyden på iPhone med EQfy: lydforstærker op til 200 %, dybere bas, 7-bånds equalizer, 3D-lyd og AI-musikværktøjer. Gratis at downloade.">
+    <meta name="author" content="EQfy">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#0A1A0A">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Louder Volume — Lydforstaerker & Basforstaerker til iPhone">
-    <meta property="og:description" content="Forstaerk din iPhones lydstyrke ud over graensen. Gratis lydforstaerker, basforstaerker, equalizer, 3D-lyd og haptisk musikafspiller.">
+    <meta property="og:site_name" content="EQfy - Louder Volume">
+    <meta property="og:title" content="EQfy - Louder Volume: Lydforstærker &amp; basboost til iPhone">
+    <meta property="og:description" content="Forstærk lydstyrken op til 200 %, få dybere bas og form din lyd med 7-bånds EQ, 3D-lyd og AI-musikværktøjer. Gratis lydforstærker til iPhone.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://eqfy.app/da/">
-    <meta property="og:image" content="https://eqfy.app/assets/images/app-icon.png">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="1024">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="EQfy - Louder Volume: drejeknappen til lydforstærkning står på 140 % på iPhone">
     <meta property="og:locale" content="da_DK">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Louder Volume — Lydforstaerker & Basforstaerker">
-    <meta name="twitter:description" content="Forstaerk din iPhones lydstyrke ud over graensen. Gratis lydforstaerker, basforstaerker og equalizer.">
-    <meta name="twitter:image" content="https://eqfy.app/assets/images/app-icon.png">
+    <meta name="twitter:title" content="EQfy - Louder Volume: Lydforstærker &amp; basboost til iPhone">
+    <meta name="twitter:description" content="Skru op for lyden på iPhone: forstærk lydstyrken op til 200 %, få dybere bas og form din lyd med 7-bånds EQ, 3D-lyd og AI-musikværktøjer i én app.">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta name="twitter:image:alt" content="EQfy - Louder Volume: drejeknappen til lydforstærkning står på 140 % på iPhone">
 
     <!-- Apple Smart App Banner -->
     <meta name="apple-itunes-app" content="app-id=6550912161">
@@ -34,12 +38,14 @@
 
     <!-- hreflang -->
     <link rel="alternate" hreflang="en" href="https://eqfy.app/">
+    <link rel="alternate" hreflang="es" href="https://eqfy.app/es/">
     <link rel="alternate" hreflang="de" href="https://eqfy.app/de/">
     <link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/">
+    <link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/">
     <link rel="alternate" hreflang="da" href="https://eqfy.app/da/">
     <link rel="alternate" hreflang="x-default" href="https://eqfy.app/">
 
-    <!-- Favicon — replace with actual app icon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
 
@@ -47,19 +53,80 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Louder Volume — Sound Amplifier",
-        "operatingSystem": "iOS",
-        "applicationCategory": "MusicApplication",
-        "description": "Boost your iPhone volume beyond the limit. Free volume booster with bass enhancer, pro equalizer, 3D spatial audio, AI audio enhancement, haptic music player, and offline playback.",
-        "offers": [
-            { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free with optional subscription" },
-            { "@type": "Offer", "price": "1.99", "priceCurrency": "USD", "description": "Weekly subscription with free trial" },
-            { "@type": "Offer", "price": "27.99", "priceCurrency": "USD", "description": "Annual subscription with free trial" }
-        ],
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "ratingCount": "150" },
-        "downloadUrl": "https://volumebooster.onelink.me/Bk0T/gocpl0p1",
-        "featureList": "Volume Booster, Bass Booster, Equalizer, 3D Spatial Audio, AI Audio Enhancement, AI Song Generator, Haptic Player, Hearing Aid, Sound Balance Control, Offline Player, Music Discovery, Audio Speed Control, Apple Music Import"
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://eqfy.app/#org",
+                "name": "EQfy",
+                "url": "https://eqfy.app/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://eqfy.app/assets/images/app-icon.png",
+                    "width": 256,
+                    "height": 256
+                },
+                "email": "support@eqfy.app",
+                "sameAs": [
+                    "https://apps.apple.com/app/id6550912161"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://eqfy.app/#website",
+                "name": "EQfy - Louder Volume",
+                "url": "https://eqfy.app/",
+                "inLanguage": "da",
+                "publisher": {
+                    "@id": "https://eqfy.app/#org"
+                }
+            },
+            {
+                "@type": "MobileApplication",
+                "@id": "https://eqfy.app/#app",
+                "name": "EQfy - Louder Volume",
+                "alternateName": "Volume Booster Sound Amplifier",
+                "url": "https://eqfy.app/da/",
+                "image": "https://eqfy.app/assets/images/og-image.png",
+                "operatingSystem": "iOS 16.0 or later",
+                "applicationCategory": "MultimediaApplication",
+                "applicationSubCategory": "Music",
+                "inLanguage": "da",
+                "description": "Gør din iPhone højere: forstærk lydstyrken op til 200 %, tilføj dyb bas, finjuster en 7-bånds equalizer med forudindstillinger, tilføj 3D-lyd, og skab med AI-musikværktøjer.",
+                "installUrl": "https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8",
+                "downloadUrl": "https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8",
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "description": "Gratis download"
+                    },
+                    {
+                        "@type": "Offer",
+                        "price": "1.99",
+                        "priceCurrency": "USD",
+                        "description": "Premium, ugentligt abonnement (pris i USA)"
+                    },
+                    {
+                        "@type": "Offer",
+                        "price": "27.99",
+                        "priceCurrency": "USD",
+                        "description": "Premium, årligt abonnement (pris i USA)"
+                    }
+                ],
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.5",
+                    "ratingCount": "40",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "publisher": {
+                    "@id": "https://eqfy.app/#org"
+                },
+                "featureList": "Lydforstærkning op til 200 %, Basforstærker, 7-bånds equalizer med 9 forudindstillinger, 3D-lyd med rumklang og automatisk bevægelse, Venstre/højre-balance, Afspilningshastighed fra halv til dobbelt hastighed, Haptisk musikafspiller, AI-sanggenerator, AI-lydeffekter, Tekst til tale, Støjreduktion, Offline-musikafspiller, Import fra musikbibliotek og Arkiver, Lydeksport"
+            }
+        ]
     }
     </script>
 
@@ -186,6 +253,7 @@
         .nav__logo {
             display: flex; align-items: center; gap: 10px;
             font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em;
+            white-space: nowrap;
         }
         .nav__logo-icon {
             width: 36px; height: 36px;
@@ -205,7 +273,7 @@
         .nav__link {
             font-size: 0.88rem; font-weight: 500;
             color: var(--text-muted); transition: color 0.3s;
-            position: relative;
+            position: relative; white-space: nowrap;
         }
         .nav__link:hover { color: var(--text-primary); }
         .nav__link::after {
@@ -219,7 +287,7 @@
             padding: 10px 22px;
             background: var(--green-primary); color: var(--bg-primary);
             font-weight: 600; font-size: 0.88rem;
-            border-radius: 100px; transition: all 0.3s;
+            border-radius: 100px; transition: all 0.3s; white-space: nowrap;
         }
         .nav__cta:hover {
             background: #33FF85;
@@ -655,7 +723,7 @@
 
         .screenshots__grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
@@ -941,6 +1009,7 @@
            ============================================= */
         .final-cta {
             text-align: center; padding: 100px 0 120px; position: relative;
+            overflow: hidden;
         }
         .final-cta__glow {
             position: absolute; top: 50%; left: 50%;
@@ -988,7 +1057,7 @@
         .footer__logo-icon img { width: 100%; height: 100%; object-fit: cover; }
         .footer__tagline { font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; }
         .footer__links { display: flex; gap: 48px; }
-        .footer__column h4 {
+        .footer__column h3 {
             font-size: 0.78rem; font-weight: 700;
             text-transform: uppercase; letter-spacing: 0.1em;
             color: var(--text-secondary); margin-bottom: 16px;
@@ -1025,6 +1094,9 @@
            ============================================= */
         @media (max-width: 1024px) {
             :root { --section-gap: 100px; }
+            .nav__links { display: none; }
+            .nav__cta--desktop { display: none; }
+            .nav__mobile-toggle { display: flex; }
             .hero__content { grid-template-columns: 1fr; gap: 48px; text-align: center; }
             .hero__text { max-width: 100%; }
             .hero__subtitle { margin-left: auto; margin-right: auto; }
@@ -1034,7 +1106,7 @@
             .hero__orbit-ring, .hero__float-tag { display: none; }
             .features__grid { grid-template-columns: repeat(2, 1fr); }
             .feature-card--featured { grid-column: span 2; grid-row: span 1; }
-            .screenshots__grid { grid-template-columns: repeat(3, 1fr); }
+            .screenshots__grid { grid-template-columns: repeat(4, 1fr); }
             .showcase__split { grid-template-columns: 1fr; gap: 48px; }
             .showcase__split--reverse { direction: ltr; }
         }
@@ -1076,35 +1148,37 @@
     <!-- ==================== NAVIGATION ==================== -->
     <nav class="nav" role="navigation" aria-label="Hovednavigation">
         <div class="nav__inner">
-            <a href="#" class="nav__logo">
+            <a href="/da/" class="nav__logo">
                 <div class="nav__logo-icon">
-                    <img src="../assets/images/app-icon.png" alt="Louder Volume ikon">
+                    <img src="../assets/images/app-icon.png" alt="EQfy-ikon" width="36" height="36">
                 </div>
-                Louder Volume
+                EQfy - Louder Volume
             </a>
             <ul class="nav__links">
                 <li><a href="#features" class="nav__link">Funktioner</a></li>
-                <li><a href="#screenshots" class="nav__link">Skaermbilleder</a></li>
-                <li><a href="#volume-booster" class="nav__link">Lydforstaerker</a></li>
                 <li><a href="#equalizer" class="nav__link">Equalizer</a></li>
-                <li><a href="#ai-audio" class="nav__link">AI Lyd</a></li>
+                <li><a href="#ai-audio" class="nav__link">AI Studio</a></li>
+                <li><a href="#faq" class="nav__link">FAQ</a></li>
+                <li><a href="/blog/" hreflang="en" class="nav__link">Blog (engelsk)</a></li>
             </ul>
             <div class="lang-switcher">
                 <button class="lang-switcher__btn" onclick="this.nextElementSibling.classList.toggle('is-open')" aria-label="Skift sprog">
                     🌐 DA ▾
                 </button>
                 <div class="lang-switcher__dropdown">
-                    <a href="../" class="lang-switcher__option">🇬🇧 English</a>
-                    <a href="../de/" class="lang-switcher__option">🇩🇪 Deutsch</a>
-                    <a href="../tr/" class="lang-switcher__option">🇹🇷 Turkce</a>
-                    <a href="./" class="lang-switcher__option lang-switcher__option--active">🇩🇰 Dansk</a>
+                    <a href="/" class="lang-switcher__option" hreflang="en">🇬🇧 English</a>
+                    <a href="/es/" class="lang-switcher__option" hreflang="es">🇪🇸 Español</a>
+                    <a href="/de/" class="lang-switcher__option" hreflang="de">🇩🇪 Deutsch</a>
+                    <a href="/tr/" class="lang-switcher__option" hreflang="tr">🇹🇷 Türkçe</a>
+                    <a href="/zh/" class="lang-switcher__option" hreflang="zh">🇨🇳 简体中文</a>
+                    <a href="/da/" class="lang-switcher__option lang-switcher__option--active" hreflang="da">🇩🇰 Dansk</a>
                 </div>
             </div>
-            <a href="https://volumebooster.onelink.me/Bk0T/gocpl0p1" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener">
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener">
                 <svg class="icon-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                Download Gratis
+                Download gratis
             </a>
-            <button class="nav__mobile-toggle" aria-label="Skift menu" onclick="document.querySelector('.nav__mobile-menu').classList.toggle('is-open')">
+            <button class="nav__mobile-toggle" aria-label="Vis/skjul menu" onclick="document.querySelector('.nav__mobile-menu').classList.toggle('is-open')">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -1114,14 +1188,14 @@
     <div class="nav__mobile-menu">
         <ul>
             <li><a href="#features" onclick="document.querySelector('.nav__mobile-menu').classList.remove('is-open')">Funktioner</a></li>
-            <li><a href="#screenshots" onclick="document.querySelector('.nav__mobile-menu').classList.remove('is-open')">Skaermbilleder</a></li>
-            <li><a href="#volume-booster" onclick="document.querySelector('.nav__mobile-menu').classList.remove('is-open')">Lydforstaerker</a></li>
             <li><a href="#equalizer" onclick="document.querySelector('.nav__mobile-menu').classList.remove('is-open')">Equalizer</a></li>
-            <li><a href="#ai-audio" onclick="document.querySelector('.nav__mobile-menu').classList.remove('is-open')">AI Lyd</a></li>
+            <li><a href="#ai-audio" onclick="document.querySelector('.nav__mobile-menu').classList.remove('is-open')">AI Studio</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="/blog/" hreflang="en">Blog (engelsk)</a></li>
         </ul>
-        <a href="https://volumebooster.onelink.me/Bk0T/gocpl0p1" class="nav__cta" target="_blank" rel="noopener">
+        <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta" target="_blank" rel="noopener">
             <svg class="icon-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            Download Gratis
+            Download gratis
         </a>
     </div>
 
@@ -1136,32 +1210,31 @@
                         Gratis i App Store
                     </div>
                     <h1 class="hero__title">
-                        Goer din iPhone<br>
-                        <span class="hero__title-gradient">Hoejere end nogensinde</span>
+                        Gør din iPhone<br>
+                        <span class="hero__title-gradient">højere end nogensinde</span>
                     </h1>
                     <p class="hero__subtitle">
-                        Forstaerk lydstyrken ud over systemgraenserne med professionel lydbehandling.
-                        Basforstaerker, equalizer, 3D rumlig lyd, AI-forbedring og haptisk feedback — alt i en app.
+                        Skru din musik op til 200 % af den normale lydstyrke — ud over iPhonens sædvanlige maksimum. Basforstærker, 7-bånds equalizer, 3D-lyd, AI-musikværktøjer og haptisk afspiller — alt i én app.
                     </p>
                     <div class="hero__actions">
-                        <a href="https://volumebooster.onelink.me/Bk0T/gocpl0p1" class="btn-primary" target="_blank" rel="noopener">
+                        <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="btn-primary" target="_blank" rel="noopener">
                             <svg class="icon-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                            Download Gratis
+                            Download gratis
                         </a>
-                        <a href="#features" class="btn-secondary">Udforsk funktioner ↓</a>
+                        <a href="#features" class="btn-secondary">Udforsk funktionerne ↓</a>
                     </div>
                     <div class="hero__stats">
                         <div>
                             <div class="hero__stat-value">200%</div>
-                            <div class="hero__stat-label">Lydforstaerkning</div>
+                            <div class="hero__stat-label">Lydforstærkning</div>
                         </div>
                         <div>
-                            <div class="hero__stat-value">26+</div>
+                            <div class="hero__stat-value">25</div>
                             <div class="hero__stat-label">Sprog</div>
                         </div>
                         <div>
                             <div class="hero__stat-value">Gratis</div>
-                            <div class="hero__stat-label">Kernefunktioner</div>
+                            <div class="hero__stat-label">At downloade</div>
                         </div>
                     </div>
                 </div>
@@ -1169,10 +1242,10 @@
                     <div class="hero__orbit-ring hero__orbit-ring--1" aria-hidden="true"></div>
                     <div class="hero__orbit-ring hero__orbit-ring--2" aria-hidden="true"></div>
                     <div class="hero__phone-mockup">
-                        <img src="../assets/images/screenshots/screenshot-7.png" alt="Louder Volume app — Frigiv den fulde kraft af din lyd" class="hero__phone-screen" width="720" height="1558" fetchpriority="high" decoding="async">
+                        <img src="../assets/images/screenshots/screenshot-7.webp" alt="EQfy - Louder Volume-appen: frigør din lyds fulde kraft" class="hero__phone-screen" width="720" height="1558" fetchpriority="high" decoding="async">
                     </div>
-                    <div class="hero__float-tag hero__float-tag--1" aria-hidden="true">🎚️ Basforstaerkning aktiv</div>
-                    <div class="hero__float-tag hero__float-tag--2" aria-hidden="true">🤖 AI-forbedret</div>
+                    <div class="hero__float-tag hero__float-tag--1" aria-hidden="true">🎚️ Basforstærkning aktiv</div>
+                    <div class="hero__float-tag hero__float-tag--2" aria-hidden="true">🤖 AI Studio</div>
                     <div class="hero__float-tag hero__float-tag--3" aria-hidden="true">📳 Haptisk synk</div>
                 </div>
             </div>
@@ -1185,15 +1258,15 @@
         <section class="section features" id="features" aria-labelledby="features-title">
             <div class="container">
                 <div class="features__header reveal">
-                    <span class="section__eyebrow">Alt hvad du har brug for</span>
-                    <h2 class="section__title" id="features-title">Kraftfuld lyd.<br>Nul kompleksitet.</h2>
-                    <p class="section__description">Alle de vaerktoejer du har brug for til at faa din iPhone til at lyde fantastisk — fra oejeblikkeligt lydboost til AI-drevet lydforbedring og 3D rumlig lyd.</p>
+                    <span class="section__eyebrow">Alt, du har brug for</span>
+                    <h2 class="section__title" id="features-title">Kraftfuld lyd.<br>Nul besvær.</h2>
+                    <p class="section__description">Alle de værktøjer, du skal bruge for at få din iPhone til at lyde fantastisk — fra øjeblikkelig lydforstærkning til 7-bånds equalizer, 3D-lyd og AI-musikværktøjer.</p>
                 </div>
                 <div class="features__grid">
                     <article class="feature-card feature-card--featured reveal">
                         <div class="feature-card__icon feature-card__icon--green">🔊</div>
-                        <h3 class="feature-card__title">Lydforstaerker &amp; Forstaarker<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Forhoej oejeblikkeligt din iPhones lydstyrke ud over systemgraensen. Smart begraensning med professionel Dynamics Processor forhindrer forvraaengning og klipning — selv ved maksimal forstaerkning.</p>
+                        <h3 class="feature-card__title">Lydforstærker og lydstyrkeboost<span class="feature-card__badge feature-card__badge--free">Gratis</span></h3>
+                        <p class="feature-card__text">Hæv afspilningen op til 200 % (+12 dB) ud over iPhonens normale maksimum for de sange og filer, du afspiller i EQfy. Skru gradvist op for den reneste lyd.</p>
                         <div class="feature-card__visual">
                             <div class="volume-knob">
                                 <div class="volume-knob__ring" aria-hidden="true"></div>
@@ -1204,63 +1277,63 @@
                     </article>
                     <article class="feature-card reveal reveal--delay-1">
                         <div class="feature-card__icon feature-card__icon--purple">🎚️</div>
-                        <h3 class="feature-card__title">Basforstaerker &amp; Pro EQ<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
-                        <p class="feature-card__text">Dyb basforstaerkning og en fuldt tilpasselig 10-baands equalizer med genre-forudindstillinger til praecis tonejustering.</p>
+                        <h3 class="feature-card__title">Basforstærker og Pro EQ<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Højttalervenlig basforstærkning plus en 7-bånds equalizer med forforstærker og 9 forudindstillinger efter genre til præcis tonejustering.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-2">
                         <div class="feature-card__icon feature-card__icon--cyan">🤖</div>
-                        <h3 class="feature-card__title">AI-lydforbedring<span class="feature-card__badge feature-card__badge--ai">AI</span></h3>
-                        <p class="feature-card__text">AI-drevet stemmeforbedring renser, tydeliggoer og loefter din lyd til et klart, dynamisk mix.</p>
+                        <h3 class="feature-card__title">AI Studio<span class="feature-card__badge feature-card__badge--ai">AI</span></h3>
+                        <p class="feature-card__text">Lav sange, lydeffekter og speak med Tekst til tale — eller fjern baggrundsstøj med Støjreduktion.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-1">
                         <div class="feature-card__icon feature-card__icon--cyan">🌐</div>
-                        <h3 class="feature-card__title">3D Rumlig Lyd<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Fordybende 3D-lydoplevelse der omgiver dig med lyd og skaber dybde og dimensionalitet i hvert nummer.</p>
+                        <h3 class="feature-card__title">3D Spatial Lyd<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Giv lyden dybde med 9 rumklangsmiljøer, fra et lille rum til en katedral, eller lad lyden bevæge sig rundt om dit hoved med 4 mønstre for automatisk bevægelse.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-2">
                         <div class="feature-card__icon feature-card__icon--gold">📳</div>
-                        <h3 class="feature-card__title">Haptisk afspiller<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Maaerk rytmen. Rytmebevidst haptik synkroniserer med din musik og tilfojer en fysisk dimension til hvert nummer.</p>
+                        <h3 class="feature-card__title">Haptisk afspiller<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Mærk rytmen. Rytmestyret haptik følger din musik og giver hvert nummer en fysisk dimension.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-3">
                         <div class="feature-card__icon feature-card__icon--green">🎧</div>
-                        <h3 class="feature-card__title">Hoereapparat-equalizer<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Tilpas lyden med praecisions-EQ skraaeddersyet til hoeretilaengelighed. Finjuster frekvenser for klarhed.</p>
+                        <h3 class="feature-card__title">Klarheds-EQ<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Løft de frekvenser, du vil høre mere af — stemmer, detaljer eller varme — til podcasts, lydbøger og musik.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-1">
                         <div class="feature-card__icon feature-card__icon--purple">🎛️</div>
-                        <h3 class="feature-card__title">Lydbalancestyring<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Finjuster venstre og hoejre lydkanaler uafhaengigt for perfekt stereobalance og hoeretelefon-kalibrering.</p>
+                        <h3 class="feature-card__title">Lydbalance<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Finjuster venstre og højre lydkanal hver for sig for perfekt stereobalance og kalibrering af høretelefoner.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-2">
                         <div class="feature-card__icon feature-card__icon--orange">🎵</div>
-                        <h3 class="feature-card__title">Opdag musik<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Udforsk kuraterede samlinger og populaere numre efter genre og kunstner. Find din naeste yndlingssang i appen.</p>
+                        <h3 class="feature-card__title">Opdag musik<span class="feature-card__badge feature-card__badge--free">Gratis</span></h3>
+                        <p class="feature-card__text">Udforsk udvalgte samlinger og populære numre efter genre og kunstner. Find din næste yndlingssang direkte i appen.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-3">
                         <div class="feature-card__icon feature-card__icon--green">📂</div>
-                        <h3 class="feature-card__title">Importer fra Apple Music &amp; Filer<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Importer din musik fra Apple Music-biblioteket eller din enheds filsystem. Forstaerk, equaliz og forbedre ethvert nummer du ejer.</p>
+                        <h3 class="feature-card__title">Importér fra musikbibliotek og filer<span class="feature-card__badge feature-card__badge--free">Gratis</span></h3>
+                        <p class="feature-card__text">Importér sange fra iPhonens musikbibliotek eller appen Arkiver, og forstærk, EQ-juster og forbedr derefter ethvert ubeskyttet nummer, du ejer.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-4">
                         <div class="feature-card__icon feature-card__icon--cyan">🎼</div>
                         <h3 class="feature-card__title">AI-sanggenerator<span class="feature-card__badge feature-card__badge--ai">AI</span></h3>
-                        <p class="feature-card__text">Skab original musik med AI. Beskriv dit humoor eller din stil og lad AI'en komponere unikke numre til dig.</p>
+                        <p class="feature-card__text">Skab original musik med AI. Beskriv dit humør eller din stil, og lad AI'en komponere unikke numre til dig.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-1">
                         <div class="feature-card__icon feature-card__icon--green">📱</div>
-                        <h3 class="feature-card__title">Offline-afspiller<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Gem numre til offline afspilning. Nyd forstaerket, equalized lyd overalt — ingen forbindelse kraevet.</p>
+                        <h3 class="feature-card__title">Offline-afspiller<span class="feature-card__badge feature-card__badge--free">Gratis</span></h3>
+                        <p class="feature-card__text">Gem numre til offlineafspilning. Nyd forstærket, EQ-justeret lyd overalt — uden internetforbindelse.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-2">
                         <div class="feature-card__icon feature-card__icon--cyan">⚡</div>
-                        <h3 class="feature-card__title">Hastighedsstyring<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Juster afspilningshastigheden fra 0,5x til 2x — perfekt til podcasts, lydboeøger og musikoevelse.</p>
+                        <h3 class="feature-card__title">Hastighedskontrol<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Juster afspilningshastigheden fra 0,5× til 2× — perfekt til podcasts, lydbøger og musikøvning.</p>
                     </article>
                     <article class="feature-card reveal reveal--delay-3">
                         <div class="feature-card__icon feature-card__icon--red">⬇️</div>
-                        <h3 class="feature-card__title">Download &amp; Del<span class="feature-card__badge feature-card__badge--free">Free</span></h3>
-                        <p class="feature-card__text">Eksporter forbedret lyd og del med venner, sociale apps eller dine enheder med faa tryk.</p>
+                        <h3 class="feature-card__title">Download og del<span class="feature-card__badge feature-card__badge--pro">Pro</span></h3>
+                        <p class="feature-card__text">Eksportér forbedret lyd, og del den med venner, sociale apps eller dine enheder med få tryk.</p>
                     </article>
                 </div>
             </div>
@@ -1270,109 +1343,89 @@
         <section class="section" id="screenshots" aria-labelledby="screenshots-title">
             <div class="container">
                 <div class="screenshots__header reveal">
-                    <span class="section__eyebrow">App-forhaaandsvisning</span>
+                    <span class="section__eyebrow">Forhåndsvisning af appen</span>
                     <h2 class="section__title" id="screenshots-title">Se den i aktion</h2>
-                    <p class="section__description">Udforsk alle funktioner i Louder Volume med smukt designede graenseflader optimeret til din iPhone.</p>
+                    <p class="section__description">Udforsk alle EQfys funktioner med smukt designede skærme, der er optimeret til din iPhone.</p>
                 </div>
                 <div class="screenshots__grid">
 
                     <div class="screenshot-card reveal">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-1.png" alt="Opdag musik-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-1.webp" alt="EQfys skærm til musikopdagelse med genrer og populære numre" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
                             <div class="screenshot-card__title">Opdag musik</div>
-                            <div class="screenshot-card__subtitle">Forstaerk lydstyrken og udforsk nye numre</div>
+                            <div class="screenshot-card__subtitle">Forstærk lydstyrken og udforsk nye numre</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal reveal--delay-1">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-2.png" alt="Lydforstaerker-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-2.webp" alt="EQfys drejeknap til lydforstærkning" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">Lydforstaerker</div>
-                            <div class="screenshot-card__subtitle">Forstaerk lydstyrken og forbedre bassen</div>
+                            <div class="screenshot-card__title">Lydforstærker</div>
+                            <div class="screenshot-card__subtitle">Skru op for lyden og forbedr bassen</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal reveal--delay-2">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-6.png" alt="Basforstaerker-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-6.webp" alt="EQfys drejeknap til basforstærkning" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">Basforstaerker</div>
-                            <div class="screenshot-card__subtitle">Dyb bas &amp; haptiske beats</div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card reveal reveal--delay-3">
-                        <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-8.png" alt="AI-lydforstaerker-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
-                        </div>
-                        <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">AI-lydforstaerker</div>
-                            <div class="screenshot-card__subtitle">Forstaerk lyd med AI-praecision</div>
+                            <div class="screenshot-card__title">Basforstærker</div>
+                            <div class="screenshot-card__subtitle">Dyb bas og haptiske beats</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal reveal--delay-4">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-4.png" alt="Hoereapparat-equalizer-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-3.webp" alt="EQfys equalizer-skærm med 7 EQ-bånd og forudindstillinger" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">Hoereapparat-equalizer</div>
-                            <div class="screenshot-card__subtitle">Tilpas lyden med praecisions-EQ</div>
+                            <div class="screenshot-card__title">Equalizer</div>
+                            <div class="screenshot-card__subtitle">Tilpas lyden med præcis EQ</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-5.png" alt="Offline musikafspiller-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-5.webp" alt="EQfys offline-musikafspiller" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">Offline musikafspiller</div>
-                            <div class="screenshot-card__subtitle">MP3 download &amp; deling</div>
+                            <div class="screenshot-card__title">Offline-musikafspiller</div>
+                            <div class="screenshot-card__subtitle">MP3-download og deling</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal reveal--delay-1">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-3.png" alt="AI-sanggenerator-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-4.webp" alt="EQfys AI Studio med musikgenerator, lydeffekter og tekst til tale" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">AI-sanggenerator</div>
-                            <div class="screenshot-card__subtitle">Musikskaber med AI</div>
+                            <div class="screenshot-card__title">AI Studio</div>
+                            <div class="screenshot-card__subtitle">Sange, lydeffekter og tale</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal reveal--delay-2">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-9.png" alt="Lydstyring-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-9.webp" alt="EQfys lydbalance mellem venstre og højre" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">Lydstyring</div>
-                            <div class="screenshot-card__subtitle">Finjuster venstre &amp; hoejre kanaler</div>
+                            <div class="screenshot-card__title">Lydkontrol</div>
+                            <div class="screenshot-card__subtitle">Finjuster venstre og højre kanal</div>
                         </div>
                     </div>
 
                     <div class="screenshot-card reveal reveal--delay-3">
                         <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-10.png" alt="3D lyd-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
+                            <img src="../assets/images/screenshots/screenshot-10.webp" alt="EQfys indstillinger for 3D-lyd" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
                         </div>
                         <div class="screenshot-card__caption">
                             <div class="screenshot-card__title">3D-lyd</div>
                             <div class="screenshot-card__subtitle">Fordybende lydoplevelse</div>
-                        </div>
-                    </div>
-
-                    <div class="screenshot-card reveal reveal--delay-4">
-                        <div class="screenshot-card__image-wrapper">
-                            <img src="../assets/images/screenshots/screenshot-1.png" alt="Opdag musik-funktion" class="screenshot-card__image" width="720" height="1558" loading="lazy" decoding="async">
-                        </div>
-                        <div class="screenshot-card__caption">
-                            <div class="screenshot-card__title">Opdag musik</div>
-                            <div class="screenshot-card__subtitle">Forstaerk lydstyrken og udforsk nye numre</div>
                         </div>
                     </div>
 
@@ -1388,18 +1441,18 @@
                         <div class="volume-knob" style="width:180px;height:180px">
                             <div class="volume-knob__ring" style="width:220px;height:220px" aria-hidden="true"></div>
                             <span class="volume-knob__value">200%</span>
-                            <span class="volume-knob__label">Maks boost</span>
+                            <span class="volume-knob__label">Maks. boost</span>
                         </div>
                     </div>
                     <div class="reveal reveal--delay-1">
                         <span class="section__eyebrow">Kernefunktion</span>
-                        <h2 class="section__title" id="vb-title">En lydforstaerker der virkelig virker</h2>
-                        <p class="section__description">Gaa ud over din iPhones lydstyrkegraaense med studiokvalitets lydbehandling. Professionel Dynamics Processor bruger hardware-acceleration til ren, forvraaengningsfri forstaerkning.</p>
+                        <h2 class="section__title" id="vb-title">En lydforstærker, der virkelig virker</h2>
+                        <p class="section__description">Gå ud over iPhonens sædvanlige maksimum. EQfy giver op til +12 dB ekstra forstærkning til de sange og lydfiler, du afspiller i appen — uden jailbreak og uden ekstra hardware.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Smart begraensning forhindrer forvraaengning ved enhver lydstyrke</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Hardware-accelereret AVAudioEngine-behandling</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Virker med din musik, Apple Music-import og opdagede numre</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Eksporter forstaerket lyd med bevaret kvalitet</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Lydstyrkeknap fra 100 % til 200 % (op til +12 dB)</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Gratis — Lydforstærkning kræver intet abonnement</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Virker med importerede sange, lydfiler og numre, du opdager i appen</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Eksportér og del din forstærkede lyd med Premium</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1420,42 +1473,40 @@
                             <div class="eq-visual__band eq-visual__band--6"></div>
                             <div class="eq-visual__band eq-visual__band--7"></div>
                             <div class="eq-visual__band eq-visual__band--8"></div>
-                            <div class="eq-visual__band eq-visual__band--9"></div>
-                            <div class="eq-visual__band eq-visual__band--10"></div>
                         </div>
                     </div>
                     <div class="reveal reveal--delay-1">
                         <span class="section__eyebrow">Pro-funktion</span>
-                        <h2 class="section__title" id="eq-title">Basforstaerker &amp; Pro Equalizer</h2>
-                        <p class="section__description">Form din lyd med praecision. Dedikeret basboost tilfojer dybde og kraft, mens den fuldt tilpasselige equalizer lader dig indstille den perfekte tone.</p>
+                        <h2 class="section__title" id="eq-title">Basforstærker og professionel equalizer</h2>
+                        <p class="section__description">Form din lyd med præcision. Den dedikerede basforstærkning giver dybde og punch, mens den fuldt tilpasselige equalizer lader dig ramme den perfekte tone.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Dedikeret basboost med justerbar intensitet</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>10-baands equalizer med avancerede skydere</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Genre-forudindstillinger: Rock, Pop, Jazz, Hip-Hop, Klassisk</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Anvend paa din egen lyd og hoer forskellen</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Basforstærkning op til +12 dB, tilpasset iPhonens højttalere</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>7-bånds equalizer fra 32 Hz til 16 kHz plus forforstærker</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>9 forudindstillinger: Rock, Jazz, Elektronisk, Klassisk, Reggae, Rap, R&amp;B, Dans, Akustisk</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Finjuster enhver forudindstilling efter gehør med en brugerdefineret kurve</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== SHOWCASE: AI AUDIO ENHANCEMENT ==================== -->
+        <!-- ==================== SHOWCASE: AI STUDIO ==================== -->
         <section class="section showcase" id="ai-audio" aria-labelledby="ai-title">
             <div class="container">
                 <div class="showcase__split">
                     <div class="showcase__visual reveal" style="flex-direction:column;gap:16px">
                         <div class="waveform-visual" id="waveform-container"></div>
-                        <p style="text-align:center;color:var(--text-dim);font-size:.75rem;font-family:'Space Mono',monospace;z-index:1">FOER → AI-FORBEDRET → EFTER</p>
+                        <p style="text-align:center;color:var(--text-dim);font-size:.75rem;font-family:'Space Mono',monospace;z-index:1">TEKST → AI → LYD</p>
                     </div>
                     <div class="reveal reveal--delay-1">
                         <span class="section__eyebrow">AI-drevet</span>
-                        <h2 class="section__title" id="ai-title">Intelligent lydforbedring</h2>
-                        <p class="section__description">Lad AI transformere din lyd. Stemmeforbedring renser og tydeliggoer tale, mens kreative vaerktoejer genererer lydeffekter.</p>
+                        <h2 class="section__title" id="ai-title">AI Studio til musik, lyd og stemme</h2>
+                        <p class="section__description">Skab og rens lyd med AI. Generér sange og lydeffekter ud fra en tekstprompt, gør tekst til naturlig tale, og fjern baggrundsstøj fra optagelser.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>AI-stemmeforbedring — rens, tydeliggoer og loeft vokaler</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Lydeffektgenerering fra tekstbeskrivelser</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Perfekt til musik- og podcastlyd</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Abonnenter faar 20% rabat paa AI-kreditter</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Musikgenerator — originale sange ud fra en tekstprompt</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Lydeffekter og Tekst til tale ud fra en kort beskrivelse</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Støjreduktion til renere stemmeoptagelser</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Premium omfatter sange, lydeffekter og tale; Støjreduktion bruger credits</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1475,17 +1526,17 @@
                                 <span class="ai-note">🎵</span>
                                 <span class="ai-note">🎶</span>
                             </div>
-                            <p style="font-family:'Space Mono',monospace;color:var(--cyan);font-size:1rem;font-weight:700;z-index:1">AI KOMPONIST</p>
+                            <p style="font-family:'Space Mono',monospace;color:var(--cyan);font-size:1rem;font-weight:700;z-index:1">AI-KOMPONIST</p>
                         </div>
                     </div>
                     <div class="reveal reveal--delay-1">
-                        <span class="section__eyebrow">AI Kreativ</span>
+                        <span class="section__eyebrow">Kreativ AI</span>
                         <h2 class="section__title" id="ai-music-title">AI-sanggenerator</h2>
-                        <p class="section__description">Skab original musik med AI. Beskriv dit humoor, genre eller stil og lad AI'en komponere unikke numre — instrumentale eller med vokal.</p>
+                        <p class="section__description">Skab original musik med AI. Beskriv dit humør, din genre eller stil, og lad AI'en komponere unikke numre — instrumentale eller med vokal.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Generer originale sange fra tekstbeskrivelser</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Vaelg instrumentale eller vokale numre</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>AI-lydeffektgenerering</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Generér originale sange ud fra tekstprompts</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Vælg instrumentale numre eller numre med vokal</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>AI-genererede lydeffekter</span></li>
                             <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Download og del dine AI-kreationer</span></li>
                         </ul>
                     </div>
@@ -1510,12 +1561,12 @@
                     </div>
                     <div class="reveal reveal--delay-1">
                         <span class="section__eyebrow">Fordybende</span>
-                        <h2 class="section__title" id="spatial-title">3D Rumlig Lyd</h2>
-                        <p class="section__description">Omgiv dig selv med lyd. 3D rumlig lyd skaber dybde og dimensionalitet og forvandler ethvert par hoeretelefoner til en fordybende lytteoplevelse.</p>
+                        <h2 class="section__title" id="spatial-title">3D Spatial Lyd</h2>
+                        <p class="section__description">Omgiv dig med lyd. 3D Spatial Lyd skaber dybde og rumfornemmelse og forvandler ethvert par høretelefoner til en fordybende lytteoplevelse.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Fordybende 3D-lydscene fra alle hoeretelefoner</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Skaber dybde, bredde og rumlig positionering</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Virker med al din musik og alt lydindhold</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>9 rumklangsmiljøer, fra et lille rum til en katedral</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Tilstanden 3D-kilde med 4 mønstre for automatisk bevægelse</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Virker med alle høretelefoner — ingen speciel hardware nødvendig</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1529,7 +1580,7 @@
                     <div class="showcase__visual reveal">
                         <div class="balance-visual">
                             <div class="balance-channel">
-                                <div class="balance-channel__label balance-channel__label--l">L</div>
+                                <div class="balance-channel__label balance-channel__label--l">V</div>
                                 <div class="balance-channel__bar">
                                     <div class="balance-channel__fill balance-channel__fill--l"></div>
                                 </div>
@@ -1541,7 +1592,7 @@
                                 <span style="font-family:'Space Mono',monospace;font-size:.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.1em">Balance</span>
                             </div>
                             <div class="balance-channel">
-                                <div class="balance-channel__label balance-channel__label--r">R</div>
+                                <div class="balance-channel__label balance-channel__label--r">H</div>
                                 <div class="balance-channel__bar">
                                     <div class="balance-channel__fill balance-channel__fill--r"></div>
                                 </div>
@@ -1549,20 +1600,20 @@
                         </div>
                     </div>
                     <div class="reveal reveal--delay-1">
-                        <span class="section__eyebrow">Praecision</span>
-                        <h2 class="section__title" id="balance-title">Lydbalancestyring</h2>
-                        <p class="section__description">Finjuster venstre og hoejre lydkanaler uafhaengigt. Perfekt til kalibrering af hoeretelefoner, kompensation for hoereforskelle eller kreativ stereopositionering.</p>
+                        <span class="section__eyebrow">Præcision</span>
+                        <h2 class="section__title" id="balance-title">Lydbalance</h2>
+                        <p class="section__description">Finjuster venstre og højre lydkanal. Perfekt til at kalibrere høretelefoner, udligne en svagere earbud eller placere lyden kreativt i stereobilledet.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Uafhaengig venstre/hoejre kanalstyring</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Hoeretelefon-balancekalibrering</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Hoeretilaengelighedsjusteringer</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Skyder til venstre/højre-balance med Center på ét tryk</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Kalibrering af balancen i høretelefoner</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Udlign en svagere earbud eller højttaler</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ==================== SHOWCASE: HEARING AID EQUALIZER ==================== -->
+        <!-- ==================== SHOWCASE: CLARITY EQUALIZER ==================== -->
         <section class="section showcase" id="hearing-aid" aria-labelledby="hearing-title">
             <div class="container">
                 <div class="showcase__split">
@@ -1579,14 +1630,15 @@
                         </div>
                     </div>
                     <div class="reveal reveal--delay-1">
-                        <span class="section__eyebrow">Tilgaengelighed</span>
-                        <h2 class="section__title" id="hearing-title">Hoereapparat-equalizer</h2>
-                        <p class="section__description">Tilpas lyden med praecisions-EQ designet til hoeretilaengelighed. Forstaerk specifikke frekvenser for at kompensere for hoereforskelle og nyd klarere lyd.</p>
+                        <span class="section__eyebrow">Klarhed</span>
+                        <h2 class="section__title" id="hearing-title">Klarheds-equalizer</h2>
+                        <p class="section__description">Gør stemmer og detaljer lettere at følge. Løft de frekvenser, du vil høre mere af — til podcasts, lydbøger, forelæsninger eller musik.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Frekvensspecifik forstaerkning til hoeretoette</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Tilpasselige EQ-profiler til forskellige miljoeer</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Virker sammen med lydforstaerkeren for maksimal klarhed</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Hæv 1 kHz- og 4 kHz-båndene for klarere stemmer</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Tilpas kurven til højttaleren eller dine hovedtelefoner</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Virker sammen med lydforstærkeren</span></li>
                         </ul>
+                        <p class="section__description" style="font-size:.85rem;margin-top:20px">EQfy er ikke medicinsk udstyr og erstatter ikke et høreapparat. Hvis du oplever ændringer i din hørelse, så tal med en hørespecialist.</p>
                     </div>
                 </div>
             </div>
@@ -1604,33 +1656,143 @@
                                 <div class="haptic-dot"></div><div class="haptic-dot"></div><div class="haptic-dot"></div>
                                 <div class="haptic-dot"></div><div class="haptic-dot"></div><div class="haptic-dot"></div>
                             </div>
-                            <p style="font-family:'Space Mono',monospace;color:var(--gold);font-size:1.1rem;font-weight:700;z-index:1">MAAERK RYTMEN</p>
+                            <p style="font-family:'Space Mono',monospace;color:var(--gold);font-size:1.1rem;font-weight:700;z-index:1">MÆRK RYTMEN</p>
                         </div>
                     </div>
                     <div class="reveal reveal--delay-1">
                         <span class="section__eyebrow">Unik funktion</span>
                         <h2 class="section__title" id="haptic-title">Haptisk musikafspiller</h2>
-                        <p class="section__description">Hoer ikke bare din musik — maaerk den. Rytmebevidst haptik synkroniserer praecist med din afspilning og tilfojer en fysisk dimension til hvert beat og groove.</p>
+                        <p class="section__description">Hør ikke bare din musik — mærk den. Rytmestyret haptik følger din afspilning præcist og giver hvert beat og groove en fysisk dimension.</p>
                         <ul class="showcase__features-list">
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Subtil, rytmebevidst haptisk feedback</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Synkroniserer med beats i realtid</span></li>
-                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Slaa til/fra oejeblikkeligt</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Diskret, rytmestyret haptisk feedback</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Synkroniseres med beatet i realtid</span></li>
+                            <li class="showcase__feature-item"><span class="showcase__feature-check">✓</span><span>Slå til og fra med ét tryk</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ==================== FAQ ==================== -->
+        <style>
+        .faq__list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+        .faq__item{background:var(--bg-card,#0F2510);border:1px solid var(--border-default,rgba(74,222,128,.15));border-radius:var(--radius-md,16px);overflow:hidden;transition:border-color .2s}
+        .faq__item[open]{border-color:var(--border-accent,rgba(0,255,102,.3))}
+        .faq__q{list-style:none;cursor:pointer;padding:22px 24px;font-weight:600;font-size:1.05rem;color:var(--text-primary,#F0FDF4);display:flex;justify-content:space-between;align-items:center;gap:16px}
+        .faq__q::-webkit-details-marker{display:none}
+        .faq__q::after{content:"+";color:var(--green-primary,#00FF66);font-size:1.6rem;line-height:1;flex:0 0 auto}
+        .faq__item[open] .faq__q::after{content:"\2212"}
+        .faq__a{padding:0 24px 22px;margin:0;color:var(--text-muted,#6B8F6B);line-height:1.7;font-size:.98rem}
+        .faq__a a{color:var(--green-secondary,#4ADE80)}
+        .section__header{text-align:center;margin-bottom:56px}
+        .section__header .section__description{margin:0 auto}
+        .faq__more{text-align:center;margin-top:36px}
+        </style>
+        <section class="section faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__eyebrow">Spørgsmål og svar</span>
+                    <h2 class="section__title" id="faq-title">Ofte stillede spørgsmål</h2>
+                    <p class="section__description">Alt, du skal vide om at skrue op for lyden på din iPhone med EQfy.</p>
+                </div>
+                <div class="faq__list">
+                    <details class="faq__item"><summary class="faq__q">Hvordan får jeg min iPhone til at spille højere end maks. lydstyrke?</summary><p class="faq__a">Åbn en sang eller lydfil i EQfy, og drej Lydstyrke-knappen over 100 %. EQfy lægger op til +12 dB ekstra forstærkning (200 %) oven på iPhonens lydstyrke — uden jailbreak eller ekstra hardware. Det virker for lyd, der afspilles i EQfy. <a href="/blog/make-iphone-louder-than-max-volume/">Læs hele guiden (på engelsk)</a>.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Er EQfy gratis?</summary><p class="faq__a">Ja, EQfy er gratis at downloade. Lydforstærkning, musikopdagelse, offline-afspilleren og import fra musikbiblioteket og Arkiver er gratis. Premium er et ugentligt eller årligt abonnement — prisen vises i din lokale valuta i App Store. Premium låser op for Basforstærkning, Equalizer, 3D-lyd, balance, hastighed, haptik og eksport og omfatter AI-sange, lydeffekter og tale. Støjreduktion bruger credits.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Kan lydforstærkning skade min hørelse eller mine højttalere?</summary><p class="faq__a">Høj lyd i lang tid kan skade din hørelse, og ekstrem forstærkning kan få små højttalere til at forvrænge. Skru gradvist op, skru ned igen, hvis du hører knitren, og hold lydstyrken i høretelefoner på et moderat niveau. <a href="/blog/is-volume-boosting-safe/">Sådan forstærker du lyden sikkert (på engelsk)</a>.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Virker EQfy med Spotify, YouTube eller telefonopkald?</summary><p class="faq__a">Nej. iOS lader kun apps behandle den lyd, de selv afspiller, så EQfy forstærker de sange og filer, du afspiller i EQfy — via iPhonens højttaler, høretelefoner med ledning eller Bluetooth-høretelefoner og -højttalere. EQfy kan ikke ændre lydstyrken i andre apps, opkald eller systemlyde.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Kan jeg bruge EQfy med Apple Music og offline?</summary><p class="faq__a">Du kan importere sange fra iPhonens musikbibliotek og fra appen Arkiver og afspille dem offline. Sange, der er beskyttet af et Apple Music-abonnement, kan afspilles i EQfy, men iOS tillader ikke forstærknings- og EQ-værktøjerne på dem — købte eller ubeskyttede numre og dine egne filer virker med alle værktøjer.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Hvad kan basforstærkeren og equalizeren?</summary><p class="faq__a">Basforstærkning giver op til +12 dB ekstra bas, tilpasset så iPhonens højttalere kan gengive den. Equalizeren har 7 bånd fra 32 Hz til 16 kHz plus forforstærker samt 9 forudindstillinger og en brugerdefineret kurve. <a href="/blog/best-iphone-eq-settings-by-genre/">Se de bedste EQ-indstillinger efter genre (på engelsk)</a>.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Hvilke enheder understøtter EQfy?</summary><p class="faq__a">EQfy er bygget til iPhone og kræver iOS 16 eller nyere. Appen fås i App Store over hele verden på 25 sprog. Understøttelse af iPhone Duo med hele den indre skærm og et layout side om side kommer i v2.2.23. <a href="/blog/iphone-duo-support/">Læs mere (på engelsk)</a>.</p></details>
+                    <details class="faq__item"><summary class="faq__q">Er EQfy den samme app som Volume Booster Sound Amplifier?</summary><p class="faq__a">Ja. EQfy - Louder Volume står i App Store i USA som »Volume Booster Sound Amplifier« (app-id 6550912161). Navnet kan variere fra land til land, men det er den samme app fra den samme udvikler.</p></details>
+                </div>
+                <p class="faq__more"><a href="#faq" class="btn-secondary">Se alle spørgsmål →</a></p>
+            </div>
+        </section>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Hvordan får jeg min iPhone til at spille højere end maks. lydstyrke?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Åbn en sang eller lydfil i EQfy, og drej Lydstyrke-knappen over 100 %. EQfy lægger op til +12 dB ekstra forstærkning (200 %) oven på iPhonens lydstyrke — uden jailbreak eller ekstra hardware. Det virker for lyd, der afspilles i EQfy. <a href=\"/blog/make-iphone-louder-than-max-volume/\">Læs hele guiden (på engelsk)</a>."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Er EQfy gratis?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja, EQfy er gratis at downloade. Lydforstærkning, musikopdagelse, offline-afspilleren og import fra musikbiblioteket og Arkiver er gratis. Premium er et ugentligt eller årligt abonnement — prisen vises i din lokale valuta i App Store. Premium låser op for Basforstærkning, Equalizer, 3D-lyd, balance, hastighed, haptik og eksport og omfatter AI-sange, lydeffekter og tale. Støjreduktion bruger credits."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan lydforstærkning skade min hørelse eller mine højttalere?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Høj lyd i lang tid kan skade din hørelse, og ekstrem forstærkning kan få små højttalere til at forvrænge. Skru gradvist op, skru ned igen, hvis du hører knitren, og hold lydstyrken i høretelefoner på et moderat niveau. <a href=\"/blog/is-volume-boosting-safe/\">Sådan forstærker du lyden sikkert (på engelsk)</a>."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Virker EQfy med Spotify, YouTube eller telefonopkald?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nej. iOS lader kun apps behandle den lyd, de selv afspiller, så EQfy forstærker de sange og filer, du afspiller i EQfy — via iPhonens højttaler, høretelefoner med ledning eller Bluetooth-høretelefoner og -højttalere. EQfy kan ikke ændre lydstyrken i andre apps, opkald eller systemlyde."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan jeg bruge EQfy med Apple Music og offline?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Du kan importere sange fra iPhonens musikbibliotek og fra appen Arkiver og afspille dem offline. Sange, der er beskyttet af et Apple Music-abonnement, kan afspilles i EQfy, men iOS tillader ikke forstærknings- og EQ-værktøjerne på dem — købte eller ubeskyttede numre og dine egne filer virker med alle værktøjer."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hvad kan basforstærkeren og equalizeren?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Basforstærkning giver op til +12 dB ekstra bas, tilpasset så iPhonens højttalere kan gengive den. Equalizeren har 7 bånd fra 32 Hz til 16 kHz plus forforstærker samt 9 forudindstillinger og en brugerdefineret kurve. <a href=\"/blog/best-iphone-eq-settings-by-genre/\">Se de bedste EQ-indstillinger efter genre (på engelsk)</a>."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hvilke enheder understøtter EQfy?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "EQfy er bygget til iPhone og kræver iOS 16 eller nyere. Appen fås i App Store over hele verden på 25 sprog. Understøttelse af iPhone Duo med hele den indre skærm og et layout side om side kommer i v2.2.23. <a href=\"/blog/iphone-duo-support/\">Læs mere (på engelsk)</a>."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Er EQfy den samme app som Volume Booster Sound Amplifier?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ja. EQfy - Louder Volume står i App Store i USA som »Volume Booster Sound Amplifier« (app-id 6550912161). Navnet kan variere fra land til land, men det er den samme app fra den samme udvikler."
+                    }
+                }
+            ]
+        }
+        </script>
+
+        <!-- blog:latest --><!-- /blog:latest -->
+
         <!-- ==================== FINAL CTA ==================== -->
         <section class="section final-cta" aria-labelledby="final-cta-title">
             <div class="container">
                 <div class="final-cta__glow" aria-hidden="true"></div>
                 <h2 class="final-cta__title reveal" id="final-cta-title">Klar til at skrue op?</h2>
-                <p class="final-cta__text reveal reveal--delay-1">Slut dig til tusindvis af brugere der har gjort deres iPhone hoejere. Download gratis — ingen konto kraevet.</p>
+                <p class="final-cta__text reveal reveal--delay-1">Gør dine yndlingsnumre højere, dybere og klarere. Download gratis — ingen konto påkrævet.</p>
                 <div class="final-cta__actions reveal reveal--delay-2">
-                    <a href="https://volumebooster.onelink.me/Bk0T/gocpl0p1" class="btn-primary" target="_blank" rel="noopener">
+                    <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="btn-primary" target="_blank" rel="noopener">
                         <svg class="icon-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                        Download i App Store
+                        Hent i App Store
                     </a>
                 </div>
             </div>
@@ -1645,45 +1807,52 @@
                 <div class="footer__brand">
                     <div class="footer__logo">
                         <div class="footer__logo-icon">
-                            <img src="../assets/images/app-icon.png" alt="">
+                            <img src="../assets/images/app-icon.png" alt="" width="32" height="32">
                         </div>
-                        Louder Volume
+                        EQfy - Louder Volume
                     </div>
-                    <p class="footer__tagline">Lydforstaerker og basforstaerker til iPhone. Goer hvert nummer hoejere, dybere og bedre.</p>
+                    <p class="footer__tagline">Lydforstærker, basforstærker og equalizer til iPhone. Gør hvert nummer højere, dybere og klarere.</p>
                 </div>
                 <div class="footer__links">
                     <div class="footer__column">
-                        <h4>Funktioner</h4>
+                        <h3>Funktioner</h3>
                         <ul>
-                            <li><a href="#volume-booster">Lydforstaerker</a></li>
-                            <li><a href="#equalizer">Basforstaerker &amp; EQ</a></li>
-                            <li><a href="#spatial-audio">3D Rumlig Lyd</a></li>
-                            <li><a href="#ai-audio">AI Lyd</a></li>
+                            <li><a href="#volume-booster">Lydforstærker</a></li>
+                            <li><a href="#equalizer">Basforstærker og EQ</a></li>
+                            <li><a href="#spatial-audio">3D Spatial Lyd</a></li>
+                            <li><a href="#ai-audio">AI Studio</a></li>
                             <li><a href="#ai-music">AI-sanggenerator</a></li>
                             <li><a href="#haptic">Haptisk afspiller</a></li>
-                            <li><a href="#hearing-aid">Hoereapparat-EQ</a></li>
-                            <li><a href="#sound-control">Lydstyring</a></li>
+                            <li><a href="#hearing-aid">Klarheds-EQ</a></li>
+                            <li><a href="#sound-control">Lydkontrol</a></li>
                         </ul>
                     </div>
                     <div class="footer__column">
-                        <h4>App</h4>
+                        <h3>App</h3>
                         <ul>
-                            <li><a href="https://volumebooster.onelink.me/Bk0T/gocpl0p1" target="_blank" rel="noopener">App Store</a></li>
-                            <li><a href="#screenshots">Skaermbilleder</a></li>
+                            <li><a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" target="_blank" rel="noopener">App Store</a></li>
+                            <li><a href="#screenshots">Skærmbilleder</a></li>
                         </ul>
                     </div>
                     <div class="footer__column">
-                        <h4>Juridisk</h4>
+                        <h3>Ressourcer</h3>
                         <ul>
-                            <li><a href="/privacy.html">Privatlivspolitik</a></li>
-                            <li><a href="/terms.html">Brugsbetingelser</a></li>
+                            <li><a href="/blog/" hreflang="en">Blog (engelsk)</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="mailto:support@eqfy.app">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3>Juridisk</h3>
+                        <ul>
+                            <li><a href="/privacy">Privatlivspolitik</a></li>
+                            <li><a href="/terms">Brugsvilkår</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer__bottom">
-                <span>&copy; 2026 Louder Volume. Alle rettigheder forbeholdes.</span>
-                <span>Lavet med 🎵 til musikelskere</span>
+                <span>&copy; 2026 EQfy. Alle rettigheder forbeholdes.</span> <span>Lavet med 🎵 til musikelskere</span>
             </div>
         </div>
     </footer>

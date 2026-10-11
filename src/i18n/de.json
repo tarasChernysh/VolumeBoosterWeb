@@ -1,0 +1,67 @@
+{
+  "dateLocale": "de-DE",
+  "home": "Startseite",
+  "nav": {
+    "features": "Funktionen",
+    "equalizer": "Equalizer",
+    "aiStudio": "KI Studio",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Kostenlos laden",
+    "changeLanguage": "Sprache ändern",
+    "menu": "Menü öffnen",
+    "logoAlt": "EQfy-Icon"
+  },
+  "footer": {
+    "tagline": "Lautstärkeverstärker, Bass-Booster und Equalizer fürs iPhone. Mach jeden Track lauter, satter und klarer.",
+    "features": "Funktionen",
+    "volumeBooster": "Lautstärkeverstärker",
+    "bassEq": "Bass-Booster & EQ",
+    "spatial": "3D-Raumklang",
+    "aiStudio": "KI Studio",
+    "resources": "Ressourcen",
+    "support": "Support",
+    "appStore": "App Store",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "rights": "Alle Rechte vorbehalten.",
+    "trademark": "iPhone, AirPods und App Store sind Marken der Apple Inc."
+  },
+  "blog": {
+    "title": "EQfy-Blog: iPhone lauter machen, Bass & EQ-Tipps",
+    "description": "Ratgeber und News von EQfy: iPhone lauter machen, Bass verstärken, die besten EQ-Einstellungen finden, zu leisen Ton beheben und mehr aus Kopfhörern holen.",
+    "eyebrow": "Ratgeber & Neuigkeiten",
+    "h1": "Der EQfy-Blog",
+    "lead": "Praktische Ratgeber für mehr Lautstärke, Klarheit und Hörspaß auf dem iPhone – plus Neuigkeiten zur EQfy-App."
+  },
+  "post": {
+    "by": "Vom EQfy-Team",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "minRead": "{n} Min. Lesezeit",
+    "faqTitle": "Häufig gestellte Fragen",
+    "related": "Ähnliche Artikel",
+    "readMore": "Weiterlesen →",
+    "categories": {
+      "guide": "Ratgeber",
+      "news": "Neuigkeiten"
+    }
+  },
+  "faqPage": {
+    "eyebrow": "Hilfe-Center",
+    "jumpTo": "Direkt zum Thema"
+  },
+  "cta": {
+    "title": "Mach dein iPhone lauter",
+    "text": "Lade EQfy - Louder Volume kostenlos im App Store. Erfordert iOS 16 oder neuer.",
+    "button": "Laden im App Store",
+    "iconAlt": "EQfy-App-Icon"
+  },
+  "latest": {
+    "eyebrow": "Aus dem Blog",
+    "title": "Ratgeber & Neuigkeiten",
+    "description": "Tipps für mehr Lautstärke, Klarheit und Hörspaß auf dem iPhone.",
+    "all": "Alle Artikel →"
+  }
+}

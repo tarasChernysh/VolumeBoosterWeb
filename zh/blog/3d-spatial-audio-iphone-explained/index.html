@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>if(/\.github\.io$/.test(location.hostname))location.replace('https://eqfy.app'+location.pathname.replace(/^\/VolumeBoosterWeb/,'')+location.search+location.hash)</script>
+    <title>iPhone 3D音效详解：空间音频与混响 | EQfy</title>
+    <meta name="description" content="iPhone 3D音效详解：Apple空间音频和杜比全景声如何工作，以及EQfy的App内3D音频如何为你的歌曲加入混响空间和环绕移动的声音。">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0A1A0A">
+    <link rel="canonical" href="https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="en" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="es" href="https://eqfy.app/es/blog/audio-espacial-3d-iphone/">
+    <link rel="alternate" hreflang="de" href="https://eqfy.app/de/blog/3d-raumklang-iphone/">
+    <link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/iphone-3d-uzamsal-ses/">
+    <link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+
+    <meta property="og:site_name" content="EQfy - Louder Volume">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="iPhone 3D音效详解：空间音频与混响 | EQfy">
+    <meta property="og:description" content="iPhone 3D音效详解：Apple空间音频和杜比全景声如何工作，以及EQfy的App内3D音频如何为你的歌曲加入混响空间和环绕移动的声音。">
+    <meta property="og:url" content="https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="iPhone上的EQfy 3D空间音频界面，效果已开启，显示混响和3D音源模式以及自动运动">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="iPhone 3D音效详解：空间音频与混响 | EQfy">
+    <meta name="twitter:description" content="iPhone 3D音效详解：Apple空间音频和杜比全景声如何工作，以及EQfy的App内3D音频如何为你的歌曲加入混响空间和环绕移动的声音。">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta name="apple-itunes-app" content="app-id=6550912161">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="/assets/css/site.css?v=2dd098d6">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/#article",
+      "headline": "iPhone 3D音效详解：空间音频与混响",
+      "description": "iPhone 3D音效详解：Apple空间音频和杜比全景声如何工作，以及EQfy的App内3D音频如何为你的歌曲加入混响空间和环绕移动的声音。",
+      "image": [
+        "https://eqfy.app/assets/images/og-image.png",
+        "https://eqfy.app/assets/images/blog/iphone-duo/10-3d-audio.webp"
+      ],
+      "datePublished": "2026-10-11",
+      "dateModified": "2026-10-11",
+      "inLanguage": "zh",
+      "mainEntityOfPage": "https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/",
+      "keywords": "iPhone 3D音效",
+      "author": {
+        "@type": "Organization",
+        "name": "EQfy",
+        "url": "https://eqfy.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://eqfy.app/#org",
+        "name": "EQfy",
+        "url": "https://eqfy.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eqfy.app/assets/images/app-icon.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://eqfy.app/zh/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "博客",
+          "item": "https://eqfy.app/zh/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "iPhone 3D音效详解：空间音频与混响",
+          "item": "https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "EQfy的3D音频和Apple空间音频是一回事吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是。Apple的空间音频是一项系统功能，适用于受支持的内容，例如Apple Music中的杜比全景声歌曲。EQfy的3D音频是它自己的App内效果，提供混响空间和可移动的3D音源，适用于你在EQfy中播放的歌曲。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "在iPhone上体验3D音效需要AirPods吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "使用Apple的头部追踪需要支持的AirPods。EQfy的3D音频可以通过任何输出设备播放，其3D音源模式还可以搭配支持的AirPods（例如AirPods Pro或AirPods Max）使用头部追踪。移动的3D音源效果用耳机听最清晰；用iPhone扬声器时，混响模式效果最好。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EQfy能为Spotify或YouTube添加3D音效吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。iOS只允许EQfy处理在EQfy内播放的音频，因此3D音频无法改变Spotify、YouTube、Apple Music流媒体、通话或其他App的声音。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EQfy的3D音频支持Apple Music歌曲吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不支持来自Apple Music订阅的歌曲：它们受到保护，可以在EQfy中播放，但无法使用增强工具。已购买或未受保护的歌曲以及导入的文件都可以使用3D音频。"
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav__inner">
+            <a href="/zh/" class="nav__logo">
+                <span class="nav__logo-icon"><img src="/assets/images/app-icon.png" alt="EQfy图标" width="36" height="36"></span>
+                EQfy - Louder Volume
+            </a>
+            <ul class="nav__links">
+                <li><a href="/zh/#features" class="nav__link">功能</a></li>
+                <li><a href="/zh/#equalizer" class="nav__link">均衡器</a></li>
+                <li><a href="/zh/#ai-audio" class="nav__link">人工智能工作室</a></li>
+                <li><a href="/zh/faq/" class="nav__link">常见问题</a></li>
+                <li><a href="/zh/blog/" class="nav__link" aria-current="page">博客</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-switcher__btn" data-toggle=".lang-switcher__dropdown" aria-label="切换语言">🌐 中文 ▾</button>
+                <div class="lang-switcher__dropdown">
+                    <a href="/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="en" lang="en">🇬🇧 English</a>
+                    <a href="/es/blog/audio-espacial-3d-iphone/" class="lang-switcher__option" hreflang="es" lang="es">🇪🇸 Español</a>
+                    <a href="/de/blog/3d-raumklang-iphone/" class="lang-switcher__option" hreflang="de" lang="de">🇩🇪 Deutsch</a>
+                    <a href="/tr/blog/iphone-3d-uzamsal-ses/" class="lang-switcher__option" hreflang="tr" lang="tr">🇹🇷 Türkçe</a>
+                    <a href="/zh/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option lang-switcher__option--active" hreflang="zh" lang="zh-Hans">🇨🇳 简体中文</a>
+                </div>
+            </div>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> 免费下载</a>
+            <button class="nav__mobile-toggle" data-toggle=".nav__mobile-menu" aria-label="打开菜单"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav__mobile-menu">
+        <ul>
+            <li><a href="/zh/#features">功能</a></li>
+            <li><a href="/zh/#equalizer">均衡器</a></li>
+            <li><a href="/zh/#ai-audio">人工智能工作室</a></li>
+            <li><a href="/zh/faq/">常见问题</a></li>
+            <li><a href="/zh/blog/" aria-current="page">博客</a></li>
+        </ul>
+        <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> 免费下载</a>
+    </div>
+
+    <main class="page">
+        <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/zh/">首页</a></li><li><a href="/zh/blog/">博客</a></li><li aria-current="page">iPhone 3D音效详解：空间音频与混响</li></ol></nav>
+        <article>
+            <header class="page__header">
+                <span class="eyebrow">指南</span>
+                <h1 class="page__title">iPhone 3D音效详解：空间音频与混响</h1>
+                <p class="post-meta"><span>EQfy团队</span> · <span>发布于 <time datetime="2026-10-11">2026年10月11日</time></span> · <span>阅读约8分钟</span></p>
+            </header>
+            <div class="prose">
+<p class="lead">说到iPhone 3D音效，通常指的是两种不同的东西。Apple的空间音频（包括Apple Music中的杜比全景声歌曲，以及支持的AirPods上的头部追踪）是一项系统功能，只适用于支持它的内容。EQfy - Louder Volume中的3D音频则是另一回事：它是一种App内效果，可以把音乐放进虚拟空间，或让声音围绕你的头部移动，适用于你在EQfy中播放的歌曲。</p>
+
+<p>下面会介绍3D声音的原理，简要讲解Apple空间音频及其具体的iPhone设置，并比较EQfy的混响模式和3D音源模式。</p>
+
+<h2 id="what-is-3d-audio">“3D音效”到底是什么意思</h2>
+<p>普通立体声把声音放在左右耳之间的一条线上。3D音效则试图把声音放在你的四周：前方、后方、上方，或是一个比耳机大得多的空间里。</p>
+<p>大脑靠两只耳朵之间的细微差异来定位声音：哪只耳朵先听到、两侧音量各有多大，以及头部和外耳如何根据声音的方向改变音色。音频软件可以模仿这些线索。这通常称为双耳（binaural）或HRTF（头部相关传输函数）处理，用耳机听效果最好，因为每只耳朵都能收到各自独立的信号。</p>
+<p>空间里的声音是这种听觉错觉的另一半。在真实空间中，你听到的是直达声，加上墙壁、地板和天花板的大量反射声。混响就是在重现这些反射，这也是为什么一段干声录音会突然听起来像是在音乐厅或大教堂里播放。</p>
+
+<h2 id="apple-spatial-audio">iPhone空间音频详解</h2>
+<p>人们谈论iPhone上的空间音频时，通常指的是Apple的功能。它分为两部分，都取决于你播放的内容和使用的耳机。</p>
+
+<h3 id="dolby-atmos">Apple Music中的杜比全景声</h3>
+<p>杜比全景声（Dolby Atmos）是一种基于对象的音频格式：工程师不再只把声音混到左右声道，而是可以把乐器放在听者的四周和上方。如果你订阅了Apple Music，就可以通过空间音频以杜比全景声聆听部分歌曲。检查设置的方法如下：</p>
+<ol>
+  <li>将iPhone更新到最新版本的iOS。</li>
+  <li>打开<strong>设置 › App › 音乐</strong>。</li>
+  <li>在“音频”下方，轻点<strong>杜比全景声</strong>。</li>
+  <li>选择<strong>自动</strong>、<strong>始终打开</strong>或<strong>关闭</strong>。</li>
+</ol>
+<p>在“自动”模式下，使用Apple或Beats蓝牙耳机，或iPhone XS及更新机型（iPhone SE除外）的内建扬声器时，受支持的歌曲会以杜比全景声播放。使用有线耳机时，Apple建议选择“始终打开”。支持的歌曲会显示杜比全景声标志。来源：<a href="https://support.apple.com/zh-cn/109354" target="_blank" rel="noopener">关于Apple Music中支持杜比全景声的空间音频功能</a>。</p>
+
+<h3 id="head-tracking">AirPods上的空间音频和头部追踪</h3>
+<p>搭配支持的AirPods时，空间音频还可以使用头部追踪，即使你转动头部，声音听起来也像是来自iPhone。要更改设置，请戴上AirPods，打开控制中心，按住音量控制，轻点<strong>空间音频</strong>，然后选择：</p>
+<ul>
+  <li><strong>关闭：</strong>同时关闭空间音频和头部追踪。</li>
+  <li><strong>固定：</strong>打开空间音频，但不打开头部追踪。</li>
+  <li><strong>头部追踪：</strong>同时打开空间音频和头部追踪。</li>
+</ul>
+<p>iPhone会为每个App分别保存这个选择。Apple指出，并非所有App或内容都可使用空间音频；它适用于受支持的节目、电影、歌曲和游戏，以及FaceTime通话。来源：<a href="https://support.apple.com/zh-cn/guide/airpods/dev00eb7e0a3/web" target="_blank" rel="noopener">在AirPods上控制空间音频和头部追踪</a>。</p>
+
+<h2 id="eqfy-3d-audio">EQfy的3D音频：一种App内效果</h2>
+<p>EQfy的3D音频是它自己的效果，内置于EQfy播放器中。它不是Apple空间音频，也不会把歌曲变成杜比全景声混音，而是以两种模式之一处理你正在EQfy中播放的歌曲。你可以在播放器的<strong>3D音频</strong>标签页中找到它，旁边是音量、低音、EQ和耳机标签页。这是一项Premium高级版工具。</p>
+
+<figure>
+  <img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" width="700" height="1019" loading="lazy" decoding="async" alt="EQfy 3D空间音频标签页，效果已开启，显示混响和3D音源模式按钮以及自动运动轨迹">
+  <figcaption>EQfy的3D音频标签页：先打开效果，再选择混响或3D音源。</figcaption>
+</figure>
+
+<h3 id="reverb-mode">混响模式：把音乐放进一个房间</h3>
+<p>混响模式会把歌曲放进一个虚拟空间。如果你正在找一款能让歌曲听起来更有空间感的iPhone混响App，这个功能直接在播放器里就能做到。它提供9种预设，“混响混合”滑块用来设定效果的多少，从干声到湿声。</p>
+<table>
+  <thead>
+    <tr><th>预设</th><th>听感</th><th>适合搭配</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>小房间（Small Room）</td><td>反射短而近，效果细腻</td><td>原声歌曲、有声朗读</td></tr>
+    <tr><td>中房间（Medium Room）</td><td>自然的房间氛围</td><td>大多数流行和摇滚</td></tr>
+    <tr><td>大房间（Large Room）</td><td>空间更大，尾音更长</td><td>乐队录音、现场感声音</td></tr>
+    <tr><td>中型音乐厅（Medium Hall）</td><td>音乐厅般的感觉</td><td>钢琴、古典</td></tr>
+    <tr><td>大型音乐厅（Large Hall）</td><td>宏大开阔，衰减悠长</td><td>管弦乐、电影配乐</td></tr>
+    <tr><td>中型混响室（Medium Chamber）</td><td>反射密集而顺滑</td><td>人声、弦乐</td></tr>
+    <tr><td>大型混响室（Large Chamber）</td><td>更大、更丰满的混响室</td><td>抒情歌、慢歌</td></tr>
+    <tr><td>大教堂（Cathedral）</td><td>非常悠长、通透的衰减</td><td>合唱、氛围音乐、冥想音乐</td></tr>
+    <tr><td>板式混响（Plate）</td><td>明亮顺滑的录音棚式混响</td><td>流行人声、鼓</td></tr>
+  </tbody>
+</table>
+<p>这些只是起点，不是规则。混响很看个人喜好，不妨在同一首歌上多试几种预设，留下你最喜欢的那个。</p>
+
+<h3 id="3d-source-mode">3D音源模式：让声音在你周围移动</h3>
+<p>3D音源会把歌曲当作你头部周围空间中的一个声源。你可以把它拖到某个位置（前、后、左、右、上或下），再用“中心位置”把它移回来。也可以打开<strong>自动运动</strong>，让EQfy按以下四种轨迹之一替你移动声音，速度可从慢调到快：</p>
+<ul>
+  <li><strong>双侧：</strong>声音从左扫到右，再扫回来。</li>
+  <li><strong>环绕：</strong>声音在耳朵的高度围绕你的头部转圈。</li>
+  <li><strong>8字形：</strong>声音沿着8字形路径在你周围移动。</li>
+  <li><strong>呼吸：</strong>声音以舒缓的节奏缓缓起伏。</li>
+</ul>
+<p>这类移动效果用耳机听最有说服力，因为每只耳朵都能收到各自的信号。用iPhone扬声器时，混响模式通常是更好的选择。</p>
+<p>3D音源还可以使用<strong>头部追踪</strong>。搭配支持该功能的AirPods（例如AirPods Pro或AirPods Max）时，EQfy会跟随你的头部动作，在你转头时调整声音的方位。第一次使用时，iPhone会询问是否允许EQfy使用运动数据。混响模式不使用头部追踪。</p>
+
+<h2 id="how-to">如何在EQfy中打开3D音频</h2>
+<ol>
+  <li>打开EQfy，播放音乐库中的一首歌或你导入的文件。</li>
+  <li>打开播放器，轻点<strong>3D音频</strong>标签页。</li>
+  <li>打开<strong>空间音频</strong>开关。别被名字误导，这个开关控制的是EQfy自己的效果，而不是Apple的功能。</li>
+  <li>在<strong>音频模式</strong>下，选择<strong>混响</strong>或<strong>3D音源</strong>。</li>
+  <li>在混响模式下，选择一个预设并调整混响混合；在3D音源模式下，选择一种自动运动轨迹和速度，或者自己摆放声音的位置。</li>
+  <li>戴上耳机，反复开关这个开关进行对比。</li>
+</ol>
+
+<h2 id="comparison">Apple空间音频与EQfy 3D音频对比</h2>
+<table>
+  <thead>
+    <tr><th>对比项</th><th>Apple空间音频／杜比全景声</th><th>EQfy 3D音频</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>是什么</td><td>一项iPhone功能，适用于受支持的内容和耳机</td><td>EQfy播放器内的一种效果</td></tr>
+    <tr><td>适用于</td><td>Apple Music中的杜比全景声歌曲，受支持的节目、电影和游戏，FaceTime通话</td><td>在EQfy中播放的歌曲：音乐库中已购买或未受保护的歌曲，以及导入的文件</td></tr>
+    <tr><td>主要控制项</td><td>关闭、固定或头部追踪；杜比全景声：自动、始终打开或关闭</td><td>9种混响预设及混合比例；3D音源位置；4种自动运动轨迹</td></tr>
+    <tr><td>所需条件</td><td>杜比全景声歌曲需要Apple Music订阅；头部追踪需要支持的AirPods</td><td>EQfy Premium高级版；3D音源建议使用耳机；头部追踪需要支持的AirPods</td></tr>
+  </tbody>
+</table>
+
+<h3 id="use-both">两者可以同时使用吗？</h3>
+<p>来自Apple Music订阅的歌曲受到保护。它们可以在EQfy中播放，但无法使用3D音频和其他增强工具，因为iOS不允许App处理受保护的音频。对于EQfy能够处理的歌曲，你可以照常用AirPods聆听。由于iPhone会按App分别保存空间音频设置，如果你只想听EQfy自己的效果，可以在控制中心为EQfy把它设为“关闭”。</p>
+
+<h2 id="tips">让iPhone 3D音效更出色的小技巧</h2>
+<ul>
+  <li><strong>从轻微开始。</strong>混合比例较低的中房间，往往比全湿声的大教堂听起来更自然。</li>
+  <li><strong>根据输出设备选择模式。</strong>3D音源和自动运动请用耳机；混响用扬声器也没问题。</li>
+  <li><strong>清理低频。</strong>混响可能让低音变得浑浊。在<a href="/zh/blog/best-iphone-eq-settings-by-genre/">均衡器</a>中把200 Hz附近稍微调低一点会有帮助；如果大空间让声音变薄，<a href="/zh/blog/boost-bass-on-iphone-speakers/">低音增强</a>可以把厚度补回来。</li>
+  <li><strong>检查左右声道。</strong>如果在添加任何效果之前，一侧就已经比较响，请先用<a href="/zh/blog/left-right-headphone-balance/">左右声道平衡</a>解决这个问题。</li>
+  <li><strong>保持舒适的音量。</strong>效果可能会让你不自觉地调大音量；我们的<a href="/zh/blog/is-volume-boosting-safe/">安全增强音量</a>指南介绍了合理的音量水平。</li>
+</ul>
+
+<div class="note"><strong>EQfy做不到的事：</strong>3D音频仅对在EQfy内播放的音频有效。它无法为Spotify、YouTube、Apple Music流媒体、通话或其他App添加3D音效，也不支持Apple Music订阅歌曲。它不是Apple空间音频，也不会生成杜比全景声混音。</div>
+
+<p>想看看播放器的其他工具？请前往<a href="/zh/#spatial-audio">EQfy首页，了解3D音频及更多功能</a>。</p>
+            </div>
+            <section class="post-faq" aria-labelledby="post-faq-title">
+                <h2 id="post-faq-title">常见问题</h2>
+                <div class="faq__list">
+<details class="faq__item"><summary class="faq__q">EQfy的3D音频和Apple空间音频是一回事吗？</summary><div class="faq__a"><p>不是。Apple的空间音频是一项系统功能，适用于受支持的内容，例如Apple Music中的杜比全景声歌曲。EQfy的3D音频是它自己的App内效果，提供混响空间和可移动的3D音源，适用于你在EQfy中播放的歌曲。</p></div></details>
+<details class="faq__item"><summary class="faq__q">在iPhone上体验3D音效需要AirPods吗？</summary><div class="faq__a"><p>使用Apple的头部追踪需要支持的AirPods。EQfy的3D音频可以通过任何输出设备播放，其3D音源模式还可以搭配支持的AirPods（例如AirPods Pro或AirPods Max）使用头部追踪。移动的3D音源效果用耳机听最清晰；用iPhone扬声器时，混响模式效果最好。</p></div></details>
+<details class="faq__item"><summary class="faq__q">EQfy能为Spotify或YouTube添加3D音效吗？</summary><div class="faq__a"><p>不能。iOS只允许EQfy处理在EQfy内播放的音频，因此3D音频无法改变Spotify、YouTube、Apple Music流媒体、通话或其他App的声音。</p></div></details>
+<details class="faq__item"><summary class="faq__q">EQfy的3D音频支持Apple Music歌曲吗？</summary><div class="faq__a"><p>不支持来自Apple Music订阅的歌曲：它们受到保护，可以在EQfy中播放，但无法使用增强工具。已购买或未受保护的歌曲以及导入的文件都可以使用3D音频。</p></div></details>
+                </div>
+            </section>
+        </article>
+        <aside class="cta-box" aria-label="让iPhone声音更大">
+            <img class="cta-box__icon" src="/assets/images/app-icon.png" alt="EQfy App图标" width="64" height="64" loading="lazy">
+            <p class="cta-box__title">让iPhone声音更大</p>
+            <p>在App Store免费下载EQfy - Louder Volume。需要iOS 16或更高版本。</p>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="btn-primary" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> 在App Store下载</a>
+        </aside>
+        <section class="related" aria-labelledby="related-title">
+            <h2 id="related-title">相关文章</h2>
+            <div class="cards">
+            <article class="card">
+                <a class="card__image" href="/zh/blog/best-iphone-eq-settings-by-genre/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/03-equalizer.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">指南</span>
+                    <h3 class="card__title"><a href="/zh/blog/best-iphone-eq-settings-by-genre/">iPhone均衡器设置：按曲风推荐最佳预设</a></h3>
+                    <p class="card__text">最佳iPhone均衡器设置：摇滚、说唱、爵士等9种曲风的7段EQ精确数值，外加增强低音、让人声更清晰的简单调法，扬声器和耳机都适用。</p>
+                    <a class="card__more" href="/zh/blog/best-iphone-eq-settings-by-genre/" aria-label="阅读全文: iPhone均衡器设置：按曲风推荐最佳预设">阅读全文 →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/zh/blog/left-right-headphone-balance/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/09-sound-control.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">指南</span>
+                    <h3 class="card__title"><a href="/zh/blog/left-right-headphone-balance/">iPhone左右声道平衡：耳机一边大一边小怎么办</a></h3>
+                    <p class="card__text">调整iPhone左右声道平衡：找到“平衡”滑块、善用单声道音频，并用简单、安全的步骤解决一只AirPod比另一只声音大的问题。</p>
+                    <a class="card__more" href="/zh/blog/left-right-headphone-balance/" aria-label="阅读全文: iPhone左右声道平衡：耳机一边大一边小怎么办">阅读全文 →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/zh/blog/boost-bass-on-iphone-speakers/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/06-bass-booster.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">指南</span>
+                    <h3 class="card__title"><a href="/zh/blog/boost-bass-on-iphone-speakers/">iPhone低音增强：让扬声器和耳机低音更足</a></h3>
+                    <p class="card__text">iPhone低音增强指南：为什么小扬声器发不出深沉低音、真正有效的200 Hz技巧、Apple Music的免费预设，以及让声音更有冲击力的均衡器调法。</p>
+                    <a class="card__more" href="/zh/blog/boost-bass-on-iphone-speakers/" aria-label="阅读全文: iPhone低音增强：让扬声器和耳机低音更足">阅读全文 →</a>
+                </div>
+            </article>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span class="footer__logo-icon"><img src="/assets/images/app-icon.png" alt="" width="32" height="32"></span>EQfy - Louder Volume</div>
+                    <p class="footer__tagline">适用于iPhone的音量增强器、低音增强器和均衡器。让每首歌更响亮、低音更深沉、声音更清晰。</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <p class="footer__heading">功能</p>
+                        <ul>
+                            <li><a href="/zh/#volume-booster">音量增强器</a></li>
+                            <li><a href="/zh/#equalizer">低音增强器与EQ</a></li>
+                            <li><a href="/zh/#spatial-audio">3D空间音频</a></li>
+                            <li><a href="/zh/#ai-audio">人工智能工作室</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">资源</p>
+                        <ul>
+                            <li><a href="/zh/blog/">博客</a></li>
+                            <li><a href="/zh/faq/">常见问题</a></li>
+                            <li><a href="mailto:support@eqfy.app">支持</a></li>
+                            <li><a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" target="_blank" rel="noopener">App Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">法律信息</p>
+                        <ul>
+                            <li><a href="/privacy">隐私政策</a></li>
+                            <li><a href="/terms">使用条款</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 EQfy. 版权所有。</span>
+                <span>iPhone、AirPods和App Store是Apple Inc.的商标。</span>
+            </div>
+        </div>
+    </footer>
+<script>
+(function(){var n=document.querySelector('.nav');addEventListener('scroll',function(){n.classList.toggle('nav--scrolled',scrollY>40)},{passive:true});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-toggle]');if(b){document.querySelector(b.getAttribute('data-toggle')).classList.toggle('is-open');return}var d=document.querySelector('.lang-switcher__dropdown');if(d&&!e.target.closest('.lang-switcher'))d.classList.remove('is-open')});})();
+</script>
+</body>
+</html>

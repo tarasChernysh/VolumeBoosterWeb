@@ -1,0 +1,64 @@
+{
+  "dateLocale": "tr-TR",
+  "home": "Ana Sayfa",
+  "nav": {
+    "features": "Özellikler",
+    "equalizer": "Ekolayzır",
+    "aiStudio": "YZ Stüdyo",
+    "faq": "SSS",
+    "blog": "Blog",
+    "download": "Ücretsiz İndir",
+    "changeLanguage": "Dili değiştir",
+    "menu": "Menüyü aç",
+    "logoAlt": "EQfy simgesi"
+  },
+  "footer": {
+    "tagline": "iPhone için ses yükseltici, bas güçlendirici ve ekolayzır. Her parçayı daha yüksek, daha derin ve daha net dinle.",
+    "features": "Özellikler",
+    "volumeBooster": "Ses Yükseltici",
+    "bassEq": "Bas Güçlendirici ve EQ",
+    "spatial": "3D Uzamsal Ses",
+    "aiStudio": "YZ Stüdyo",
+    "resources": "Kaynaklar",
+    "support": "Destek",
+    "appStore": "App Store",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "rights": "Tüm hakları saklıdır.",
+    "trademark": "iPhone, AirPods ve App Store, Apple Inc.’in ticari markalarıdır."
+  },
+  "blog": {
+    "title": "EQfy Blog: iPhone Ses Yükseltme, Bas ve EQ Rehberleri",
+    "description": "EQfy rehberleri ve haberleri: iPhone sesini yükseltme, bas artırma, en iyi ekolayzır ayarları, düşük ses sorunlarını çözme ve kulaklıktan daha fazlasını alma.",
+    "eyebrow": "Rehberler ve haberler",
+    "h1": "EQfy Blog",
+    "lead": "iPhone’unun sesini daha yüksek, daha net ve dinlemesi daha keyifli hale getiren pratik rehberler — ayrıca EQfy uygulamasıyla ilgili haberler."
+  },
+  "post": {
+    "by": "EQfy ekibi",
+    "published": "Yayın tarihi:",
+    "updated": "Güncelleme:",
+    "minRead": "{n} dk okuma",
+    "faqTitle": "Sıkça sorulan sorular",
+    "related": "İlgili yazılar",
+    "readMore": "Devamını oku →",
+    "categories": { "guide": "Rehber", "news": "Haberler" }
+  },
+  "faqPage": {
+    "eyebrow": "Yardım merkezi",
+    "jumpTo": "Konuya git"
+  },
+  "cta": {
+    "title": "iPhone’unun sesini yükselt",
+    "text": "EQfy - Louder Volume uygulamasını App Store’dan ücretsiz indir. iOS 16 veya sonrasını gerektirir.",
+    "button": "App Store’dan İndir",
+    "iconAlt": "EQfy uygulama simgesi"
+  },
+  "latest": {
+    "eyebrow": "Blogdan",
+    "title": "Rehberler ve Haberler",
+    "description": "iPhone’unun sesini daha yüksek, daha net ve dinlemesi daha keyifli hale getirmek için ipuçları.",
+    "all": "Tüm yazılar →"
+  }
+}
