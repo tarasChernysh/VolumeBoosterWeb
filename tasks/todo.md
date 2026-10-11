@@ -149,3 +149,31 @@ Plan: `~/.claude/plans/crystalline-petting-stallman.md`. Scope: everything; auth
 - `node build.mjs && node check.mjs`: 79 pages, 0 errors, 0 warnings, and a second build is byte-identical.
 - At 375px: 0 contrast failures on /, a post, the FAQ, the blog index, zh and de; 0 small tap targets; no horizontal scroll; homepage CLS 0 with no render-blocking resources.
 - Spot-checked the en, de and zh share images by eye.
+
+---
+
+# Readable text (Taras: "text is a faint green, make all text clearly visible")
+
+Cause: body and supporting text use gray-green and pale-green colors on a dark green background. #779A77 (descriptions, nav, footer, cards) reads washed out, and blog/FAQ text (#B7D9BC, #A9CBAE) plus the homepage checklist (mint #86EFAC) is green-tinted. Fix: switch the **text** colors to neutral light grays (only a faint green hint) and keep green just for accents (links, eyebrows, badges, buttons).
+
+- [x] 1. New `--text-body: #E4EBE5` (14.9:1) for long-form text: blog paragraphs/lists/tables, FAQ answers (site.css + homepage FAQ), homepage checklist items
+- [x] 2. `--text-muted` #779A77 → #C9D3CB (11.7:1): descriptions, nav, card text, footer links (site.css + index.html tokens)
+- [x] 3. `--text-dim` #6E926E → #A7B5AA (8.4:1): breadcrumb, copyright, small labels
+- [x] 4. Re-apply 5 homepages, build + check, browser before/after on home, post, FAQ (desktop + 375px)
+- [ ] 5. PR, deploy after OK, review section
+
+## Review (readable text)
+
+**Changes:**
+- **Neutral palette** (Taras picked "Neutral light gray"):
+  - `--text-body` #E4EBE5 (new) for blog paragraphs, lists and tables, FAQ answers, the homepage checklist, and privacy/terms body text.
+  - `--text-muted` #779A77 → #C9D3CB.
+  - `--text-dim` #6E926E → #A7B5AA.
+- **Green is now accents only:** links, eyebrows, badges, buttons. Headings stay near-white.
+- **Legal pages:** privacy.html and terms.html had their own copy of the tokens, still at the original #6B8F6B / #3D5C3D, and mint body text. Both are now on the same palette.
+- **Purple hero tag** ("AI Studio") is now #C084FC, the same as the Pro badge.
+
+**Verification:**
+- `node build.mjs && node check.mjs`: 79 pages, 0 errors.
+- Text-color inventory on home, post, FAQ, blog index, privacy and /de/: every body and supporting text is #E4EBE5, #C9D3CB, #A7B5AA or #F0FDF4.
+- Before/after crops at 375px confirm the change.
