@@ -18,8 +18,9 @@
 
     --text-primary: #F0FDF4;
     --text-secondary: #86EFAC;
-    --text-muted: #779A77;
-    --text-dim: #6E926E;
+    --text-body: #E4EBE5;
+    --text-muted: #C9D3CB;
+    --text-dim: #A7B5AA;
 
     --border-subtle: rgba(74, 222, 128, 0.08);
     --border-default: rgba(74, 222, 128, 0.15);
@@ -159,7 +160,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .prose h3 { font-size: 1.2rem; font-weight: 700; margin-top: 36px; color: var(--green-secondary); }
 .prose h2, .prose h3 { scroll-margin-top: calc(var(--nav-height) + 16px); }
-.prose p, .prose li { color: #B7D9BC; line-height: 1.8; font-size: 1.04rem; }
+.prose p, .prose li { color: var(--text-body); line-height: 1.8; font-size: 1.04rem; }
 .prose .lead { font-size: 1.15rem; color: var(--text-primary); }
 .prose ul, .prose ol { padding-left: 24px; }
 .prose li + li { margin-top: 8px; }
@@ -188,7 +189,7 @@ img { max-width: 100%; height: auto; display: block; }
 .prose table.compare { display: table; table-layout: fixed; }
 .prose table.compare th, .prose table.compare td { white-space: normal; text-align: left; vertical-align: top; overflow-wrap: break-word; hyphens: auto; }
 .prose table.compare th:first-child, .prose table.compare td:first-child { width: 28%; }
-.prose td { color: #B7D9BC; }
+.prose td { color: var(--text-body); }
 .prose code { font-family: 'Space Mono', monospace; font-size: 0.9em; color: var(--text-secondary); }
 
 /* ---------- FAQ (shared with landing pages) ---------- */
@@ -205,7 +206,7 @@ img { max-width: 100%; height: auto; display: block; }
 .faq__q::-webkit-details-marker { display: none; }
 .faq__q::after { content: '+'; color: var(--green-primary); font-size: 1.6rem; line-height: 1; flex: 0 0 auto; }
 .faq__item[open] .faq__q::after { content: '\2212'; }
-.faq__a { padding: 0 24px 20px; color: #A9CBAE; line-height: 1.75; font-size: 0.98rem; }
+.faq__a { padding: 0 24px 20px; color: var(--text-body); line-height: 1.75; font-size: 0.98rem; }
 .faq__a a { color: var(--green-primary); text-decoration: underline; text-underline-offset: 3px; }
 .post-faq { max-width: 800px; margin: 64px auto 0; }
 .post-faq h2 { font-size: clamp(1.4rem, 2.6vw, 1.75rem); font-weight: 800; margin-bottom: 20px; }
