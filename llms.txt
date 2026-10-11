@@ -7,6 +7,8 @@ Key facts:
 - EQfy boosts audio played inside EQfy (imported songs, Files, discovered tracks). iOS does not allow it to boost other apps, calls or system sounds.
 - iPhone Duo support (full inner display, sidebar and side-by-side layouts) is coming in v2.2.23.
 - Support: support@eqfy.app · App Store: https://apps.apple.com/app/id6550912161
+- Developer: Taras Chernysh (App Store seller). The App Store listing name differs by country; App ID 6550912161 is the same app everywhere.
+- Not related to similarly named apps from other developers, such as "Louder Volume: Sound Booster" or "Equalizer Fx".
 
 ## Main pages
 - [Home](https://eqfy.app/): features overview
@@ -22,8 +24,10 @@ Key facts:
 - [Left-Right Audio Balance on iPhone: How to Fix It](https://eqfy.app/blog/left-right-headphone-balance/): Fix left-right audio balance on iPhone: find the Balance slider, use Mono Audio, and solve one AirPod louder than the other with simple, safe steps.
 - [How to Make iPhone Louder Than Max Volume](https://eqfy.app/blog/make-iphone-louder-than-max-volume/): How to make iPhone louder than max: remove hidden volume limits, turn off Sound Check, clean the speaker, then add up to +12 dB to songs with a free booster.
 - [Is a Volume Booster Safe for Ears and Speakers?](https://eqfy.app/blog/is-volume-boosting-safe/): Is a volume booster safe? See WHO safe listening limits for headphones, why extra gain can distort speakers, and the iPhone tools that help you boost wisely.
+- [Free Sound Amplifier App for iPhone: What to Use](https://eqfy.app/blog/sound-amplifier-app-iphone/): Looking for a free sound amplifier app for iPhone? Make music louder with a volume booster, or hear people better with Live Listen and AirPods hearing tools.
 - [3D Audio on iPhone, Explained: Spatial vs. Reverb](https://eqfy.app/blog/3d-spatial-audio-iphone-explained/): 3D audio on iPhone explained: how Apple's Spatial Audio and Dolby Atmos work, and how EQfy's in-app 3D Audio adds reverb rooms and moving sound to your songs.
 - [iPhone Volume Too Low? 12 Quick Fixes to Try](https://eqfy.app/blog/iphone-volume-too-low-fixes/): iPhone volume too low? Work through 12 fixes: ringer vs media volume, Headphone Safety, Bluetooth, Balance, dirty speaker grilles and a hardware check.
+- [EQfy vs Boom: Which iPhone Booster Should You Get?](https://eqfy.app/blog/eqfy-vs-boom/): EQfy vs Boom compared: free volume boost vs 7-day trial, 7-band vs 16-band EQ, AI Studio vs TIDAL and radio. An honest Boom alternative check for iPhone.
 
 ## Other languages
 - [Español](https://eqfy.app/es/)
