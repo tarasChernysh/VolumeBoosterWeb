@@ -18,8 +18,8 @@
 
     --text-primary: #F0FDF4;
     --text-secondary: #86EFAC;
-    --text-muted: #6B8F6B;
-    --text-dim: #3D5C3D;
+    --text-muted: #779A77;
+    --text-dim: #6E926E;
 
     --border-subtle: rgba(74, 222, 128, 0.08);
     --border-default: rgba(74, 222, 128, 0.15);
@@ -101,7 +101,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---------- Language switcher ---------- */
 .lang-switcher { position: relative; }
 .lang-switcher__btn {
-    display: flex; align-items: center; gap: 4px; font: inherit; font-size: 0.85rem; font-weight: 500;
+    display: flex; align-items: center; gap: 4px; font: inherit; font-size: 0.85rem; font-weight: 500; white-space: nowrap;
     color: var(--text-muted); cursor: pointer; padding: 6px 10px; border-radius: var(--radius-sm);
     border: 1px solid var(--border-subtle); background: transparent; transition: all 0.3s;
 }
@@ -145,7 +145,7 @@ img { max-width: 100%; height: auto; display: block; }
 .breadcrumb { max-width: 800px; margin: 0 auto 24px; font-size: 0.82rem; color: var(--text-dim); }
 .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
 .breadcrumb li + li::before { content: '›'; margin-right: 6px; color: var(--text-dim); }
-.breadcrumb a { color: var(--text-muted); }
+.breadcrumb a { display: inline-block; padding: 4px 0; color: var(--text-muted); }
 .breadcrumb a:hover { color: var(--green-primary); }
 
 .post-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 0.85rem; color: var(--text-muted); }
@@ -259,8 +259,8 @@ img { max-width: 100%; height: auto; display: block; }
 .footer__tagline { font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; }
 .footer__links { display: flex; gap: 48px; }
 .footer__heading { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 16px; }
-.footer__column ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer__column a { font-size: 0.86rem; color: var(--text-muted); transition: color 0.3s; }
+.footer__column ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.footer__column a { display: inline-block; padding: 3px 0; font-size: 0.86rem; color: var(--text-muted); transition: color 0.3s; }
 .footer__column a:hover { color: var(--green-primary); }
 .footer__bottom {
     margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-subtle);

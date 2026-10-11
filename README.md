@@ -18,7 +18,7 @@ src/content/<lang>/blog/<id>.html           Blog posts (JSON front-matter + HTML
 src/content/<lang>/faq.json                 FAQ page content
 src/landing/<lang>.json                     Homepage translations (EN string → translation)
 src/landing-i18n.mjs                        Builds <lang>/index.html from index.html + src/landing/<lang>.json
-src/og/*.html                               Templates for the 1200×630 share images
+src/og/                                     Share-image templates (site.html, post.html, iphone-duo.html) + render.mjs
 _headers                                    Cloudflare Pages headers (noindex for tooling paths, image caching)
 _redirects                                  Cloudflare Pages 301s for renamed URLs
 .gitattributes                              export-ignore list: what the deploy export leaves out
@@ -78,7 +78,10 @@ Keep the App Store rating in `src/site.json` and the homepage JSON-LD (`aggregat
 ## Regenerating share images
 
 ```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
-  --window-size=1200,630 --screenshot="$PWD/assets/images/og-image.png" "file://$PWD/src/og/site.html"
+node src/og/render.mjs   # then node build.mjs
 ```
-(Chrome may not exit by itself after writing the file — stop it once the PNG exists.)
+Renders every 1200×630 share image with headless Chrome and converts it to JPEG with macOS `sips` (~100 KB each):
+- `assets/images/og-image.jpg` from `src/og/site.html`: the default for homepages, FAQ, blog index and legal pages.
+- `assets/images/og/<lang>-<id>.jpg` from `src/og/post.html`: one per post and language (localized title plus the post's screenshot). `build.mjs` uses it automatically when it exists.
+
+Posts with an `"ogImage"` in their front-matter (the iPhone Duo post) keep their own image. Re-run after changing a post title or image.

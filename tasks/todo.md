@@ -118,3 +118,34 @@ Everything is paste-ready in `docs/AI_VISIBILITY_OUTREACH.md` (private app repo)
 - [x] `site.json` gets `developer`, used in the llms.txt template.
 - [x] FAQ and llms.txt disambiguation no longer name the rival apps; they cite the App ID.
 - [x] App repo: `upload_metadata` reads the en-US description from `descriptions_all_locales.md` (no pasted copy).
+
+---
+
+# SEO audit fixes (SearchFit seo-audit, score 88/100)
+
+Plan: `~/.claude/plans/crystalline-petting-stallman.md`. Scope: everything; author stays "the EQfy team".
+
+- [x] 1. Contrast: `--text-dim` ≥ 4.5:1 on bg, `--text-muted` ≥ 4.5:1 on cards (site.css + homepage inline CSS)
+- [x] 2. Homepage fonts non-blocking (`media=print` + noscript), drop unused Outfit 300
+- [x] 3. `related` arrays link the two new posts (4 posts × 5 langs)
+- [x] 4. `_headers`: HSTS + one-year immutable cache for /assets/css/*
+- [x] 5. Tap targets ≥ 24px for footer + breadcrumb links
+- [x] 6. Per-post/per-language share images (`src/og/post.html` + `src/og/render.mjs`), lighter default `og-image.jpg`
+- [ ] 7. Build/check, browser verification, PR, deploy (after OK), IndexNow, review section
+
+## Review (SEO audit fixes)
+
+**Changes:**
+- **Contrast:** `--text-muted` → #779A77 and `--text-dim` → #6E926E (≥ 4.5:1 on page, section and card backgrounds). The homepage "Pro" badge is now #C084FC (it was 3.75:1).
+- **Fonts:** the homepage Google Fonts load without blocking (`media=print` + noscript) and the unused Outfit 300 is dropped. The language button no longer wraps at 375px; that bug was already live.
+- **Internal links:** `related` cards now point to vs-boom and sound-amplifier from 6 posts in 5 languages, so the new posts have 16+ inbound links (up from 7). The weakest post is unchanged at 12.
+- **Headers:** `_headers` adds HSTS (1 year) and a one-year immutable cache for `/assets/css/*` (every reference is `?v=<hash>`).
+- **Tap targets:** footer and breadcrumb links are now ≥ 24px tall (footer 28px).
+- **Share images:**
+  - Each post has its own image per language: 55 images at 95–112 KB, from `src/og/post.html` via `src/og/render.mjs`, wired up in `build.mjs`. `imageSize` now reads JPEG too.
+  - The default share image is now `og-image.jpg` at 104 KB (was a 380 KB PNG); the PNG is kept for old shares.
+
+**Verification:**
+- `node build.mjs && node check.mjs`: 79 pages, 0 errors, 0 warnings, and a second build is byte-identical.
+- At 375px: 0 contrast failures on /, a post, the FAQ, the blog index, zh and de; 0 small tap targets; no horizontal scroll; homepage CLS 0 with no render-blocking resources.
+- Spot-checked the en, de and zh share images by eye.
