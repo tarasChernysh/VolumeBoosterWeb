@@ -14,7 +14,7 @@ Decisions: brand **"EQfy - Louder Volume"** · Duo post = **"coming in v2.2.23"*
 - [x] 5. EN content: 10 posts + EN FAQ (SearchFit create-content), fact-check pass, internal-linking pass
 - [x] 6. Localization (SearchFit translate-content): es/de/tr/zh posts + FAQ + i18n + homepages; da homepage fix; per-language review
 - [x] 7. Verify: `node build.mjs && node check.mjs`, idempotent rebuild, `xmllint`, browser preview (375/768/1280), SearchFit seo-check per template
-- [ ] 8. Commit on branch + open PR (deploy stays manual via wrangler)
+- [x] 8. Commit on branch + open PR (deploy stays manual via wrangler) — https://github.com/tarasChernysh/VolumeBoosterWeb/pull/5
 - [x] 9. Review section (below)
 
 ## Review
