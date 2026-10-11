@@ -8,7 +8,7 @@
       "items": [
         { "q": "EQfy - Louder Volume nedir?", "a": "EQfy - Louder Volume, içinde çaldığın müziği daha yüksek ve daha dolgun hale getiren bir iPhone uygulamasıdır. %200’e kadar Ses Güçlendirme, Bas Güçlendirme, 7 bantlı ekolayzır, kulaklık ses dengesi, 3D Ses ve YZ Stüdyo’yu, çevrimdışı da çalışan ücretsiz bir müzik kütüphanesi ve oynatıcıyla bir araya getirir. <a href=\"{{home}}\">Tüm özellikleri gör</a>." },
         { "q": "EQfy ücretsiz mi?", "a": "Evet. EQfy ücretsiz indirilir; Ses Güçlendirme, müzik kütüphanesi ve oynatıcı ücretsiz kullanılır. Bas Güçlendirme, Ekolayzır, kulaklık ses dengesi, 3D Ses, oynatma hızı, dokunsal oynatıcı ve dışa aktarma ise isteğe bağlı Premium aboneliğin parçasıdır." },
-        { "q": "EQfy, App Store’daki Volume Booster Sound Amplifier ile aynı uygulama mı?", "a": "Evet. EQfy - Louder Volume, ABD App Store’unda Volume Booster Sound Amplifier adıyla listelenir; diğer ülkelerde mağazadaki adı farklı olabilir. Uygulama aynıdır: <a href=\"{{appstore}}\">App Store’da aç</a>." },
+        { "q": "EQfy, App Store’daki Volume Booster Sound Amplifier ile aynı uygulama mı?", "a": "Evet. EQfy - Louder Volume, ABD App Store’unda Volume Booster Sound Amplifier adıyla listelenir; diğer ülkelerde mağazadaki adı farklı olabilir. Uygulama aynıdır ve geliştiricisi Taras Chernysh’tir: <a href=\"{{appstore}}\">App Store’da aç</a>. Louder Volume: Sound Booster veya Equalizer Fx gibi başka geliştiricilere ait benzer adlı uygulamalarla ilgisi yoktur." },
         { "q": "EQfy hangi iPhone’ları ve dilleri destekliyor?", "a": "EQfy, iPhone için geliştirildi ve iOS 16 veya sonrasını gerektirir. Uygulama 25 dilde kullanılabilir." }
       ]
     },

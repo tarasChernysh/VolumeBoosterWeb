@@ -8,7 +8,7 @@
       "items": [
         { "q": "EQfy - Louder Volume是什么？", "a": "EQfy - Louder Volume是一款iPhone App，能让你在其中播放的音乐更响亮、更饱满。它集合了最高200%的音量增强、低音增强、7段均衡器、耳机平衡、3D音频和人工智能工作室，还有免费的音乐曲库和播放器，并且支持离线播放。<a href=\"{{home}}\">查看全部功能</a>。" },
         { "q": "EQfy免费吗？", "a": "免费。EQfy可免费下载，音量增强以及音乐曲库和播放器都可以免费使用。低音增强、均衡器、耳机平衡、3D音频、播放速度、触觉播放器和导出功能属于可选的Premium高级版订阅。" },
-        { "q": "EQfy和App Store上的Volume Booster Sound Amplifier是同一个App吗？", "a": "是的。在美国App Store中，EQfy - Louder Volume的名称是Volume Booster Sound Amplifier；在其他国家或地区，App Store上显示的名称可能不同。它们是同一个App：<a href=\"{{appstore}}\">在App Store中打开</a>。" },
+        { "q": "EQfy和App Store上的Volume Booster Sound Amplifier是同一个App吗？", "a": "是的。在美国App Store中，EQfy - Louder Volume的名称是Volume Booster Sound Amplifier；在其他国家或地区，App Store上显示的名称可能不同。它们是同一个App，由开发者Taras Chernysh开发：<a href=\"{{appstore}}\">在App Store中打开</a>。它与其他开发者推出的名称相似的App（例如Louder Volume: Sound Booster或Equalizer Fx）无关。" },
         { "q": "EQfy支持哪些iPhone和语言？", "a": "EQfy专为iPhone打造，需要iOS 16或更高版本。App支持25种语言。" }
       ]
     },

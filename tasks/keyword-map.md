@@ -91,6 +91,22 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | headphone balance iphone | Secondary |
 | one airpod louder than the other | Secondary |
 
+### 11. EQfy vs Boom — C (AI-visibility: "Boom alternatives" prompts)
+**Post id**: `vs-boom`
+| Keyword | Role |
+|---|---|
+| boom alternative iphone | Primary |
+| eqfy vs boom / boom vs | Secondary |
+| best bass booster app iphone / best volume booster app for iphone | Supporting |
+
+### 12. Sound amplifier — I/C (top Search Console query)
+**Post id**: `sound-amplifier`
+| Keyword | Role |
+|---|---|
+| free sound amplifier app for iphone | Primary |
+| sound amplifier iphone / live listen iphone | Secondary |
+| hearing amplifier app iphone | Supporting (answer: Apple's free tools; EQfy is not a hearing aid) |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -110,6 +126,8 @@ zh uses the English slug (Hanzi/pinyin slugs add nothing). es/de/tr slugs are AS
 | spatial-audio | 3d-spatial-audio-iphone-explained | audio espacial 3D en iPhone · `audio-espacial-3d-iphone` | 3D-Raumklang iPhone · `3d-raumklang-iphone` | iPhone 3D uzamsal ses · `iphone-3d-uzamsal-ses` | iPhone 3D音效 |
 | ai-song-generator | ai-song-generator-iphone | generador de canciones con IA · `generador-canciones-ia-iphone` | KI-Song-Generator iPhone · `ki-song-generator-iphone` | yapay zeka şarkı oluşturucu · `yapay-zeka-sarki-olusturucu` | AI歌曲生成器 |
 | headphone-balance | left-right-headphone-balance | balance de auriculares en iPhone · `balance-auriculares` | Kopfhörer-Balance links rechts · `kopfhoerer-balance-links-rechts` | kulaklık ses dengesi · `kulaklik-ses-dengesi` | iPhone左右声道平衡 |
+| vs-boom | eqfy-vs-boom | alternativa a Boom para iPhone · `eqfy-vs-boom` | Boom Alternative iPhone · `eqfy-vs-boom` | boom alternatifi iphone · `eqfy-vs-boom` | Boom替代应用 |
+| sound-amplifier | sound-amplifier-app-iphone | amplificador de sonido gratis para iPhone · `app-amplificador-sonido-iphone` | Hörverstärker App iPhone kostenlos · `hoerverstaerker-app-iphone` | ücretsiz ses yükseltici uygulama iphone · `iphone-ses-yukseltici-uygulama` | iPhone免费声音放大器App |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
 - **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting
