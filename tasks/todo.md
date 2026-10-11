@@ -79,7 +79,7 @@ Branch `ai-visibility-fixes`. Source: [ai-visibility.md](ai-visibility.md).
 - [x] 6. `tasks/outreach.md`: Search Console + Bing steps, AlternativeTo/Product Hunt copy, outreach email, Reddit rules
 - [x] 7. Update report statuses (ratings prompt already in app: 5 `requestReview` call sites)
 - [x] 8a. Build + check, commit, PRs (#7 web, VolumeBooster#37, DevPage#10)
-- [ ] 8b. Merge + deploy + `node indexnow.mjs --since 2026-10-11` (after Taras OKs)
+- [x] 8b. Merged #7, deployed to eqfy.app (Cloudflare Pages, 2026-10-11), IndexNow 200 for 65 URLs
 
 ## Review (write & fix all findings)
 
@@ -95,12 +95,12 @@ Branch `ai-visibility-fixes`. Source: [ai-visibility.md](ai-visibility.md).
 
 **DevPage#10:** taraschernysh.com (the App Store `sellerUrl`) now links to eqfy.app, including a static link crawlers can see.
 
+**Follow-ups done the same day:** merged VolumeBooster#37 (plus a sync of the shared description in `aso_metadata_all_locales.md`, which `upload_metadata` fans out to the India locales) and DevPage#10. Subtitle decision: keep "Equalizer FX".
+
 **Left for Taras (needs your accounts):**
 - Deploy and IndexNow.
 - Search Console and Bing Webmaster Tools.
 - Upload the descriptions with v2.2.23.
-- Merge DevPage#10.
 - AlternativeTo, Product Hunt, outreach emails and Reddit.
-- The subtitle decision.
 
 Everything is paste-ready in [outreach.md](outreach.md). No code change was needed for ratings, because the app already calls `requestReview()` in 5 places.

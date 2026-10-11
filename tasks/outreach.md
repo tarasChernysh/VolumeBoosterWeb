@@ -22,7 +22,7 @@ Companion to [ai-visibility.md](ai-visibility.md). Everything here needs Taras's
 2. Sitemaps → submit `https://eqfy.app/sitemap.xml`.
 3. After each deploy, run `node indexnow.mjs --since <YYYY-MM-DD>`. This IndexNow ping covers Bing, Yandex, Seznam and Naver.
 
-## 2. App Store listing (app repo, branch `claude/aso-eqfy-brand`)
+## 2. App Store listing (app repo, merged into `release/v2.2.23` via VolumeBooster#37)
 
 Already done in `fastlane/descriptions_all_locales.md`:
 - All 50 locales now open with "EQfy - Louder Volume".
@@ -39,11 +39,11 @@ After release, check `https://itunes.apple.com/lookup?id=6550912161`:
 - `description` should start with "EQfy - Louder Volume".
 - `sellerUrl` should be `https://eqfy.app`. If it still says taraschernysh.com, change the developer website in App Store Connect.
 
-**Decision for you (not changed):** the subtitle "Equalizer FX" is almost the same as the name of TwinBit's app "Equalizer Fx", which has 27,979 ratings. One option that carries the brand is `EQfy: Bass Booster & Equalizer` (30 chars). It changes keyword coverage, so test it in one storefront first (`ios-aso-keyword-metadata` skill).
+**Decided 2026-10-11: keep "Equalizer FX".** The analysis is kept for later: the subtitle "Equalizer FX" is almost the same as the name of TwinBit's app "Equalizer Fx", which has 27,979 ratings. One option that carries the brand is `EQfy: Bass Booster & Equalizer` (30 chars). It changes keyword coverage, so test it in one storefront first (`ios-aso-keyword-metadata` skill).
 
-## 3. Developer site (DevPage repo, branch `claude/eqfy-link`)
+## 3. Developer site (DevPage repo, merged)
 
-The app card and a new static footer link now point to `https://eqfy.app/` and are labelled "EQfy - Louder Volume". The cards are JS-rendered, so the footer link is the one crawlers can see. Merge the PR and GitHub Pages deploys it.
+The app card and a new static footer link now point to `https://eqfy.app/` and are labelled "EQfy - Louder Volume". The cards are JS-rendered, so the footer link is the one crawlers can see. Merged 2026-10-11 (DevPage#10) and live via GitHub Pages.
 
 ---
 
