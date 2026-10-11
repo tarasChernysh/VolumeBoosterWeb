@@ -1,0 +1,9 @@
+# Source, tooling and notes stay out of the deployed site: `git archive` (the deploy export) skips them.
+/src export-ignore
+/tasks export-ignore
+/README.md export-ignore
+/build.mjs export-ignore
+/check.mjs export-ignore
+/indexnow.mjs export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore

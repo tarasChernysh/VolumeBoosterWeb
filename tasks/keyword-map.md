@@ -127,7 +127,7 @@ zh uses the English slug (Hanzi/pinyin slugs add nothing). es/de/tr slugs are AS
 | ai-song-generator | ai-song-generator-iphone | generador de canciones con IA · `generador-canciones-ia-iphone` | KI-Song-Generator iPhone · `ki-song-generator-iphone` | yapay zeka şarkı oluşturucu · `yapay-zeka-sarki-olusturucu` | AI歌曲生成器 |
 | headphone-balance | left-right-headphone-balance | balance de auriculares en iPhone · `balance-auriculares` | Kopfhörer-Balance links rechts · `kopfhoerer-balance-links-rechts` | kulaklık ses dengesi · `kulaklik-ses-dengesi` | iPhone左右声道平衡 |
 | vs-boom | eqfy-vs-boom | alternativa a Boom para iPhone · `eqfy-vs-boom` | Boom Alternative iPhone · `eqfy-vs-boom` | boom alternatifi iphone · `eqfy-vs-boom` | Boom替代应用 |
-| sound-amplifier | sound-amplifier-app-iphone | amplificador de sonido gratis para iPhone · `app-amplificador-sonido-iphone` | Hörverstärker App iPhone kostenlos · `hoerverstaerker-app-iphone` | ücretsiz ses yükseltici uygulama iphone · `iphone-ses-yukseltici-uygulama` | iPhone免费声音放大器App |
+| sound-amplifier | sound-amplifier-app-iphone | amplificador de sonido gratis para iPhone · `app-amplificador-sonido-iphone` | Verstärker App iPhone kostenlos · `verstaerker-app-iphone` | ücretsiz ses yükseltici uygulama iphone · `iphone-ses-yukseltici-uygulama` | iPhone免费声音放大器App |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
 - **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting

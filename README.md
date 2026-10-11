@@ -20,6 +20,8 @@ src/landing/<lang>.json                     Homepage translations (EN string →
 src/landing-i18n.mjs                        Builds <lang>/index.html from index.html + src/landing/<lang>.json
 src/og/*.html                               Templates for the 1200×630 share images
 _headers                                    Cloudflare Pages headers (noindex for tooling paths, image caching)
+_redirects                                  Cloudflare Pages 301s for renamed URLs
+.gitattributes                              export-ignore list: what the deploy export leaves out
 tasks/                                      Notes: facts.md (app facts for writers), keyword-map.md, todo.md
 ```
 
@@ -32,10 +34,11 @@ node indexnow.mjs  # AFTER deploying: notify Bing & other IndexNow engines (--si
 python3 -m http.server 8765   # preview at http://localhost:8765 (folder URLs work; /privacy needs the .html locally)
 ```
 
-Deploy as before (from a clean checkout of `main`, after `node build.mjs && node check.mjs` pass), e.g.:
+Deploy from a clean export of `main` (after `node build.mjs && node check.mjs` pass). `git archive` skips the paths marked `export-ignore` in `.gitattributes` (src/, tasks/, README and the build scripts), so they never go live:
 
 ```bash
-npx wrangler pages deploy . --project-name louder-volume
+rm -rf /tmp/eqfy-deploy && mkdir /tmp/eqfy-deploy && git archive main | tar -x -C /tmp/eqfy-deploy
+npx wrangler pages deploy /tmp/eqfy-deploy --project-name louder-volume --branch main --commit-hash "$(git rev-parse main)"
 ```
 
 ## Add or update a blog post
