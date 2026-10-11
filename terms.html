@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use — Louder Volume</title>
+    <meta name="description" content="Terms of Use for Louder Volume — Sound Amplifier & Bass Booster. Read our terms and conditions for using the app.">
+    <meta name="keywords" content="terms of use, terms and conditions, louder volume, volume booster, bass booster, legal">
+    <meta name="author" content="Volume Booster">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A1A0A">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Terms of Use — Louder Volume">
+    <meta property="og:description" content="Terms of Use for Louder Volume — Sound Amplifier & Bass Booster. Read our terms and conditions for using the app.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eqfy.app/terms.html">
+    <meta property="og:image" content="https://eqfy.app/assets/images/app-icon.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Terms of Use — Louder Volume">
+    <meta name="twitter:description" content="Terms of Use for Louder Volume — Sound Amplifier & Bass Booster.">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/app-icon.png">
+
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6550912161">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://eqfy.app/terms.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* =============================================
+           CSS VARIABLES — BRAND PALETTE
+           ============================================= */
+        :root {
+            --bg-primary: #0A1A0A;
+            --bg-secondary: #0D1F0D;
+            --bg-card: #0F2510;
+            --bg-card-hover: #132D14;
+            --bg-elevated: #1A2F1A;
+            --bg-glass: rgba(10, 26, 10, 0.75);
+            --bg-glass-light: rgba(26, 47, 26, 0.5);
+
+            --green-primary: #00FF66;
+            --green-secondary: #4ADE80;
+            --green-muted: #22C55E;
+            --green-dark: #166534;
+            --green-glow: rgba(0, 255, 102, 0.15);
+            --green-glow-strong: rgba(0, 255, 102, 0.3);
+
+            --cyan: #00D4FF;
+            --purple: #8B5CF6;
+
+            --text-primary: #F0FDF4;
+            --text-secondary: #86EFAC;
+            --text-muted: #6B8F6B;
+            --text-dim: #3D5C3D;
+
+            --border-subtle: rgba(74, 222, 128, 0.08);
+            --border-default: rgba(74, 222, 128, 0.15);
+            --border-accent: rgba(0, 255, 102, 0.3);
+
+            --nav-height: 72px;
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        /* =============================================
+           RESET & BASE
+           ============================================= */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* =============================================
+           NAVIGATION
+           ============================================= */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .nav--scrolled {
+            background: rgba(10, 26, 10, 0.95);
+            border-bottom-color: var(--border-default);
+        }
+
+        .nav__inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .nav__logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .nav__logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav__cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: var(--green-primary);
+            color: #000;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav__cta:hover {
+            background: var(--green-secondary);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px var(--green-glow-strong);
+        }
+
+        .nav__cta .icon-apple {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* =============================================
+           LEGAL CONTENT
+           ============================================= */
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: calc(var(--nav-height) + 60px) 24px 80px;
+        }
+
+        .legal-content h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.03em;
+        }
+
+        .legal-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 48px;
+        }
+
+        .legal-content h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--green-secondary);
+        }
+
+        .legal-content h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .legal-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        .legal-content ul, .legal-content ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .legal-content li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .legal-content a {
+            color: var(--green-primary);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .legal-content a:hover {
+            color: var(--green-secondary);
+        }
+
+        .legal-content strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* =============================================
+           FOOTER
+           ============================================= */
+        .footer {
+            border-top: 1px solid var(--border-subtle);
+            padding: 60px 0 30px;
+            background: var(--bg-secondary);
+        }
+
+        .footer__inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer__brand {
+            max-width: 350px;
+        }
+
+        .footer__logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .footer__logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .footer__logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .footer__tagline {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer__links {
+            display: flex;
+            gap: 60px;
+        }
+
+        .footer__column h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        .footer__column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer__column li {
+            margin-bottom: 10px;
+        }
+
+        .footer__column a {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer__column a:hover {
+            color: var(--green-primary);
+        }
+
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-subtle);
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        /* =============================================
+           RESPONSIVE
+           ============================================= */
+        @media (max-width: 768px) {
+            .nav__inner {
+                padding: 0 16px;
+            }
+
+            .nav__cta {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+
+            .legal-content {
+                padding: calc(var(--nav-height) + 40px) 16px 60px;
+            }
+
+            .legal-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .legal-content h2 {
+                font-size: 1.2rem;
+                margin-top: 36px;
+            }
+
+            .footer__inner {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .footer__brand {
+                max-width: 100%;
+            }
+
+            .footer__links {
+                gap: 40px;
+            }
+
+            .footer__bottom {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav__logo {
+                font-size: 0.95rem;
+            }
+
+            .nav__logo-icon {
+                width: 34px;
+                height: 34px;
+            }
+
+            .legal-content h1 {
+                font-size: 1.5rem;
+            }
+
+            .footer__links {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation">
+        <div class="nav__inner">
+            <a href="/" class="nav__logo">
+                <div class="nav__logo-icon">
+                    <img src="assets/images/app-icon.png" alt="Louder Volume icon">
+                </div>
+                Louder Volume
+            </a>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VolumeBoosterWebSite&mt=8" class="nav__cta" target="_blank" rel="noopener">
+                <svg class="icon-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download Free
+            </a>
+        </div>
+    </nav>
+
+    <!-- Terms of Use Content -->
+    <main class="legal-content">
+        <h1>Terms of Use</h1>
+        <p class="legal-date">Last Updated: October 11, 2026</p>
+
+        <p>These Terms of Use ("Terms") govern your use of <strong>Louder Volume — Sound Amplifier &amp; Bass Booster</strong> ("the App"), developed and operated by VolumeBooster (Taras Chernysh), based in Ukraine. By accessing or using the App, you agree to be bound by these Terms.</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using Louder Volume, you agree to these Terms. If you do not agree to these Terms, do not download, install, or use the App. These Terms constitute a legally binding agreement between you and VolumeBooster (Taras Chernysh).</p>
+
+        <h2>2. Description of Service</h2>
+        <p>Louder Volume is an iOS audio enhancement application that provides the following features:</p>
+        <ul>
+            <li>Volume boosting beyond device default levels</li>
+            <li>Bass enhancement and optimization</li>
+            <li>7-band equalizer with customizable presets</li>
+            <li>3D spatial audio processing</li>
+            <li>AI audio enhancement</li>
+            <li>AI song generation</li>
+            <li>Haptic music player with tactile feedback</li>
+            <li>Hearing aid equalizer for accessibility</li>
+            <li>Sound balance control</li>
+            <li>Music discovery via integrated catalog</li>
+            <li>Offline playback support</li>
+            <li>Apple Music import</li>
+        </ul>
+        <p>The App is available free of charge with core features, with optional premium features accessible via subscription.</p>
+
+        <h2>3. Apple's Licensed Application End User License Agreement (EULA)</h2>
+        <p><strong>IMPORTANT:</strong> Your use of Louder Volume is also subject to Apple's Standard Licensed Application End User License Agreement (EULA), which is incorporated into these Terms by reference. You can review Apple's Standard EULA at:</p>
+        <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        <p>The Apple EULA applies as a minimum baseline for your use of the App. In the event of a conflict between these Terms and the Apple EULA, the more restrictive provision shall apply. You acknowledge and agree that:</p>
+        <ul>
+            <li>Apple is not a party to these Terms and has no obligation to furnish any maintenance or support services with respect to the App.</li>
+            <li>Apple is not responsible for addressing any claims by you or any third party relating to the App.</li>
+            <li>Apple is a third-party beneficiary of these Terms, and upon your acceptance, Apple will have the right to enforce these Terms against you as a third-party beneficiary thereof.</li>
+        </ul>
+
+        <h2>4. Subscription Terms</h2>
+
+        <h3>Free Tier</h3>
+        <p>Core features of the App are available at no cost. The free tier is supported by advertisements displayed within the App.</p>
+
+        <h3>Premium Subscription</h3>
+        <p>Premium subscription unlocks all features and removes advertisements. The following subscription plans are available:</p>
+        <ul>
+            <li><strong>Weekly:</strong> $1.99 per week (with free trial period)</li>
+            <li><strong>Annual:</strong> $27.99 per year (with free trial period)</li>
+        </ul>
+
+        <h3>Free Trial</h3>
+        <p>Each subscription plan includes a free trial period. You will not be charged during the free trial. If you do not cancel your subscription before the free trial ends, your subscription will automatically convert to a paid subscription and you will be charged the applicable subscription fee.</p>
+
+        <h3>Auto-Renewal</h3>
+        <p>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the same subscription rate.</p>
+
+        <h3>Cancellation</h3>
+        <p>You may cancel your subscription at any time by going to <strong>Settings &gt; [Your Name] &gt; Subscriptions</strong> on your iOS device. Cancellation takes effect at the end of the current billing period. No refunds are provided for partial billing periods.</p>
+
+        <h3>Payment</h3>
+        <p>All payments are processed through Apple's App Store. We do not collect, store, or have access to your payment information. All billing inquiries should be directed to Apple.</p>
+
+        <h3>Price Changes</h3>
+        <p>We reserve the right to change subscription pricing at any time. Price changes will not affect active subscription periods. You will be notified of any price changes before they take effect, and your continued subscription after the price change constitutes acceptance of the new pricing.</p>
+
+        <h2>5. Acceptable Use</h2>
+        <p>You agree NOT to:</p>
+        <ul>
+            <li>Reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the App</li>
+            <li>Use the App for any unlawful purpose or in violation of any applicable local, state, national, or international law</li>
+            <li>Attempt to gain unauthorized access to any service, system, network, or data connected to the App</li>
+            <li>Redistribute, sublicense, rent, lease, or commercially exploit the App or any portion thereof</li>
+            <li>Use the App to infringe on the intellectual property rights of others</li>
+            <li>Use automated systems, bots, scrapers, or similar technology to interact with the App</li>
+            <li>Interfere with or disrupt the App's functionality, servers, or networks</li>
+            <li>Use the App's AI features to generate content that is harmful, illegal, defamatory, obscene, or infringes on the rights of others</li>
+            <li>Remove, alter, or obscure any proprietary notices, labels, or marks on the App</li>
+        </ul>
+
+        <h2>6. Intellectual Property</h2>
+        <p>All content, features, and functionality of the App, including but not limited to text, graphics, logos, icons, audio clips, user interface design, and software code, are the exclusive property of VolumeBooster (Taras Chernysh) and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+        <p>"Louder Volume" and associated logos are trademarks of VolumeBooster. You may not use these trademarks without prior written consent. Nothing in these Terms grants you any right to use any trademark, service mark, logo, or trade name of VolumeBooster.</p>
+
+        <h2>7. User-Generated Content</h2>
+
+        <h3>AI-Generated Songs</h3>
+        <p>Songs created using our AI Song Generator feature are generated for your personal, non-commercial use. You may save and listen to AI-generated content within the App. You acknowledge that AI-generated content may be similar to content generated for other users and does not confer exclusive rights.</p>
+
+        <h3>Audio Enhancements</h3>
+        <p>Audio processing applied to your existing music (including volume boosting, equalization, and bass enhancement) does not create new intellectual property rights. The original rights to the underlying music remain with the original rights holders.</p>
+
+        <h3>Your Content</h3>
+        <p>You retain all ownership rights to your own music files imported into the App. By importing music, you represent that you have the necessary rights or licenses to use that content.</p>
+
+        <h2>8. Third-Party Content and Services</h2>
+        <p>The App integrates with the following third-party services:</p>
+        <ul>
+            <li><strong>Jamendo:</strong> Music discovery content is provided by Jamendo and is subject to their terms of use and licensing agreements.</li>
+            <li><strong>ElevenLabs:</strong> AI audio processing features are powered by ElevenLabs and are subject to their terms of service.</li>
+            <li><strong>Apple Music:</strong> Import functionality requires a valid Apple Music subscription and is subject to Apple's terms and conditions.</li>
+            <li><strong>Advertising Partners:</strong> Advertisements are served by AppLovin and Google AdMob and are subject to their respective terms of service and privacy policies.</li>
+        </ul>
+        <p>We are not responsible for the availability, accuracy, or content of third-party services. Your use of third-party services is at your own risk and subject to the terms and conditions of those third parties.</p>
+
+        <h2>9. Hearing Safety Disclaimer</h2>
+        <p><strong>IMPORTANT WARNING:</strong> The App can significantly amplify audio volume beyond your device's default levels. Prolonged exposure to high-volume audio may cause <strong>permanent hearing damage</strong>.</p>
+        <ul>
+            <li>Users are solely responsible for adjusting volume to safe levels.</li>
+            <li>We strongly recommend following the World Health Organization's guidelines for safe listening levels.</li>
+            <li>VolumeBooster is <strong>NOT liable</strong> for any hearing damage or hearing loss resulting from the use of the App.</li>
+            <li>The Hearing Aid Equalizer feature is <strong>NOT a medical device</strong> and should <strong>NOT</strong> be used as a substitute for professional hearing aids or medical advice.</li>
+            <li>If you experience ringing in your ears, discomfort, or any change in your hearing, stop using the App immediately and consult a medical professional.</li>
+        </ul>
+
+        <h2>10. Disclaimers</h2>
+        <p><strong>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</strong></p>
+        <p>We do not warrant that:</p>
+        <ul>
+            <li>The App will be uninterrupted, timely, secure, or error-free</li>
+            <li>Results obtained from the App will be accurate or reliable</li>
+            <li>Any errors in the App will be corrected</li>
+            <li>AI-generated content will be free from errors or appropriate for all purposes</li>
+            <li>The App will be compatible with all devices or operating system versions</li>
+        </ul>
+        <p>You acknowledge that the use of the App is at your sole risk.</p>
+
+        <h2>11. Limitation of Liability</h2>
+        <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL VOLUMEBOOSTER (TARAS CHERNYSH) BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</strong></p>
+        <ul>
+            <li>Your use of or inability to use the App</li>
+            <li>Any unauthorized access to or alteration of your data</li>
+            <li>Any third-party content or conduct within the App</li>
+            <li>Any content obtained from the App</li>
+            <li>Hearing damage resulting from audio amplification</li>
+        </ul>
+        <p>Our total aggregate liability to you for all claims arising out of or relating to these Terms or your use of the App shall not exceed the total amount you have paid to us in the twelve (12) months preceding the claim.</p>
+
+        <h2>12. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless VolumeBooster (Taras Chernysh) and its affiliates, officers, agents, and licensors from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with:</p>
+        <ul>
+            <li>Your use of the App</li>
+            <li>Your violation of these Terms</li>
+            <li>Your infringement of any third-party rights, including intellectual property rights</li>
+            <li>Any content you submit, post, or transmit through the App</li>
+        </ul>
+
+        <h2>13. Governing Law and Dispute Resolution</h2>
+        <p>These Terms are governed by and construed in accordance with the laws of Ukraine, without regard to its conflict of law provisions. Any disputes arising from or relating to these Terms shall be resolved in the courts of Ukraine, except where prohibited by local law.</p>
+        <p><strong>For EU users:</strong> Nothing in these Terms affects your statutory rights under EU consumer protection laws, including Directive 2011/83/EU on consumer rights. You may also bring proceedings in the courts of your country of residence.</p>
+        <p><strong>For US users:</strong> Any dispute arising out of or relating to these Terms shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, except where prohibited by state law. You agree that any arbitration shall be conducted on an individual basis and not as a class action or other representative proceeding.</p>
+
+        <h2>14. Termination</h2>
+        <p>We may terminate or suspend your access to the App at any time, without prior notice or liability, for conduct that we believe violates these Terms, is harmful to other users, us, or third parties, or for any other reason at our sole discretion.</p>
+        <p>Upon termination:</p>
+        <ul>
+            <li>Your right to use the App ceases immediately</li>
+            <li>All provisions of these Terms that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability</li>
+            <li>Termination does not entitle you to a refund of any subscription fees already paid</li>
+        </ul>
+
+        <h2>15. Changes to These Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date at the top of this page</li>
+            <li>Providing in-app notification where appropriate</li>
+        </ul>
+        <p>Your continued use of the App following the posting of revised Terms constitutes your acceptance of the updated Terms. If you do not agree with the modified Terms, you must stop using the App.</p>
+
+        <h2>16. Severability</h2>
+        <p>If any provision of these Terms is found to be unenforceable, invalid, or illegal by a court of competent jurisdiction, that provision will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect and enforceable.</p>
+
+        <h2>17. Contact Us</h2>
+        <p>If you have any questions, concerns, or feedback about these Terms of Use, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@eqfy.app">support@eqfy.app</a></li>
+            <li><strong>App:</strong> Louder Volume — Sound Amplifier &amp; Bass Booster</li>
+            <li><strong>Website:</strong> <a href="https://eqfy.app" target="_blank" rel="noopener">https://eqfy.app</a></li>
+        </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="footer__logo-icon">
+                            <img src="assets/images/app-icon.png" alt="">
+                        </div>
+                        Louder Volume
+                    </div>
+                    <p class="footer__tagline">Sound amplifier and bass booster for iPhone. Make every track louder, deeper, and better.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Louder Volume. All rights reserved.</span>
+                <span>Made with &#127925; for music lovers</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nav scroll effect -->
+    <script>
+        (function() {
+            const nav = document.querySelector('.nav');
+            let lastScroll = 0;
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > 50) {
+                    nav.classList.add('nav--scrolled');
+                } else {
+                    nav.classList.remove('nav--scrolled');
+                }
+                lastScroll = currentScroll;
+            }, { passive: true });
+        })();
+    </script>
+
+</body>
+</html>
