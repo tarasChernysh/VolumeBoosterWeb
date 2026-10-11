@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://taraschernysh.github.io/VolumeBoosterWeb/sitemap.xml
+Sitemap: https://eqfy.app/sitemap.xml
