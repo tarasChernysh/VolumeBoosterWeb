@@ -17,7 +17,7 @@
     <meta property="og:description" content="把iPhone音量增强到最高200%，让低音更深沉，再用7段均衡器、3D音频和AI音乐工具打造专属音色。iPhone版免费下载。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://eqfy.app/zh/">
-    <meta property="og:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="EQfy - Louder Volume：iPhone上调至140%的音量增强旋钮">
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="EQfy - Louder Volume：iPhone音量与低音增强">
     <meta name="twitter:description" content="iPhone音量太小？用EQfy把音量增强到最高200%，让低音更深沉，再用7段均衡器、3D音频和AI音乐工具打造你的专属音色。">
-    <meta name="twitter:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og-image.jpg">
     <meta name="twitter:image:alt" content="EQfy - Louder Volume：iPhone上调至140%的音量增强旋钮">
 
     <!-- Apple Smart App Banner -->
@@ -91,7 +91,7 @@
                 "name": "EQfy - Louder Volume",
                 "alternateName": "Volume Booster Sound Amplifier",
                 "url": "https://eqfy.app/zh/",
-                "image": "https://eqfy.app/assets/images/og-image.png",
+                "image": "https://eqfy.app/assets/images/og-image.jpg",
                 "operatingSystem": "iOS 16.0 or later",
                 "applicationCategory": "MultimediaApplication",
                 "applicationSubCategory": "Music",
@@ -138,7 +138,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"></noscript>
 
     <style>
         /* =============================================
@@ -170,8 +171,8 @@
 
             --text-primary: #F0FDF4;
             --text-secondary: #86EFAC;
-            --text-muted: #6B8F6B;
-            --text-dim: #3D5C3D;
+            --text-muted: #779A77;
+            --text-dim: #6E926E;
 
             --border-subtle: rgba(74, 222, 128, 0.08);
             --border-default: rgba(74, 222, 128, 0.15);
@@ -340,7 +341,7 @@
             position: relative;
         }
         .lang-switcher__btn {
-            display: flex; align-items: center; gap: 4px;
+            display: flex; align-items: center; gap: 4px; white-space: nowrap;
             font-size: 0.85rem; font-weight: 500;
             color: var(--text-muted); cursor: pointer;
             padding: 6px 10px;
@@ -670,7 +671,7 @@
             margin-left: 6px; vertical-align: middle;
         }
         .feature-card__badge--free { background: rgba(0,255,102,0.1); color: var(--green-primary); border: 1px solid rgba(0,255,102,0.2); }
-        .feature-card__badge--pro { background: rgba(139,92,246,0.1); color: var(--purple-light); border: 1px solid rgba(139,92,246,0.2); }
+        .feature-card__badge--pro { background: rgba(139,92,246,0.1); color: #C084FC; border: 1px solid rgba(139,92,246,0.2); }
         .feature-card__badge--ai { background: rgba(0,212,255,0.1); color: var(--cyan); border: 1px solid rgba(0,212,255,0.2); }
 
         .feature-card__text {
@@ -1067,8 +1068,8 @@
             text-transform: uppercase; letter-spacing: 0.1em;
             color: var(--text-secondary); margin-bottom: 16px;
         }
-        .footer__column ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-        .footer__column a { font-size: 0.86rem; color: var(--text-muted); transition: color 0.3s; }
+        .footer__column ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+        .footer__column a { display: inline-block; padding: 3px 0; font-size: 0.86rem; color: var(--text-muted); transition: color 0.3s; }
         .footer__column a:hover { color: var(--green-primary); }
         .footer__bottom {
             margin-top: 40px; padding-top: 20px;

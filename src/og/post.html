@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 1200×630 share image for a blog post: ?title=&tag=&img=&lang=. Rendered for every post by src/og/render.mjs. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=block" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: 'Outfit', -apple-system, 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+    color: #F0FDF4;
+    background:
+      radial-gradient(circle at 78% 40%, rgba(0, 255, 102, 0.28), transparent 45%),
+      radial-gradient(circle at 10% 100%, rgba(0, 212, 255, 0.12), transparent 40%),
+      #0A1A0A;
+    display: flex; align-items: center; padding: 0 72px; gap: 48px;
+  }
+  .text { flex: 1; min-width: 0; }
+  .brand { display: flex; align-items: center; gap: 18px; margin-bottom: 32px; }
+  .brand img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 0 40px rgba(0, 255, 102, 0.35); }
+  .brand span { font-size: 30px; font-weight: 600; color: #86EFAC; }
+  .tag { display: inline-block; font-size: 22px; font-weight: 600; color: #0A1A0A; background: #00FF66;
+    padding: 8px 18px; border-radius: 999px; margin-bottom: 24px; }
+  h1 { font-size: 72px; line-height: 1.08; font-weight: 800; letter-spacing: -1px; }
+  .phone { flex-shrink: 0; }
+  .phone img { display: block; width: 330px; height: 480px; object-fit: cover; object-position: 50% 30%; border-radius: 28px;
+    border: 2px solid rgba(240, 253, 244, 0.16); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(0, 255, 102, 0.2); }
+</style>
+</head>
+<body>
+  <div class="text">
+    <div class="brand"><img src="../../assets/images/app-icon.png" alt=""><span>EQfy - Louder Volume</span></div>
+    <span class="tag" id="tag"></span>
+    <h1 id="title"></h1>
+  </div>
+  <div class="phone"><img id="shot" alt=""></div>
+  <script>
+    const q = new URLSearchParams(location.search);
+    document.documentElement.lang = q.get('lang') || 'en';
+    document.getElementById('tag').textContent = q.get('tag') || '';
+    document.getElementById('shot').src = '../..' + (q.get('img') || '/assets/images/blog/iphone-duo/05-volume-booster.webp');
+    const h1 = document.getElementById('title');
+    h1.textContent = q.get('title') || '';
+    // Once the font is in, shrink long titles until they fit in about four lines (320px).
+    document.fonts.ready.then(() => {
+      for (let size = 72; size > 40 && h1.offsetHeight > 320; size -= 2) h1.style.fontSize = size - 2 + 'px';
+    });
+  </script>
+</body>
+</html>

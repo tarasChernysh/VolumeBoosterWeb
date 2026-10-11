@@ -9,7 +9,7 @@
   "supportEmail": "support@eqfy.app",
   "indexNowKey": "6473060fe550c745515e5ae71d9e1538",
   "rating": { "value": "4.5", "count": "40" },
-  "defaultImage": "/assets/images/og-image.png",
+  "defaultImage": "/assets/images/og-image.jpg",
   "logo": "/assets/images/app-icon.png",
   "contentLangs": ["en", "es", "de", "tr", "zh"],
   "langs": {

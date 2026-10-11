@@ -38,7 +38,13 @@ function imageSize(url) {
     if (t === 'VP8 ') return [b.readUInt16LE(26) & 0x3fff, b.readUInt16LE(28) & 0x3fff];
     if (t === 'VP8L') { const n = b.readUInt32LE(21); return [1 + (n & 0x3fff), 1 + ((n >> 14) & 0x3fff)]; }
   }
-  fail(`${url}: only PNG and WebP images are supported`);
+  if (b[0] === 0xff && b[1] === 0xd8) { // JPEG: read the size from the first SOFn marker
+    for (let i = 2; i + 9 < b.length; i += 2 + b.readUInt16BE(i + 2)) {
+      const m = b[i + 1];
+      if (m >= 0xc0 && m <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(m)) return [b.readUInt16BE(i + 7), b.readUInt16BE(i + 5)];
+    }
+  }
+  fail(`${url}: only PNG, WebP and JPEG images are supported`);
 }
 
 // ---------- load ----------
@@ -317,7 +323,8 @@ for (const lang of LANGS) {
     const url = postUrl(lang, post.id);
     const where = post.file;
     const crumbs = [[t.home, home(lang)], [t.nav.blog, blogUrl(lang)], [post.title, url]];
-    const ogImage = post.ogImage || site.defaultImage;
+    const postOg = `/assets/images/og/${lang}-${post.id}.jpg`; // rendered by src/og/render.mjs
+    const ogImage = post.ogImage || (exists(postOg) ? postOg : site.defaultImage);
     const related = post.related.map((id) => {
       const p = POSTS[lang][id] || fail(`${where}: related post "${id}" not found in ${lang}`);
       return card(p, { heading: 'h3' });
