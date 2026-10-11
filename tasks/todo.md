@@ -41,16 +41,16 @@ Decisions: brand **"EQfy - Louder Volume"** · Duo post = **"coming in v2.2.23"*
 
 # AI visibility audit (SearchFit ai-visibility) — report only
 
-Plan: `~/.claude/plans/crystalline-petting-stallman.md`. Deliverable: [ai-visibility.md](ai-visibility.md). Scope chosen by Taras: report only (no site changes); "EQfy vs Boom" page + rivals Boom, Equalizer+ HD, Equalizer Fx, Increase/Higher Volume go into the report as recommendations.
+Plan: `~/.claude/plans/crystalline-petting-stallman.md`. Deliverable: `docs/AI_VISIBILITY.md` (private app repo). Scope chosen by Taras: report only (no site changes); "EQfy vs Boom" page + rivals Boom, Equalizer+ HD, Equalizer Fx, Increase/Higher Volume go into the report as recommendations.
 
 - [x] 1. Pull rival App Store facts via iTunes lookup API
-- [x] 2. Write `tasks/ai-visibility.md` (score, prompt analysis, competitors, action plan, content to create, monitoring)
+- [x] 2. Write `docs/AI_VISIBILITY.md` (private app repo) (score, prompt analysis, competitors, action plan, content to create, monitoring)
 - [x] 3. Verify (`node check.mjs`, `git status`, numbers trace to sources)
 - [x] 4. Review section
 
 ## Review
 
-**What changed:** added `tasks/ai-visibility.md` (report only, no site changes). `node check.mjs` → 69 pages, 0 errors; `git status` shows only `tasks/` files.
+**What changed:** added `docs/AI_VISIBILITY.md` (private app repo) (report only, no site changes). `node check.mjs` → 69 pages, 0 errors; `git status` shows only `tasks/` files.
 
 **Key findings:** estimated AI visibility **23/100**. EQfy is named in 0 of 6 discovery prompts, and the brand query "EQfy" returns other apps.
 - eqfy.app is not indexed yet.
@@ -69,14 +69,14 @@ The full ranked list is in the report.
 
 # AI visibility — write & fix all findings (`/goal`)
 
-Branch `ai-visibility-fixes`. Source: [ai-visibility.md](ai-visibility.md).
+Branch `ai-visibility-fixes`. Source: `docs/AI_VISIBILITY.md` (private app repo).
 
 - [x] 1. New post `vs-boom` "EQfy vs Boom" (EN + es/de/tr/zh), facts from Boom's US listing (2026-10-11)
 - [x] 2. New post `sound-amplifier` (music vs hearing: Live Listen, AirPods Pro Hearing Aid) (EN + es/de/tr/zh)
 - [x] 3. Entity: FAQ "same app" answer names the developer + "not to be confused with" (5 langs); `llms.txt` developer + disambiguation; Organization `founder`
 - [x] 4. App repo (`../VolumeBooster`, branch off `release/v2.2.23`): App Store descriptions start with "EQfy - Louder Volume", remove the AI-enhancement + "no distortion" claims (all locales)
 - [x] 5. DevPage (taraschernysh.com): app link → https://eqfy.app/ + crawlable static link
-- [x] 6. `tasks/outreach.md`: Search Console + Bing steps, AlternativeTo/Product Hunt copy, outreach email, Reddit rules
+- [x] 6. `docs/AI_VISIBILITY_OUTREACH.md` (private app repo): Search Console + Bing steps, AlternativeTo/Product Hunt copy, outreach email, Reddit rules
 - [x] 7. Update report statuses (ratings prompt already in app: 5 `requestReview` call sites)
 - [x] 8a. Build + check, commit, PRs (#7 web, VolumeBooster#37, DevPage#10)
 - [x] 8b. Merged #7, deployed to eqfy.app (Cloudflare Pages, 2026-10-11), IndexNow 200 for 65 URLs
@@ -103,4 +103,18 @@ Branch `ai-visibility-fixes`. Source: [ai-visibility.md](ai-visibility.md).
 - Upload the descriptions with v2.2.23.
 - AlternativeTo, Product Hunt, outreach emails and Reddit.
 
-Everything is paste-ready in [outreach.md](outreach.md). No code change was needed for ratings, because the app already calls `requestReview()` in 5 places.
+Everything is paste-ready in `docs/AI_VISIBILITY_OUTREACH.md` (private app repo). No code change was needed for ratings, because the app already calls `requestReview()` in 5 places.
+
+---
+
+# Code review follow-up (10 findings)
+
+- [x] `table.compare` cells wrap long words. The DE/ES tables had overflowed the page on phones.
+- [x] Strategy docs moved to the private app repo. `.gitattributes` `export-ignore` keeps `src/`, `tasks/`, the README and the build scripts out of the deploy export.
+- [x] EN posts call "Volume Booster Sound Amplifier" the **US** App Store name (6 posts).
+- [x] vs-Boom: extras list hedged ("not mentioned in Boom's listing"), neutral heading, rating row dated (5 langs).
+- [x] DE sound-amplifier now targets "Verstärker App" (not "Hörverstärker"). New slug `verstaerker-app-iphone` with a 301 in `_redirects`.
+- [x] "Made for iPhone hearing aids" → "compatible hearing aids" (5 langs, facts.md §3.3).
+- [x] `site.json` gets `developer`, used in the llms.txt template.
+- [x] FAQ and llms.txt disambiguation no longer name the rival apps; they cite the App ID.
+- [x] App repo: `upload_metadata` reads the en-US description from `descriptions_all_locales.md` (no pasted copy).

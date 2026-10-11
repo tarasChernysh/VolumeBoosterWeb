@@ -185,8 +185,9 @@ img { max-width: 100%; height: auto; display: block; }
 .prose th:first-child, .prose td:first-child { text-align: left; }
 .prose thead th { color: var(--text-secondary); font-weight: 700; background: var(--bg-card); }
 /* Text comparison tables: wrap cells instead of scrolling sideways */
-.prose table.compare { display: table; }
-.prose table.compare th, .prose table.compare td { white-space: normal; text-align: left; vertical-align: top; }
+.prose table.compare { display: table; table-layout: fixed; }
+.prose table.compare th, .prose table.compare td { white-space: normal; text-align: left; vertical-align: top; overflow-wrap: break-word; hyphens: auto; }
+.prose table.compare th:first-child, .prose table.compare td:first-child { width: 28%; }
 .prose td { color: #B7D9BC; }
 .prose code { font-family: 'Space Mono', monospace; font-size: 0.9em; color: var(--text-secondary); }
 

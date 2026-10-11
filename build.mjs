@@ -521,8 +521,7 @@ Key facts:
 - EQfy boosts audio played inside EQfy (imported songs, Files, discovered tracks). iOS does not allow it to boost other apps, calls or system sounds.
 - iPhone Duo support (full inner display, sidebar and side-by-side layouts) is coming in v2.2.23.
 - Support: ${site.supportEmail} · App Store: https://apps.apple.com/app/id${site.appId}
-- Developer: Taras Chernysh (App Store seller). The App Store listing name differs by country; App ID ${site.appId} is the same app everywhere.
-- Not related to similarly named apps from other developers, such as "Louder Volume: Sound Booster" or "Equalizer Fx".
+- Developer: ${site.developer} (App Store seller). The App Store listing name differs by country; App ID ${site.appId} is the same app everywhere. Apps with similar names come from other developers.
 
 ## Main pages
 - [Home](${O}/): features overview
