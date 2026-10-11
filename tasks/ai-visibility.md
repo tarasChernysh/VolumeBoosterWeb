@@ -11,15 +11,15 @@ Related: [facts.md](facts.md) (what we may claim) · [keyword-map.md](keyword-ma
 
 | # | Finding | Status | Where |
 |---|---|---|---|
-| 1 | eqfy.app not indexed | **Ready, waiting on you.** Deploy, then Search Console and Bing steps, then `node indexnow.mjs` | [outreach.md §1](outreach.md) |
-| 2a | App Store listing never says "EQfy" | **Fixed in fastlane.** All 50 locales open with "EQfy - Louder Volume". Uploads with v2.2.23. | app repo, branch `claude/aso-eqfy-brand` |
-| 2b | Listing sells the hidden "AI-Powered Audio Enhancement" and "without distortion" | **Fixed in fastlane** (all locales) | same |
-| 2c | `sellerUrl` → taraschernysh.com, which links to github.io | **Fixed.** DevPage links to eqfy.app with a crawlable footer link. Re-check `sellerUrl` after v2.2.23 ships (`marketing_url` = eqfy.app). | DevPage, branch `claude/eqfy-link` |
-| 2d | Subtitle "Equalizer FX" collides with TwinBit's "Equalizer Fx" | **Your decision** (ASO trade-off). Option drafted. | [outreach.md §2](outreach.md) |
+| 1 | eqfy.app not indexed | **Deployed 2026-10-11** and IndexNow pinged (65 URLs, HTTP 200). Taras submits Search Console and Bing Webmaster himself. | [outreach.md §1](outreach.md) |
+| 2a | App Store listing never says "EQfy" | **Fixed and merged** into `release/v2.2.23` (VolumeBooster#37). All 50 locales open with "EQfy - Louder Volume", and the shared India copy in `aso_metadata_all_locales.md` is synced. Goes live with the v2.2.23 upload. | app repo `fastlane/` |
+| 2b | Listing sells the hidden "AI-Powered Audio Enhancement" and "without distortion" | **Fixed and merged** (all locales, both fastlane files) | same |
+| 2c | `sellerUrl` → taraschernysh.com, which links to github.io | **Fixed and live** (DevPage#10 merged). taraschernysh.com links to eqfy.app, including a crawlable footer link. Re-check `sellerUrl` after v2.2.23 ships (`marketing_url` = eqfy.app). | DevPage |
+| 2d | Subtitle "Equalizer FX" collides with TwinBit's "Equalizer Fx" | **Decided 2026-10-11: keep "Equalizer FX"** (ASO). The collision is mitigated by the FAQ/llms.txt disambiguation and the EQfy-first description. Revisit if AI answers keep mixing the apps up. | [outreach.md §2](outreach.md) |
 | 3 | Name collisions and no developer link on the site | **Fixed.** FAQ answer (5 languages) names developer Taras Chernysh and says EQfy is not related to "Louder Volume: Sound Booster" or "Equalizer Fx". `llms.txt` says the same. Organization schema has `founder` on all 6 homepages. | `src/content/*/faq.json`, `build.mjs`, `index.html` |
 | 4 | No "EQfy vs Boom" page | **Written:** `/blog/eqfy-vs-boom/` + es/de/tr/zh | `src/content/*/blog/vs-boom.html` |
 | 5 | Top Search Console query "free sound amplifier app for iPhone" answered by hearing-aid apps | **Written:** `/blog/sound-amplifier-app-iphone/` + es/de/tr/zh | `src/content/*/blog/sound-amplifier.html` |
-| 6 | No third-party footprint (AlternativeTo, Product Hunt, roundups, Reddit) | **Drafted, paste-ready.** Posting needs your accounts. | [outreach.md §4–7](outreach.md) |
+| 6 | No third-party footprint (AlternativeTo, Product Hunt, roundups, Reddit) | **Drafted, paste-ready.** Taras posts and sends from his own accounts. | [outreach.md §4–7](outreach.md) |
 | 7 | Thin social proof (40 ratings) | **No code change needed.** The app already calls `requestReview()` in 5 places. | [outreach.md §8](outreach.md) |
 | 8 | Monitoring | Monthly prompt log below. Next check 2026-11-11. | [Monitoring](#monitoring) |
 
