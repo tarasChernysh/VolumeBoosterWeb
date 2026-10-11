@@ -71,11 +71,36 @@ The full ranked list is in the report.
 
 Branch `ai-visibility-fixes`. Source: [ai-visibility.md](ai-visibility.md).
 
-- [ ] 1. New post `vs-boom` "EQfy vs Boom" (EN + es/de/tr/zh), facts from Boom's US listing (2026-10-11)
-- [ ] 2. New post `sound-amplifier` (music vs hearing: Live Listen, AirPods Pro Hearing Aid) (EN + es/de/tr/zh)
+- [x] 1. New post `vs-boom` "EQfy vs Boom" (EN + es/de/tr/zh), facts from Boom's US listing (2026-10-11)
+- [x] 2. New post `sound-amplifier` (music vs hearing: Live Listen, AirPods Pro Hearing Aid) (EN + es/de/tr/zh)
 - [x] 3. Entity: FAQ "same app" answer names the developer + "not to be confused with" (5 langs); `llms.txt` developer + disambiguation; Organization `founder`
 - [x] 4. App repo (`../VolumeBooster`, branch off `release/v2.2.23`): App Store descriptions start with "EQfy - Louder Volume", remove the AI-enhancement + "no distortion" claims (all locales)
 - [x] 5. DevPage (taraschernysh.com): app link → https://eqfy.app/ + crawlable static link
 - [x] 6. `tasks/outreach.md`: Search Console + Bing steps, AlternativeTo/Product Hunt copy, outreach email, Reddit rules
 - [x] 7. Update report statuses (ratings prompt already in app: 5 `requestReview` call sites)
-- [ ] 8. Build + check, commit, PRs; deploy + IndexNow after Taras OKs
+- [x] 8a. Build + check, commit, PRs (#7 web, VolumeBooster#37, DevPage#10)
+- [ ] 8b. Merge + deploy + `node indexnow.mjs --since 2026-10-11` (after Taras OKs)
+
+## Review (write & fix all findings)
+
+**Website (PR #7):**
+- Two new posts in 5 languages:
+  - "EQfy vs Boom": honest comparison built from Boom's US listing.
+  - "Free sound amplifier app for iPhone": hearing questions point to Live Listen and the AirPods Pro Hearing Aid feature, using localized Apple links each translator checked; music questions point to Volume Boost.
+- FAQ, `llms.txt` and the Organization `founder` field now tie EQfy to developer Taras Chernysh and rule out look-alike apps.
+- New `table.compare` CSS so text tables wrap on phones.
+- Result: 79 pages, 0 errors, 0 warnings; a second build changes nothing.
+
+**App repo (VolumeBooster#37 → `release/v2.2.23`):** all 50 App Store description locales now lead with "EQfy - Louder Volume". The hidden "AI-Powered Audio Enhancement" claim and the "without distortion" promises are gone.
+
+**DevPage#10:** taraschernysh.com (the App Store `sellerUrl`) now links to eqfy.app, including a static link crawlers can see.
+
+**Left for Taras (needs your accounts):**
+- Deploy and IndexNow.
+- Search Console and Bing Webmaster Tools.
+- Upload the descriptions with v2.2.23.
+- Merge DevPage#10.
+- AlternativeTo, Product Hunt, outreach emails and Reddit.
+- The subtitle decision.
+
+Everything is paste-ready in [outreach.md](outreach.md). No code change was needed for ratings, because the app already calls `requestReview()` in 5 places.
