@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>if(/\.github\.io$/.test(location.hostname))location.replace('https://eqfy.app'+location.pathname.replace(/^\/VolumeBoosterWeb/,'')+location.search+location.hash)</script>
+    <title>3D Audio on iPhone, Explained: Spatial vs. Reverb | EQfy</title>
+    <meta name="description" content="3D audio on iPhone explained: how Apple's Spatial Audio and Dolby Atmos work, and how EQfy's in-app 3D Audio adds reverb rooms and moving sound to your songs.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0A1A0A">
+    <link rel="canonical" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="en" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="es" href="https://eqfy.app/es/blog/audio-espacial-3d-iphone/">
+    <link rel="alternate" hreflang="de" href="https://eqfy.app/de/blog/3d-raumklang-iphone/">
+    <link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/iphone-3d-uzamsal-ses/">
+    <link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+
+    <meta property="og:site_name" content="EQfy - Louder Volume">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="3D Audio on iPhone, Explained: Spatial vs. Reverb | EQfy">
+    <meta property="og:description" content="3D audio on iPhone explained: how Apple's Spatial Audio and Dolby Atmos work, and how EQfy's in-app 3D Audio adds reverb rooms and moving sound to your songs.">
+    <meta property="og:url" content="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="EQfy 3D Spatial Audio screen on iPhone with the effect switched on, Reverb and 3D Source modes and Auto Motion">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="3D Audio on iPhone, Explained: Spatial vs. Reverb | EQfy">
+    <meta name="twitter:description" content="3D audio on iPhone explained: how Apple's Spatial Audio and Dolby Atmos work, and how EQfy's in-app 3D Audio adds reverb rooms and moving sound to your songs.">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og-image.png">
+    <meta name="apple-itunes-app" content="app-id=6550912161">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="/assets/css/site.css?v=2dd098d6">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://eqfy.app/blog/3d-spatial-audio-iphone-explained/#article",
+      "headline": "3D Audio on iPhone, Explained: Spatial vs. Reverb",
+      "description": "3D audio on iPhone explained: how Apple's Spatial Audio and Dolby Atmos work, and how EQfy's in-app 3D Audio adds reverb rooms and moving sound to your songs.",
+      "image": [
+        "https://eqfy.app/assets/images/og-image.png",
+        "https://eqfy.app/assets/images/blog/iphone-duo/10-3d-audio.webp"
+      ],
+      "datePublished": "2026-10-11",
+      "dateModified": "2026-10-11",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://eqfy.app/blog/3d-spatial-audio-iphone-explained/",
+      "keywords": "3d audio iphone",
+      "author": {
+        "@type": "Organization",
+        "name": "EQfy",
+        "url": "https://eqfy.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://eqfy.app/#org",
+        "name": "EQfy",
+        "url": "https://eqfy.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eqfy.app/assets/images/app-icon.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eqfy.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://eqfy.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "3D Audio on iPhone, Explained: Spatial vs. Reverb",
+          "item": "https://eqfy.app/blog/3d-spatial-audio-iphone-explained/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is EQfy's 3D Audio the same as Apple Spatial Audio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Apple's Spatial Audio is a system feature for supported content such as Dolby Atmos songs in Apple Music. EQfy's 3D Audio is its own in-app effect, with reverb rooms and a movable 3D sound source, for songs you play inside EQfy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need AirPods for 3D audio on iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Apple's head tracking, you need supported AirPods. EQfy's 3D Audio plays through any output, and its 3D Source mode can also use head tracking with supported AirPods such as AirPods Pro or AirPods Max. The moving 3D Source effect is clearest on headphones; on the iPhone speaker, Reverb mode works best."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can EQfy add 3D audio to Spotify or YouTube?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. iOS only lets EQfy process audio played inside EQfy, so 3D Audio can't change Spotify, YouTube, Apple Music streaming, calls or other apps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does EQfy's 3D Audio work with Apple Music songs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not with songs from an Apple Music subscription: they're protected, so they play in EQfy but the enhancement tools aren't available. Purchased or unprotected songs and imported files work with 3D Audio."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav__inner">
+            <a href="/" class="nav__logo">
+                <span class="nav__logo-icon"><img src="/assets/images/app-icon.png" alt="EQfy icon" width="36" height="36"></span>
+                EQfy - Louder Volume
+            </a>
+            <ul class="nav__links">
+                <li><a href="/#features" class="nav__link">Features</a></li>
+                <li><a href="/#equalizer" class="nav__link">Equalizer</a></li>
+                <li><a href="/#ai-audio" class="nav__link">AI Studio</a></li>
+                <li><a href="/faq/" class="nav__link">FAQ</a></li>
+                <li><a href="/blog/" class="nav__link" aria-current="page">Blog</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-switcher__btn" data-toggle=".lang-switcher__dropdown" aria-label="Change language">🌐 EN ▾</button>
+                <div class="lang-switcher__dropdown">
+                    <a href="/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option lang-switcher__option--active" hreflang="en" lang="en">🇬🇧 English</a>
+                    <a href="/es/blog/audio-espacial-3d-iphone/" class="lang-switcher__option" hreflang="es" lang="es">🇪🇸 Español</a>
+                    <a href="/de/blog/3d-raumklang-iphone/" class="lang-switcher__option" hreflang="de" lang="de">🇩🇪 Deutsch</a>
+                    <a href="/tr/blog/iphone-3d-uzamsal-ses/" class="lang-switcher__option" hreflang="tr" lang="tr">🇹🇷 Türkçe</a>
+                    <a href="/zh/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="zh" lang="zh-Hans">🇨🇳 简体中文</a>
+                </div>
+            </div>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Download Free</a>
+            <button class="nav__mobile-toggle" data-toggle=".nav__mobile-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav__mobile-menu">
+        <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#equalizer">Equalizer</a></li>
+            <li><a href="/#ai-audio">AI Studio</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><a href="/blog/" aria-current="page">Blog</a></li>
+        </ul>
+        <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Download Free</a>
+    </div>
+
+    <main class="page">
+        <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/blog/">Blog</a></li><li aria-current="page">3D Audio on iPhone, Explained: Spatial vs. Reverb</li></ol></nav>
+        <article>
+            <header class="page__header">
+                <span class="eyebrow">Guide</span>
+                <h1 class="page__title">3D Audio on iPhone, Explained: Spatial vs. Reverb</h1>
+                <p class="post-meta"><span>By the EQfy team</span> · <span>Published <time datetime="2026-10-11">October 11, 2026</time></span> · <span>7 min read</span></p>
+            </header>
+            <div class="prose">
+<p class="lead">"3D audio" on iPhone usually means one of two things. Apple's Spatial Audio, with Dolby Atmos songs in Apple Music and head tracking on supported AirPods, is a system feature for content that supports it. The 3D Audio in EQfy - Louder Volume is something different: an in-app effect that puts your music in a virtual room or moves it around your head, for songs you play inside EQfy.</p>
+
+<p>Below, you'll find how 3D sound works, a short explainer on Apple's Spatial Audio with the exact iPhone settings, and how EQfy's Reverb and 3D Source modes compare.</p>
+
+<h2 id="what-is-3d-audio">What "3D audio" actually means</h2>
+<p>Ordinary stereo places sound on a line between your left and right ear. 3D audio tries to place sound all around you: in front, behind, above, or inside a space much bigger than your headphones.</p>
+<p>Your brain locates sounds from small differences between your two ears: which ear hears a sound first, how loud it is on each side, and how your head and outer ears color the sound depending on its direction. Audio software can imitate those cues. This is usually called binaural or HRTF (head-related transfer function) processing, and it works best on headphones, because each ear gets its own signal.</p>
+<p>Room sound is the other half of the illusion. In a real space you hear the direct sound plus many reflections from the walls, floor and ceiling. Reverb recreates those reflections, which is why a dry recording can suddenly feel like it's playing in a hall or a cathedral.</p>
+
+<h2 id="apple-spatial-audio">Spatial audio on iPhone, explained</h2>
+<p>When people talk about spatial audio on iPhone, they usually mean Apple's features. There are two parts, and both depend on the content and the headphones you use.</p>
+
+<h3 id="dolby-atmos">Dolby Atmos in Apple Music</h3>
+<p>Dolby Atmos is an object-based audio format: instead of mixing only to left and right, engineers can place instruments around and above the listener. If you subscribe to Apple Music, you can listen to select songs in Spatial Audio with Dolby Atmos. To check the setting:</p>
+<ol>
+  <li>Update your iPhone to the latest version of iOS.</li>
+  <li>Open <strong>Settings › Apps › Music</strong>.</li>
+  <li>Under Audio, tap <strong>Dolby Atmos</strong>.</li>
+  <li>Choose <strong>Automatic</strong>, <strong>Always On</strong> or <strong>Off</strong>.</li>
+</ol>
+<p>In Automatic mode, supported songs play in Dolby Atmos with Apple or Beats Bluetooth headphones and on the built-in speakers of iPhone XS or later (except iPhone SE). With wired headphones, Apple recommends Always On. Songs that support it show a Dolby Atmos badge. Source: <a href="https://support.apple.com/en-us/109354" target="_blank" rel="noopener">About Spatial Audio with Dolby Atmos in Apple Music</a>.</p>
+
+<h3 id="head-tracking">Spatial Audio and head tracking on AirPods</h3>
+<p>With supported AirPods, Spatial Audio can also use head tracking, so sound seems to come from your iPhone even as you turn your head. To change it, wear your AirPods, open Control Center, touch and hold the volume control, tap <strong>Spatial Audio</strong> and choose:</p>
+<ul>
+  <li><strong>Off:</strong> Spatial Audio and head tracking are both off.</li>
+  <li><strong>Fixed:</strong> Spatial Audio without head tracking.</li>
+  <li><strong>Head Tracked:</strong> Spatial Audio with head tracking.</li>
+</ul>
+<p>Your iPhone saves this choice separately for each app. Apple notes that Spatial Audio isn't available for all apps or content; it works with supported shows, movies, songs and games, and with FaceTime calls. Source: <a href="https://support.apple.com/en-us/102469" target="_blank" rel="noopener">Control Spatial Audio and head tracking on AirPods</a>.</p>
+
+<h2 id="eqfy-3d-audio">EQfy's 3D Audio: an in-app effect</h2>
+<p>EQfy's 3D Audio is its own effect, built into the EQfy player. It isn't Apple Spatial Audio, and it doesn't turn songs into Dolby Atmos mixes. Instead, it processes the song you're playing in EQfy in one of two modes. You'll find it in the <strong>3D Audio</strong> tab of the player, next to Volume, Bass, EQ and Headphones. It's a Premium tool.</p>
+
+<figure>
+  <img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" width="700" height="1019" loading="lazy" decoding="async" alt="EQfy 3D Spatial Audio tab with the effect switched on, the Reverb and 3D Source mode buttons and Auto Motion patterns">
+  <figcaption>EQfy's 3D Audio tab: switch the effect on, then choose Reverb or 3D Source.</figcaption>
+</figure>
+
+<h3 id="reverb-mode">Reverb mode: put your music in a room</h3>
+<p>Reverb mode places the song in a virtual space. If you were looking for a reverb app for iPhone to make songs sound bigger, this does the job right inside the player. There are 9 presets, and the Reverb Blend slider sets how much of the effect you hear, from dry to wet.</p>
+<table>
+  <thead>
+    <tr><th>Preset</th><th>What it sounds like</th><th>Try it with</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Small Room</td><td>Short, close reflections; subtle</td><td>Acoustic songs, spoken word</td></tr>
+    <tr><td>Medium Room</td><td>Natural room ambience</td><td>Most pop and rock</td></tr>
+    <tr><td>Large Room</td><td>More space, a longer tail</td><td>Band recordings, live-style sound</td></tr>
+    <tr><td>Medium Hall</td><td>Concert-hall feel</td><td>Piano, classical</td></tr>
+    <tr><td>Large Hall</td><td>Big and spacious, long decay</td><td>Orchestral, film scores</td></tr>
+    <tr><td>Medium Chamber</td><td>Dense, smooth reflections</td><td>Vocals, strings</td></tr>
+    <tr><td>Large Chamber</td><td>A bigger, richer chamber</td><td>Ballads, slow songs</td></tr>
+    <tr><td>Cathedral</td><td>Very long, airy decay</td><td>Choir, ambient, meditation music</td></tr>
+    <tr><td>Plate</td><td>Bright, smooth studio-style reverb</td><td>Pop vocals, drums</td></tr>
+  </tbody>
+</table>
+<p>These are starting points, not rules. Reverb is personal, so try a few presets on the same song and keep the one you like.</p>
+
+<h3 id="3d-source-mode">3D Source mode: move the sound around you</h3>
+<p>3D Source treats the song as a sound source in the space around your head. You can drag it to a position (front, back, left, right, up or down) and bring it back with Center Position. Or switch on <strong>Auto Motion</strong> and let EQfy move it for you in one of four patterns, with a speed control from slow to fast:</p>
+<ul>
+  <li><strong>Bilateral:</strong> the sound sweeps from left to right and back.</li>
+  <li><strong>Orbit:</strong> the sound circles around your head at ear level.</li>
+  <li><strong>Figure-eight:</strong> the sound traces a figure-8 path around you.</li>
+  <li><strong>Breathing:</strong> the sound slowly rises and falls at a relaxed pace.</li>
+</ul>
+<p>Movement like this is most convincing on headphones, because each ear gets its own signal. On the iPhone speaker, Reverb mode is usually the better choice.</p>
+<p>3D Source can also use <strong>head tracking</strong>. With AirPods that support it, such as AirPods Pro or AirPods Max, EQfy follows your head movement and adjusts where the sound seems to come from as you turn your head. The first time, iPhone asks whether EQfy may use motion data. Reverb mode doesn't use head tracking.</p>
+
+<h2 id="how-to">How to turn on 3D Audio in EQfy</h2>
+<ol>
+  <li>Open EQfy and play a song from your library or a file you've imported.</li>
+  <li>Open the player and tap the <strong>3D Audio</strong> tab.</li>
+  <li>Switch on the <strong>Spatial Audio</strong> toggle. Despite the name, this switch controls EQfy's own effect, not Apple's.</li>
+  <li>Under <strong>Audio Mode</strong>, choose <strong>Reverb</strong> or <strong>3D Source</strong>.</li>
+  <li>In Reverb, pick a preset and adjust Reverb Blend. In 3D Source, pick an Auto Motion pattern and speed, or place the sound yourself.</li>
+  <li>Put on headphones and flip the toggle off and on to compare.</li>
+</ol>
+
+<h2 id="comparison">Apple Spatial Audio vs. EQfy 3D Audio</h2>
+<table>
+  <thead>
+    <tr><th>Feature</th><th>Apple Spatial Audio / Dolby Atmos</th><th>EQfy 3D Audio</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>What it is</td><td>An iPhone feature for supported content and headphones</td><td>An effect inside the EQfy player</td></tr>
+    <tr><td>Works with</td><td>Dolby Atmos songs in Apple Music, supported shows, movies and games, FaceTime calls</td><td>Songs played in EQfy: purchased or unprotected Music library songs and imported files</td></tr>
+    <tr><td>Main controls</td><td>Off, Fixed or Head Tracked; Dolby Atmos Automatic, Always On or Off</td><td>9 reverb presets with blend; 3D Source position; 4 Auto Motion patterns</td></tr>
+    <tr><td>What you need</td><td>An Apple Music subscription for Atmos songs; supported AirPods for head tracking</td><td>EQfy Premium; headphones recommended for 3D Source; supported AirPods for head tracking</td></tr>
+  </tbody>
+</table>
+
+<h3 id="use-both">Can you use both?</h3>
+<p>Songs from an Apple Music subscription are protected. They play in EQfy, but 3D Audio and the other enhancement tools aren't available for them, because iOS doesn't allow apps to process protected audio. For the songs EQfy can process, you can listen with AirPods as usual. Because iPhone saves your Spatial Audio choice per app, you can set it to Off for EQfy in Control Center if you want to hear EQfy's effect on its own.</p>
+
+<h2 id="tips">Tips for better 3D sound</h2>
+<ul>
+  <li><strong>Start subtle.</strong> A Medium Room with a low blend often sounds more natural than Cathedral at full wet.</li>
+  <li><strong>Match the mode to the output.</strong> Use headphones for 3D Source and Auto Motion; the speaker is fine for Reverb.</li>
+  <li><strong>Clean up the low end.</strong> Reverb can make bass sound muddy. A small cut around 200 Hz in the <a href="/blog/best-iphone-eq-settings-by-genre/">equalizer</a> can help, while <a href="/blog/boost-bass-on-iphone-speakers/">Bass Boost</a> adds weight back if a big room thins things out.</li>
+  <li><strong>Check left and right.</strong> If one side sounds louder before you add any effect, fix that first with <a href="/blog/left-right-headphone-balance/">left/right headphone balance</a>.</li>
+  <li><strong>Keep the volume comfortable.</strong> Effects can make you turn things up; our guide to <a href="/blog/is-volume-boosting-safe/">safe volume boosting</a> explains sensible levels.</li>
+</ul>
+
+<div class="note"><strong>What EQfy can't do:</strong> 3D Audio works only on audio played inside EQfy. It can't add 3D sound to Spotify, YouTube, Apple Music streaming, calls or other apps, and it isn't available for Apple Music subscription songs. It isn't Apple Spatial Audio and it doesn't create Dolby Atmos mixes.</div>
+
+<p>Want to see the rest of the player tools? Take a look at <a href="/#spatial-audio">3D Audio and more on the EQfy homepage</a>.</p>
+            </div>
+            <section class="post-faq" aria-labelledby="post-faq-title">
+                <h2 id="post-faq-title">Frequently asked questions</h2>
+                <div class="faq__list">
+<details class="faq__item"><summary class="faq__q">Is EQfy's 3D Audio the same as Apple Spatial Audio?</summary><div class="faq__a"><p>No. Apple's Spatial Audio is a system feature for supported content such as Dolby Atmos songs in Apple Music. EQfy's 3D Audio is its own in-app effect, with reverb rooms and a movable 3D sound source, for songs you play inside EQfy.</p></div></details>
+<details class="faq__item"><summary class="faq__q">Do I need AirPods for 3D audio on iPhone?</summary><div class="faq__a"><p>For Apple's head tracking, you need supported AirPods. EQfy's 3D Audio plays through any output, and its 3D Source mode can also use head tracking with supported AirPods such as AirPods Pro or AirPods Max. The moving 3D Source effect is clearest on headphones; on the iPhone speaker, Reverb mode works best.</p></div></details>
+<details class="faq__item"><summary class="faq__q">Can EQfy add 3D audio to Spotify or YouTube?</summary><div class="faq__a"><p>No. iOS only lets EQfy process audio played inside EQfy, so 3D Audio can't change Spotify, YouTube, Apple Music streaming, calls or other apps.</p></div></details>
+<details class="faq__item"><summary class="faq__q">Does EQfy's 3D Audio work with Apple Music songs?</summary><div class="faq__a"><p>Not with songs from an Apple Music subscription: they're protected, so they play in EQfy but the enhancement tools aren't available. Purchased or unprotected songs and imported files work with 3D Audio.</p></div></details>
+                </div>
+            </section>
+        </article>
+        <aside class="cta-box" aria-label="Make your iPhone louder">
+            <img class="cta-box__icon" src="/assets/images/app-icon.png" alt="EQfy app icon" width="64" height="64" loading="lazy">
+            <p class="cta-box__title">Make your iPhone louder</p>
+            <p>Download EQfy - Louder Volume free on the App Store. Requires iOS 16 or later.</p>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="btn-primary" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Download on the App Store</a>
+        </aside>
+        <section class="related" aria-labelledby="related-title">
+            <h2 id="related-title">Related articles</h2>
+            <div class="cards">
+            <article class="card">
+                <a class="card__image" href="/blog/best-iphone-eq-settings-by-genre/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/03-equalizer.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">Guide</span>
+                    <h3 class="card__title"><a href="/blog/best-iphone-eq-settings-by-genre/">Best EQ Settings for iPhone: Presets by Genre</a></h3>
+                    <p class="card__text">The best EQ settings for iPhone by genre: exact 7-band presets for rock, rap, jazz and more, plus easy recipes for deeper bass and clearer vocals.</p>
+                    <a class="card__more" href="/blog/best-iphone-eq-settings-by-genre/" aria-label="Read more: Best EQ Settings for iPhone: Presets by Genre">Read more →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/blog/left-right-headphone-balance/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/09-sound-control.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">Guide</span>
+                    <h3 class="card__title"><a href="/blog/left-right-headphone-balance/">Left-Right Audio Balance on iPhone: How to Fix It</a></h3>
+                    <p class="card__text">Fix left-right audio balance on iPhone: find the Balance slider, use Mono Audio, and solve one AirPod louder than the other with simple, safe steps.</p>
+                    <a class="card__more" href="/blog/left-right-headphone-balance/" aria-label="Read more: Left-Right Audio Balance on iPhone: How to Fix It">Read more →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/blog/boost-bass-on-iphone-speakers/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/06-bass-booster.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">Guide</span>
+                    <h3 class="card__title"><a href="/blog/boost-bass-on-iphone-speakers/">How to Boost Bass on iPhone Speakers and Headphones</a></h3>
+                    <p class="card__text">How to boost bass on iPhone: why tiny speakers lose deep notes, the 200 Hz trick that works, Apple Music's free preset and EQ tips for punchier sound.</p>
+                    <a class="card__more" href="/blog/boost-bass-on-iphone-speakers/" aria-label="Read more: How to Boost Bass on iPhone Speakers and Headphones">Read more →</a>
+                </div>
+            </article>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span class="footer__logo-icon"><img src="/assets/images/app-icon.png" alt="" width="32" height="32"></span>EQfy - Louder Volume</div>
+                    <p class="footer__tagline">Volume booster, bass booster and equalizer for iPhone. Make every track louder, deeper and clearer.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <p class="footer__heading">Features</p>
+                        <ul>
+                            <li><a href="/#volume-booster">Volume Booster</a></li>
+                            <li><a href="/#equalizer">Bass Booster &amp; EQ</a></li>
+                            <li><a href="/#spatial-audio">3D Spatial Audio</a></li>
+                            <li><a href="/#ai-audio">AI Studio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">Resources</p>
+                        <ul>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/faq/">FAQ</a></li>
+                            <li><a href="mailto:support@eqfy.app">Support</a></li>
+                            <li><a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" target="_blank" rel="noopener">App Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">Legal</p>
+                        <ul>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="/terms">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 EQfy. All rights reserved.</span>
+                <span>iPhone, AirPods and App Store are trademarks of Apple Inc.</span>
+            </div>
+        </div>
+    </footer>
+<script>
+(function(){var n=document.querySelector('.nav');addEventListener('scroll',function(){n.classList.toggle('nav--scrolled',scrollY>40)},{passive:true});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-toggle]');if(b){document.querySelector(b.getAttribute('data-toggle')).classList.toggle('is-open');return}var d=document.querySelector('.lang-switcher__dropdown');if(d&&!e.target.closest('.lang-switcher'))d.classList.remove('is-open')});})();
+</script>
+</body>
+</html>

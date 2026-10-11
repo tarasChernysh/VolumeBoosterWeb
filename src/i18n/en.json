@@ -1,0 +1,64 @@
+{
+  "dateLocale": "en-US",
+  "home": "Home",
+  "nav": {
+    "features": "Features",
+    "equalizer": "Equalizer",
+    "aiStudio": "AI Studio",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Download Free",
+    "changeLanguage": "Change language",
+    "menu": "Open menu",
+    "logoAlt": "EQfy icon"
+  },
+  "footer": {
+    "tagline": "Volume booster, bass booster and equalizer for iPhone. Make every track louder, deeper and clearer.",
+    "features": "Features",
+    "volumeBooster": "Volume Booster",
+    "bassEq": "Bass Booster & EQ",
+    "spatial": "3D Spatial Audio",
+    "aiStudio": "AI Studio",
+    "resources": "Resources",
+    "support": "Support",
+    "appStore": "App Store",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "rights": "All rights reserved.",
+    "trademark": "iPhone, AirPods and App Store are trademarks of Apple Inc."
+  },
+  "blog": {
+    "title": "EQfy Blog: iPhone Volume, Bass & EQ Guides",
+    "description": "Guides and news from EQfy: make your iPhone louder, boost bass, find the best EQ settings, fix low volume and get more from your headphones.",
+    "eyebrow": "Guides & news",
+    "h1": "The EQfy Blog",
+    "lead": "Practical guides to make your iPhone louder, clearer and more fun to listen to — plus news about the EQfy app."
+  },
+  "post": {
+    "by": "By the EQfy team",
+    "published": "Published",
+    "updated": "Updated",
+    "minRead": "{n} min read",
+    "faqTitle": "Frequently asked questions",
+    "related": "Related articles",
+    "readMore": "Read more →",
+    "categories": { "guide": "Guide", "news": "News" }
+  },
+  "faqPage": {
+    "eyebrow": "Help center",
+    "jumpTo": "Jump to a topic"
+  },
+  "cta": {
+    "title": "Make your iPhone louder",
+    "text": "Download EQfy - Louder Volume free on the App Store. Requires iOS 16 or later.",
+    "button": "Download on the App Store",
+    "iconAlt": "EQfy app icon"
+  },
+  "latest": {
+    "eyebrow": "From the blog",
+    "title": "Guides & News",
+    "description": "Tips to make your iPhone louder, clearer and more fun to listen to.",
+    "all": "All articles →"
+  }
+}

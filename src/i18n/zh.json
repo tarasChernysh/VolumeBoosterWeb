@@ -1,0 +1,67 @@
+{
+  "dateLocale": "zh-CN",
+  "home": "首页",
+  "nav": {
+    "features": "功能",
+    "equalizer": "均衡器",
+    "aiStudio": "人工智能工作室",
+    "faq": "常见问题",
+    "blog": "博客",
+    "download": "免费下载",
+    "changeLanguage": "切换语言",
+    "menu": "打开菜单",
+    "logoAlt": "EQfy图标"
+  },
+  "footer": {
+    "tagline": "适用于iPhone的音量增强器、低音增强器和均衡器。让每首歌更响亮、低音更深沉、声音更清晰。",
+    "features": "功能",
+    "volumeBooster": "音量增强器",
+    "bassEq": "低音增强器与EQ",
+    "spatial": "3D空间音频",
+    "aiStudio": "人工智能工作室",
+    "resources": "资源",
+    "support": "支持",
+    "appStore": "App Store",
+    "legal": "法律信息",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "rights": "版权所有。",
+    "trademark": "iPhone、AirPods和App Store是Apple Inc.的商标。"
+  },
+  "blog": {
+    "title": "EQfy博客：iPhone音量、低音与均衡器指南",
+    "description": "EQfy的使用指南与最新动态：教你让iPhone声音更大、增强低音、找到最佳均衡器设置、解决iPhone音量太小的问题，并让耳机发挥更好的效果。",
+    "eyebrow": "指南与新闻",
+    "h1": "EQfy博客",
+    "lead": "实用指南，帮你让iPhone声音更大、更清晰、听起来更有乐趣，还有EQfy App的最新动态。"
+  },
+  "post": {
+    "by": "EQfy团队",
+    "published": "发布于",
+    "updated": "更新于",
+    "minRead": "阅读约{n}分钟",
+    "faqTitle": "常见问题",
+    "related": "相关文章",
+    "readMore": "阅读全文 →",
+    "categories": {
+      "guide": "指南",
+      "news": "新闻"
+    }
+  },
+  "faqPage": {
+    "eyebrow": "帮助中心",
+    "jumpTo": "跳转到主题"
+  },
+  "cta": {
+    "title": "让iPhone声音更大",
+    "text": "在App Store免费下载EQfy - Louder Volume。需要iOS 16或更高版本。",
+    "button": "在App Store下载",
+    "iconAlt": "EQfy App图标"
+  },
+  "latest": {
+    "eyebrow": "博客精选",
+    "title": "指南与新闻",
+    "description": "让iPhone声音更大、更清晰、听起来更有乐趣的实用技巧。",
+    "all": "全部文章 →"
+  }
+}
