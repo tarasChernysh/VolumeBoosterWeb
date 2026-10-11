@@ -28,6 +28,7 @@ tasks/                                      Notes: facts.md (app facts for write
 ```bash
 node build.mjs     # regenerate blog, FAQ, 404, sitemap.xml, llms.txt and the "latest posts" block on homepages
 node check.mjs     # validate links, canonicals, hreflang, headings, images, JSON-LD, sitemap (exit 1 on errors)
+node indexnow.mjs  # AFTER deploying: notify Bing & other IndexNow engines (--since YYYY-MM-DD for changed pages, --dry-run to preview)
 python3 -m http.server 8765   # preview at http://localhost:8765 (folder URLs work; /privacy needs the .html locally)
 ```
 
@@ -54,7 +55,7 @@ npx wrangler pages deploy . --project-name louder-volume
    Internal links use placeholders so translations never hard-code slugs: `{{post:<id>}}`, `{{blog}}`, `{{faq}}`, `{{home}}`, `{{home}}#equalizer`, `{{appstore}}`.
    No `<h1>`, FAQ or download box in the body — the template adds them. Optional `"ogImage"` (PNG, 1200×630) and `"pinned": true`.
 3. Translate it to `src/content/{es,de,tr,zh}/blog/<id>.html` (same id, localized `slug`, title, description, keyword, alts and FAQ).
-4. `node build.mjs && node check.mjs`, preview, commit, deploy.
+4. `node build.mjs && node check.mjs`, preview, commit, deploy, then `node indexnow.mjs --since <today>`.
 
 When something changes (e.g. iPhone Duo support ships in v2.2.23), edit the posts in every language, bump `"updated"`, rebuild.
 
