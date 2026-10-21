@@ -120,7 +120,8 @@ const absLinks = (html) => html.replace(/href="\//g, `href="${O}/`);
 const fmtDate = (lang, d) => new Intl.DateTimeFormat(T[lang].dateLocale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${d}T00:00:00Z`));
 function readingMinutes(lang, html) {
   const text = stripTags(html);
-  const units = lang === 'zh' ? text.replace(/\s/g, '').length / 400 : text.split(' ').length / 220;
+  const cjk = { zh: 400, ja: 500 }[lang]; // characters per minute for languages written without spaces
+  const units = cjk ? text.replace(/\s/g, '').length / cjk : text.split(' ').length / 220;
   return Math.max(1, Math.round(units));
 }
 

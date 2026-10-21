@@ -44,6 +44,7 @@ Key facts:
 - [Deutsch](https://eqfy.app/de/)
 - [Français](https://eqfy.app/fr/)
 - [Português](https://eqfy.app/pt/)
+- [日本語](https://eqfy.app/ja/)
 - [Türkçe](https://eqfy.app/tr/)
 - [简体中文](https://eqfy.app/zh/)
 - [Dansk](https://eqfy.app/da/)

@@ -179,6 +179,25 @@ Use these names for in-app features so readers find the same words on screen. Br
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Electrónico, Clásico, Reggae, Rap, R&B, Danza, Acústico | Rock, Jazz, Elektronisch, Klassisch, Reggae, Rap, R&B, Tanz, Akustisch | Rock, Caz, Elektronik, Klasik, Reggae, Rap, R&B, Dans, Akustik | 摇滚、爵士、电子、古典、雷鬼、说唱、节奏布鲁斯、舞曲、原声 |
 | Unlock Premium | Desbloquear Premium | Premium freischalten | Premium'u Aç | 解锁高级版 |
 
+**Japanese (ja)** — from the app's own catalog (`Localizable.xcstrings`, ja values) and `ja-jp` Apple pages. Tone: polite **です・ます**, no "あなた". URL prefix `/ja`, `hreflang="ja"`, **English slugs** (like zh: Japanese slugs can't be ASCII). Brand names stay in Latin script: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, YouTube, Premium.
+| EN (app UI) | ja |
+|---|---|
+| AI Studio · tab "AI" | AIスタジオ · AI |
+| Volume Boost / Bass Boost | 音量ブースト / 低音ブースト |
+| Equalizer · EQ | イコライザー · EQ |
+| Headphones (tab) / Audio Balance | ヘッドフォン / オーディオバランス |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | 空間オーディオ · 3Dオーディオ · 3Dソース · 自動モーション |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode · Dry / Wet | リバーブ · リバーブ環境 · リバーブブレンド · オーディオモード · ドライ / ウェット |
+| Center (balance) · Custom · Reset | 中央 · カスタム · リセット |
+| Music Library · Files · Find more | ミュージックライブラリ · ファイル · もっと見つける |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | トラックを選択 · すべてのマイミュージック · 最近 · すべてのマイミュージックを削除 · プレイリスト |
+| Home · Music · Settings (tabs; catalog keys `home.title`, `music.title`, `settings.title`) | ホーム · ミュージック · 設定 |
+| Volume · Bass · Speed · Share (player) | 音量 · 低音 · 速度 · 共有 |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | 効果音 · テキスト読み上げ · ノイズリダクション |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | 音声を生成 · 音声を選択 · オーディオファイルを選択 · ノイズを除去 |
+| Force instrumental · Unlock Premium | インストゥルメンタルを強制 · プレミアムをアンロック |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | ロック, ジャズ, エレクトロニック, クラシック, レゲエ, ラップ, R&B, ダンス, アコースティック |
+
 **Portuguese (pt = pt-BR)** — from the app's own catalog (`Localizable.xcstrings`, pt-BR values) and `pt-br` Apple pages. Tone: **você**. URL prefix `/pt`, `hreflang="pt"`, `<html lang="pt-BR">`. Brand names stay: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Premium.
 **Two catalog values are plain mistranslations — do NOT copy them:** "Custom" shows as "Costume" (use **Personalizado**) and the "Rock" preset shows as "Rocha" (use **Rock**). Report as an app-side localization bug.
 | EN (app UI) | pt-BR |

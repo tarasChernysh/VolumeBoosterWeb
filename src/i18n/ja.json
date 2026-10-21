@@ -1,0 +1,64 @@
+{
+  "dateLocale": "ja-JP",
+  "home": "ホーム",
+  "nav": {
+    "features": "機能",
+    "equalizer": "イコライザー",
+    "aiStudio": "AIスタジオ",
+    "faq": "よくある質問",
+    "blog": "ブログ",
+    "download": "無料ダウンロード",
+    "changeLanguage": "言語を変更",
+    "menu": "メニューを開く",
+    "logoAlt": "EQfyアイコン"
+  },
+  "footer": {
+    "tagline": "iPhone向けの音量ブースト、低音ブースト、イコライザー。すべての曲をより大きく、より深く、よりクリアに。",
+    "features": "機能",
+    "volumeBooster": "音量ブースト",
+    "bassEq": "低音ブーストとイコライザー",
+    "spatial": "3D空間オーディオ",
+    "aiStudio": "AIスタジオ",
+    "resources": "リソース",
+    "support": "サポート",
+    "appStore": "App Store",
+    "legal": "法的情報",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "rights": "無断複写・転載を禁じます。",
+    "trademark": "iPhone、AirPods、App StoreはApple Inc.の商標です。"
+  },
+  "blog": {
+    "title": "EQfyブログ：音量・低音・EQガイド",
+    "description": "EQfyのガイドとお知らせ：iPhoneの音量アップ、低音強化、おすすめEQ設定、音が小さい時の対処、イヤホンをもっと活用するコツ。",
+    "eyebrow": "ガイド＆お知らせ",
+    "h1": "EQfyブログ",
+    "lead": "iPhoneをもっと大きく、クリアに、楽しく聴くための実用ガイドと、EQfyアプリのお知らせをお届けします。"
+  },
+  "post": {
+    "by": "EQfyチーム",
+    "published": "公開日",
+    "updated": "更新日",
+    "minRead": "読了目安 {n}分",
+    "faqTitle": "よくある質問",
+    "related": "関連記事",
+    "readMore": "続きを読む →",
+    "categories": { "guide": "ガイド", "news": "お知らせ" }
+  },
+  "faqPage": {
+    "eyebrow": "ヘルプセンター",
+    "jumpTo": "トピックに移動"
+  },
+  "cta": {
+    "title": "iPhoneの音量をもっと大きく",
+    "text": "EQfy - Louder VolumeをApp Storeで無料ダウンロード。iOS 16以降が必要です。",
+    "button": "App Storeでダウンロード",
+    "iconAlt": "EQfyアプリアイコン"
+  },
+  "latest": {
+    "eyebrow": "ブログより",
+    "title": "ガイド＆お知らせ",
+    "description": "iPhoneをもっと大きく、クリアに、楽しく聴くためのヒント。",
+    "all": "すべての記事 →"
+  }
+}
