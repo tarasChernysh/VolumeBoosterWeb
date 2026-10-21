@@ -16,6 +16,8 @@ Key facts:
 
 ## Articles
 - [iPhone Duo Support Is Coming to EQfy in v2.2.23](https://eqfy.app/blog/iphone-duo-support/): iPhone Duo apps, upgraded: EQfy - Louder Volume v2.2.23 will use the full inner display with a sidebar and two-column screens. See what the next update brings.
+- [Best Equalizer Apps for iPhone, Compared](https://eqfy.app/blog/best-equalizer-apps-iphone/): Looking for the best equalizer app for iPhone? We compare Apple Music's EQ, EQfy, Boom, Equalizer Fx and Equalizer+ HD on bands, presets, price and what they can EQ.
+- [Best Volume Booster Apps for iPhone, Compared](https://eqfy.app/blog/best-volume-booster-apps-iphone/): Which volume booster app for iPhone is best? We compare EQfy, Boom, Increase Volume Sound, Equalizer Fx and Higher Volume on what each one really boosts.
 - [AI Song Generator on iPhone: Make a Song with AI](https://eqfy.app/blog/ai-song-generator-iphone/): Use an AI song generator on iPhone: describe a track in EQfy's AI Studio, name it, choose Force instrumental and compose. Plus prompt tips for better songs.
 - [How to Make AirPods Louder When Max Isn't Enough](https://eqfy.app/blog/make-airpods-louder/): How to make AirPods louder: lift Reduce Loud Audio, clean the mesh, test ear-tip fit, tame Conversation Awareness, then boost songs up to +12 dB for free.
 - [How to Boost Bass on iPhone Speakers and Headphones](https://eqfy.app/blog/boost-bass-on-iphone-speakers/): How to boost bass on iPhone: why tiny speakers lose deep notes, the 200 Hz trick that works, Apple Music's free preset and EQ tips for punchier sound.

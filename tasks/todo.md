@@ -177,3 +177,32 @@ Cause: body and supporting text use gray-green and pale-green colors on a dark g
 - `node build.mjs && node check.mjs`: 79 pages, 0 errors.
 - Text-color inventory on home, post, FAQ, blog index, privacy and /de/: every body and supporting text is #E4EBE5, #C9D3CB, #A7B5AA or #F0FDF4.
 - Before/after crops at 375px confirm the change.
+
+---
+
+# More posts + more languages (plan: `~/.claude/plans/what-else-post-we-sparkling-scroll.md`)
+
+Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr + pt-BR + ar (full), every post in every language, new posts first, Claude-only translation review.
+
+## Phase A: new posts (en, es, de, tr, zh), one PR per group
+- [x] A1. Comparisons: `best-volume-boosters`, `best-eq-apps` (branch `posts-comparisons`)
+- [ ] A2. How-tos: `slowed-reverb`, `play-mp3-offline`, `louder-audio-file`
+- [ ] A3. Troubleshooting: `spotify-louder`, `bluetooth-volume-low`, `airpods-bass`
+- [ ] A4. AI Studio: `ai-text-to-speech`, `ai-sound-effects`, `remove-background-noise`
+
+## Phase B: new languages (all 23 posts + FAQ + homepage each)
+- [ ] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter)
+- [ ] B2. pt (key `pt`, htmlLang `pt-BR`)
+- [ ] B3. ja (readingMinutes, check.mjs CJK rules, ja font stacks)
+- [ ] B4. ar (RTL: `dir`, logical CSS properties, `[dir="rtl"]` overrides, Arabic fonts, OG)
+
+## Review (A1: comparisons)
+
+**Changes:**
+- Two new posts in en, es, de, tr and zh (10 files): "Best Volume Booster Apps for iPhone, Compared" and "Best Equalizer Apps for iPhone, Compared". Each has a comparison table, a section per app and a "which one should you pick" list.
+- Rival facts come from the US App Store listings and the iTunes lookup API on 2026-10-21 (Boom, Equalizer Fx, Equalizer+ HD, Increase Volume Sound, Higher Volume, plus Apple Music's built-in EQ). Every claim says "per its listing" or is dated. Higher Volume is described as untested, because its listing doesn't say how it works.
+- Both posts state the iOS limit (no app can boost other apps or protected Apple Music tracks) and EQfy's honest gaps (EQ doesn't save custom presets; 7 bands vs Boom's 16).
+- `related` arrays of 6 existing posts (x 5 languages) now point to the new posts, so each has 3-4 inbound links. New keyword-map rows and clusters (#13, #14).
+- 10 new share images. Re-rendering also changed 8 existing JPEGs by a few bytes with no title change; those were restored.
+
+**Verification:** `node build.mjs && node check.mjs` gives 89 pages, 0 errors, 0 warnings. At 375 px the en/de/es/tr/zh posts have no sideways scroll, the tables fit (343 px) and no image is broken.
