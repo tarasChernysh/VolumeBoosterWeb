@@ -35,13 +35,13 @@
       "heading": "KI Studio",
       "items": [
         { "q": "Was steckt im KI Studio?", "a": "Das KI Studio hat vier Tools: den KI-Songgenerator (komponiert einen Song aus einem Text-Prompt, optional mit dem Schalter „Instrumental erzwingen“), Soundeffekte, Text-zu-Sprache und Rauschunterdrückung. Alle brauchen eine Internetverbindung. Lies den <a href=\"{{post:ai-song-generator}}\">Ratgeber zum KI-Song-Generator</a>." },
-        { "q": "Wie funktionieren KI-Credits?", "a": "Das KI Studio arbeitet mit Credits. Premium enthält KI-Songgenerator, Soundeffekte und Text-zu-Sprache; ohne Premium verbrauchen diese Tools Credits, und Credit-Pakete gibt es in der App. Die Rauschunterdrückung verbraucht immer Credits – auch für Abonnenten." }
+        { "q": "Wie funktionieren KI-Credits?", "a": "Das KI Studio arbeitet mit Credits, und jedes Tool verbraucht welche: Der KI-Songgenerator kostet 3.000 Credits, Soundeffekte 250, Text-zu-Sprache 500 und die Rauschunterdrückung 1.500 pro angefangener Minute. Credit-Pakete kannst du in der App kaufen oder im Credit Shop verdienen. Credits werden erst abgezogen, wenn ein Ergebnis gespeichert ist." }
       ]
     },
     {
       "heading": "Preise & Abo",
       "items": [
-        { "q": "Was ist in Premium enthalten?", "a": "Premium schaltet Bass-Boost, den 7-Band-Equalizer, Kopfhörer-Balance, 3D-Audio, Wiedergabegeschwindigkeit und den haptischen Player frei und enthält im KI Studio den KI-Songgenerator, Soundeffekte und Text-zu-Sprache. Lautstärke-Boost und Musikplayer bleiben für alle kostenlos." },
+        { "q": "Was ist in Premium enthalten?", "a": "Premium schaltet Bass-Boost, den 7-Band-Equalizer, Kopfhörer-Balance, 3D-Audio, Wiedergabegeschwindigkeit und den haptischen Player frei. Lautstärke-Boost und Musikplayer bleiben für alle kostenlos, und die Tools im KI Studio verbrauchen Credits." },
         { "q": "Was kostet Premium, und gibt es eine kostenlose Testphase?", "a": "Premium gibt es als Wochen- oder Jahresabo. Den Preis siehst du im App Store in deiner Landeswährung, bevor du bestätigst – er kann je nach Land variieren. Berechtigte Abos starten mit einer kostenlosen Testphase." },
         { "q": "Wie kündige ich mein Abo?", "a": "Abos werden von Apple abgerechnet und verwaltet. Öffne auf deinem iPhone die Einstellungen, tippe auf deinen Namen und dann auf „Abonnements“, wähle das EQfy-Abo und tippe auf „Abo kündigen“. Apple erklärt die Schritte unter <a href=\"https://support.apple.com/de-de/118428\" target=\"_blank\" rel=\"noopener\">Ein Abonnement von Apple kündigen</a>." }
       ]

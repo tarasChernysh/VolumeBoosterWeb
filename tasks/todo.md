@@ -258,3 +258,12 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 **Verification:** `node build.mjs && node check.mjs` gives 134 pages, 0 errors, 0 warnings. At 375 px all 15 new pages have no sideways scroll, no broken images, 3 related cards and 4 FAQ items. All 35 external Apple links return 200. Not checked on a device: the in-app labels and flows (read from code).
 
 **Known site-wide conflicts left open:** the FAQ, homepages, vs-boom and the ai-song-generator post still say Premium includes the AI tools (code: all tools spend credits; Taras chose to keep the new posts neutral); the Duo post, FAQ and homepages still say "coming in v2.2.23", which went live on 2026-10-14 (a separate PR is next).
+
+## Follow-up: "Premium includes the AI tools" corrected (2026-10-21)
+
+The code makes every user spend credits on every AI tool (see facts.md), but the site said Premium includes Music Generator, Sound Effects and Text to Speech. Corrected to "AI tools use credits" in:
+- `ai-song-generator` (FAQ answer, lead, credits section, Noise Reducer paragraph) in 5 languages; the credits section now lists the costs and how to get credits. The Noise Reducer paragraph also no longer suggests a voice memo (M4A is rejected; MP3 or WAV only)
+- FAQ page: "How do AI credits work?" (with costs) and "What does Premium include?" (5 languages)
+- `vs-boom` lead (5 languages)
+- homepages: showcase line and FAQ answer (page and JSON-LD), `index.html` plus the 5 landing files
+`node build.mjs && node check.mjs`: 134 pages, 0 errors, 0 warnings.
