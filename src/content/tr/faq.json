@@ -7,7 +7,7 @@
       "heading": "Başlarken",
       "items": [
         { "q": "EQfy - Louder Volume nedir?", "a": "EQfy - Louder Volume, içinde çaldığın müziği daha yüksek ve daha dolgun hale getiren bir iPhone uygulamasıdır. %200’e kadar Ses Güçlendirme, Bas Güçlendirme, 7 bantlı ekolayzır, kulaklık ses dengesi, 3D Ses ve YZ Stüdyo’yu, çevrimdışı da çalışan ücretsiz bir müzik kütüphanesi ve oynatıcıyla bir araya getirir. <a href=\"{{home}}\">Tüm özellikleri gör</a>." },
-        { "q": "EQfy ücretsiz mi?", "a": "Evet. EQfy ücretsiz indirilir; Ses Güçlendirme, müzik kütüphanesi ve oynatıcı ücretsiz kullanılır. Bas Güçlendirme, Ekolayzır, kulaklık ses dengesi, 3D Ses, oynatma hızı, dokunsal oynatıcı ve dışa aktarma ise isteğe bağlı Premium aboneliğin parçasıdır." },
+        { "q": "EQfy ücretsiz mi?", "a": "Evet. EQfy ücretsiz indirilir; Ses Güçlendirme, müzik kütüphanesi ve oynatıcı ücretsiz kullanılır. Bas Güçlendirme, Ekolayzır, kulaklık ses dengesi, 3D Ses, oynatma hızı ve dokunsal oynatıcı ise isteğe bağlı Premium aboneliğin parçasıdır." },
         { "q": "EQfy, App Store’daki Volume Booster Sound Amplifier ile aynı uygulama mı?", "a": "Evet. EQfy - Louder Volume, ABD App Store’unda Volume Booster Sound Amplifier adıyla listelenir; diğer ülkelerde mağazadaki adı farklı olabilir. Uygulama aynıdır ve geliştiricisi Taras Chernysh’tir: <a href=\"{{appstore}}\">App Store’da aç</a>. Benzer adlı uygulamalar başka geliştiricilere aittir; EQfy’nin App Store kimliği 6550912161’dir." },
         { "q": "EQfy hangi iPhone’ları ve dilleri destekliyor?", "a": "EQfy, iPhone için geliştirildi ve iOS 16 veya sonrasını gerektirir. Uygulama 25 dilde kullanılabilir." }
       ]
@@ -28,7 +28,7 @@
         { "q": "EQfy’nin ekolayzırında neler var?", "a": "Yedi bant (32 Hz, 64 Hz, 200 Hz, 500 Hz, 1 kHz, 4 kHz ve 16 kHz) ve bir ön amfi, 9 ön ayar (Rock, Caz, Elektronik, Klasik, Reggae, Rap, R&amp;B, Dans ve Akustik), Özelleştirilmiş ayarı ve Sıfırla düğmesi. <a href=\"{{post:eq-settings}}\">Türlere göre en iyi iPhone EQ ayarlarına</a> göz at." },
         { "q": "EQfy uygulamasındaki 3D Ses nedir?", "a": "İki modlu bir uygulama içi efekttir: küçük bir odadan katedrale 9 ortam ön ayarı sunan Yankı ve sesi 4 Otomatik Hareket deseniyle (çift taraflı, yörünge, sekiz şekli ve nefes) çevrende dolaştıran, desteklenen AirPods modelleriyle kafa takibini kullanabilen 3D Kaynak. Apple’ın Uzamsal Ses özelliği ya da Dolby Atmos değildir. Farkı <a href=\"{{post:spatial-audio}}\">iPhone’da 3D ses</a> yazısında anlatıyoruz." },
         { "q": "Bir kulaklığın diğerinden daha yüksek çalmasını düzeltebilir miyim?", "a": "EQfy içinde çalınan şarkılar için Kulaklıklar sekmesinde, Merkez düğmesiyle sıfırlanabilen bir sol/sağ ses dengesi kaydırıcısı bulunur. <a href=\"{{post:headphone-balance}}\">iPhone’da kulaklık ses dengesini ayarlama</a> rehberine bak." },
-        { "q": "Oynatma hızını değiştirebilir ya da iyileştirilmiş şarkıları dışa aktarabilir miyim?", "a": "Evet, Premium ile. Oynatma hızını 0,5× ile 2× arasında ayarlayabilir, iyileştirilmiş ses dosyasını kaydedip paylaşabilir ve iPhone’unu ritme göre titreştiren dokunsal oynatıcıyı kullanabilirsin." }
+        { "q": "Oynatma hızını değiştirebilir ya da iyileştirilmiş şarkıları dışa aktarabilir miyim?", "a": "Evet. Oynatma hızı (0,5× ile 2× arası) ve iPhone’unu ritme göre titreştiren dokunsal oynatıcı Premium’a dahildir. Oynatıcıdaki paylaş düğmesiyle iyileştirilmiş ses dosyasını kaydedip paylaşabilirsin; dosya hız, ses güçlendirme, ekolayzır ve bas ayarlarını içerir, ancak yankıyı, 3D Sesi ve ses dengesini içermez." }
       ]
     },
     {
@@ -41,7 +41,7 @@
     {
       "heading": "Fiyatlar ve abonelik",
       "items": [
-        { "q": "Premium neleri içeriyor?", "a": "Premium; Bas Güçlendirme, 7 bantlı ekolayzır, kulaklık ses dengesi, 3D Ses, oynatma hızı, dokunsal oynatıcı ve dışa aktarma özelliklerinin kilidini açar, YZ Stüdyo’daki Müzik Oluşturucu, Ses Efektleri ve Metinden Sese araçlarını da içerir. Ses Güçlendirme ve müzik oynatıcı herkes için ücretsiz kalır." },
+        { "q": "Premium neleri içeriyor?", "a": "Premium; Bas Güçlendirme, 7 bantlı ekolayzır, kulaklık ses dengesi, 3D Ses, oynatma hızı ve dokunsal oynatıcının kilidini açar, YZ Stüdyo’daki Müzik Oluşturucu, Ses Efektleri ve Metinden Sese araçlarını da içerir. Ses Güçlendirme ve müzik oynatıcı herkes için ücretsiz kalır." },
         { "q": "Premium ne kadar, ücretsiz deneme var mı?", "a": "Premium haftalık ya da yıllık bir aboneliktir. Fiyatlar ülkeye göre değişir; App Store, onaylamadan önce fiyatı yerel para biriminle gösterir. Uygun planlar ücretsiz denemeyle başlar." },
         { "q": "Aboneliğimi nasıl iptal ederim?", "a": "Abonelikler Apple tarafından faturalandırılır ve yönetilir. iPhone’unda Ayarlar’ı aç, adına dokun, Abonelikler’e dokun, EQfy aboneliğini seç ve Aboneliği İptal Et’e dokun. Apple, Türkiye için geçerli özel durumlar dahil adımları <a href=\"https://support.apple.com/tr-tr/118428\" target=\"_blank\" rel=\"noopener\">Bir Apple aboneliğini iptal etme</a> sayfasında anlatıyor." }
       ]

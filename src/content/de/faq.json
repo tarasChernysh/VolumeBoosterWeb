@@ -7,7 +7,7 @@
       "heading": "Erste Schritte",
       "items": [
         { "q": "Was ist EQfy - Louder Volume?", "a": "EQfy - Louder Volume ist eine iPhone-App, die Musik, die du darin abspielst, lauter und voller macht. Sie kombiniert einen Lautstärke-Boost bis 200 %, Bass-Boost, einen 7-Band-Equalizer, Kopfhörer-Balance, 3D-Audio und ein KI Studio mit einer kostenlosen Musikbibliothek und einem Player, der auch offline funktioniert. <a href=\"{{home}}\">Alle Funktionen ansehen</a>." },
-        { "q": "Ist EQfy kostenlos?", "a": "Ja. EQfy kannst du kostenlos laden, und Lautstärke-Boost, Musikbibliothek und Player sind gratis nutzbar. Bass-Boost, Equalizer, Kopfhörer-Balance, 3D-Audio, Wiedergabegeschwindigkeit, der haptische Player und der Export gehören zum optionalen Premium-Abo." },
+        { "q": "Ist EQfy kostenlos?", "a": "Ja. EQfy kannst du kostenlos laden, und Lautstärke-Boost, Musikbibliothek und Player sind gratis nutzbar. Bass-Boost, Equalizer, Kopfhörer-Balance, 3D-Audio, Wiedergabegeschwindigkeit und der haptische Player gehören zum optionalen Premium-Abo." },
         { "q": "Ist EQfy dieselbe App wie Volume Booster Sound Amplifier im App Store?", "a": "Ja. Im US-App-Store ist EQfy - Louder Volume als Volume Booster Sound Amplifier gelistet, in anderen Ländern kann der Name abweichen. Es ist dieselbe App, entwickelt von Taras Chernysh: <a href=\"{{appstore}}\">im App Store öffnen</a>. Apps mit ähnlichem Namen stammen von anderen Entwicklern; die App-Store-ID von EQfy ist 6550912161." },
         { "q": "Welche iPhones und Sprachen unterstützt EQfy?", "a": "EQfy ist fürs iPhone entwickelt und benötigt iOS 16 oder neuer. Die App ist in 25 Sprachen verfügbar." }
       ]
@@ -28,7 +28,7 @@
         { "q": "Was bietet der Equalizer von EQfy?", "a": "Sieben Bänder (32 Hz, 64 Hz, 200 Hz, 500 Hz, 1 kHz, 4 kHz und 16 kHz) plus Vorverstärker, 9 Presets (Rock, Jazz, Elektronisch, Klassisch, Reggae, Rap, R&amp;B, Tanz und Akustisch), die Einstellung „Benutzerdefiniert“ und die Taste „Zurücksetzen“. Mehr in <a href=\"{{post:eq-settings}}\">Beste Equalizer-Einstellungen fürs iPhone nach Genre</a>." },
         { "q": "Was ist 3D-Audio in EQfy?", "a": "Ein Effekt in der App mit zwei Modi: Hall mit 9 Presets für Zimmer, Säle und Kammern, und 3D-Quelle, die den Klang mit 4 automatischen Bewegungsmustern (Bilateral, Umlaufbahn, Achter und Atmen) um dich herum bewegt und mit unterstützten AirPods die Kopfverfolgung nutzen kann. Das ist weder Apples 3D-Audio (Spatial Audio) noch Dolby Atmos. <a href=\"{{post:spatial-audio}}\">3D-Raumklang am iPhone erklärt</a> zeigt den Unterschied." },
         { "q": "Kann ich ausgleichen, dass ein Ohrhörer lauter klingt als der andere?", "a": "Für Songs, die in EQfy laufen, hat der Tab „Kopfhörer“ einen Links-rechts-Regler für die Audio-Balance mit der Taste „Mitte“ zum Zurücksetzen. Mehr in <a href=\"{{post:headphone-balance}}\">Kopfhörer-Balance links/rechts am iPhone einstellen</a>." },
-        { "q": "Kann ich die Wiedergabegeschwindigkeit ändern oder verbesserte Songs exportieren?", "a": "Ja, mit Premium. Du kannst die Wiedergabegeschwindigkeit von 0,5× bis 2× einstellen, die verbesserte Audiodatei speichern und teilen und den haptischen Player nutzen, der dein iPhone im Takt vibrieren lässt." }
+        { "q": "Kann ich die Wiedergabegeschwindigkeit ändern oder verbesserte Songs exportieren?", "a": "Ja. Die Wiedergabegeschwindigkeit (0,5× bis 2×) und der haptische Player, der dein iPhone im Takt vibrieren lässt, gehören zu Premium. Über die Teilen-Schaltfläche im Player kannst du die verbesserte Audiodatei speichern und teilen; sie enthält Geschwindigkeit, Lautstärke-Boost, Equalizer und Bass, aber keinen Hall, kein 3D-Audio und keine Balance." }
       ]
     },
     {
@@ -41,7 +41,7 @@
     {
       "heading": "Preise & Abo",
       "items": [
-        { "q": "Was ist in Premium enthalten?", "a": "Premium schaltet Bass-Boost, den 7-Band-Equalizer, Kopfhörer-Balance, 3D-Audio, Wiedergabegeschwindigkeit, den haptischen Player und den Export frei und enthält im KI Studio den KI-Songgenerator, Soundeffekte und Text-zu-Sprache. Lautstärke-Boost und Musikplayer bleiben für alle kostenlos." },
+        { "q": "Was ist in Premium enthalten?", "a": "Premium schaltet Bass-Boost, den 7-Band-Equalizer, Kopfhörer-Balance, 3D-Audio, Wiedergabegeschwindigkeit und den haptischen Player frei und enthält im KI Studio den KI-Songgenerator, Soundeffekte und Text-zu-Sprache. Lautstärke-Boost und Musikplayer bleiben für alle kostenlos." },
         { "q": "Was kostet Premium, und gibt es eine kostenlose Testphase?", "a": "Premium gibt es als Wochen- oder Jahresabo. Den Preis siehst du im App Store in deiner Landeswährung, bevor du bestätigst – er kann je nach Land variieren. Berechtigte Abos starten mit einer kostenlosen Testphase." },
         { "q": "Wie kündige ich mein Abo?", "a": "Abos werden von Apple abgerechnet und verwaltet. Öffne auf deinem iPhone die Einstellungen, tippe auf deinen Namen und dann auf „Abonnements“, wähle das EQfy-Abo und tippe auf „Abo kündigen“. Apple erklärt die Schritte unter <a href=\"https://support.apple.com/de-de/118428\" target=\"_blank\" rel=\"noopener\">Ein Abonnement von Apple kündigen</a>." }
       ]

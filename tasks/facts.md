@@ -31,7 +31,7 @@ Every blog post, FAQ answer and homepage string must be consistent with this fil
 | 3D Audio | "3D Spatial Audio": **Reverb** mode (9 presets: Small/Medium/Large Room, Medium/Large Hall, Medium/Large Chamber, Cathedral, Plate) and **3D Source** mode with **4 Auto Motion** patterns (bilateral, orbit, figure-eight, breathing) | Premium |
 | Playback speed | 0.5× – 2× (rabbit icon) | Premium |
 | Haptic player | phone vibrates to the beat/bass | Premium |
-| Export / share | save & share the enhanced audio file | Premium |
+| Export / share | save & share the enhanced audio file (speed, boost, EQ, bass and limiter included; reverb, 3D and balance are not) | **Unresolved**: `docs/FEATURES.md` says Premium, the code has no gate. Don't state free or Premium |
 
 **EQ preset values (dB) — from `EqualizerViewModel.swift`, publish exactly:**
 
