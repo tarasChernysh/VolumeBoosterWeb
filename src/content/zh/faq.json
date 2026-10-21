@@ -49,7 +49,7 @@
     {
       "heading": "设备",
       "items": [
-        { "q": "EQfy支持iPhone Duo吗？", "a": "完整的iPhone Duo适配将在下一次更新v2.2.23中推出。届时EQfy将完整使用内屏，提供侧边栏导航和双栏布局，所有iPhone在横屏时也将拥有左右并排的播放器。<a href=\"{{post:iphone-duo}}\">看看即将带来什么</a>。" },
+        { "q": "EQfy支持iPhone Duo吗？", "a": "支持。EQfy自2026年10月14日发布的v2.2.23起支持iPhone Duo：完整使用内屏，提供侧边栏导航和双栏布局，所有iPhone在横屏时也拥有左右并排的播放器。<a href=\"{{post:iphone-duo}}\">看看有哪些新变化</a>。" },
         { "q": "EQfy能在iPad上使用吗？", "a": "EQfy专为iPhone打造。你可以把它安装在iPad上，它会以iPhone模式运行，但它并不是为iPad设计的App。" }
       ]
     },

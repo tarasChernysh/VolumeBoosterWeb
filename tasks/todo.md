@@ -267,3 +267,13 @@ The code makes every user spend credits on every AI tool (see facts.md), but the
 - `vs-boom` lead (5 languages)
 - homepages: showcase line and FAQ answer (page and JSON-LD), `index.html` plus the 5 landing files
 `node build.mjs && node check.mjs`: 134 pages, 0 errors, 0 warnings.
+
+## Follow-up: iPhone Duo is available (2026-10-21)
+
+v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version 2.2.23 and that release date; its notes mention iPhone Duo). Everything that said "coming in v2.2.23" now says it is available:
+- `iphone-duo` post in 5 languages: new title ("iPhone Duo Support Is Here in EQfy v2.2.23" and translations), description, lead, note ("Available now … released on October 14, 2026"), FAQ, headings, tense of the whole body, `updated`
+- FAQ page item "Does EQfy support iPhone Duo?" (5 languages), the ai-song-generator link sentence and link text, the vs-boom bullet
+- homepages: "Which devices does EQfy support?" answer (page + JSON-LD) in `index.html` and the 5 landing files; the generated "latest posts" card and `llms.txt` (template in `build.mjs`) follow automatically
+- Duo share image (`assets/images/blog/iphone-duo/og.png`, from `src/og/iphone-duo.html`): tag now "Now in v2.2.23"
+- `tasks/facts.md`: live version 2.2.23, §4 now "available since v2.2.23"
+`node build.mjs && node check.mjs`: 134 pages, 0 errors, 0 warnings; a scan of every built page, JSON-LD and llms.txt finds no leftover "coming"/"next update" wording about Duo.
