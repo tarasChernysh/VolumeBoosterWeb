@@ -188,7 +188,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - [x] A1. Comparisons: `best-volume-boosters`, `best-eq-apps` (branch `posts-comparisons`)
 - [x] A2. How-tos: `slowed-reverb`, `play-mp3-offline`, `louder-audio-file` (branch `posts-howtos`)
 - [x] A3. Troubleshooting: `spotify-louder`, `bluetooth-volume-low`, `airpods-bass` (branch `posts-troubleshooting`)
-- [ ] A4. AI Studio: `ai-text-to-speech`, `ai-sound-effects`, `remove-background-noise`
+- [x] A4. AI Studio: `ai-text-to-speech`, `ai-sound-effects`, `remove-background-noise` (branch `posts-ai-studio`)
 
 ## Phase B: new languages (all 23 posts + FAQ + homepage each)
 - [ ] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter)
@@ -242,3 +242,19 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - showcase line is now "Export and share your boosted audio" (no "with Premium")
 - FAQ answer (page + JSON-LD) lists Premium as "balance, speed and haptics" without export
 - `src/landing/<lang>.json`: the 2 affected entries per language updated (key and translation), homepages re-applied. `node build.mjs && node check.mjs`: 119 pages, 0 errors, 0 warnings.
+
+## Review (A4: AI Studio posts)
+
+**Changes:**
+- Three new posts in en, es, de, tr and zh (15 files): "Text to Speech on iPhone: AI Voices and Free Options", "AI Sound Effects Generator for iPhone: How to Use It" and "Remove Background Noise from Audio on iPhone". This completes Phase A (11 new posts).
+- Facts come from the app code (`release/v2.2.23`, which is the live 2.2.23) and Apple's support pages, recorded in `tasks/facts.md` §2:
+  - Costs: Text to Speech 500 credits per generation (limit 5,000 characters), Sound Effects 250 credits (1-30 s manual duration, Influence 0.1-1.0), Noise Reducer 1,500 credits per started minute (MP3 or WAV only, no M4A or video).
+  - Taras's decisions (2026-10-21): Noise Reducer is live; the posts say only that the tools use credits and leave Premium out.
+  - Not claimed: voices and languages offered, which noises the Noise Reducer removes, how long "automatic" duration is, the AI provider.
+  - Free Apple options named with exact paths: Read & Speak (Spoken Content in older iOS), Live Speech, Voice Memos' Enhance Recording (a playback setting that doesn't export a file), Mic Mode Voice Isolation, Photos Audio Mix (iPhone 16+ Spatial Audio videos), Background Sounds, GarageBand sound library.
+- Two new posts link to each other; ai-song-generator and louder-audio-file now link to them. keyword-map rows and clusters 21-23, 15 share images.
+- Fixed raw `&` in the FAQ answers of the en and de `airpods-bass` posts (answers are inserted as HTML).
+
+**Verification:** `node build.mjs && node check.mjs` gives 134 pages, 0 errors, 0 warnings. At 375 px all 15 new pages have no sideways scroll, no broken images, 3 related cards and 4 FAQ items. All 35 external Apple links return 200. Not checked on a device: the in-app labels and flows (read from code).
+
+**Known site-wide conflicts left open:** the FAQ, homepages, vs-boom and the ai-song-generator post still say Premium includes the AI tools (code: all tools spend credits; Taras chose to keep the new posts neutral); the Duo post, FAQ and homepages still say "coming in v2.2.23", which went live on 2026-10-14 (a separate PR is next).
