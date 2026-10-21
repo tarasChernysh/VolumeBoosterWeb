@@ -192,7 +192,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 
 ## Phase B: new languages (all 23 posts + FAQ + homepage each)
 - [x] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter) (branch `lang-fr`)
-- [ ] B2. pt (key `pt`, htmlLang `pt-BR`)
+- [x] B2. pt (key `pt`, htmlLang `pt-BR`) (branch `lang-pt`)
 - [ ] B3. ja (readingMinutes, check.mjs CJK rules, ja font stacks)
 - [ ] B4. ar (RTL: `dir`, logical CSS properties, `[dir="rtl"]` overrides, Arabic fonts, OG)
 
@@ -291,3 +291,16 @@ v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version
 **Verification:** `node build.mjs && node check.mjs` gives 160 pages, 0 errors, 0 warnings (homepage structure of /fr/ matches index.html). All 26 French pages (homepage, blog index, FAQ, 23 posts) pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); the navigation stays on one row at 1025, 1040, 1100 and 1280 px. 22 share images rendered (the Duo post keeps its own).
 
 **Not verified:** a native French speaker has not read the translations. Apple's French names for the Music EQ presets (Bass Booster etc.) weren't found, so those stay English with a gloss; "Désactivé" for the Music EQ Off choice, and the Spotify French app labels, come from help pages, not a device.
+
+## Review (B2: Portuguese, pt-BR)
+
+**Changes:**
+- **Brazilian Portuguese is now a full language** at `/pt/` (key `pt`, `<html lang="pt-BR">`, `hreflang="pt"`, which also serves pt-PT readers): homepage, blog index, FAQ and all 23 posts (23 posts x 7 languages), in every switcher and hreflang set. `src/site.json`, `src/i18n/pt.json`, `src/content/pt/` (23 posts + `faq.json`), `src/landing/pt.json`. No code changes were needed: French's tooling fixes already cover it.
+- **Tone and typography:** "você", Brazilian vocabulary (compartilhar, arquivo, app, fones de ouvido), simple typography (200%, `3.000`, decimal comma, no special spaces).
+- **Terms:** from the app's catalog (pt-BR table in `tasks/facts.md` §8). Two catalog values are plain mistranslations and were NOT copied: "Custom" shows as "Costume" (used Personalizado) and the "Rock" preset as "Rocha" (used Rock). **Both are app-side bugs worth fixing in the app repo.**
+- **Apple and Spotify links:** every Apple link points to its `pt-br` page with Apple's Brazilian menu names (Ajustes, Central de Controle, ...); Spotify links use `/br-pt/`. 56 external links, all 200.
+- keyword-map has a PT column; README language lists updated; 22 share images.
+
+**Verification:** `node build.mjs && node check.mjs`: 186 pages, 0 errors, 0 warnings. All 26 Portuguese pages pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); navigation stays on one row at 1025-1280 px. Existing languages changed only by the Portuguese additions.
+
+**Not verified:** no native Brazilian reader has checked the text. Apple's pt-BR pages don't list the Music EQ preset names, so "Aumentar Graves", "Reduzir Graves", "Reduzir Agudos", "Alto-falantes Pequenos" and "Amplificador de Voz" come from a Brazilian Apple-news article (MacMagazine), not an Apple page. Apple's pt-BR pages call both the speaker and the headphone loudness setting "Limite de Volume" (the posts use "Redução do Volume" in one place), and voice memos are "Gravador".

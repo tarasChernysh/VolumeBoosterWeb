@@ -179,6 +179,25 @@ Use these names for in-app features so readers find the same words on screen. Br
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Electrónico, Clásico, Reggae, Rap, R&B, Danza, Acústico | Rock, Jazz, Elektronisch, Klassisch, Reggae, Rap, R&B, Tanz, Akustisch | Rock, Caz, Elektronik, Klasik, Reggae, Rap, R&B, Dans, Akustik | 摇滚、爵士、电子、古典、雷鬼、说唱、节奏布鲁斯、舞曲、原声 |
 | Unlock Premium | Desbloquear Premium | Premium freischalten | Premium'u Aç | 解锁高级版 |
 
+**Portuguese (pt = pt-BR)** — from the app's own catalog (`Localizable.xcstrings`, pt-BR values) and `pt-br` Apple pages. Tone: **você**. URL prefix `/pt`, `hreflang="pt"`, `<html lang="pt-BR">`. Brand names stay: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Premium.
+**Two catalog values are plain mistranslations — do NOT copy them:** "Custom" shows as "Costume" (use **Personalizado**) and the "Rock" preset shows as "Rocha" (use **Rock**). Report as an app-side localization bug.
+| EN (app UI) | pt-BR |
+|---|---|
+| AI Studio · tab "AI" | Estúdio IA · IA |
+| Volume Boost / Bass Boost | Aumento de Volume / Aumento de Graves |
+| Equalizer | Equalizador |
+| Headphones (tab, key `headphones.title`) / Audio Balance | Fones de ouvido / Balanço de áudio |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Áudio espacial · Áudio 3D · Fonte 3D · Movimento automático |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode · Dry / Wet | Reverberação · Ambiente de reverberação · Mistura de reverberação · Modo de áudio · Seco / Úmido |
+| Center (balance) · Custom · Reset | Centro · Personalizado · Redefinir |
+| Music Library · Files · Find more | Biblioteca de músicas · Arquivos · Encontrar mais |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Escolha uma faixa · Toda a minha música · Recentes · Remover toda a minha música · Playlists |
+| Home · Music · Settings (tabs) | Início · Música · Configurações |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Efeitos sonoros · Texto para fala · Redutor de ruído |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | Gerar fala · Selecionar voz · Selecionar arquivo de áudio · Remover ruído |
+| Force instrumental · Unlock Premium · Speed · Share | Forçar instrumental · Desbloquear Premium · Velocidade · Compartilhar |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Eletrônico, Clássico, Reggae, Rap, R&B, Dança, Acústico |
+
 **French (fr)** — from the app's own catalog (`Localizable.xcstrings`, fr values) and `fr-fr` Apple pages. Tone: **vous** (the app itself says "Choisissez un titre"). Brand names stay: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Premium.
 | EN (app UI) | fr |
 |---|---|

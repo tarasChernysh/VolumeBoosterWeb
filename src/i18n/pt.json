@@ -1,0 +1,64 @@
+{
+  "dateLocale": "pt-BR",
+  "home": "Início",
+  "nav": {
+    "features": "Funcionalidades",
+    "equalizer": "Equalizador",
+    "aiStudio": "Estúdio IA",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Baixar grátis",
+    "changeLanguage": "Mudar idioma",
+    "menu": "Abrir menu",
+    "logoAlt": "Ícone do EQfy"
+  },
+  "footer": {
+    "tagline": "Aumento de volume, aumento de graves e equalizador para iPhone. Deixe cada faixa mais alta, mais profunda e mais nítida.",
+    "features": "Funcionalidades",
+    "volumeBooster": "Aumento de volume",
+    "bassEq": "Aumento de graves e equalizador",
+    "spatial": "Áudio espacial 3D",
+    "aiStudio": "Estúdio IA",
+    "resources": "Recursos",
+    "support": "Suporte",
+    "appStore": "App Store",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso",
+    "rights": "Todos os direitos reservados.",
+    "trademark": "iPhone, AirPods e App Store são marcas registradas da Apple Inc."
+  },
+  "blog": {
+    "title": "Blog EQfy: guias de volume, graves e equalizador",
+    "description": "Guias e novidades do EQfy: deixe o iPhone mais alto, reforce os graves, ache os melhores ajustes de EQ, resolva volume baixo e melhore o som dos fones.",
+    "eyebrow": "Guias e novidades",
+    "h1": "O blog do EQfy",
+    "lead": "Guias práticos para deixar seu iPhone mais alto, mais nítido e mais agradável de ouvir, além de novidades sobre o app EQfy."
+  },
+  "post": {
+    "by": "Pela equipe EQfy",
+    "published": "Publicado em",
+    "updated": "Atualizado em",
+    "minRead": "{n} min de leitura",
+    "faqTitle": "Perguntas frequentes",
+    "related": "Artigos relacionados",
+    "readMore": "Ler mais →",
+    "categories": { "guide": "Guia", "news": "Novidades" }
+  },
+  "faqPage": {
+    "eyebrow": "Central de ajuda",
+    "jumpTo": "Ir para um tópico"
+  },
+  "cta": {
+    "title": "Deixe seu iPhone mais alto",
+    "text": "Baixe o EQfy - Louder Volume grátis na App Store. Requer iOS 16 ou posterior.",
+    "button": "Baixar na App Store",
+    "iconAlt": "Ícone do app EQfy"
+  },
+  "latest": {
+    "eyebrow": "No blog",
+    "title": "Guias e novidades",
+    "description": "Dicas para deixar seu iPhone mais alto, mais nítido e mais agradável de ouvir.",
+    "all": "Todos os artigos →"
+  }
+}
