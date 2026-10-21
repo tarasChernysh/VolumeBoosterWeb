@@ -179,4 +179,21 @@ Use these names for in-app features so readers find the same words on screen. Br
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Electrónico, Clásico, Reggae, Rap, R&B, Danza, Acústico | Rock, Jazz, Elektronisch, Klassisch, Reggae, Rap, R&B, Tanz, Akustisch | Rock, Caz, Elektronik, Klasik, Reggae, Rap, R&B, Dans, Akustik | 摇滚、爵士、电子、古典、雷鬼、说唱、节奏布鲁斯、舞曲、原声 |
 | Unlock Premium | Desbloquear Premium | Premium freischalten | Premium'u Aç | 解锁高级版 |
 
+**French (fr)** — from the app's own catalog (`Localizable.xcstrings`, fr values) and `fr-fr` Apple pages. Tone: **vous** (the app itself says "Choisissez un titre"). Brand names stay: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Premium.
+| EN (app UI) | fr |
+|---|---|
+| AI Studio | Studio IA |
+| Volume Boost / Bass Boost | Boost du volume / Boost des basses |
+| Equalizer | Égaliseur |
+| Headphones (tab) / Audio Balance | Écouteurs (catalog key `headphones.title`; generic "headphones" in running text can be casque or écouteurs) / Balance audio |
+| Spatial Audio (toggle) · 3D Source · Auto Motion | Audio spatial · Source 3D · Mouvement automatique |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Réverbération · Environnement de réverbération · Mélange de réverbération · Mode audio |
+| Center (balance) · Custom · Reset | Centre · Personnalisé · Réinitialiser |
+| Music Library · Files · Find more | Bibliothèque musicale · Fichiers · Trouver plus |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Choisissez un titre · Toute ma musique · Récents · Supprimer toute ma musique · Playlists |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Effets sonores · Synthèse vocale · Réducteur de bruit |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | Générer la parole · Sélectionner la voix · Sélectionner un fichier audio · Supprimer le bruit |
+| Force instrumental · Unlock Premium | Forcer instrumental · Déverrouiller Premium |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Électronique, Classique, Reggae, Rap, R&B, Danse, Acoustique |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.

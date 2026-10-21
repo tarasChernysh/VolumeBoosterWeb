@@ -17,7 +17,7 @@ const rd = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const site = JSON.parse(rd('src/site.json'));
 const [, , cmd, lang] = process.argv;
 if (!['extract', 'apply'].includes(cmd) || !site.langs[lang] || lang === 'en') {
-  console.error('usage: node src/landing-i18n.mjs extract|apply <es|de|tr|zh|da>');
+  console.error(`usage: node src/landing-i18n.mjs extract|apply <${Object.keys(site.langs).filter((l) => l !== 'en').join('|')}>`);
   process.exit(1);
 }
 const dictFile = `src/landing/${lang}.json`;

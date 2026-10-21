@@ -191,7 +191,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - [x] A4. AI Studio: `ai-text-to-speech`, `ai-sound-effects`, `remove-background-noise` (branch `posts-ai-studio`)
 
 ## Phase B: new languages (all 23 posts + FAQ + homepage each)
-- [ ] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter)
+- [x] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter) (branch `lang-fr`)
 - [ ] B2. pt (key `pt`, htmlLang `pt-BR`)
 - [ ] B3. ja (readingMinutes, check.mjs CJK rules, ja font stacks)
 - [ ] B4. ar (RTL: `dir`, logical CSS properties, `[dir="rtl"]` overrides, Arabic fonts, OG)
@@ -277,3 +277,17 @@ v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version
 - Duo share image (`assets/images/blog/iphone-duo/og.png`, from `src/og/iphone-duo.html`): tag now "Now in v2.2.23"
 - `tasks/facts.md`: live version 2.2.23, §4 now "available since v2.2.23"
 `node build.mjs && node check.mjs`: 134 pages, 0 errors, 0 warnings; a scan of every built page, JSON-LD and llms.txt finds no leftover "coming"/"next update" wording about Duo.
+
+## Review (B1: French)
+
+**Changes:**
+- **French is now a full language** at `/fr/`: homepage, blog index, FAQ and all 23 posts (23 posts x 6 languages), with the language in every switcher and every hreflang set. `src/site.json` (`langs`, `contentLangs`, `landingLangs`), `src/i18n/fr.json`, `src/content/fr/` (23 posts + `faq.json`), `src/landing/fr.json`.
+- **Tone and typography:** "vous" (the app itself uses it); real no-break spaces (U+00A0) before ? ! : ; % and inside « », decimal commas, French date format.
+- **Terms:** from the app's string catalog, recorded as a French table in `tasks/facts.md` §8. The catalog shows the Headphones tab as "Écouteurs", so the table (which first said "Casque") was corrected. English-only app labels (AI Studio card names, Compose Song, Influence, playlist names) stay English in bold with a French gloss.
+- **Apple and Spotify links:** every Apple link points to its `fr-fr` page and uses Apple's French menu names; Spotify help links use `/fr/` where the page exists. 53 external links, all 200.
+- **Tooling:** `check.mjs` now reads the homepage languages from `site.json` (it used to skip any language not in a hard-coded list); `landing-i18n.mjs` lists the languages in its usage line; `src/og/render.mjs` takes optional language codes (`node src/og/render.mjs fr`). README updated; keyword-map has an FR column.
+- Existing languages changed only by the French additions (a hreflang link and a switcher option per page, plus French in the 404 page's language list).
+
+**Verification:** `node build.mjs && node check.mjs` gives 160 pages, 0 errors, 0 warnings (homepage structure of /fr/ matches index.html). All 26 French pages (homepage, blog index, FAQ, 23 posts) pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); the navigation stays on one row at 1025, 1040, 1100 and 1280 px. 22 share images rendered (the Duo post keeps its own).
+
+**Not verified:** a native French speaker has not read the translations. Apple's French names for the Music EQ presets (Bass Booster etc.) weren't found, so those stay English with a gloss; "Désactivé" for the Music EQ Off choice, and the Spotify French app labels, come from help pages, not a device.
