@@ -234,3 +234,11 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - Related cards of 6 existing posts (x5 languages) point to the new posts; the new posts have 2-3 inbound cards each. keyword-map rows and clusters 18-20, 15 share images.
 
 **Verification:** `node build.mjs && node check.mjs` gives 119 pages, 0 errors, 0 warnings. At 375 px all 15 new pages have no sideways scroll, no broken images and 3 related cards. All 53 external Apple and Spotify links return 200. Not checked on a device: iOS menu names (taken from Apple's pages) and the Spotify app labels.
+
+## Follow-up: export claim on the homepages
+
+`docs/FEATURES.md` says export is Premium but the code has no gate on sharing (see facts.md), so the six homepages (en + es/de/tr/zh/da) no longer tie export to Premium:
+- removed the "Pro" badge from the Download & Share card
+- showcase line is now "Export and share your boosted audio" (no "with Premium")
+- FAQ answer (page + JSON-LD) lists Premium as "balance, speed and haptics" without export
+- `src/landing/<lang>.json`: the 2 affected entries per language updated (key and translation), homepages re-applied. `node build.mjs && node check.mjs`: 119 pages, 0 errors, 0 warnings.
