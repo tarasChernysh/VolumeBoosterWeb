@@ -194,7 +194,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - [x] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter) (branch `lang-fr`)
 - [x] B2. pt (key `pt`, htmlLang `pt-BR`) (branch `lang-pt`)
 - [x] B3. ja (readingMinutes, check.mjs CJK rules, ja font stacks) (branch `lang-ja`)
-- [ ] B4. ar (RTL: `dir`, logical CSS properties, `[dir="rtl"]` overrides, Arabic fonts, OG)
+- [x] B4. ar (RTL: `dir`, logical CSS properties, `[dir="rtl"]` overrides, Arabic fonts, OG) (branch `lang-ar`)
 
 ## Review (A1: comparisons)
 
@@ -321,3 +321,20 @@ v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version
 **Verification:** `node build.mjs && node check.mjs`: 212 pages, 0 errors, 0 warnings. All 26 Japanese pages pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); navigation stays on one row at 1025-1280 px; the Japanese font stack is applied on posts. Other languages changed only by the Japanese additions plus the CSS version hash. 22 share images rendered.
 
 **Not verified:** a native Japanese reader has not read the text. Apple's Japanese pages don't list the Music EQ preset names (Bass Booster etc.), so they stay English with a gloss. The homepage <title> had to drop "Free Sound Amplifier" to fit the 34-character limit ("EQfy - Louder Volume：iPhoneの音量ブースト"); the meta description keeps 無料サウンドアンプ. The "slowed and reverb" post uses "slowed reverb" in its title (length limit).
+
+## Review (B4: Arabic, right-to-left) — Phase B complete
+
+**Changes:**
+- **Arabic is now a full language** at `/ar/` (`<html lang="ar" dir="rtl">`, `hreflang="ar"`): homepage, blog index, FAQ and all 23 posts (23 posts x 9 languages), in every switcher and hreflang set. `src/site.json` (new `"dir": "rtl"` field, only on ar), `src/i18n/ar.json` (`ar-u-nu-latn`: Latin digits), `src/content/ar/` (23 posts + `faq.json`), `src/landing/ar.json`. English slugs, like zh and ja.
+- **RTL mechanics (all identical in left-to-right pages):**
+  - `build.mjs` and `landing-i18n.mjs` emit `dir="rtl"` when the language has `dir`; the card aria-label regex strips both → and ←.
+  - `assets/css/site.css` and the homepage inline CSS: physical properties swapped for logical ones (dropdown `inset-inline-end`, breadcrumb separator margin, list indent, note and blockquote border, table `text-align: start`, nav underline, badge and hero-badge padding/margin).
+  - `index.html`: an RTL-only block (the alternating "reverse" showcase sections swap columns with `direction: rtl`, which needed undoing; the balance visual stays LTR so L is on the left).
+  - Arabic: font stack (SF Arabic, Geeza Pro, Segoe UI, Tahoma, Noto Sans Arabic), `letter-spacing: 0` so letters join, taller heading line-height, and `unicode-bidi: plaintext` in table cells so signed numbers (+5, −3) stay intact.
+  - Share images: `render.mjs` passes `dir`, `post.html` sets it and has the Arabic font stack (checked: mirrored layout, joined letters).
+- **Writers' bidi rules** (in `tasks/facts.md` §8): ← not →, no leading +/− in running text ("حتى 12 ديسيبل"), no invisible control characters or `&rlm;`, Latin digits, English brand names inline. The audit found no violations.
+- **Terms:** from the app's catalog (Arabic table in `tasks/facts.md`). Apple links point to `ar-sa` pages with Apple's Arabic menu names; Spotify links use `ae-ar` (the `/ar/` page serves Spanish). 55 external links, all 200. keyword-map has an AR column; README updated.
+
+**Verification:** `node build.mjs && node check.mjs`: 238 pages, 0 errors, 0 warnings. All 26 Arabic pages pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); the navigation stays on one row at 1025-1280 px. In RTL: the logo is on the right, the language dropdown stays inside the viewport at 375 and 1100 px, the showcase sections alternate with right-to-left text, L is on the left in the balance visual, the note border/list indent/breadcrumb separator are on the correct side, and the EQ table keeps its signed numbers. English pages measured identical to before (3px left note border, 24px left list indent, dropdown at right 0). Other languages changed only by the logical-property swaps, the RTL-only block and the Arabic additions.
+
+**Not verified:** no native Arabic reader has checked the text. Apple's Arabic pages don't list the Music EQ preset names, so they stay English with an Arabic gloss. Spotify's Arabic help page calls the Playback menu «إعادة التشغيل» (literally "restart"); the posts add "(Playback)". App-side catalog issues found: the key `Balance:` ("Balance: N credits" in the AI tools) is translated «التوازن:» (audio balance, not account balance), and the Figure 8 motion pattern uses an Arabic-Indic digit (٨). Layout checks used computed styles and a shrunken browser pane, not a real Arabic-language device.

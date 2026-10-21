@@ -158,7 +158,7 @@ ${Object.entries(alternates).map(([l, u]) => `                    <a href="${u}"
   ];
   const navLinks = links.map(([u, label, key]) => `<li><a href="${u}" class="nav__link"${key && key === current ? ' aria-current="page"' : ''}>${esc(label)}</a></li>`);
   return `<!DOCTYPE html>
-<html lang="${L[lang].htmlLang}">
+<html lang="${L[lang].htmlLang}"${L[lang].dir ? ` dir="${L[lang].dir}"` : ''}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -291,7 +291,7 @@ function card(post, { heading = 'h2', featured = false } = {}) {
                     <span class="card__tag">${esc(t.post.categories[post.category])}</span>
                     <${heading} class="card__title"><a href="${u}">${esc(post.title)}</a></${heading}>
                     <p class="card__text">${esc(post.description)}</p>
-                    <a class="card__more" href="${u}" aria-label="${esc(t.post.readMore.replace(/\s*→\s*$/, ''))}: ${esc(post.title)}">${esc(t.post.readMore)}</a>
+                    <a class="card__more" href="${u}" aria-label="${esc(t.post.readMore.replace(/\s*[→←]\s*$/, ''))}: ${esc(post.title)}">${esc(t.post.readMore)}</a>
                 </div>
             </article>`;
 }

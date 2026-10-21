@@ -179,6 +179,26 @@ Use these names for in-app features so readers find the same words on screen. Br
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Electrónico, Clásico, Reggae, Rap, R&B, Danza, Acústico | Rock, Jazz, Elektronisch, Klassisch, Reggae, Rap, R&B, Tanz, Akustisch | Rock, Caz, Elektronik, Klasik, Reggae, Rap, R&B, Dans, Akustik | 摇滚、爵士、电子、古典、雷鬼、说唱、节奏布鲁斯、舞曲、原声 |
 | Unlock Premium | Desbloquear Premium | Premium freischalten | Premium'u Aç | 解锁高级版 |
 
+**Arabic (ar) — right-to-left** — from the app's own catalog (`Localizable.xcstrings`, ar values) and `ar-sa` Apple pages. Modern Standard Arabic, friendly and neutral (imperative forms like «افتح», «اضغط»; no gendered address). URL prefix `/ar`, `hreflang="ar"`, `<html lang="ar" dir="rtl">`, **English slugs** (like zh/ja), **Latin digits** (0-9; dates via `ar-u-nu-latn`), Arabic punctuation (، ؟ ؛), « » quotes. Brand names stay in Latin script: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, YouTube, Premium (may be followed by المميز once).
+| EN (app UI) | ar |
+|---|---|
+| AI Studio · tab "AI" | استوديو الذكاء الاصطناعي · الذكاء الاصطناعي |
+| Volume Boost / Bass Boost | تعزيز الصوت / تعزيز الجهير |
+| Equalizer · EQ | معادل الصوت · EQ |
+| Headphones (tab) / Audio Balance | سماعات الرأس / توازن الصوت |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | الصوت المكاني · صوت ثلاثي الأبعاد · مصدر ثلاثي الأبعاد · حركة تلقائية |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode · Dry / Wet | الصدى · بيئة الصدى · مزج الصدى · وضع الصوت · جاف / رطب |
+| Center (balance) · Custom · Reset | الوسط · مخصص · إعادة تعيين |
+| Music Library · Files · Find more | مكتبة الموسيقى · الملفات · اعثر على المزيد |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | اختر مقطعًا · جميع موسيقاي · الأخيرة · إزالة جميع موسيقاي · قوائم التشغيل |
+| Home · Music · Settings (tabs) | الرئيسية · الموسيقى · إعدادات |
+| Volume · Bass · Speed · Share (player) | الصوت · الجهير · السرعة · مشاركة |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | المؤثرات الصوتية · تحويل النص إلى كلام · مزيل الضوضاء |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | إنشاء الكلام · اختر الصوت · اختر ملف صوتي · إزالة الضوضاء |
+| Force instrumental · Unlock Premium | فرض موسيقى آلية · فتح المميز |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | روك, جاز, إلكتروني, كلاسيكي, ريغي, راب, آر آند بي, رقص, صوتي |
+**Bidi rules for writers:** use « ← » (not «→») in arrow strings; never write a leading `+` or `−` in running text (write «حتى 12 ديسيبل», not «+12 dB»; signed numbers are fine inside the EQ table cells, CSS isolates them); never use `&rlm;`/`&lrm;`/`&nbsp;` (the build's decoder doesn't know them); Latin product names in Arabic sentences are fine as they are.
+
 **Japanese (ja)** — from the app's own catalog (`Localizable.xcstrings`, ja values) and `ja-jp` Apple pages. Tone: polite **です・ます**, no "あなた". URL prefix `/ja`, `hreflang="ja"`, **English slugs** (like zh: Japanese slugs can't be ASCII). Brand names stay in Latin script: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, YouTube, Premium.
 | EN (app UI) | ja |
 |---|---|

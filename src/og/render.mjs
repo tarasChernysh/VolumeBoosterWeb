@@ -36,7 +36,7 @@ for (const lang of site.contentLangs.filter((l) => !only.length || only.includes
     const fm = JSON.parse(fs.readFileSync(path.join(ROOT, dir, file), 'utf8').match(/^---\n([\s\S]*?)\n---\n/)[1]);
     if (fm.ogImage) continue;
     const id = file.replace(/\.html$/, '');
-    render('src/og/post.html', { title: fm.title, tag: t.post.categories[fm.category], img: fm.image, lang: site.langs[lang].htmlLang },
+    render('src/og/post.html', { title: fm.title, tag: t.post.categories[fm.category], img: fm.image, lang: site.langs[lang].htmlLang, dir: site.langs[lang].dir || 'ltr' },
       `assets/images/og/${lang}-${id}.jpg`);
     count++;
   }
