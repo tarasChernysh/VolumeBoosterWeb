@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 10 blog posts + 1 FAQ hub
+**Clusters**: 14 blog posts + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -107,6 +107,22 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | sound amplifier iphone / live listen iphone | Secondary |
 | hearing amplifier app iphone | Supporting (answer: Apple's free tools; EQfy is not a hearing aid) |
 
+### 13. Best volume booster apps — C (AI-visibility: "best volume booster app for iPhone")
+**Post id**: `best-volume-boosters`
+| Keyword | Role |
+|---|---|
+| best volume booster app for iphone | Primary |
+| volume booster iphone app comparison / increase volume sound | Secondary |
+| iphone volume booster that works | Supporting |
+
+### 14. Best equalizer apps — C (AI-visibility: "best equalizer app for iPhone")
+**Post id**: `best-eq-apps`
+| Keyword | Role |
+|---|---|
+| best equalizer app for iphone | Primary |
+| iphone equalizer app / equalizer fx alternative | Secondary |
+| apple music eq vs app | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -128,10 +144,12 @@ zh uses the English slug (Hanzi/pinyin slugs add nothing). es/de/tr slugs are AS
 | headphone-balance | left-right-headphone-balance | balance de auriculares en iPhone · `balance-auriculares` | Kopfhörer-Balance links rechts · `kopfhoerer-balance-links-rechts` | kulaklık ses dengesi · `kulaklik-ses-dengesi` | iPhone左右声道平衡 |
 | vs-boom | eqfy-vs-boom | alternativa a Boom para iPhone · `eqfy-vs-boom` | Boom Alternative iPhone · `eqfy-vs-boom` | boom alternatifi iphone · `eqfy-vs-boom` | Boom替代应用 |
 | sound-amplifier | sound-amplifier-app-iphone | amplificador de sonido gratis para iPhone · `app-amplificador-sonido-iphone` | Verstärker App iPhone kostenlos · `verstaerker-app-iphone` | ücretsiz ses yükseltici uygulama iphone · `iphone-ses-yukseltici-uygulama` | iPhone免费声音放大器App |
+| best-volume-boosters | best-volume-booster-apps-iphone | mejores apps para subir el volumen del iPhone · `mejores-apps-subir-volumen-iphone` | beste Lautstärke-Booster App iPhone · `beste-lautstaerke-booster-app-iphone` | en iyi ses yükseltici uygulama iphone · `en-iyi-ses-yukseltici-uygulama-iphone` | iPhone音量增强App推荐 |
+| best-eq-apps | best-equalizer-apps-iphone | mejor app de ecualizador para iPhone · `mejores-apps-ecualizador-iphone` | beste Equalizer App iPhone · `beste-equalizer-app-iphone` | en iyi ekolayzer uygulaması iphone · `en-iyi-ekolayzer-uygulamasi-iphone` | iPhone均衡器App推荐 |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
-- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting
-- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance
+- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters
+- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
 
 ## Priority ranking
