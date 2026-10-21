@@ -187,7 +187,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 ## Phase A: new posts (en, es, de, tr, zh), one PR per group
 - [x] A1. Comparisons: `best-volume-boosters`, `best-eq-apps` (branch `posts-comparisons`)
 - [x] A2. How-tos: `slowed-reverb`, `play-mp3-offline`, `louder-audio-file` (branch `posts-howtos`)
-- [ ] A3. Troubleshooting: `spotify-louder`, `bluetooth-volume-low`, `airpods-bass`
+- [x] A3. Troubleshooting: `spotify-louder`, `bluetooth-volume-low`, `airpods-bass` (branch `posts-troubleshooting`)
 - [ ] A4. AI Studio: `ai-text-to-speech`, `ai-sound-effects`, `remove-background-noise`
 
 ## Phase B: new languages (all 23 posts + FAQ + homepage each)
@@ -221,3 +221,24 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - Related cards of 6 existing posts (x5 languages) now link to the new posts. keyword-map rows and clusters 15-17, 15 share images.
 
 **Verification:** `node build.mjs && node check.mjs` gives 104 pages, 0 errors, 0 warnings. At 375 px all 15 new pages have no sideways scroll, no broken images and 3 related cards. Not verified on a device: the app behaviours above come from reading code.
+
+## Review (A3: troubleshooting posts)
+
+**Changes:**
+- Three new posts in en, es, de, tr and zh (15 files): "Make Spotify Louder on iPhone: Volume and EQ Tips", "iPhone Bluetooth Volume Too Low? Fixes That Work" and "How to Get More Bass on AirPods". Each opens with what EQfy can't do (it only boosts audio played inside the app).
+- Instructions come from Apple and Spotify support pages (fetched 2026-10-21, with the localized Apple and Spotify pages used in es/de/tr; Spotify isn't offered in mainland China, so zh keeps the US links). Only what the pages say is stated:
+  - Spotify: Volume level Loud, Audio Normalization and the Equalizer, with no preset names or band count (Spotify doesn't publish them) and a note that Volume level is listed for Premium.
+  - Apple: Device Type for third-party Bluetooth devices, Forget This Device, Airplane Mode for interference, the ear tip fit and seal test, and the new three-band custom AirPods EQ (Apple's page doesn't give an iOS version, so the post says it may not be available on all models).
+  - Not Apple-documented, so worded as general advice or left out: the two-volume-controls idea, accessory firmware updates, what Headphone Accommodations' tones do, and any bass effect of noise control.
+- Apple's article 102449 is "If your headphones don't work with your iPhone or iPad", not a volume page; the posts now name it correctly.
+- Related cards of 6 existing posts (x5 languages) point to the new posts; the new posts have 2-3 inbound cards each. keyword-map rows and clusters 18-20, 15 share images.
+
+**Verification:** `node build.mjs && node check.mjs` gives 119 pages, 0 errors, 0 warnings. At 375 px all 15 new pages have no sideways scroll, no broken images and 3 related cards. All 53 external Apple and Spotify links return 200. Not checked on a device: iOS menu names (taken from Apple's pages) and the Spotify app labels.
+
+## Follow-up: export claim on the homepages
+
+`docs/FEATURES.md` says export is Premium but the code has no gate on sharing (see facts.md), so the six homepages (en + es/de/tr/zh/da) no longer tie export to Premium:
+- removed the "Pro" badge from the Download & Share card
+- showcase line is now "Export and share your boosted audio" (no "with Premium")
+- FAQ answer (page + JSON-LD) lists Premium as "balance, speed and haptics" without export
+- `src/landing/<lang>.json`: the 2 affected entries per language updated (key and translation), homepages re-applied. `node build.mjs && node check.mjs`: 119 pages, 0 errors, 0 warnings.
