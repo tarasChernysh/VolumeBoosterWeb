@@ -31,7 +31,7 @@ Every blog post, FAQ answer and homepage string must be consistent with this fil
 | 3D Audio | "3D Spatial Audio": **Reverb** mode (9 presets: Small/Medium/Large Room, Medium/Large Hall, Medium/Large Chamber, Cathedral, Plate) and **3D Source** mode with **4 Auto Motion** patterns (bilateral, orbit, figure-eight, breathing) | Premium |
 | Playback speed | 0.5× – 2× (rabbit icon) | Premium |
 | Haptic player | phone vibrates to the beat/bass | Premium |
-| Export / share | save & share the enhanced audio file | Premium |
+| Export / share | save & share the enhanced audio file (speed, boost, EQ, bass and limiter included; reverb, 3D and balance are not) | **Unresolved**: `docs/FEATURES.md` says Premium, the code has no gate. Don't state free or Premium |
 
 **EQ preset values (dB) — from `EqualizerViewModel.swift`, publish exactly:**
 
@@ -59,6 +59,15 @@ Every blog post, FAQ answer and homepage string must be consistent with this fil
 - **Preamp = Volume Boost gain**: the EQ preamp (PR) and the Volume Boost dial drive the same gain (`AudioPlayerViewModel.swift` 648–653, 1306–1310). Don't describe this to users (the dial doesn't visibly sync yet).
 - **Headphones balance**: in-app pan (`panMixerNode.pan`, persisted). It is not in the signal chain in 3D Source mode. Interaction with the iOS Accessibility Balance slider can't be verified in code → say "keep the iOS slider centred so you only adjust balance in one place".
 - **AI song output**: generated songs are saved to a **"Song Compose"** playlist under the song name (`Modules/AIProducts/SongCompose/SongComposeViewModel.swift` 50, 128, 174–188). Force instrumental text in app: "If true, guarantees that the generated song will be instrumental" (`SongComposeView.swift` 187).
+
+**Verified in code (how-to pass, 2026-10-21, branch `release/v2.2.23`; read from source, not run on a device)** — paths relative to `../VolumeBooster/VolumeBooster/VolumeBooster/`:
+- **Playback speed**: 11 fixed steps: 0.5×, 0.75×, 0.85×, 0.9×, 0.95×, 1.0×, 1.15×, 1.25×, 1.5×, 1.75×, 2.0× (`Models/AudioSpeedType.swift` 10–48), picked from a pop-up menu on the hare icon (`DetailPageExtraActionsView.swift` 65–76). It sets only `AVAudioUnitTimePitch.rate` (`AudioPlayerViewModel.swift` 1215, 1737); `.pitch` is never set → **tempo changes, pitch stays the same; there is no pitch control and no "pitched-down slowed" sound**. Gated as Premium on the player screen (`DetailsSongView.swift` 495–499); the Music-tab mini player is not gated (don't mention). Speed is **not saved**: it resets to 1.0× on a cold launch.
+- **Reverb** (player › 3D Audio › "Spatial Audio" toggle › Audio Mode "Reverb"): 9 presets (Small/Medium/Large Room, Medium/Large Hall, Medium/Large Chamber, Cathedral, Plate; default Medium Room) + a **Reverb Blend** slider, Dry → Wet 0–100% in 5% steps, default 50% (`SurroundedAudioView.swift` 116–274, `AudioPlayerViewModel.swift` 445–453). Premium by design (blurred "Unlock Premium" overlay). Settings are global and saved between launches.
+- **Export / share**: share button top-right of the player; shows a "Saving…" progress card, then the iOS share sheet (Save to Files, AirDrop, Messages…). Baked in: **volume boost, 7-band EQ, bass, speed, limiter**. **NOT baked in: reverb, 3D, balance.** The file is named `<song>-volume_booster` and is not added to the EQfy library. Codec is unverified (don't say "AAC"/"mp3"/"wav"). `docs/FEATURES.md` says export is Premium, but the code has **no subscription check** on the share path → **don't state whether sharing is free or Premium**; say only what is free for sure (Volume Boost, library, player).
+- **Import**: Files picker accepts any audio type (`UTType.audio`), **one file at a time** (formats depend on what iOS can decode — say "MP3, M4A and other common audio files"); Music Library picker shows **downloaded** songs only, one at a time, copied into the app as .m4a. **Video files can't be imported.** Apple Music subscription (protected) songs are rejected with the in-app message "Apple Music streaming tracks are copy-protected and can't be boosted. Use purchased, synced or downloaded files."
+- **Find more**: genres/artists/search; tapping plays (streams); adding a track to a playlist **downloads** it so it plays offline. Separate "Preview Songs" are **30-second clips**. Never claim a license for the free catalog (unverified).
+- **Offline**: imported/added songs play with no connection and in the background. **Caveat:** with no internet the player screen shows only the Volume dial (Bass, EQ, Headphones, 3D are not rendered; speed and share still work), the Music tab hides Genres/Artists, and the AI tab is hidden. Don't claim "every tool works offline".
+- **Library**: playlists (create, rename, delete), "Move" a song into a playlist, delete or rename songs, "Remove all my music" in Settings, "Recent" row on Home (last 10).
 
 ## 3. Hard limits — NEVER claim
 

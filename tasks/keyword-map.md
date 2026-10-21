@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 14 blog posts + 1 FAQ hub
+**Clusters**: 17 blog posts + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -123,6 +123,30 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | iphone equalizer app / equalizer fx alternative | Secondary |
 | apple music eq vs app | Supporting |
 
+### 15. Slowed + reverb — I (how-to)
+**Post id**: `slowed-reverb`
+| Keyword | Role |
+|---|---|
+| slowed and reverb app iphone | Primary |
+| slowed reverb songs iphone / reverb app iphone | Secondary |
+| how to slow down a song on iphone | Supporting |
+
+### 16. Play MP3 offline — I (how-to)
+**Post id**: `play-mp3-offline`
+| Keyword | Role |
+|---|---|
+| play mp3 on iphone offline | Primary |
+| offline music player iphone / mp3 player iphone | Secondary |
+| import mp3 from files app iphone | Supporting |
+
+### 17. Louder audio file — I (how-to)
+**Post id**: `louder-audio-file`
+| Keyword | Role |
+|---|---|
+| make audio file louder iphone | Primary |
+| make mp3 louder iphone / boost audio file volume | Secondary |
+| save louder audio iphone | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -146,11 +170,15 @@ zh uses the English slug (Hanzi/pinyin slugs add nothing). es/de/tr slugs are AS
 | sound-amplifier | sound-amplifier-app-iphone | amplificador de sonido gratis para iPhone · `app-amplificador-sonido-iphone` | Verstärker App iPhone kostenlos · `verstaerker-app-iphone` | ücretsiz ses yükseltici uygulama iphone · `iphone-ses-yukseltici-uygulama` | iPhone免费声音放大器App |
 | best-volume-boosters | best-volume-booster-apps-iphone | mejores apps para subir el volumen del iPhone · `mejores-apps-subir-volumen-iphone` | beste Lautstärke-Booster App iPhone · `beste-lautstaerke-booster-app-iphone` | en iyi ses yükseltici uygulama iphone · `en-iyi-ses-yukseltici-uygulama-iphone` | iPhone音量增强App推荐 |
 | best-eq-apps | best-equalizer-apps-iphone | mejor app de ecualizador para iPhone · `mejores-apps-ecualizador-iphone` | beste Equalizer App iPhone · `beste-equalizer-app-iphone` | en iyi ekolayzer uygulaması iphone · `en-iyi-ekolayzer-uygulamasi-iphone` | iPhone均衡器App推荐 |
+| slowed-reverb | slowed-reverb-songs-iphone | slowed and reverb en iPhone · `slowed-reverb-iphone` | Slowed and Reverb App iPhone · `slowed-reverb-app-iphone` | slowed reverb nasıl yapılır · `slowed-reverb-nasil-yapilir` | iPhone慢速混响 |
+| play-mp3-offline | play-mp3-offline-iphone | reproducir MP3 en iPhone sin internet · `reproducir-mp3-iphone-sin-internet` | MP3 auf iPhone offline abspielen · `mp3-iphone-offline-abspielen` | iphone internetsiz mp3 dinleme · `iphone-internetsiz-mp3-dinleme` | iPhone离线播放MP3 |
+| louder-audio-file | make-audio-file-louder-iphone | subir el volumen de un archivo de audio en iPhone · `subir-volumen-archivo-audio-iphone` | Audiodatei lauter machen iPhone · `audiodatei-lauter-machen-iphone` | ses dosyasının sesini yükseltme · `ses-dosyasinin-sesini-yukseltme-iphone` | iPhone调大音频文件音量 |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
-- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters
-- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps
+- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file
+- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
+- **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb (+ ai-song-generator, iphone-duo → play-mp3-offline)
 
 ## Priority ranking
 | # | Cluster | Content type | Primary keyword |

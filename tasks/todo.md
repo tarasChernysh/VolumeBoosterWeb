@@ -186,7 +186,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 
 ## Phase A: new posts (en, es, de, tr, zh), one PR per group
 - [x] A1. Comparisons: `best-volume-boosters`, `best-eq-apps` (branch `posts-comparisons`)
-- [ ] A2. How-tos: `slowed-reverb`, `play-mp3-offline`, `louder-audio-file`
+- [x] A2. How-tos: `slowed-reverb`, `play-mp3-offline`, `louder-audio-file` (branch `posts-howtos`)
 - [ ] A3. Troubleshooting: `spotify-louder`, `bluetooth-volume-low`, `airpods-bass`
 - [ ] A4. AI Studio: `ai-text-to-speech`, `ai-sound-effects`, `remove-background-noise`
 
@@ -206,3 +206,18 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 - 10 new share images. Re-rendering also changed 8 existing JPEGs by a few bytes with no title change; those were restored.
 
 **Verification:** `node build.mjs && node check.mjs` gives 89 pages, 0 errors, 0 warnings. At 375 px the en/de/es/tr/zh posts have no sideways scroll, the tables fit (343 px) and no image is broken.
+
+## Review (A2: how-to posts)
+
+**Changes:**
+- Three new posts in en, es, de, tr and zh (15 files): "Slowed and Reverb on iPhone", "How to Play MP3 Files on iPhone Offline" and "How to Make an Audio File Louder on iPhone".
+- Facts come from a code read of the app (branch `release/v2.2.23`), now recorded in `tasks/facts.md` §2. The code check changed what the posts say:
+  - Speed keeps the original pitch (tempo only), so the post says EQfy can't make the pitched-down "slowed" sound.
+  - Reverb, 3D and balance are not in a shared file; speed, volume boost, EQ, bass and the limiter are.
+  - Speed resets to 1.0x on a cold launch; reverb settings are saved.
+  - With no internet the player screen shows only the Volume dial, so the offline post says so.
+  - Video can't be imported; Apple Music subscription songs are rejected.
+- Whether sharing is free or Premium is not stated: `docs/FEATURES.md` says Premium, the code has no gate. The posts only call Volume Boost and the library free.
+- Related cards of 6 existing posts (x5 languages) now link to the new posts. keyword-map rows and clusters 15-17, 15 share images.
+
+**Verification:** `node build.mjs && node check.mjs` gives 104 pages, 0 errors, 0 warnings. At 375 px all 15 new pages have no sideways scroll, no broken images and 3 related cards. Not verified on a device: the app behaviours above come from reading code.
