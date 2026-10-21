@@ -193,7 +193,7 @@ Decisions (Taras, 2026-10-21): all 4 topic groups (11 posts), languages ja + fr 
 ## Phase B: new languages (all 23 posts + FAQ + homepage each)
 - [x] B1. fr (+ check.mjs landing list from site.json, landing-i18n usage, render.mjs language filter) (branch `lang-fr`)
 - [x] B2. pt (key `pt`, htmlLang `pt-BR`) (branch `lang-pt`)
-- [ ] B3. ja (readingMinutes, check.mjs CJK rules, ja font stacks)
+- [x] B3. ja (readingMinutes, check.mjs CJK rules, ja font stacks) (branch `lang-ja`)
 - [ ] B4. ar (RTL: `dir`, logical CSS properties, `[dir="rtl"]` overrides, Arabic fonts, OG)
 
 ## Review (A1: comparisons)
@@ -304,3 +304,20 @@ v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version
 **Verification:** `node build.mjs && node check.mjs`: 186 pages, 0 errors, 0 warnings. All 26 Portuguese pages pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); navigation stays on one row at 1025-1280 px. Existing languages changed only by the Portuguese additions.
 
 **Not verified:** no native Brazilian reader has checked the text. Apple's pt-BR pages don't list the Music EQ preset names, so "Aumentar Graves", "Reduzir Graves", "Reduzir Agudos", "Alto-falantes Pequenos" and "Amplificador de Voz" come from a Brazilian Apple-news article (MacMagazine), not an Apple page. Apple's pt-BR pages call both the speaker and the headphone loudness setting "Limite de Volume" (the posts use "Redução do Volume" in one place), and voice memos are "Gravador".
+
+## Review (B3: Japanese)
+
+**Changes:**
+- **Japanese is now a full language** at `/ja/` (`<html lang="ja">`, `hreflang="ja"`): homepage, blog index, FAQ and all 23 posts (23 posts x 8 languages), in every switcher and hreflang set. `src/site.json`, `src/i18n/ja.json`, `src/content/ja/` (23 posts + `faq.json`), `src/landing/ja.json`.
+- **Tooling for CJK (4 small edits):**
+  - `build.mjs` `readingMinutes`: Japanese is counted by characters (500 per minute, like zh at 400); without it every post would have shown "1 min" (now 4-10).
+  - `check.mjs`: `ja` uses the same CJK title and description length rules as `zh`.
+  - `assets/css/site.css`: a `:lang(ja)` font stack (Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, Noto Sans JP; no Chinese fonts).
+  - `src/og/post.html`: the same stack for share images, otherwise PingFang SC would draw the kanji with Chinese glyph shapes (checked: the ja image uses Japanese shapes).
+- **Text rules:** polite です・ます, no "あなた" (one marketing line was reworded), 「」 and 、。, no spaces between Japanese and Latin text; **English slugs** (Japanese can't be ASCII), titles ≤ 26 characters, descriptions 60-90.
+- **Terms:** from the app's catalog (Japanese table in `tasks/facts.md` §8). The Music tab is ミュージック (`music.title`), not 音楽 as the table first said (corrected). English-only app labels stay English in bold with a Japanese gloss.
+- Apple and Spotify links: every Apple link points to its `ja-jp` page with Apple's Japanese menu names; Spotify links use `/jp/`. 52 external links, all 200. keyword-map has a JA column.
+
+**Verification:** `node build.mjs && node check.mjs`: 212 pages, 0 errors, 0 warnings. All 26 Japanese pages pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); navigation stays on one row at 1025-1280 px; the Japanese font stack is applied on posts. Other languages changed only by the Japanese additions plus the CSS version hash. 22 share images rendered.
+
+**Not verified:** a native Japanese reader has not read the text. Apple's Japanese pages don't list the Music EQ preset names (Bass Booster etc.), so they stay English with a gloss. The homepage <title> had to drop "Free Sound Amplifier" to fit the 34-character limit ("EQfy - Louder Volume：iPhoneの音量ブースト"); the meta description keeps 無料サウンドアンプ. The "slowed and reverb" post uses "slowed reverb" in its title (length limit).

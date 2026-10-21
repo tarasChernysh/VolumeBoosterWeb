@@ -47,7 +47,7 @@ for (const [url, { file, html }] of pages) {
   const noindex = /<meta name="robots" content="noindex/.test(html);
   const lang = (html.match(/<html lang="([^"]+)"/) || [])[1];
   if (!lang) err(file, 'missing <html lang>');
-  const isZh = lang?.startsWith('zh');
+  const isZh = /^(zh|ja)\b/.test(lang || ''); // CJK length rules
 
   // headings
   const heads = [...html.matchAll(/<h([1-6])[\s>]/g)].map((m) => +m[1]);
