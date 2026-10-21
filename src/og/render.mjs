@@ -3,7 +3,8 @@
 //   assets/images/og-image.jpg            ← src/og/site.html (default for pages without their own image)
 //   assets/images/og/<lang>-<id>.jpg      ← src/og/post.html, one per blog post and language
 // Posts whose front-matter sets "ogImage" keep that image and are skipped.
-// Usage: node src/og/render.mjs   (then `node build.mjs`, which picks the images up)
+// Usage: node src/og/render.mjs [lang…]   (then `node build.mjs`, which picks the images up)
+//   With language codes (e.g. `node src/og/render.mjs fr`) only those languages are rendered and the default image is skipped.
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -14,6 +15,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const readJSON = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const site = readJSON('src/site.json');
+const only = process.argv.slice(2);
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'eqfy-og-'));
 
 function render(page, query, out) {
@@ -24,10 +26,10 @@ function render(page, query, out) {
   execFileSync('sips', ['-s', 'format', 'jpeg', '-s', 'formatOptions', '82', png, '--out', path.join(ROOT, out)], { stdio: 'ignore' });
 }
 
-render('src/og/site.html', null, 'assets/images/og-image.jpg');
+let count = 0;
+if (!only.length) { render('src/og/site.html', null, 'assets/images/og-image.jpg'); count = 1; }
 fs.mkdirSync(path.join(ROOT, 'assets/images/og'), { recursive: true });
-let count = 1;
-for (const lang of site.contentLangs) {
+for (const lang of site.contentLangs.filter((l) => !only.length || only.includes(l))) {
   const t = readJSON(`src/i18n/${lang}.json`);
   const dir = `src/content/${lang}/blog`;
   for (const file of fs.readdirSync(path.join(ROOT, dir)).filter((f) => f.endsWith('.html'))) {

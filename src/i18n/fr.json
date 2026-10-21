@@ -1,0 +1,64 @@
+{
+  "dateLocale": "fr-FR",
+  "home": "Accueil",
+  "nav": {
+    "features": "Fonctionnalités",
+    "equalizer": "Égaliseur",
+    "aiStudio": "Studio IA",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Télécharger gratuitement",
+    "changeLanguage": "Changer de langue",
+    "menu": "Ouvrir le menu",
+    "logoAlt": "Icône EQfy"
+  },
+  "footer": {
+    "tagline": "Boost du volume, boost des basses et égaliseur pour iPhone. Rendez chaque titre plus fort, plus profond et plus clair.",
+    "features": "Fonctionnalités",
+    "volumeBooster": "Boost du volume",
+    "bassEq": "Boost des basses et égaliseur",
+    "spatial": "Audio spatial 3D",
+    "aiStudio": "Studio IA",
+    "resources": "Ressources",
+    "support": "Assistance",
+    "appStore": "App Store",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "rights": "Tous droits réservés.",
+    "trademark": "iPhone, AirPods et App Store sont des marques commerciales d’Apple Inc."
+  },
+  "blog": {
+    "title": "Blog EQfy : guides volume, basses et égaliseur",
+    "description": "Guides et actualités EQfy : iPhone plus fort, basses renforcées, meilleurs réglages d’égaliseur, volume trop bas corrigé et meilleur son au casque.",
+    "eyebrow": "Guides et actualités",
+    "h1": "Le blog EQfy",
+    "lead": "Des guides pratiques pour rendre votre iPhone plus fort, plus clair et plus agréable à écouter, ainsi que les actualités de l’application EQfy."
+  },
+  "post": {
+    "by": "Par l’équipe EQfy",
+    "published": "Publié le",
+    "updated": "Mis à jour le",
+    "minRead": "{n} min de lecture",
+    "faqTitle": "Questions fréquentes",
+    "related": "Articles similaires",
+    "readMore": "Lire la suite →",
+    "categories": { "guide": "Guide", "news": "Actualité" }
+  },
+  "faqPage": {
+    "eyebrow": "Centre d’aide",
+    "jumpTo": "Accéder à une rubrique"
+  },
+  "cta": {
+    "title": "Rendez votre iPhone plus fort",
+    "text": "Téléchargez gratuitement EQfy - Louder Volume sur l’App Store. Nécessite iOS 16 ou version ultérieure.",
+    "button": "Télécharger sur l’App Store",
+    "iconAlt": "Icône de l’application EQfy"
+  },
+  "latest": {
+    "eyebrow": "Sur le blog",
+    "title": "Guides et actualités",
+    "description": "Des conseils pour rendre votre iPhone plus fort, plus clair et plus agréable à écouter.",
+    "all": "Tous les articles →"
+  }
+}

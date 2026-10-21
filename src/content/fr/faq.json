@@ -1,0 +1,64 @@
+{
+  "title": "FAQ EQfy : aide sur le volume et l’égaliseur",
+  "description": "Réponses sur EQfy - Louder Volume : volume maximal, basses et égaliseur, Audio 3D, crédits du Studio IA, prix de Premium, iPhone Duo et confidentialité.",
+  "intro": "<p>Réponses rapides sur EQfy - Louder Volume, l’app iPhone qui rend le son plus fort, les basses plus profondes et la musique plus agréable à écouter. Vous ne trouvez pas votre question ? Écrivez à <a href=\"mailto:support@eqfy.app\">support@eqfy.app</a>.</p>",
+  "groups": [
+    {
+      "heading": "Premiers pas",
+      "items": [
+        { "q": "Qu’est-ce qu’EQfy - Louder Volume ?", "a": "EQfy - Louder Volume est une app iPhone qui rend la musique que vous y lisez plus forte et plus riche. Elle réunit le Boost du volume jusqu’à 200 %, le Boost des basses, un égaliseur à 7 bandes, la balance audio, l’Audio 3D et un Studio IA, avec une bibliothèque musicale gratuite et un lecteur qui fonctionne aussi hors connexion. <a href=\"{{home}}\">Voir toutes les fonctionnalités</a>." },
+        { "q": "EQfy est-elle gratuite ?", "a": "Oui. EQfy se télécharge gratuitement, et le Boost du volume, la bibliothèque musicale et le lecteur sont gratuits. Le Boost des basses, l’égaliseur, la balance audio, l’Audio 3D, la vitesse de lecture et le lecteur haptique font partie de l’abonnement Premium, optionnel." },
+        { "q": "EQfy est-elle la même app que Volume Booster Sound Amplifier sur l’App Store ?", "a": "Oui. Sur l’App Store américain, EQfy - Louder Volume apparaît sous le nom Volume Booster Sound Amplifier, et le nom affiché peut différer dans d’autres pays. C’est la même app, créée par le développeur Taras Chernysh : <a href=\"{{appstore}}\">ouvrez-la sur l’App Store</a>. Les apps au nom proche viennent d’autres développeurs ; l’identifiant App Store d’EQfy est 6550912161." },
+        { "q": "Quels iPhone et quelles langues EQfy prend-elle en charge ?", "a": "EQfy est conçue pour iPhone et nécessite iOS 16 ou version ultérieure. L’app est disponible en 25 langues." }
+      ]
+    },
+    {
+      "heading": "Volume et basses",
+      "items": [
+        { "q": "De combien EQfy peut-elle augmenter le volume de mon iPhone ?", "a": "Le Boost du volume va de 100 % à 200 %, ce qui ajoute jusqu’à +12 dB de gain en plus du volume de votre iPhone pour les titres lus dans EQfy. Utilisez-le avec modération. Pour en savoir plus, lisez <a href=\"{{post:louder-than-max}}\">comment rendre votre iPhone plus fort que le volume maximal</a> et <a href=\"{{post:safe-boosting}}\">amplifier le volume est-il sans danger ?</a>" },
+        { "q": "Le boost fonctionne-t-il avec le haut-parleur de l’iPhone et avec des écouteurs ?", "a": "Oui. Les outils d’EQfy s’appliquent à tout ce qu’EQfy lit, que vous écoutiez avec le haut-parleur de l’iPhone, des écouteurs filaires ou des AirPods. Pour plus de conseils, consultez <a href=\"{{post:airpods-louder}}\">comment augmenter le volume des AirPods</a>." },
+        { "q": "Pourquoi EQfy ne peut-elle pas amplifier Spotify, YouTube ou les appels ?", "a": "Le cloisonnement (sandbox) d’iOS limite EQfy au traitement de l’audio lu dans EQfy. Elle ne peut pas amplifier Spotify, YouTube, le streaming Apple Music, Netflix, les appels téléphoniques ou FaceTime, les notifications ni le volume du système. Pour des solutions qui aident partout, consultez <a href=\"{{post:volume-too-low}}\">volume de l’iPhone trop faible</a>." },
+        { "q": "Puis-je amplifier des titres d’Apple Music ?", "a": "Les titres d’un abonnement Apple Music, ainsi que d’autres fichiers protégés, se lisent dans EQfy, mais les outils d’amélioration ne sont pas disponibles pour eux, car iOS n’autorise pas les apps à traiter l’audio protégé. Les titres achetés ou non protégés de votre bibliothèque Musique et les fichiers que vous importez depuis Fichiers fonctionnent avec tous les outils." },
+        { "q": "Comment fonctionne le Boost des basses ?", "a": "Le Boost des basses ajoute jusqu’à +12 dB avec un filtre en plateau (low-shelf) centré autour de 200 Hz, réglé pour que les petits haut-parleurs de l’iPhone puissent vraiment le restituer. Il fait partie de Premium. Consultez <a href=\"{{post:bass-boost}}\">comment renforcer les basses sur iPhone</a>." }
+      ]
+    },
+    {
+      "heading": "Outils sonores",
+      "items": [
+        { "q": "Que comprend l’égaliseur d’EQfy ?", "a": "Sept bandes (32 Hz, 64 Hz, 200 Hz, 500 Hz, 1 kHz, 4 kHz et 16 kHz), plus un préampli, 9 préréglages (Rock, Jazz, Électronique, Classique, Reggae, Rap, R&amp;B, Danse et Acoustique), un réglage Personnalisé et un bouton Réinitialiser. Consultez <a href=\"{{post:eq-settings}}\">les meilleurs réglages d’égaliseur pour iPhone selon le genre</a>." },
+        { "q": "Qu’est-ce que l’Audio 3D dans EQfy ?", "a": "C’est un effet intégré à l’app, avec deux modes : Réverbération, avec 9 préréglages de pièce, de salle et de chambre, et Source 3D, qui déplace le son autour de vous grâce à 4 schémas de Mouvement automatique (bilatéral, orbite, figure en 8 et respiration) et peut utiliser le suivi de la tête avec des AirPods compatibles. Ce n’est ni l’audio spatial d’Apple ni Dolby Atmos. <a href=\"{{post:spatial-audio}}\">L’audio 3D sur iPhone, expliqué</a> détaille la différence." },
+        { "q": "Puis-je corriger un écouteur qui sonne plus fort que l’autre ?", "a": "Pour les titres lus dans EQfy, l’onglet Écouteurs propose un curseur de balance audio gauche/droite avec un bouton Centre pour le réinitialiser. Consultez <a href=\"{{post:headphone-balance}}\">comment régler la balance gauche/droite des écouteurs sur iPhone</a>." },
+        { "q": "Puis-je changer la vitesse de lecture ou exporter des titres améliorés ?", "a": "Oui. La vitesse de lecture (de 0,5× à 2×) et le lecteur haptique, qui fait vibrer votre iPhone au rythme de la musique, font partie de Premium. Vous pouvez enregistrer et partager le fichier audio amélioré avec le bouton de partage du lecteur ; il inclut votre vitesse, le boost du volume, l’égaliseur et les réglages des basses, mais ni la réverbération, ni l’Audio 3D, ni la balance." }
+      ]
+    },
+    {
+      "heading": "Studio IA",
+      "items": [
+        { "q": "Que contient le Studio IA ?", "a": "Le Studio IA propose quatre outils : <strong>Music Generator</strong> (générateur de musique : il compose un morceau à partir d’une description, avec un interrupteur optionnel Forcer instrumental), <strong>Sound Effects</strong> (effets sonores), <strong>Text to Speech</strong> (synthèse vocale) et <strong>Noise Reducer</strong> (réducteur de bruit). Tous nécessitent une connexion internet. Lisez le <a href=\"{{post:ai-song-generator}}\">guide du générateur de chansons IA</a>." },
+        { "q": "Comment fonctionnent les crédits IA ?", "a": "Le Studio IA fonctionne avec des crédits, et chaque outil en utilise : Music Generator coûte 3 000 crédits, Sound Effects 250, Text to Speech 500 et Noise Reducer 1 500 par minute commencée. Vous pouvez acheter des packs de crédits dans l’app ou gagner des crédits dans la Credit Shop (boutique de crédits). Les crédits ne sont débités qu’une fois le résultat enregistré." }
+      ]
+    },
+    {
+      "heading": "Tarifs et abonnement",
+      "items": [
+        { "q": "Que comprend Premium ?", "a": "Premium déverrouille le Boost des basses, l’égaliseur à 7 bandes, la balance audio, l’Audio 3D, la vitesse de lecture et le lecteur haptique. Le Boost du volume et le lecteur de musique restent gratuits pour tout le monde, et les outils du Studio IA utilisent des crédits." },
+        { "q": "Combien coûte Premium, et y a-t-il un essai gratuit ?", "a": "Premium est un abonnement hebdomadaire ou annuel. Le prix varie selon le pays, et l’App Store affiche votre prix local avant que vous ne confirmiez. Les formules éligibles commencent par un essai gratuit." },
+        { "q": "Comment résilier mon abonnement ?", "a": "Les abonnements sont facturés et gérés par Apple. Sur votre iPhone, ouvrez Réglages, touchez votre nom, touchez Abonnements, choisissez l’abonnement EQfy et touchez Annuler l’abonnement. Apple détaille les étapes dans <a href=\"https://support.apple.com/fr-fr/118428\" target=\"_blank\" rel=\"noopener\">Résilier un abonnement Apple</a>." }
+      ]
+    },
+    {
+      "heading": "Appareils",
+      "items": [
+        { "q": "EQfy prend-elle en charge l’iPhone Duo ?", "a": "Oui. EQfy prend en charge l’iPhone Duo depuis la v2.2.23, sortie le 14 octobre 2026 : elle utilise tout l’écran intérieur avec une navigation par barre latérale et des présentations sur deux colonnes, et tous les iPhone disposent d’un lecteur côte à côte en mode paysage. <a href=\"{{post:iphone-duo}}\">Découvrez les nouveautés</a>." },
+        { "q": "EQfy fonctionne-t-elle sur iPad ?", "a": "EQfy est conçue pour iPhone. Vous pouvez l’installer sur un iPad, où elle s’exécute en mode iPhone, mais elle n’est pas conçue comme une app pour iPad." }
+      ]
+    },
+    {
+      "heading": "Confidentialité et assistance",
+      "items": [
+        { "q": "Quelles données EQfy collecte-t-elle ?", "a": "EQfy ne nécessite pas de compte. Elle utilise des services d’analyse et de publicité, demande votre autorisation via la transparence du suivi par les apps d’Apple avant d’utiliser votre identifiant publicitaire, et envoie les requêtes du Studio IA à un fournisseur d’IA tiers pour traitement. La <a href=\"/privacy\">Politique de confidentialité</a> donne tous les détails." },
+        { "q": "Comment contacter l’assistance ?", "a": "Écrivez à <a href=\"mailto:support@eqfy.app\">support@eqfy.app</a>. Indiquez-nous votre modèle d’iPhone et votre version d’iOS, et décrivez ce qui s’est passé, afin que nous puissions vous aider plus vite." }
+      ]
+    }
+  ]
+}

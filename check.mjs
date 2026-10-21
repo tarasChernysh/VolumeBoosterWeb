@@ -150,8 +150,9 @@ const skeleton = (html) => stripLD(html)
   .match(/<[a-z][a-z0-9]*\b[^>]*\s(?:class|id)="[^"]*"[^>]*>/g)
   .map((tag) => `${tag.match(/^<([a-z0-9]+)/)[1]}.${(attr(tag, 'class') || '').replace(' lang-switcher__option--active', '')}#${attr(tag, 'id') || ''}`);
 const base = skeleton(pages.get('/').html);
-for (const l of ['de', 'tr', 'da', 'es', 'zh']) {
-  const p = pages.get(`/${l}/`);
+const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/site.json'), 'utf8'));
+for (const l of site.landingLangs.filter((x) => x !== 'en')) {
+  const p = pages.get(`${site.langs[l].prefix}/`);
   if (!p) continue;
   const s = skeleton(p.html);
   const i = base.findIndex((x, k) => x !== s[k]);
