@@ -43,6 +43,7 @@
     <link rel="alternate" hreflang="fr" href="https://eqfy.app/fr/">
     <link rel="alternate" hreflang="pt" href="https://eqfy.app/pt/">
     <link rel="alternate" hreflang="ja" href="https://eqfy.app/ja/">
+    <link rel="alternate" hreflang="ar" href="https://eqfy.app/ar/">
     <link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/">
     <link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/">
     <link rel="alternate" hreflang="da" href="https://eqfy.app/da/">
@@ -287,7 +288,7 @@
         }
         .nav__link:hover { color: var(--text-primary); }
         .nav__link::after {
-            content: ''; position: absolute; bottom: -4px; left: 0;
+            content: ''; position: absolute; bottom: -4px; inset-inline-start: 0;
             width: 0; height: 2px;
             background: var(--green-primary); transition: width 0.3s;
         }
@@ -360,7 +361,7 @@
         }
         .lang-switcher__dropdown {
             display: none; position: absolute;
-            top: calc(100% + 8px); right: 0;
+            top: calc(100% + 8px); inset-inline-end: 0;
             background: var(--bg-card);
             border: 1px solid var(--border-default);
             border-radius: var(--radius-md);
@@ -420,7 +421,7 @@
 
         .hero__badge {
             display: inline-flex; align-items: center; gap: 8px;
-            padding: 6px 16px 6px 8px;
+            padding: 6px 16px; padding-inline-start: 8px;
             background: var(--bg-glass-light);
             border: 1px solid var(--border-default);
             border-radius: 100px;
@@ -672,7 +673,7 @@
             padding: 3px 10px; border-radius: 100px;
             font-size: 0.65rem; font-weight: 700;
             text-transform: uppercase; letter-spacing: 0.06em;
-            margin-left: 6px; vertical-align: middle;
+            margin-inline-start: 6px; vertical-align: middle;
         }
         .feature-card__badge--free { background: rgba(0,255,102,0.1); color: var(--green-primary); border: 1px solid rgba(0,255,102,0.2); }
         .feature-card__badge--pro { background: rgba(139,92,246,0.1); color: #C084FC; border: 1px solid rgba(139,92,246,0.2); }
@@ -1145,6 +1146,13 @@
             .hero__actions { flex-direction: column; width: 100%; }
             .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
         }
+
+        /* Right-to-left (Arabic). Only affects pages with dir="rtl". */
+        [dir="rtl"] .showcase__split--reverse { direction: ltr; }          /* the 'reverse' sections swap columns with direction: rtl, so undo it here */
+        [dir="rtl"] .showcase__split--reverse > * { direction: rtl; }
+        [dir="rtl"] .balance-visual { direction: ltr; }                    /* keep the L channel on the left */
+        :lang(ar) * { letter-spacing: 0 !important; }                      /* tracking breaks the joins between Arabic letters */
+        :lang(ar) h1, :lang(ar) h2 { line-height: 1.4; }
     </style>
 </head>
 <body>
@@ -1182,6 +1190,7 @@
                     <a href="/fr/" class="lang-switcher__option" hreflang="fr">🇫🇷 Français</a>
                     <a href="/pt/" class="lang-switcher__option" hreflang="pt">🇧🇷 Português</a>
                     <a href="/ja/" class="lang-switcher__option" hreflang="ja">🇯🇵 日本語</a>
+                    <a href="/ar/" class="lang-switcher__option" hreflang="ar">🇸🇦 العربية</a>
                     <a href="/tr/" class="lang-switcher__option lang-switcher__option--active" hreflang="tr">🇹🇷 Türkçe</a>
                     <a href="/zh/" class="lang-switcher__option" hreflang="zh">🇨🇳 简体中文</a>
                     <a href="/da/" class="lang-switcher__option" hreflang="da">🇩🇰 Dansk</a>

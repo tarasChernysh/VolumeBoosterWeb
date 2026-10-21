@@ -132,7 +132,7 @@ if (hasContent) {
 
 html = html
   .replace(/<!-- blog:latest -->[\s\S]*?<!-- \/blog:latest -->/, '<!-- blog:latest --><!-- /blog:latest -->') // filled by build.mjs
-  .replace('<html lang="en">', `<html lang="${L.htmlLang}">`)
+  .replace('<html lang="en">', `<html lang="${L.htmlLang}"${L.dir ? ` dir="${L.dir}"` : ''}>`)
   .replace(/\s*<!-- Google Search Console -->\n\s*<meta name="google-site-verification"[^>]*>\n/, '\n')
   .replace('<link rel="canonical" href="https://eqfy.app/">', `<link rel="canonical" href="https://eqfy.app${pre}/">`)
   .replace('<meta property="og:url" content="https://eqfy.app/">', `<meta property="og:url" content="https://eqfy.app${pre}/">`)
