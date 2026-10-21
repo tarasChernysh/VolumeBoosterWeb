@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 17 blog posts + 1 FAQ hub
+**Clusters**: 20 blog posts + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -147,6 +147,30 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | make mp3 louder iphone / boost audio file volume | Secondary |
 | save louder audio iphone | Supporting |
 
+### 18. Spotify louder — I (troubleshooting)
+**Post id**: `spotify-louder`
+| Keyword | Role |
+|---|---|
+| spotify eq settings iphone | Primary |
+| make spotify louder iphone / spotify volume level loud | Secondary |
+| spotify too quiet iphone | Supporting |
+
+### 19. Bluetooth volume low — I (troubleshooting)
+**Post id**: `bluetooth-volume-low`
+| Keyword | Role |
+|---|---|
+| iphone bluetooth volume low | Primary |
+| bluetooth speaker quiet iphone / car bluetooth volume low iphone | Secondary |
+| bluetooth device type iphone | Supporting |
+
+### 20. More bass on AirPods — I (troubleshooting)
+**Post id**: `airpods-bass`
+| Keyword | Role |
+|---|---|
+| more bass airpods | Primary |
+| airpods bass boost / airpods equalizer iphone | Secondary |
+| airpods ear tip fit test | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -173,10 +197,13 @@ zh uses the English slug (Hanzi/pinyin slugs add nothing). es/de/tr slugs are AS
 | slowed-reverb | slowed-reverb-songs-iphone | slowed and reverb en iPhone · `slowed-reverb-iphone` | Slowed and Reverb App iPhone · `slowed-reverb-app-iphone` | slowed reverb nasıl yapılır · `slowed-reverb-nasil-yapilir` | iPhone慢速混响 |
 | play-mp3-offline | play-mp3-offline-iphone | reproducir MP3 en iPhone sin internet · `reproducir-mp3-iphone-sin-internet` | MP3 auf iPhone offline abspielen · `mp3-iphone-offline-abspielen` | iphone internetsiz mp3 dinleme · `iphone-internetsiz-mp3-dinleme` | iPhone离线播放MP3 |
 | louder-audio-file | make-audio-file-louder-iphone | subir el volumen de un archivo de audio en iPhone · `subir-volumen-archivo-audio-iphone` | Audiodatei lauter machen iPhone · `audiodatei-lauter-machen-iphone` | ses dosyasının sesini yükseltme · `ses-dosyasinin-sesini-yukseltme-iphone` | iPhone调大音频文件音量 |
+| spotify-louder | make-spotify-louder-eq-settings | ecualizador de Spotify en iPhone · `ecualizador-spotify-iphone` | Spotify lauter machen iPhone · `spotify-lauter-machen-iphone` | Spotify ses yükseltme · `spotify-ses-yukseltme` | Spotify声音太小 |
+| bluetooth-volume-low | iphone-bluetooth-volume-low | volumen Bluetooth bajo en iPhone · `volumen-bluetooth-iphone-bajo` | iPhone Bluetooth Lautstärke zu leise · `iphone-bluetooth-lautstaerke-zu-leise` | iPhone Bluetooth sesi düşük · `iphone-bluetooth-sesi-dusuk` | iPhone蓝牙音量太小 |
+| airpods-bass | more-bass-on-airpods | más graves en AirPods · `mas-graves-airpods` | AirPods mehr Bass · `airpods-mehr-bass` | AirPods bas artırma · `airpods-bas-artirma` | AirPods低音 |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
-- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file
-- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb
+- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low
+- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
 - **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb (+ ai-song-generator, iphone-duo → play-mp3-offline)
 
