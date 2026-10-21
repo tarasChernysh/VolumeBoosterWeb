@@ -49,7 +49,7 @@
     {
       "heading": "Dispositivos",
       "items": [
-        { "q": "¿EQfy es compatible con el iPhone Duo?", "a": "La compatibilidad completa con el iPhone Duo llegará en la v2.2.23, la próxima actualización. EQfy usará toda la pantalla interior con navegación en barra lateral y diseños a dos columnas, y todos los iPhone tendrán un reproductor a dos columnas en horizontal. <a href=\"{{post:iphone-duo}}\">Descubre lo que llega</a>." },
+        { "q": "¿EQfy es compatible con el iPhone Duo?", "a": "Sí. EQfy es compatible con el iPhone Duo desde la v2.2.23, publicada el 14 de octubre de 2026: usa toda la pantalla interior con navegación en barra lateral y diseños a dos columnas, y todos los iPhone tienen un reproductor a dos columnas en horizontal. <a href=\"{{post:iphone-duo}}\">Descubre las novedades</a>." },
         { "q": "¿EQfy funciona en el iPad?", "a": "EQfy está diseñada para iPhone. Puedes instalarla en un iPad, donde funciona en modo iPhone, pero no está pensada como app para iPad." }
       ]
     },

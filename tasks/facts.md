@@ -15,7 +15,7 @@ Every blog post, FAQ answer and homepage string must be consistent with this fil
 | Category | Music |
 | Price | **Free download**; optional **Premium** subscription (weekly or yearly; free trial on eligible plans). Credit packs for some AI tools. **No USD prices in localized posts**; in EN say "free to download" and avoid exact prices except in the FAQ pricing answer (weekly $1.99, yearly $27.99 in the US — "prices vary by country"). |
 | Rating | **4.5 ★ on the US App Store (40 ratings)** — say "rated 4.5 on the App Store"; no user counts, no testimonials |
-| Live version | 2.2.22. **v2.2.23 is NOT released yet** → write "coming in v2.2.23" / "the next update" |
+| Live version | **2.2.23**, released on the App Store on **2026-10-14** (App Store lookup 2026-10-21). iPhone Duo support is **available** — write "since v2.2.23" / "now available" |
 | Languages | App available in **25 languages** |
 
 ## 2. What the app does (exact numbers)
@@ -87,9 +87,9 @@ Every blog post, FAQ answer and homepage string must be consistent with this fil
 7. Don't promise features not listed here (no widgets, no Mac app, no Android, no system-wide EQ).
 8. Apple trademarks: iPhone, AirPods, Apple Music, App Store, iPhone Duo are Apple's. Don't imply Apple endorsement.
 
-## 4. iPhone Duo (post `iphone-duo`) — coming in v2.2.23
+## 4. iPhone Duo (post `iphone-duo`) — available since v2.2.23 (2026-10-14)
 
-What v2.2.23 brings (from `ReleaseNotes.md` + Swift code):
+What v2.2.23 brought (from `ReleaseNotes.md` + Swift code):
 - **Uses the full inner display** instead of a letter-boxed phone layout.
 - **Sidebar navigation** on the inner display (iOS 27 sidebar-adaptable tabs: Home, Music, AI Studio, Settings); on narrow widths it stays a tab bar. The outer display shows a compact floating tab bar on the right edge (visible in the screenshots).
 - **Home**: tool cards and the Recent list sit **side by side** in two columns.

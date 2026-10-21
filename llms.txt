@@ -5,7 +5,7 @@
 Key facts:
 - Platform: iPhone, iOS 16 or later. Free to download; optional Premium subscription. Rated 4.5 on the US App Store.
 - EQfy boosts audio played inside EQfy (imported songs, Files, discovered tracks). iOS does not allow it to boost other apps, calls or system sounds.
-- iPhone Duo support (full inner display, sidebar and side-by-side layouts) is coming in v2.2.23.
+- iPhone Duo support (full inner display, sidebar and side-by-side layouts) is available since v2.2.23.
 - Support: support@eqfy.app · App Store: https://apps.apple.com/app/id6550912161
 - Developer: Taras Chernysh (App Store seller). The App Store listing name differs by country; App ID 6550912161 is the same app everywhere. Apps with similar names come from other developers.
 
@@ -15,7 +15,7 @@ Key facts:
 - [Blog](https://eqfy.app/blog/): guides and news
 
 ## Articles
-- [iPhone Duo Support Is Coming to EQfy in v2.2.23](https://eqfy.app/blog/iphone-duo-support/): iPhone Duo apps, upgraded: EQfy - Louder Volume v2.2.23 will use the full inner display with a sidebar and two-column screens. See what the next update brings.
+- [iPhone Duo Support Is Here in EQfy v2.2.23](https://eqfy.app/blog/iphone-duo-support/): iPhone Duo apps, upgraded: EQfy - Louder Volume v2.2.23 uses the full inner display with a sidebar and two-column screens. See what's new and how to update.
 - [AI Sound Effects Generator for iPhone: How to Use It](https://eqfy.app/blog/ai-sound-effects-generator/): Make an AI sound effect on your iPhone: type a prompt in EQfy's AI Studio, choose a duration and Influence, and get an MP3. Plus free Apple sound options.
 - [Text to Speech on iPhone: AI Voices and Free Options](https://eqfy.app/blog/ai-text-to-speech-iphone/): Need a text to speech app for iPhone? Compare the free Read & Speak feature with EQfy's AI Studio, which turns up to 5,000 characters into an MP3 voiceover.
 - [How to Get More Bass on AirPods](https://eqfy.app/blog/more-bass-on-airpods/): Want more bass on AirPods? Check the ear tip seal, try Apple's custom AirPods EQ, use the Music app's Bass Booster, and boost songs with EQfy. Here is how.
