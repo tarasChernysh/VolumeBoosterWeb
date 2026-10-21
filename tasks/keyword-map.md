@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 20 blog posts + 1 FAQ hub
+**Clusters**: 23 blog posts + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -171,6 +171,30 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | airpods bass boost / airpods equalizer iphone | Secondary |
 | airpods ear tip fit test | Supporting |
 
+### 21. Text to speech — C/I (AI Studio)
+**Post id**: `ai-text-to-speech`
+| Keyword | Role |
+|---|---|
+| text to speech app iphone | Primary |
+| ai voice generator iphone / text to mp3 iphone | Secondary |
+| iphone read text aloud (Read & Speak) | Supporting |
+
+### 22. AI sound effects — C/I (AI Studio)
+**Post id**: `ai-sound-effects`
+| Keyword | Role |
+|---|---|
+| ai sound effects generator | Primary |
+| generate sound effects iphone / sfx generator app | Secondary |
+| free sound effects iphone | Supporting |
+
+### 23. Remove background noise — I/C (AI Studio)
+**Post id**: `remove-background-noise`
+| Keyword | Role |
+|---|---|
+| remove background noise from audio iphone | Primary |
+| noise reducer app iphone / voice memos enhance recording | Secondary |
+| clean up audio file iphone | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -200,11 +224,15 @@ zh uses the English slug (Hanzi/pinyin slugs add nothing). es/de/tr slugs are AS
 | spotify-louder | make-spotify-louder-eq-settings | ecualizador de Spotify en iPhone · `ecualizador-spotify-iphone` | Spotify lauter machen iPhone · `spotify-lauter-machen-iphone` | Spotify ses yükseltme · `spotify-ses-yukseltme` | Spotify声音太小 |
 | bluetooth-volume-low | iphone-bluetooth-volume-low | volumen Bluetooth bajo en iPhone · `volumen-bluetooth-iphone-bajo` | iPhone Bluetooth Lautstärke zu leise · `iphone-bluetooth-lautstaerke-zu-leise` | iPhone Bluetooth sesi düşük · `iphone-bluetooth-sesi-dusuk` | iPhone蓝牙音量太小 |
 | airpods-bass | more-bass-on-airpods | más graves en AirPods · `mas-graves-airpods` | AirPods mehr Bass · `airpods-mehr-bass` | AirPods bas artırma · `airpods-bas-artirma` | AirPods低音 |
+| ai-text-to-speech | ai-text-to-speech-iphone | app de texto a voz para iPhone · `app-texto-a-voz-iphone` | Text-zu-Sprache iPhone · `text-zu-sprache-iphone` | iPhone metin okuma uygulaması · `iphone-metin-okuma-uygulamasi` | iPhone文字转语音 |
+| ai-sound-effects | ai-sound-effects-generator | generador de efectos de sonido con IA · `generador-efectos-sonido-ia-iphone` | KI-Soundeffekte erstellen · `ki-soundeffekte-erstellen-iphone` | yapay zeka ses efekti oluşturucu · `yapay-zeka-ses-efekti-olusturucu` | AI音效生成器 |
+| remove-background-noise | remove-background-noise-audio-iphone | quitar el ruido de fondo de un audio en iPhone · `quitar-ruido-de-fondo-audio-iphone` | Hintergrundgeräusche entfernen iPhone · `hintergrundgeraeusche-entfernen-iphone` | arka plan gürültüsünü kaldırma · `iphone-arka-plan-gurultusunu-kaldirma` | iPhone音频降噪 |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
 - **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low
 - **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
+- **AI Studio**: ai-song-generator ↔ ai-text-to-speech ↔ ai-sound-effects ↔ remove-background-noise (+ louder-audio-file → remove-background-noise)
 - **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb (+ ai-song-generator, iphone-duo → play-mp3-offline)
 
 ## Priority ranking
