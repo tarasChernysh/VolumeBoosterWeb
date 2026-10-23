@@ -129,6 +129,11 @@ Writers must check the current wording on support.apple.com (iOS 26/27 menus mov
 - **Apple Music EQ "Late Night" preset no longer exists** on iOS 26+ (removed from Settings › Apps › Music › EQ). Don't recommend it; recommend EQ **Off** instead of presets that cut (Bass/Treble Reducer). iOS 26 added a separate speaker setting (Reduce Loud Sounds / "Late Night Mode" in Sounds & Haptics) that *lowers* loud peaks — keep it off for maximum volume.
 Safety: cite **WHO safe listening** (e.g. "Make Listening Safe" / WHO-ITU H.870: ~80 dB for 40 hours/week for adults) and Apple's Hearing/Noise features. Link sources.
 
+**iPhone equalizers + rival bass apps (checked 2026-10-23, support.apple.com and the iTunes lookup API, US store):**
+- Apple Music EQ: Settings › Apps › Music › EQ ("Choose an equalization (EQ) setting"; Apple's guide iph5643d2c85 doesn't name the presets, so Bass Booster / Bass Reducer / Treble Reducer come from the older posts); "Off" turns it off (support.apple.com/en-us/102663). It changes only the Music app.
+- Headphone Accommodations (102663): Settings › Accessibility › Audio & Visual › Headphone Accommodations; works with AirPods 2 and later, AirPods Pro, AirPods Max, EarPods, several Beats; Phone and Media switches; Customize Audio flow; Hearing Assistance on AirPods Pro 2/3 (iOS 18.1+) overrides it. AirPods Equalizer (Settings › AirPods › Audio & Routing › Equalizer, Custom = Low/Mid/High): see `airpods-bass`.
+- Rival listings (descriptions only, no hands-on): Boom 3.87★/4,561 (7-day trial, subscription; 8/16-band EQ, 29 presets, Headphone EQ); Equalizer Fx 4.17★/27,992 (7-band, 15+ presets, custom presets, monthly/yearly subscription); Bass Booster Volume Boost EQ (Companjen, id 1475414196) 4.38★/19,219 (10-band, 20+ presets, cloud import, no price text); Bass Booster Volume Power Amp (AppRover, id 927920917) 4.29★/18,335 (one-tap bass, flanger, pitch; Pro subscription). EQfy 4.53★/40 on the same day.
+
 ## 7. Content format (for `src/content/<lang>/blog/<id>.html`)
 
 ```
