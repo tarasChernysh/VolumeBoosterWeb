@@ -338,3 +338,26 @@ v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version
 **Verification:** `node build.mjs && node check.mjs`: 238 pages, 0 errors, 0 warnings. All 26 Arabic pages pass at 375 px (no sideways scroll, no broken images, 3 related cards, FAQ present); the navigation stays on one row at 1025-1280 px. In RTL: the logo is on the right, the language dropdown stays inside the viewport at 375 and 1100 px, the showcase sections alternate with right-to-left text, L is on the left in the balance visual, the note border/list indent/breadcrumb separator are on the correct side, and the EQ table keeps its signed numbers. English pages measured identical to before (3px left note border, 24px left list indent, dropdown at right 0). Other languages changed only by the logical-property swaps, the RTL-only block and the Arabic additions.
 
 **Not verified:** no native Arabic reader has checked the text. Apple's Arabic pages don't list the Music EQ preset names, so they stay English with an Arabic gloss. Spotify's Arabic help page calls the Playback menu «إعادة التشغيل» (literally "restart"); the posts add "(Playback)". App-side catalog issues found: the key `Balance:` ("Balance: N credits" in the AI tools) is translated «التوازن:» (audio balance, not account balance), and the Figure 8 motion pattern uses an Arabic-Indic digit (٨). Layout checks used computed styles and a shrunken browser pane, not a real Arabic-language device.
+
+# More EN posts (plan: `~/.claude/plans/what-else-seo-optimized-snappy-flame.md`)
+
+English only for now (translations later in one batch). New ids go in `related` of EN posts only. One PR per group.
+
+- [x] PR 1 `posts-8d-haptics`: `8d-audio`, `music-haptics`
+- [ ] PR 2 `posts-bass-eq`: `best-bass-boosters`, `iphone-equalizer`
+- [ ] PR 3 `posts-voice-podcasts`: `voice-memo-louder`, `podcasts-too-quiet`
+- [ ] PR 4 `posts-volume-ai`: `volume-keeps-going-down`, `ai-birthday-song`
+
+Per post: verify facts (app code + Apple pages) → write EN → fact-check → add to `related` of 1-3 EN posts → keyword-map → `node src/og/render.mjs en` → `node build.mjs && node check.mjs` → preview.
+
+## Review (PR 1: 8D audio + Music Haptics, EN only)
+
+**Changes:**
+- Two new EN posts: `8d-audio` (`/blog/8d-audio-iphone/`) and `music-haptics` (`/blog/music-haptics-iphone/`), each with a lead answer, 4 FAQ entries, Apple source links where relevant and the standard "what EQfy can't do" note.
+- 8D audio explains the term honestly (not a format, headphones needed) and walks through 3D Audio › 3D Source › Auto Motion › Orbit with the Speed slider; the four patterns and their cycle times come from the code. It says plainly that 3D is a live effect and is not included in shared files.
+- Music Haptics covers Apple's feature (steps, Full Mix / Vocals Only, intensity, "not working" checklist, Spotify not named by Apple) and EQfy's own haptic player for imported files (Premium).
+- `related`: `8d-audio` replaces one card in `spatial-audio` and `slowed-reverb`, `music-haptics` replaces one in `bass-boost` (each keeps 3 cards; EN only). `tasks/keyword-map.md` clusters 24-25, `tasks/facts.md` new verified block (§2). Share images `en-8d-audio.jpg`, `en-music-haptics.jpg`.
+
+**Verification:** `node build.mjs && node check.mjs`: 240 pages, 0 errors, 0 warnings (the build prints "missing translations" for the 8 other languages, expected until the translation batch). Browser preview at 375 and 1280 px: no sideways scroll, no broken images, FAQ and JSON-LD present, share image URL set, post listed on `/blog/`; no language switcher on these posts (EN only).
+
+**Not verified:** nothing was run on a device (facts read from source). Apple's page lists no supported iPhone models, so the post doesn't name any. `render.mjs` aborts here because headless Chrome exits non-zero at teardown even though the screenshot is written; the two images were made with a scratch script using the same Chrome flags and `sips` settings (not committed). The homepage "latest posts" block uses a fixed `latestPosts` list and was left alone.

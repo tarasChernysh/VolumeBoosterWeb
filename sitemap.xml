@@ -147,6 +147,12 @@
     <loc>https://eqfy.app/terms</loc>
   </url>
   <url>
+    <loc>https://eqfy.app/blog/8d-audio-iphone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eqfy.app/blog/8d-audio-iphone/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/8d-audio-iphone/"/>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
     <loc>https://eqfy.app/blog/ai-song-generator-iphone/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://eqfy.app/blog/ai-song-generator-iphone/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://eqfy.app/es/blog/generador-canciones-ia-iphone/"/>
@@ -1911,6 +1917,12 @@
     <lastmod>2026-10-11</lastmod>
   </url>
   <url>
+    <loc>https://eqfy.app/blog/music-haptics-iphone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://eqfy.app/blog/music-haptics-iphone/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/music-haptics-iphone/"/>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
     <loc>https://eqfy.app/blog/play-mp3-offline-iphone/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://eqfy.app/blog/play-mp3-offline-iphone/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://eqfy.app/es/blog/reproducir-mp3-iphone-sin-internet/"/>
@@ -3056,7 +3068,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/es/blog/</loc>
@@ -3070,7 +3082,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/de/blog/</loc>
@@ -3084,7 +3096,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/fr/blog/</loc>
@@ -3098,7 +3110,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/pt/blog/</loc>
@@ -3112,7 +3124,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/ja/blog/</loc>
@@ -3126,7 +3138,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/ar/blog/</loc>
@@ -3140,7 +3152,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/tr/blog/</loc>
@@ -3154,7 +3166,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/zh/blog/</loc>
@@ -3168,7 +3180,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/"/>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-23</lastmod>
   </url>
   <url>
     <loc>https://eqfy.app/faq/</loc>
