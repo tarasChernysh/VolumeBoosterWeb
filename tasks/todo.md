@@ -345,7 +345,7 @@ English only for now (translations later in one batch). New ids go in `related` 
 
 - [x] PR 1 `posts-8d-haptics`: `8d-audio`, `music-haptics`
 - [x] PR 2 `posts-bass-eq`: `best-bass-boosters`, `iphone-equalizer`
-- [ ] PR 3 `posts-voice-podcasts`: `voice-memo-louder`, `podcasts-too-quiet`
+- [x] PR 3 `posts-voice-podcasts`: `voice-memo-louder`, `podcasts-too-quiet`
 - [ ] PR 4 `posts-volume-ai`: `volume-keeps-going-down`, `ai-birthday-song`
 
 Per post: verify facts (app code + Apple pages) → write EN → fact-check → add to `related` of 1-3 EN posts → keyword-map → `node src/og/render.mjs en` → `node build.mjs && node check.mjs` → preview.
@@ -373,3 +373,14 @@ Per post: verify facts (app code + Apple pages) → write EN → fact-check → 
 **Verification:** `node build.mjs && node check.mjs`: 242 pages, 0 errors, 0 warnings. Preview at 375 px: no sideways page scroll, no broken images, FAQ present; the comparison table fits the column.
 
 **Not verified:** rival apps were not installed or tested, so their rows rest on their App Store descriptions (the Companjen listing doesn't say what is paid). Ratings move daily. Apple's Music EQ guide doesn't list preset names; the preset names reuse the existing `bass-boost` post.
+
+## Review (PR 3: voice memo louder + podcasts too quiet, EN only)
+
+**Changes:**
+- `voice-memo-louder` (`/blog/make-voice-memo-louder-iphone/`): why a memo is quiet in the file, what Voice Memos can do (Enhance Recording, Skip Silence, speed: Apple says playback options don't change the recording), then Voice Memos › Save to Files (.m4a) › EQfy Files import › Volume Boost › share. Honest that noise is boosted too and that the Noise Reducer tool takes MP3/WAV only.
+- `podcasts-too-quiet` (`/blog/podcasts-too-quiet-iphone/`): fixes in order: Apple Podcasts (volume bar, Enhance Dialogue), Spotify Volume level (Premium; Spotify's page doesn't say it covers podcasts), audiobook apps, iPhone limits, then EQfy for episode files you have, with the existing speech EQ recipe. Says plainly EQfy can't touch the Podcasts/Spotify/Audible apps.
+- `related` swaps (EN only): `louder-audio-file` (best-volume-boosters → voice-memo-louder) and `spotify-louder` (volume-too-low → podcasts-too-quiet). keyword-map clusters 28-29 and cluster lines; facts.md block with the checked Apple/Spotify/Audible pages. Share images for both.
+
+**Verification:** `node build.mjs && node check.mjs`: 244 pages, 0 errors, 0 warnings. Preview at 375 px: no sideways scroll, no broken images, FAQ and share image URL present.
+
+**Not verified:** nothing run on a device. Whether an exported Voice Memos file includes Enhance Recording is not stated by Apple and is left open in the post. Whether EQfy opens Voice Memos' "Editable" (QuickTime Audio) export wasn't tested, so the post says to use the default .m4a. Apple's per-show Podcasts settings (seen in a search summary only) are not mentioned. Audible's file protection is described as "usually copy-protected", not tested.

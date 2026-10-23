@@ -134,6 +134,12 @@ Safety: cite **WHO safe listening** (e.g. "Make Listening Safe" / WHO-ITU H.870:
 - Headphone Accommodations (102663): Settings › Accessibility › Audio & Visual › Headphone Accommodations; works with AirPods 2 and later, AirPods Pro, AirPods Max, EarPods, several Beats; Phone and Media switches; Customize Audio flow; Hearing Assistance on AirPods Pro 2/3 (iOS 18.1+) overrides it. AirPods Equalizer (Settings › AirPods › Audio & Routing › Equalizer, Custom = Low/Mid/High): see `airpods-bass`.
 - Rival listings (descriptions only, no hands-on): Boom 3.87★/4,561 (7-day trial, subscription; 8/16-band EQ, 29 presets, Headphone EQ); Equalizer Fx 4.17★/27,992 (7-band, 15+ presets, custom presets, monthly/yearly subscription); Bass Booster Volume Boost EQ (Companjen, id 1475414196) 4.38★/19,219 (10-band, 20+ presets, cloud import, no price text); Bass Booster Volume Power Amp (AppRover, id 927920917) 4.29★/18,335 (one-tap bass, flanger, pitch; Pro subscription). EQfy 4.53★/40 on the same day.
 
+**Voice Memos + podcast apps (read 2026-10-23, support.apple.com / support.spotify.com / help.audible.com):**
+- Voice Memos playback options (guide `iphebbd067ce`): Enhance Recording ("reduce background noise and echo when you play Mono and Stereo recordings"), Skip Silence, speed slider, Studio Sound (Spatial Audio recordings only). Apple: these "don't affect the recording itself". Apple does **not** say whether an export includes them: don't claim it. No volume/gain control is listed.
+- Export (`iph831c37815`): Share › Save to Files; default **.m4a** (layered recordings flattened, Spatial Audio becomes stereo); "Editable" = QuickTime Audio format (untested with EQfy, so the post says to keep the default). Share (`iph3d6dc359`): Rendered = single .m4a.
+- Apple Podcasts (`iph3a22707a5`): volume bar in Now Playing (touch and hold, slide); **Enhance Dialogue** = speed button › Enhance Dialogue ("hear voices more clearly"; clarity, not volume).
+- Spotify (`/us/article/volume-normalization/`): iOS profile picture › Settings and privacy › Playback › Volume level Loud/Normal/Quiet, "For: Premium"; described for songs, doesn't say if it applies to podcasts. Spotify's equalizer page mentions podcasts. Audible's "Listen in the app" page lists timers/skip intervals, no volume control.
+
 ## 7. Content format (for `src/content/<lang>/blog/<id>.html`)
 
 ```

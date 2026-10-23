@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 27 blog posts (24–27 EN only until translated) + 1 FAQ hub
+**Clusters**: 29 blog posts (24–29 EN only until translated) + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -227,6 +227,22 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | system wide equalizer iphone / is there an equalizer on iphone | Secondary |
 | apple music equalizer iphone / apple music equalizer ios 27 | Supporting |
 
+### 28. Voice memo louder — I (how-to) · EN only so far
+**Post id**: `voice-memo-louder`
+| Keyword | Role |
+|---|---|
+| make voice memo louder iphone | Primary |
+| why is my voice memo volume so low / increase volume on voice memos | Secondary |
+| voice memos enhance recording | Supporting |
+
+### 29. Podcasts too quiet — I (troubleshooting) · EN only so far
+**Post id**: `podcasts-too-quiet`
+| Keyword | Role |
+|---|---|
+| podcasts too quiet on iphone | Primary |
+| best equalizer settings for podcasts / apple podcast too quiet | Secondary |
+| how to make audible louder / enhance dialogue apple podcasts | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -261,11 +277,11 @@ zh, ja and ar use the English slug (Hanzi/kana/Arabic-script slugs add nothing).
 | remove-background-noise | remove-background-noise-audio-iphone | quitar el ruido de fondo de un audio en iPhone · `quitar-ruido-de-fondo-audio-iphone` | Hintergrundgeräusche entfernen iPhone · `hintergrundgeraeusche-entfernen-iphone` | arka plan gürültüsünü kaldırma · `iphone-arka-plan-gurultusunu-kaldirma` | iPhone音频降噪 | supprimer le bruit de fond audio · `supprimer-bruit-de-fond-audio-iphone` | remover ruído de fundo de áudio no iphone · `remover-ruido-de-fundo-audio-iphone` | 音声ノイズ除去 | إزالة الضوضاء من الصوت على iPhone |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
-- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low
+- **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low ↔ voice-memo-louder ↔ podcasts-too-quiet
 - **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass ↔ 8d-audio ↔ music-haptics ↔ best-bass-boosters ↔ iphone-equalizer
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
 - **AI Studio**: ai-song-generator ↔ ai-text-to-speech ↔ ai-sound-effects ↔ remove-background-noise (+ louder-audio-file → remove-background-noise)
-- **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb (+ ai-song-generator, iphone-duo → play-mp3-offline)
+- **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb ↔ voice-memo-louder (+ ai-song-generator, iphone-duo → play-mp3-offline)
 
 ## Priority ranking
 | # | Cluster | Content type | Primary keyword |
