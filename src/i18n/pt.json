@@ -10,7 +10,9 @@
     "download": "Baixar grátis",
     "changeLanguage": "Mudar idioma",
     "menu": "Abrir menu",
-    "logoAlt": "Ícone do EQfy"
+    "logoAlt": "Ícone do EQfy",
+    "main": "Navegação principal",
+    "breadcrumb": "Trilha de navegação"
   },
   "footer": {
     "tagline": "Aumento de volume, aumento de graves e equalizador para iPhone. Deixe cada faixa mais alta, mais profunda e mais nítida.",
@@ -23,8 +25,8 @@
     "support": "Suporte",
     "appStore": "App Store",
     "legal": "Legal",
-    "privacy": "Política de Privacidade",
-    "terms": "Termos de Uso",
+    "privacy": "Política de Privacidade (em inglês)",
+    "terms": "Termos de Uso (em inglês)",
     "rights": "Todos os direitos reservados.",
     "trademark": "iPhone, AirPods e App Store são marcas registradas da Apple Inc."
   },
@@ -60,5 +62,15 @@
     "title": "Guias e novidades",
     "description": "Dicas para deixar seu iPhone mais alto, mais nítido e mais agradável de ouvir.",
     "all": "Todos os artigos →"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que você procura não existe.",
+    "lead": "A página que você procura não existe ou foi movida. Tente uma destas:"
+  },
+  "og": {
+    "title": "Deixe seu iPhone <em>mais alto</em>",
+    "sub": "Amplificador de volume e graves com equalizador profissional",
+    "pills": ["Volume até 200%", "Equalizador de 7 bandas", "Áudio 3D", "Estúdio IA"]
   }
 }

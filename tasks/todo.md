@@ -434,3 +434,45 @@ Taras (2026-10-24): hold the merges, translate first. Branch `translate-new-post
 - French spacing: the new posts use U+202F before : ; ? ! (per facts.md §8 rule) while the 23 older French posts use U+00A0 everywhere; both render the same, left as is.
 - "Music Haptics arrived with iOS 18" is based on Apple's guide being tagged iOS 18, not an explicit Apple statement.
 - App-side catalog issues seen again: ar "Figure 8" uses an Arabic-Indic digit, ar `Balance:` means audio balance, tr `Balance:`.
+
+# Localize the site properly (plan: `~/.claude/plans/localize-my-website-properly-agile-falcon.md`)
+
+Taras (2026-10-24): polish the existing languages, make Danish a full language, add ko/it/nl/pl/ru/uk as full languages. Privacy/Terms and screenshots stay English. Switcher keeps flags, Russian without one. Keywords from Ahrefs (fallback: autocomplete). 8 stacked PRs: `l10n-polish` → `lang-da` → `lang-it` → `lang-nl` → `lang-pl` → `lang-ko` → `lang-ru` → `lang-uk`.
+
+## Phase A: polish (PR `l10n-polish`)
+- [x] A1. `render.mjs`: don't abort when Chrome exits non-zero after writing the screenshot
+- [x] A2. Localized default share image (`site.html` params, i18n `og` key, `og/<lang>-site.jpg`, used by build.mjs + landing-i18n)
+- [x] A3. iPhone Duo post: drop `ogImage` in the 8 non-EN translations (localized cards)
+- [x] A4. Per-language 404 pages (`<prefix>/404.html`)
+- [x] A5. Footer Privacy/Terms links marked English (`hreflang="en"` + "(English)" label)
+- [x] A6. aria-labels "Main navigation" / "Breadcrumb" from i18n
+- [x] A7. Japanese homepage copyright line
+- [x] A8. `200%` translatable on homepages; German posts/FAQ use a no-break space before `%`
+- [x] A9. `inLanguage` = page language (`pt-BR`, `zh-Hans`)
+- [x] A10. Homepage switcher `lang` attributes, ja/zh font stacks, scrollable dropdown
+- [x] A11. Build, check, browser preview, PR, review
+
+## Review (Phase A: polish)
+
+**Changes:**
+- **Share images in every language:** `src/og/site.html` takes `?title&sub&pills&lang&dir` (English when empty) and keeps the green highlighted words on one line. `render.mjs` writes `assets/images/og/<lang>-site.jpg` from the new `og` strings in `src/i18n/<lang>.json`. `build.mjs` uses it as the default image for that language's blog index, FAQ, 404 and any post without its own card. `landing-i18n.mjs apply` swaps it into the homepage meta and JSON-LD. The 8 translated iPhone Duo posts dropped the English `og.png` and now have localized cards. 16 new images.
+- **render.mjs no longer aborts** when Chrome exits non-zero at teardown after writing the screenshot.
+- **404 per language:** `build.mjs` writes `<prefix>/404.html` for each content language (new `notFound` strings). Its buttons go to that language's home, blog and FAQ. Cloudflare Pages serves the nearest 404.html, so a miss under `/de/` now gets the German page.
+- **Legal links:** Privacy/Terms stay English, so every non-EN footer marks them with `hreflang="en"` and a "(in English)" label in the page language (i18n + homepage dictionaries, Danish too).
+- **Hard-coded English removed:** the nav and breadcrumb `aria-label`s come from i18n (`nav.main`, `nav.breadcrumb`). The Japanese homepage copyright now says 無断複写・転載を禁じます。
+- **Numbers:** `landing-i18n.mjs` now also extracts text runs that contain `%`, so the hero stat and the two dials say `200 %` (de/fr/da, no-break space), `%200` (tr) or `200%`. German posts and FAQ: 101 `<digit> %` now use a no-break space, so the number can't wrap away from the sign. The 6 French cases are only in `alt` text and were left as they are.
+- **`inLanguage`** on homepages, posts, blog index and FAQ is the page's language tag (`pt-BR`, `zh-Hans`), matching `<html lang>`.
+- **Homepage:** switcher options carry `lang`. The zh/ja/ar font stacks from `site.css` are now in the homepage CSS. The language dropdown gets `max-height` + scrolling (site.css too) so 16 languages will fit a phone.
+
+**Verification:** `node build.mjs && node check.mjs`: 318 pages, 0 errors, 0 warnings. In the browser at 375 px: `/de/404.html` is German with German buttons and the other languages listed; `/ar/404.html` is RTL; `/de/` shows `200 %` three times, the footer reads "Datenschutzerklärung (auf Englisch)", and there's no sideways scroll; `/ja/` uses the Japanese font stack and the dropdown scrolls (max-height 716 px). Share images checked by eye for de, ja (もっと大きく on one line), ar (RTL, joined letters), fr, es and the German Duo card.
+
+**Not verified:** the local server can't show Cloudflare's nearest-404 fallback; that is checked after deploy by opening a missing `/de/…` URL. Danish has no share image yet (it comes with Phase B). No native speaker has read the new strings.
+
+## Phase B + C: new full languages (one PR each)
+- [ ] da (Danish)
+- [ ] it (Italian)
+- [ ] nl (Dutch)
+- [ ] pl (Polish)
+- [ ] ko (Korean, + CJK tooling)
+- [ ] ru (Russian, no flag)
+- [ ] uk (Ukrainian)
