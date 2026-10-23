@@ -404,3 +404,33 @@ Per post: verify facts (app code + Apple pages) → write EN → fact-check → 
 - **Length:** the posts run about 750-1,170 words, below the plan's 1,200-1,800 target. I kept them to facts I could verify instead of padding. Extend them if the target matters.
 - **Demand:** no search-volume tool was connected (Ahrefs needs authorization), so the picks rest on Google autocomplete signals, not volumes.
 - `src/og/render.mjs` aborts here because headless Chrome exits non-zero at teardown; share images were made with an equivalent scratch script. Worth fixing in `render.mjs` (ignore the exit code if the screenshot exists).
+
+# Translate the 8 new posts into es, de, tr, zh, fr, pt, ja, ar
+
+Taras (2026-10-24): hold the merges, translate first. Branch `translate-new-posts`, stacked on `posts-volume-ai` (#24). 8 posts x 8 languages = 64 files.
+
+- [x] 1. One subagent per language writes `src/content/<lang>/blog/<id>.html` for the 8 ids (brief: facts.md §7-8, keyword-map, two existing posts of that language, `Localizable.xcstrings` for new UI terms, localized Apple/Spotify links); each runs the validator (scratchpad `validate-translation.py`) before reporting
+- [x] 2. Apply the same `related` swaps to the 10 changed EN posts in every language (done: 80 one-line edits)
+- [x] 3. Second pass per language: terms vs `Localizable.xcstrings`, localized Apple links return 200, natural phrasing
+- [x] 4. keyword-map: localized primary keywords + slugs for ids 24-31 (cols es/de/tr/zh/fr/pt/ja/ar)
+- [x] 5. Share images for 64 new posts (scratch script, Chrome exits non-zero at teardown), `node build.mjs && node check.mjs`, browser preview (375 px; RTL for ar), PR
+- [x] 6. Review section
+
+## Review (translations of the 8 new posts)
+
+**Changes:**
+- 64 new files: `src/content/{es,de,tr,zh,fr,pt,ja,ar}/blog/<id>.html` for `8d-audio`, `music-haptics`, `best-bass-boosters`, `iphone-equalizer`, `voice-memo-louder`, `podcasts-too-quiet`, `volume-keeps-going-down`, `ai-birthday-song`. One subagent per language; each used facts.md §7-8, two existing posts of that language, `Localizable.xcstrings` for in-app terms and the localized Apple/Spotify pages for menu names. es/de/tr/fr/pt have localized ASCII slugs; zh/ja/ar keep the English slug.
+- The 10 `related` swaps made in the English posts are applied to every language (80 one-line edits), so all 9 languages link the same posts.
+- English fix carried to all 9 languages: the best-bass-boosters lead called both "Bass Booster" apps "simple music players"; AppRover's app is a one-tap booster, so it now says "simpler apps built around bass boosting".
+- keyword-map: localized primary keywords and slugs for the 8 ids in all 8 language columns. 64 share images.
+
+**Verification:** `node build.mjs && node check.mjs`: 279 posts, 310 pages, 0 errors, 0 warnings, no "missing translations" left. The validator (scratchpad, not committed) passes for all 8 languages: strict-JSON front-matter, same placeholders, same h2/h3 ids, same table/list/link counts, slug rules, title and description lengths. All 120 external links in the new posts return 200. Numbers in every translation match the English once separators are normalized. All 64 pages at 375 px: no sideways scroll, no broken images, no overflowing tables, FAQ and 3 related cards present; Arabic pages are `dir="rtl"`. Ja and ar share images checked by eye (Japanese glyph shapes; Arabic mirrored with joined letters).
+
+**Not verified / worth a native reader:**
+- No native speaker has read any language. Terms came from the app's catalog and Apple's localized pages.
+- Spotify's and Audible's localized help pages: Audible only has an English article reachable, so that link stays English and is labelled in each language. Spotify links use each language's locale and return 200 on GET.
+- Apple's pages disagree across languages on a few terms: the pt-BR posts call "Reduce Loud Audio" **Limite de Volume** (Apple's pt-BR wording) while the older pt posts say **Redução do Volume**; Apple's zh page says Music Haptics covers "tens of millions" of songs while the English page says "millions" (translations follow English); Apple's Japanese Sound Check page says 音楽 where the iPhone guide says ミュージック (posts use ミュージック).
+- Own coinages to check: ar «مشغّل الحس اللمسي», tr "Haptik oynatıcı" (EQfy's haptic player, which the app doesn't name).
+- French spacing: the new posts use U+202F before : ; ? ! (per facts.md §8 rule) while the 23 older French posts use U+00A0 everywhere; both render the same, left as is.
+- "Music Haptics arrived with iOS 18" is based on Apple's guide being tagged iOS 18, not an explicit Apple statement.
+- App-side catalog issues seen again: ar "Figure 8" uses an Arabic-Indic digit, ar `Balance:` means audio balance, tr `Balance:`.
