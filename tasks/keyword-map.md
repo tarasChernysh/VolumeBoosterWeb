@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 25 blog posts (24–25 EN only until translated) + 1 FAQ hub
+**Clusters**: 27 blog posts (24–27 EN only until translated) + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -97,7 +97,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 |---|---|
 | boom alternative iphone | Primary |
 | eqfy vs boom / boom vs | Secondary |
-| best bass booster app iphone / best volume booster app for iphone | Supporting |
+| best volume booster app for iphone | Supporting ("best bass booster app" now belongs to `best-bass-boosters`) |
 
 ### 12. Sound amplifier — I/C (top Search Console query)
 **Post id**: `sound-amplifier`
@@ -211,6 +211,22 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | music haptics spotify / music haptics not working | Secondary |
 | feel the beat iphone / iphone vibrate to music | Supporting |
 
+### 26. Best bass booster apps — C (AI-visibility: "best bass booster app iphone") · EN only so far
+**Post id**: `best-bass-boosters`
+| Keyword | Role |
+|---|---|
+| best bass booster app for iphone | Primary |
+| best bass booster app free / for headphones / for bluetooth speaker | Secondary |
+| boom alternative iphone | Supporting (stays with `vs-boom`; "best bass booster app iphone" moved here from `vs-boom`) |
+
+### 27. Does iPhone have an equalizer? — I · EN only so far
+**Post id**: `iphone-equalizer`
+| Keyword | Role |
+|---|---|
+| does iphone have an equalizer | Primary |
+| system wide equalizer iphone / is there an equalizer on iphone | Secondary |
+| apple music equalizer iphone / apple music equalizer ios 27 | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -246,7 +262,7 @@ zh, ja and ar use the English slug (Hanzi/kana/Arabic-script slugs add nothing).
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
 - **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low
-- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass ↔ 8d-audio ↔ music-haptics
+- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass ↔ 8d-audio ↔ music-haptics ↔ best-bass-boosters ↔ iphone-equalizer
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
 - **AI Studio**: ai-song-generator ↔ ai-text-to-speech ↔ ai-sound-effects ↔ remove-background-noise (+ louder-audio-file → remove-background-noise)
 - **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb (+ ai-song-generator, iphone-duo → play-mp3-offline)

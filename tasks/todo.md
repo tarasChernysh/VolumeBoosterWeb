@@ -344,7 +344,7 @@ v2.2.23 went live on the App Store on 2026-10-14 (App Store lookup shows version
 English only for now (translations later in one batch). New ids go in `related` of EN posts only. One PR per group.
 
 - [x] PR 1 `posts-8d-haptics`: `8d-audio`, `music-haptics`
-- [ ] PR 2 `posts-bass-eq`: `best-bass-boosters`, `iphone-equalizer`
+- [x] PR 2 `posts-bass-eq`: `best-bass-boosters`, `iphone-equalizer`
 - [ ] PR 3 `posts-voice-podcasts`: `voice-memo-louder`, `podcasts-too-quiet`
 - [ ] PR 4 `posts-volume-ai`: `volume-keeps-going-down`, `ai-birthday-song`
 
@@ -361,3 +361,15 @@ Per post: verify facts (app code + Apple pages) → write EN → fact-check → 
 **Verification:** `node build.mjs && node check.mjs`: 240 pages, 0 errors, 0 warnings (the build prints "missing translations" for the 8 other languages, expected until the translation batch). Browser preview at 375 and 1280 px: no sideways scroll, no broken images, FAQ and JSON-LD present, share image URL set, post listed on `/blog/`; no language switcher on these posts (EN only).
 
 **Not verified:** nothing was run on a device (facts read from source). Apple's page lists no supported iPhone models, so the post doesn't name any. `render.mjs` aborts here because headless Chrome exits non-zero at teardown even though the screenshot is written; the two images were made with a scratch script using the same Chrome flags and `sips` settings (not committed). The homepage "latest posts" block uses a fixed `latestPosts` list and was left alone.
+
+## Review (PR 2: best bass booster apps + "Does iPhone have an equalizer?", EN only)
+
+**Changes:**
+- `best-bass-boosters` (`/blog/best-bass-booster-apps-iphone/`): compares EQfy, Boom, Equalizer Fx, Bass Booster Volume Boost EQ (Companjen) and Bass Booster Volume Power Amp (AppRover) from their US listings (dated Oct 2026), plus Apple Music's free Bass Booster preset and Spotify's EQ. Says plainly that EQfy's Bass Boost is Premium, its EQ is less detailed than Boom's or Companjen's, it can't save presets and has 40 ratings.
+- `iphone-equalizer` (`/blog/does-iphone-have-an-equalizer/`): where the real equalizers are (Music app EQ, AirPods Equalizer, Headphone Accommodations, Spotify), why there is no system-wide one, and the app option. Apple steps come from support.apple.com (read 2026-10-23).
+- `related` swaps (EN only): `vs-boom` and `best-eq-apps` → `best-bass-boosters`; `eq-settings` → `iphone-equalizer`. keyword-map clusters 26-27 (and "best bass booster app iphone" moved from `vs-boom` to the new post); facts.md block with the checked Apple pages and rival numbers. Share images for both.
+- Also fixed on PR 1's branch: plain `<table>` scrolls sideways inside its column at 375 px, so text tables in the new posts use `class="compare"` (fixed, wrapping columns).
+
+**Verification:** `node build.mjs && node check.mjs`: 242 pages, 0 errors, 0 warnings. Preview at 375 px: no sideways page scroll, no broken images, FAQ present; the comparison table fits the column.
+
+**Not verified:** rival apps were not installed or tested, so their rows rest on their App Store descriptions (the Companjen listing doesn't say what is paid). Ratings move daily. Apple's Music EQ guide doesn't list preset names; the preset names reuse the existing `bass-boost` post.

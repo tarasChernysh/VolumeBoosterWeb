@@ -16,7 +16,9 @@ Key facts:
 
 ## Articles
 - [iPhone Duo Support Is Here in EQfy v2.2.23](https://eqfy.app/blog/iphone-duo-support/): iPhone Duo apps, upgraded: EQfy - Louder Volume v2.2.23 uses the full inner display with a sidebar and two-column screens. See what's new and how to update.
+- [Does iPhone Have an Equalizer? Where to Find It](https://eqfy.app/blog/does-iphone-have-an-equalizer/): Does iPhone have an equalizer? Not a system-wide one. Find the built-in EQs in Music, AirPods and Accessibility, and how to add one with an app.
 - [8D Audio on iPhone: How to Get the 8D Effect](https://eqfy.app/blog/8d-audio-iphone/): Want 8D audio on iPhone? Switch on 3D Source in EQfy, pick the Orbit motion and put on headphones. Here is how to get the circling effect, step by step.
+- [Best Bass Booster Apps for iPhone, Compared](https://eqfy.app/blog/best-bass-booster-apps-iphone/): Looking for the best bass booster app for iPhone? We compare Boom, Equalizer Fx, two Bass Booster apps and EQfy on bass tools, price and rating. Free options too.
 - [Music Haptics on iPhone: How to Feel Your Music](https://eqfy.app/blog/music-haptics-iphone/): Music Haptics makes your iPhone tap and vibrate in time with a song. Learn how to turn it on, why it may not work, and how EQfy adds haptics to your own files.
 - [AI Sound Effects Generator for iPhone: How to Use It](https://eqfy.app/blog/ai-sound-effects-generator/): Make an AI sound effect on your iPhone: type a prompt in EQfy's AI Studio, choose a duration and Influence, and get an MP3. Plus free Apple sound options.
 - [Text to Speech on iPhone: AI Voices and Free Options](https://eqfy.app/blog/ai-text-to-speech-iphone/): Need a text to speech app for iPhone? Compare the free Read & Speak feature with EQfy's AI Studio, which turns up to 5,000 characters into an MP3 voiceover.
