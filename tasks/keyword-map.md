@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 31 blog posts (24–31 EN only until translated) + 1 FAQ hub
+**Clusters**: 31 blog posts (24–31 translated into all 8 languages on 2026-10-24) + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -195,7 +195,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | noise reducer app iphone / voice memos enhance recording | Secondary |
 | clean up audio file iphone | Supporting |
 
-### 24. 8D audio — I (how-to) · EN only so far
+### 24. 8D audio — I (how-to) 
 **Post id**: `8d-audio`
 | Keyword | Role |
 |---|---|
@@ -203,7 +203,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | how to get 8d audio on iphone / 8d audio maker / 8d audio settings iphone | Secondary |
 | 3d audio orbit motion | Supporting |
 
-### 25. Music Haptics — I (how-to) · EN only so far
+### 25. Music Haptics — I (how-to) 
 **Post id**: `music-haptics`
 | Keyword | Role |
 |---|---|
@@ -211,7 +211,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | music haptics spotify / music haptics not working | Secondary |
 | feel the beat iphone / iphone vibrate to music | Supporting |
 
-### 26. Best bass booster apps — C (AI-visibility: "best bass booster app iphone") · EN only so far
+### 26. Best bass booster apps — C (AI-visibility: "best bass booster app iphone") 
 **Post id**: `best-bass-boosters`
 | Keyword | Role |
 |---|---|
@@ -219,7 +219,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | best bass booster app free / for headphones / for bluetooth speaker | Secondary |
 | boom alternative iphone | Supporting (stays with `vs-boom`; "best bass booster app iphone" moved here from `vs-boom`) |
 
-### 27. Does iPhone have an equalizer? — I · EN only so far
+### 27. Does iPhone have an equalizer? — I 
 **Post id**: `iphone-equalizer`
 | Keyword | Role |
 |---|---|
@@ -227,7 +227,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | system wide equalizer iphone / is there an equalizer on iphone | Secondary |
 | apple music equalizer iphone / apple music equalizer ios 27 | Supporting |
 
-### 28. Voice memo louder — I (how-to) · EN only so far
+### 28. Voice memo louder — I (how-to) 
 **Post id**: `voice-memo-louder`
 | Keyword | Role |
 |---|---|
@@ -235,7 +235,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | why is my voice memo volume so low / increase volume on voice memos | Secondary |
 | voice memos enhance recording | Supporting |
 
-### 29. Podcasts too quiet — I (troubleshooting) · EN only so far
+### 29. Podcasts too quiet — I (troubleshooting) 
 **Post id**: `podcasts-too-quiet`
 | Keyword | Role |
 |---|---|
@@ -243,7 +243,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | best equalizer settings for podcasts / apple podcast too quiet | Secondary |
 | how to make audible louder / enhance dialogue apple podcasts | Supporting |
 
-### 30. Volume keeps going down — I (troubleshooting) · EN only so far
+### 30. Volume keeps going down — I (troubleshooting) 
 **Post id**: `volume-keeps-going-down`
 | Keyword | Role |
 |---|---|
@@ -251,7 +251,7 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | iphone volume keeps going down when i pick it up / headphones / reddit | Secondary |
 | headphone notification lower volume iphone / attention aware lower volume | Supporting |
 
-### 31. AI birthday song — C/I (AI Studio) · EN only so far
+### 31. AI birthday song — C/I (AI Studio) 
 **Post id**: `ai-birthday-song`
 | Keyword | Role |
 |---|---|
@@ -291,6 +291,14 @@ zh, ja and ar use the English slug (Hanzi/kana/Arabic-script slugs add nothing).
 | ai-text-to-speech | ai-text-to-speech-iphone | app de texto a voz para iPhone · `app-texto-a-voz-iphone` | Text-zu-Sprache iPhone · `text-zu-sprache-iphone` | iPhone metin okuma uygulaması · `iphone-metin-okuma-uygulamasi` | iPhone文字转语音 | synthèse vocale iphone · `synthese-vocale-iphone-ia` | texto para voz no iphone · `texto-para-voz-iphone` | テキスト読み上げ | تحويل النص إلى كلام على iPhone |
 | ai-sound-effects | ai-sound-effects-generator | generador de efectos de sonido con IA · `generador-efectos-sonido-ia-iphone` | KI-Soundeffekte erstellen · `ki-soundeffekte-erstellen-iphone` | yapay zeka ses efekti oluşturucu · `yapay-zeka-ses-efekti-olusturucu` | AI音效生成器 | générateur d’effets sonores IA · `generateur-effets-sonores-ia-iphone` | gerador de efeitos sonoros com ia · `gerador-efeitos-sonoros-ia-iphone` | AI効果音 | مؤثرات صوتية بالذكاء الاصطناعي |
 | remove-background-noise | remove-background-noise-audio-iphone | quitar el ruido de fondo de un audio en iPhone · `quitar-ruido-de-fondo-audio-iphone` | Hintergrundgeräusche entfernen iPhone · `hintergrundgeraeusche-entfernen-iphone` | arka plan gürültüsünü kaldırma · `iphone-arka-plan-gurultusunu-kaldirma` | iPhone音频降噪 | supprimer le bruit de fond audio · `supprimer-bruit-de-fond-audio-iphone` | remover ruído de fundo de áudio no iphone · `remover-ruido-de-fundo-audio-iphone` | 音声ノイズ除去 | إزالة الضوضاء من الصوت على iPhone |
+| 8d-audio | 8d-audio-iphone | audio 8D en iPhone · `audio-8d-iphone` | 8D Audio iPhone · `8d-audio-iphone-erstellen` | iPhone 8D ses · `iphone-8d-ses` | iPhone 8D音频 | audio 8D sur iPhone · `audio-8d-iphone` | áudio 8d no iphone · `audio-8d-iphone` | iPhoneの8Dオーディオ | صوت 8D على iPhone |
+| music-haptics | music-haptics-iphone | vibración con la música en iPhone · `vibracion-con-la-musica-iphone` | Musikhaptik iPhone · `musikhaptik-iphone` | iPhone Müzik Dokunuşları · `iphone-muzik-dokunuslari` | iPhone音乐触感反馈 | musique tactile iphone · `musique-tactile-iphone` | resposta tátil da música no iphone · `resposta-tatil-da-musica-iphone` | ミュージックの触覚 | الحس اللمسي في الموسيقى على iPhone |
+| best-bass-boosters | best-bass-booster-apps-iphone | mejores apps para aumentar graves en iPhone · `mejores-apps-aumentar-graves-iphone` | beste Bass Booster App iPhone · `beste-bass-booster-apps-iphone` | en iyi bas artırıcı uygulama iphone · `en-iyi-bas-artirici-uygulama-iphone` | iPhone低音增强App推荐 | meilleures applis bass booster iphone · `meilleures-applis-bass-booster-iphone` | melhor app para aumentar graves no iphone · `melhor-app-aumentar-graves-iphone` | iPhone低音ブースターアプリ | أفضل تطبيق لتعزيز الجهير على iPhone |
+| iphone-equalizer | does-iphone-have-an-equalizer | tiene el iPhone ecualizador · `tiene-iphone-ecualizador` | Hat das iPhone einen Equalizer · `hat-das-iphone-einen-equalizer` | iPhone ekolayzer var mı · `iphone-ekolayzer-var-mi` | iPhone有均衡器吗 | iphone a-t-il un égaliseur · `iphone-a-t-il-un-egaliseur` | iphone tem equalizador · `iphone-tem-equalizador` | iPhoneのイコライザー | هل يحتوي iPhone على معادل صوت |
+| voice-memo-louder | make-voice-memo-louder-iphone | subir el volumen de una nota de voz en iPhone · `subir-volumen-nota-de-voz-iphone` | Sprachmemo lauter machen iPhone · `sprachmemo-lauter-machen-iphone` | sesli notun sesini yükseltme · `sesli-notun-sesini-yukseltme-iphone` | iPhone调大语音备忘录音量 | augmenter le volume d’un mémo vocal sur iPhone · `augmenter-volume-memo-vocal-iphone` | aumentar o volume de uma gravação de voz no iphone · `aumentar-volume-gravacao-de-voz-iphone` | iPhoneでボイスメモの音量を上げる | رفع صوت مذكرة صوتية على iPhone |
+| podcasts-too-quiet | podcasts-too-quiet-iphone | podcasts muy bajos en iPhone · `podcasts-muy-bajos-iphone` | Podcasts zu leise iPhone · `podcasts-zu-leise-iphone` | podcast sesi kısık · `podcast-sesi-kisik-iphone` | iPhone播客声音太小 | volume des podcasts trop bas sur iPhone · `volume-podcasts-trop-bas-iphone` | podcast baixo no iphone · `podcast-baixo-iphone` | ポッドキャストの音が小さい | صوت البودكاست منخفض على iPhone |
+| volume-keeps-going-down | iphone-volume-keeps-going-down | el volumen del iPhone baja solo · `volumen-iphone-baja-solo` | iPhone Lautstärke sinkt von selbst · `iphone-lautstaerke-sinkt-von-selbst` | iPhone sesi kendiliğinden düşüyor · `iphone-sesi-kendiliginden-dusuyor` | iPhone音量自动变小 | le volume de l’iPhone baisse tout seul · `volume-iphone-baisse-tout-seul` | volume do iphone diminui sozinho · `volume-iphone-diminui-sozinho` | iPhoneの音量が勝手に下がる | انخفاض صوت iPhone من تلقاء نفسه |
+| ai-birthday-song | ai-birthday-song-generator-with-name | canción de cumpleaños con IA · `cancion-cumpleanos-ia-nombre` | KI Geburtstagslied mit Namen · `ki-geburtstagslied-mit-namen` | yapay zeka doğum günü şarkısı · `yapay-zeka-dogum-gunu-sarkisi` | AI生日歌生成器 | chanson d’anniversaire IA avec prénom · `chanson-anniversaire-ia-prenom` | música de aniversário com ia e nome · `musica-de-aniversario-ia-com-nome` | AI誕生日ソング | أغنية عيد ميلاد بالذكاء الاصطناعي باسم |
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
 - **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low ↔ voice-memo-louder ↔ podcasts-too-quiet ↔ volume-keeps-going-down
