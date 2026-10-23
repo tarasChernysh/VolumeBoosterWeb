@@ -1,7 +1,7 @@
 # Keyword map (SearchFit keyword-cluster)
 
 **Keywords processed**: 28 EN seeds (+ localized equivalents, seeded from `../docs/aso-keywords.md` and the App Store titles per storefront)
-**Clusters**: 23 blog posts + 1 FAQ hub
+**Clusters**: 25 blog posts (24–25 EN only until translated) + 1 FAQ hub
 
 Intent legend: **I** = informational, **C** = commercial (looking for an app), **N** = news.
 Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph, slug and meta description, and weaves secondaries into H2s naturally. No keyword stuffing.
@@ -195,6 +195,22 @@ Every post targets ONE primary keyword in its `<title>`, `<h1>`, first paragraph
 | noise reducer app iphone / voice memos enhance recording | Secondary |
 | clean up audio file iphone | Supporting |
 
+### 24. 8D audio — I (how-to) · EN only so far
+**Post id**: `8d-audio`
+| Keyword | Role |
+|---|---|
+| 8d audio iphone | Primary |
+| how to get 8d audio on iphone / 8d audio maker / 8d audio settings iphone | Secondary |
+| 3d audio orbit motion | Supporting |
+
+### 25. Music Haptics — I (how-to) · EN only so far
+**Post id**: `music-haptics`
+| Keyword | Role |
+|---|---|
+| music haptics iphone | Primary |
+| music haptics spotify / music haptics not working | Secondary |
+| feel the beat iphone / iphone vibrate to music | Supporting |
+
 ### FAQ hub — I/C
 **Page**: `/faq/` — catches long-tail questions ("is EQfy free", "does it work with Apple Music", "does it work with Spotify", "iPhone Duo") and links into every cluster.
 
@@ -230,7 +246,7 @@ zh, ja and ar use the English slug (Hanzi/kana/Arabic-script slugs add nothing).
 
 ## Internal-link clusters (each post links to the other members + FAQ + home anchor)
 - **Loudness**: louder-than-max ↔ volume-too-low ↔ airpods-louder ↔ safe-boosting ↔ best-volume-boosters ↔ louder-audio-file ↔ spotify-louder ↔ bluetooth-volume-low
-- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass
+- **Tone**: eq-settings ↔ bass-boost ↔ spatial-audio ↔ headphone-balance ↔ best-eq-apps ↔ slowed-reverb ↔ airpods-bass ↔ 8d-audio ↔ music-haptics
 - **Product/News**: iphone-duo ↔ ai-song-generator (+ Duo links to every feature post)
 - **AI Studio**: ai-song-generator ↔ ai-text-to-speech ↔ ai-sound-effects ↔ remove-background-noise (+ louder-audio-file → remove-background-noise)
 - **Library**: play-mp3-offline ↔ louder-audio-file ↔ slowed-reverb (+ ai-song-generator, iphone-duo → play-mp3-offline)
