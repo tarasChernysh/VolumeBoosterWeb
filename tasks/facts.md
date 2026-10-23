@@ -140,6 +140,11 @@ Safety: cite **WHO safe listening** (e.g. "Make Listening Safe" / WHO-ITU H.870:
 - Apple Podcasts (`iph3a22707a5`): volume bar in Now Playing (touch and hold, slide); **Enhance Dialogue** = speed button › Enhance Dialogue ("hear voices more clearly"; clarity, not volume).
 - Spotify (`/us/article/volume-normalization/`): iOS profile picture › Settings and privacy › Playback › Volume level Loud/Normal/Quiet, "For: Premium"; described for songs, doesn't say if it applies to podcasts. Spotify's equalizer page mentions podcasts. Audible's "Listen in the app" page lists timers/skip intervals, no volume control.
 
+**Volume drops + AI birthday song (checked 2026-10-24):**
+- Apple, headphone notifications (`iph0596a9152`): after a notification about loud listening, "the next time you plug in your headphones or connect them using Bluetooth, your volume is automatically set to a lower level" (user can raise it); Health › Browse › Hearing › Headphone Notifications; Settings › Sounds & Haptics › Headphone Safety (Reduce Loud Audio, Headphone Notifications; may be on by default / not switchable by country).
+- Apple, Attention Aware Features (support.apple.com/en-us/102216): "When attention is detected, your iPhone will lower the volume of your alerts" (alerts only, TrueDepth camera); Settings › Face ID & Passcode › Attention Aware Features. Sound Check (109331): evens loudness between songs. AirPods Conversation Awareness / Personalized Volume: see `airpods-louder`.
+- Music Generator input (code `SongComposeView.swift`, `VBGuidenceView.swift`): free-text prompt (no limit in the UI), "Enter song name" (default "Track name", saved as `<name>.mp3` in the "Song Compose" playlist), Force instrumental. In-app guide: no lyrics → the model writes them; own lyrics → "the system arranges them into a musical form"; can ask for a length ("60-second track") and vocal entry ("vocals start at 15 seconds"); multilingual lyrics supported. How reliably a name is sung is **unverified**: never promise it.
+
 ## 7. Content format (for `src/content/<lang>/blog/<id>.html`)
 
 ```
