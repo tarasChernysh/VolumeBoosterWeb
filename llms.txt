@@ -16,9 +16,11 @@ Key facts:
 
 ## Articles
 - [iPhone Duo Support Is Here in EQfy v2.2.23](https://eqfy.app/blog/iphone-duo-support/): iPhone Duo apps, upgraded: EQfy - Louder Volume v2.2.23 uses the full inner display with a sidebar and two-column screens. See what's new and how to update.
+- [AI Birthday Song With Their Name, on iPhone](https://eqfy.app/blog/ai-birthday-song-generator-with-name/): Make an AI birthday song with a name on iPhone: write a prompt or your own lyrics in EQfy's Music Generator, pick the style and share it. Uses 3,000 credits.
 - [Does iPhone Have an Equalizer? Where to Find It](https://eqfy.app/blog/does-iphone-have-an-equalizer/): Does iPhone have an equalizer? Not a system-wide one. Find the built-in EQs in Music, AirPods and Accessibility, and how to add one with an app.
 - [Podcasts Too Quiet on iPhone? Fixes and EQ Tips](https://eqfy.app/blog/podcasts-too-quiet-iphone/): Podcasts too quiet on your iPhone? Try Enhance Dialogue in Apple Podcasts, Spotify's Volume level and your iPhone limits, plus a voice EQ and boost for MP3 files.
 - [How to Make a Voice Memo Louder on iPhone](https://eqfy.app/blog/make-voice-memo-louder-iphone/): Voice memo too quiet? Save it to Files, import it into EQfy, raise Volume Boost up to +12 dB and share a louder copy. Here is how, plus what Voice Memos can do.
+- [iPhone Volume Keeps Going Down? Why and How to Fix](https://eqfy.app/blog/iphone-volume-keeps-going-down/): iPhone volume keeps going down by itself? See why: headphone notifications, Reduce Loud Audio, AirPods features and Attention Aware, and how to stop each one.
 - [8D Audio on iPhone: How to Get the 8D Effect](https://eqfy.app/blog/8d-audio-iphone/): Want 8D audio on iPhone? Switch on 3D Source in EQfy, pick the Orbit motion and put on headphones. Here is how to get the circling effect, step by step.
 - [Best Bass Booster Apps for iPhone, Compared](https://eqfy.app/blog/best-bass-booster-apps-iphone/): Looking for the best bass booster app for iPhone? We compare Boom, Equalizer Fx, two Bass Booster apps and EQfy on bass tools, price and rating. Free options too.
 - [Music Haptics on iPhone: How to Feel Your Music](https://eqfy.app/blog/music-haptics-iphone/): Music Haptics makes your iPhone tap and vibrate in time with a song. Learn how to turn it on, why it may not work, and how EQfy adds haptics to your own files.

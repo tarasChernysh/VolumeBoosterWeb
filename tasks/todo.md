@@ -346,7 +346,7 @@ English only for now (translations later in one batch). New ids go in `related` 
 - [x] PR 1 `posts-8d-haptics`: `8d-audio`, `music-haptics`
 - [x] PR 2 `posts-bass-eq`: `best-bass-boosters`, `iphone-equalizer`
 - [x] PR 3 `posts-voice-podcasts`: `voice-memo-louder`, `podcasts-too-quiet`
-- [ ] PR 4 `posts-volume-ai`: `volume-keeps-going-down`, `ai-birthday-song`
+- [x] PR 4 `posts-volume-ai`: `volume-keeps-going-down`, `ai-birthday-song`
 
 Per post: verify facts (app code + Apple pages) → write EN → fact-check → add to `related` of 1-3 EN posts → keyword-map → `node src/og/render.mjs en` → `node build.mjs && node check.mjs` → preview.
 
@@ -384,3 +384,23 @@ Per post: verify facts (app code + Apple pages) → write EN → fact-check → 
 **Verification:** `node build.mjs && node check.mjs`: 244 pages, 0 errors, 0 warnings. Preview at 375 px: no sideways scroll, no broken images, FAQ and share image URL present.
 
 **Not verified:** nothing run on a device. Whether an exported Voice Memos file includes Enhance Recording is not stated by Apple and is left open in the post. Whether EQfy opens Voice Memos' "Editable" (QuickTime Audio) export wasn't tested, so the post says to use the default .m4a. Apple's per-show Podcasts settings (seen in a search summary only) are not mentioned. Audible's file protection is described as "usually copy-protected", not tested.
+
+## Review (PR 4: volume keeps going down + AI birthday song, EN only)
+
+**Changes:**
+- `volume-keeps-going-down` (`/blog/iphone-volume-keeps-going-down/`): a symptom table and six causes, each tied to an Apple page: headphone notifications set a lower volume on the next connection, Reduce Loud Audio, AirPods Conversation Awareness / Personalized Volume, Attention Aware Features (alerts only, not media), Sound Check, a pressed volume button. EQfy is a side note and the post says it can't switch off iOS volume features.
+- `ai-birthday-song` (`/blog/ai-birthday-song-generator-with-name/`): Music Generator steps, two ways to get a name into the song (describe it, or write your own lyrics, which the in-app guide says the system arranges), an original lyric template, six prompt examples, credits (3,000; one free generation in a free trial; never "free" or "Premium includes"), and a responsible-use note. It says the name may not be sung clearly.
+- `related` swaps (EN only): `ai-song-generator` (ai-sound-effects → ai-birthday-song) and `volume-too-low` (louder-audio-file → volume-keeps-going-down). keyword-map clusters 30-31, facts.md block, share images.
+- Also on PR 3's branch: the podcasts post no longer says "thousands of independent producers".
+
+**Verification:** `node build.mjs && node check.mjs`: 246 pages, 0 errors, 0 warnings. Preview at 375 px: no sideways scroll, no broken images, FAQ present, the symptom table fits and its anchor links resolve.
+
+**Not verified:** nothing run on a device. How reliably the AI sings a given name is unknown (the post doesn't promise it). The Attention Aware menu path is quoted from Apple's article (Settings › Face ID & Passcode); other iOS versions may place it elsewhere, which the post says.
+
+## Overall review: 8 new EN-only posts (PRs #21-#24, stacked)
+
+- 8 posts, 4 stacked PRs, all EN only. Merge in order #21 → #22 → #23 → #24 (retarget each to `main` after the one below merges). Deploy only after Taras OKs it, then `node indexnow.mjs --since 2026-10-23`.
+- **Translations are the open item.** Each post still needs es/de/tr/zh/fr/pt/ja/ar versions (the build warns "missing translations" for all 8 until then); then add the localized slugs to keyword-map and the new ids to the `related` arrays in the other languages.
+- **Length:** the posts run about 750-1,170 words, below the plan's 1,200-1,800 target. I kept them to facts I could verify instead of padding. Extend them if the target matters.
+- **Demand:** no search-volume tool was connected (Ahrefs needs authorization), so the picks rest on Google autocomplete signals, not volumes.
+- `src/og/render.mjs` aborts here because headless Chrome exits non-zero at teardown; share images were made with an equivalent scratch script. Worth fixing in `render.mjs` (ignore the exit code if the screenshot exists).
