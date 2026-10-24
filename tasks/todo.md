@@ -475,7 +475,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 - [x] pl (Polish)
 - [x] ko (Korean, + CJK tooling)
 - [x] ru (Russian, no flag)
-- [ ] uk (Ukrainian)
+- [x] uk (Ukrainian)
 
 ## Review (Danish, PR `lang-da`)
 
@@ -566,4 +566,18 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Verification:** `node build.mjs && node check.mjs`: 527 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters or mixed Latin/Cyrillic words. Browser at 375 px: all 34 Russian pages have no sideways scroll, `lang="ru"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images. At 1025 px the nav stays on one row (homepage and generated pages). Share images and the homepage hero checked by eye.
 
 **Not verified:** no native Russian reader; Apple's Russian pages disagree with themselves in places (Аудиовизуализация vs «Аудио и видео», «Звук и его источники» vs «Аудио и маршрутизация»; the guide wording was used); Apple Music EQ preset names stay English in parentheses; the app's «Премиум» is written "Premium" like the other languages.
+
+## Review (Ukrainian, PR `lang-uk`)
+
+**Changes:**
+- **Ukrainian is now a full language** at `/uk/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set (🇺🇦 «Українська», button code **UA** because "UK" reads as United Kingdom). `src/site.json`, `index.html`, `src/i18n/uk.json`, `src/landing/uk.json`, `src/content/uk/` (31 posts + `faq.json`), 32 share images, all homepages regenerated. English slugs.
+- **Keywords:** Ukrainian Google autocomplete (hl=uk, gl=ua; no Ahrefs API access). Many Ukrainian searches still autocomplete in Russian, so the posts use natural modern Ukrainian: "як зробити айфон гучніше", "тихий звук айфон", "налаштування еквалайзера", "підсилювач звуку", "створити пісню ші", "озвучка тексту", "видалити фоновий шум", "8d звук". Titles write "iPhone"; "айфон" appears once in a description.
+- **Terms:** app catalog (Ukrainian table in `tasks/facts.md` §8) plus Apple's uk-ua names: **Параметри** for iOS Settings (the app's own tab says «Налаштування»), Звуки і вібровідгуки, Диктофон, Файли, **Вібромузика** (Music Haptics), Просторове аудіо. Apple links point to `uk-ua`; Spotify links to `/ua-uk/` (the plain `/ua/` redirects to English). WHO and Audible are marked «(англійською)».
+- **Style decided once for all Ukrainian files:** typographic ’, no-break spaces before % and units («200 %», «+12 дБ»), «Студія ШІ» with a no-break space (the nav label used to wrap at 1025 px; «Функції» replaced «Можливості» for the same reason), «застосунок» for apps, Dance = «Денс».
+- **Catalog mistakes not copied:** the Dance preset ("Танець") and the credit balance ("Баланс:" → баланс кредитів).
+- **Fonts:** Outfit and Space Mono have no Cyrillic glyphs, so Cyrillic uses the system font (same as Russian; checked).
+
+**Verification:** `node build.mjs && node check.mjs`: 562 pages, 0 errors, 0 warnings, 16 languages. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters (one report mentioned `¤` and a Cyrillic "П" inside "iPhone"; neither is in the files), no mixed Latin/Cyrillic words, no straight apostrophes. Browser at 375 px: all 34 Ukrainian pages have no sideways scroll, `lang="uk"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images. At 1025 px the nav is one row. On a 375×667 phone the 16-language dropdown fits (bottom at 629 px) and scrolls to the last entry.
+
+**Not verified:** no native Ukrainian reader (the translators applied the з/із and в/у euphony rules by hand); Apple's Ukrainian pages name Sound Check «Корекція гучності» in the iPhone guide but «Корекція звуку» in one article; Apple Music EQ preset names stay English in «»; «Premium» is written Latin although the app shows «Преміум».
 

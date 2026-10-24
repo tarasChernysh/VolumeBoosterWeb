@@ -62,6 +62,7 @@ Key facts:
 - [Polski](https://eqfy.app/pl/)
 - [한국어](https://eqfy.app/ko/)
 - [Русский](https://eqfy.app/ru/)
+- [Українська](https://eqfy.app/uk/)
 
 ## Legal
 - [Privacy Policy](https://eqfy.app/privacy)

@@ -393,4 +393,22 @@ Apple's Russian names (ru-ru pages): Settings › Sounds & Haptics = Настр�
 | Force instrumental · Unlock Premium | Только инструментал · Разблокировать Premium |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Рок, Джаз, Электронный, Классический, Регги, Рэп, R&B, **Dance** (not Танец), Акустический |
 
+**Ukrainian (uk)** — from the app's own catalog (`Localizable.xcstrings`, uk values) and `uk-ua` Apple pages. Tone: **ви** (lowercase in running text); natural modern Ukrainian, not Russian calques. URL prefix `/uk`, `hreflang="uk"`, `<html lang="uk">`, **English slugs**. The switcher shows 🇺🇦 «Українська» with the code **UA** (UK reads as United Kingdom). Decimal comma, `200 %` with U+00A0 (also before дБ, Гц, кГц; thousands `3 000` with U+00A0), «…» quotes, typographic apostrophe ’ (never a straight '). Write "iPhone" in titles and text; "айфон" may appear once in a description or lead. «застосунок» for apps (Apple's own apps: «програма»), «кредити» for credits, «ШІ» = штучний інтелект (Студія ШІ, written with a no-break space). Brand names stay Latin: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, Premium. **Catalog mistakes — do not copy:** the Dance preset "Танець" (use **Денс**); `Balance:` (credit balance) is "Баланс:" (use **баланс кредитів**).
+Apple's Ukrainian names (uk-ua pages): iOS Settings = **Параметри** (the app's own tab says «Налаштування»); Sounds & Haptics = Звуки і вібровідгуки; Headphone Safety = Безпечне користування навушниками; Reduce Loud Audio = Приглушувати гучні звуки; Voice Memos = **Диктофон**; Files = **Файли**; Music Haptics = **Вібромузика** (Параметри › Доступність › Вібромузика; EQfy's own wording: тактильний відгук); Spatial Audio = **Просторове аудіо**; Sound Check = Корекція гучності; Headphone Accommodations = Адаптації навушників; Accessibility › Audio & Visual = Доступність › Аудіювання і візуалізація. Spotify help in Ukrainian: `support.spotify.com/ua-uk/…` (the plain `/ua/` redirects to the English `ua-en`). Apple Music EQ preset names are not listed on any Apple uk page: describe them in words with the English name in «».
+| EN (app UI) | uk |
+|---|---|
+| AI Studio | Студія ШІ |
+| Volume Boost / Bass Boost | Підсилення гучності / Підсилення басів |
+| Equalizer · EQ | Еквалайзер · EQ |
+| Headphones (tab) / Audio Balance | Навушники / Аудіобаланс |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Просторове аудіо · 3D-аудіо · 3D-джерело · Автоматичний рух |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Реверберація · Середовище реверберації · Змішування реверберації · Режим аудіо |
+| Center (balance) · Custom · Reset | Центр · Користувацький · Скинути |
+| Music Library · Files · Find more | Музична бібліотека · Файли · Знайти більше |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Виберіть трек · Вся моя музика · Нещодавні · Видалити всю мою музику · Плейлисти |
+| Home · Music · Settings (tabs) | Головна · Музика · Налаштування |
+| Volume · Bass · Speed · Share (player) | Гучність · Баси · Швидкість · Поділитися |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Звукові ефекти · Текст у мовлення · Шумозаглушення |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Рок, Джаз, Електронний, Класичний, Реггі, Реп, R&B, **Денс** (not Танець), Акустичний |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.
