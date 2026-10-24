@@ -481,7 +481,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 - [x] it (Italian)
 - [x] nl (Dutch)
 - [x] pl (Polish)
-- [ ] ko (Korean, + CJK tooling)
+- [x] ko (Korean, + CJK tooling)
 - [ ] ru (Russian, no flag)
 - [ ] uk (Ukrainian)
 
@@ -546,4 +546,18 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Verification:** `node build.mjs && node check.mjs`: 457 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; 0 straight apostrophes in declined forms. Browser at 375 px: all 34 Polish pages have no sideways scroll, `lang="pl"`, 3 related cards and a FAQ on every post, no links into the English blog and no broken images; the dropdown lists 13 languages.
 
 **Not verified:** no native Polish reader; Apple's Polish pages disagree with themselves in places (Redukuj głośny dźwięk vs głośne dźwięki, Wyrównanie vs Wyrównywanie dźwięku, Dźwięk i wizualne vs Audio i wizualne); Apple Music EQ preset names stay in words with the English name; "Studio SI" is declined in running text ("w Studiu SI") while the label stays "Studio SI".
+
+## Review (Korean, PR `lang-ko`)
+
+**Changes:**
+- **Korean is now a full language** at `/ko/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set. `src/site.json`, `index.html`, `src/i18n/ko.json`, `src/landing/ko.json`, `src/content/ko/` (31 posts + `faq.json`), 32 share images, all homepages regenerated.
+- **CJK tooling (same pattern as the Japanese edits):** `build.mjs` counts reading time by character for `ko` (500 per minute; posts now read 3-8 min, not 1); `check.mjs` applies the CJK title and description rules to `ko`; `:lang(ko)` font stack (Apple SD Gothic Neo, Malgun Gothic, Noto Sans KR) with `word-break: keep-all` so lines break only at spaces, in `assets/css/site.css`, the homepage CSS, and both share-image templates.
+- **Keywords:** Korean Google autocomplete (hl=ko, gl=kr; no Ahrefs API access). Koreans search "아이폰 소리 키우기", "아이폰 소리 작음", "아이폰 이퀄라이저 (설정/앱)", "볼륨 부스터 앱 추천", "에어팟 소리 작음", "ai 노래 만들기", "배경 소음 제거", "8d 오디오". Titles keep "iPhone" (≤ 27 characters; the site adds " | EQfy"), while descriptions and leads use 아이폰 where it is the search word. English slugs, like zh/ja/ar.
+- **Terms:** app catalog (Korean table in `tasks/facts.md` §8) plus Apple's ko-kr names: 사운드 및 햅틱, 음성 메모, 파일, 음악 햅틱, 공간 음향, 사운드 자동 조절. **Apple's Korean support pages live at `support.apple.com/ko-kr/…`; the `/kr/` form 404s or redirects to English** (recorded in facts.md). Spotify links use `/kr-ko/`. WHO and Audible are marked "(영문)".
+- **Consistency fixes:** two wordings differed between the post groups ("EQfy로/가 할 수 없는 것", "알아 두세요/알아두세요"): unified to «EQfy가 할 수 없는 것» and «알아두세요».
+- **Catalog mistakes not copied:** the credit balance ("밸런스:" → 크레딧 잔액) and the Dance preset (댄스).
+
+**Verification:** `node build.mjs && node check.mjs`: 492 pages, 0 errors, 0 warnings (CJK length rules active). Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters or mixed scripts. Browser at 375 px: all 34 Korean pages have no sideways scroll, `lang="ko"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images, and `word-break: keep-all` applies. At 1025 px (narrowest desktop nav) the nav stays on one row on the homepage and the generated pages, including the long «자주 묻는 질문». Share images checked by eye.
+
+**Not verified:** no native Korean reader; the Korean Reverb preset names stay English (not in the catalog); Apple's Korean pages use 음량 where running text says 볼륨 (menu names follow Apple, prose follows search habits); Apple Music EQ preset names stay English; the Duo post adds Apple's cm figures next to the inch sizes.
 

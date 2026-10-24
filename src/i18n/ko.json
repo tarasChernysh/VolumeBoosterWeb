@@ -1,0 +1,76 @@
+{
+  "dateLocale": "ko-KR",
+  "home": "홈",
+  "nav": {
+    "features": "기능",
+    "equalizer": "이퀄라이저",
+    "aiStudio": "AI 스튜디오",
+    "faq": "자주 묻는 질문",
+    "blog": "블로그",
+    "download": "무료 다운로드",
+    "changeLanguage": "언어 변경",
+    "menu": "메뉴 열기",
+    "logoAlt": "EQfy 아이콘",
+    "main": "메인 내비게이션",
+    "breadcrumb": "이동 경로"
+  },
+  "footer": {
+    "tagline": "아이폰용 볼륨 부스터, 베이스 부스터, 이퀄라이저. 모든 곡을 더 크고, 더 깊고, 더 선명하게.",
+    "features": "기능",
+    "volumeBooster": "볼륨 부스터",
+    "bassEq": "베이스 부스터와 EQ",
+    "spatial": "3D 공간 오디오",
+    "aiStudio": "AI 스튜디오",
+    "resources": "리소스",
+    "support": "지원",
+    "appStore": "App Store",
+    "legal": "법적 고지",
+    "privacy": "개인정보 처리방침(영어)",
+    "terms": "이용 약관(영어)",
+    "rights": "모든 권리 보유.",
+    "trademark": "iPhone, AirPods, App Store는 Apple Inc.의 상표입니다."
+  },
+  "blog": {
+    "title": "EQfy 블로그: iPhone 볼륨·베이스·EQ 가이드",
+    "description": "EQfy의 가이드와 소식: 아이폰 소리 키우기, 저음 강화, 추천 EQ 설정, 작은 소리 해결, 이어폰 활용 팁까지 한곳에서 확인하세요.",
+    "eyebrow": "가이드와 소식",
+    "h1": "EQfy 블로그",
+    "lead": "아이폰 소리를 더 크고, 더 선명하고, 더 즐겁게 들을 수 있는 실용 가이드와 EQfy 앱 소식을 전해 드려요."
+  },
+  "post": {
+    "by": "작성: EQfy 팀",
+    "published": "게시일",
+    "updated": "수정일",
+    "minRead": "{n}분 읽기",
+    "faqTitle": "자주 묻는 질문",
+    "related": "관련 글",
+    "readMore": "더 읽기 →",
+    "categories": { "guide": "가이드", "news": "소식" }
+  },
+  "faqPage": {
+    "eyebrow": "도움말 센터",
+    "jumpTo": "주제로 이동"
+  },
+  "cta": {
+    "title": "아이폰 소리를 더 크게",
+    "text": "EQfy - Louder Volume을 App Store에서 무료로 다운로드하세요. iOS 16 이상이 필요해요.",
+    "button": "App Store에서 다운로드",
+    "iconAlt": "EQfy 앱 아이콘"
+  },
+  "latest": {
+    "eyebrow": "블로그에서",
+    "title": "가이드와 소식",
+    "description": "아이폰 소리를 더 크고, 더 선명하고, 더 즐겁게 듣는 데 도움이 되는 팁이에요.",
+    "all": "모든 글 보기 →"
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없어요",
+    "description": "찾으시는 페이지가 존재하지 않아요.",
+    "lead": "찾으시는 페이지가 없거나 다른 곳으로 옮겨졌어요. 대신 아래 페이지를 이용해 보세요:"
+  },
+  "og": {
+    "title": "아이폰 소리를 <em>더 크게</em>",
+    "sub": "프로급 이퀄라이저를 갖춘 볼륨·베이스 부스터",
+    "pills": ["최대 200% 볼륨", "7밴드 EQ", "3D 오디오", "AI 스튜디오"]
+  }
+}

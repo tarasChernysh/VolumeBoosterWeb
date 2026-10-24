@@ -56,6 +56,10 @@ body {
 :lang(ja) body, body:lang(ja) {
     font-family: 'Outfit', -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, 'Noto Sans JP', sans-serif;
 }
+:lang(ko) body, body:lang(ko) {
+    font-family: 'Outfit', -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+    word-break: keep-all; overflow-wrap: break-word; /* Korean separates words with spaces: break only there, never inside a word */
+}
 ::selection { background: var(--green-primary); color: var(--bg-primary); }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; height: auto; display: block; }

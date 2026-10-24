@@ -11,7 +11,7 @@
   "rating": { "value": "4.5", "count": "40" },
   "defaultImage": "/assets/images/og-image.jpg",
   "logo": "/assets/images/app-icon.png",
-  "contentLangs": ["en", "es", "de", "fr", "pt", "ja", "ar", "tr", "zh", "da", "nl", "it", "pl"],
+  "contentLangs": ["en", "es", "de", "fr", "pt", "ja", "ar", "tr", "zh", "da", "nl", "it", "pl", "ko"],
   "langs": {
     "en": { "prefix": "", "hreflang": "en", "htmlLang": "en", "ogLocale": "en_US", "code": "EN", "label": "🇬🇧 English" },
     "es": { "prefix": "/es", "hreflang": "es", "htmlLang": "es", "ogLocale": "es_ES", "code": "ES", "label": "🇪🇸 Español" },
@@ -25,9 +25,10 @@
     "da": { "prefix": "/da", "hreflang": "da", "htmlLang": "da", "ogLocale": "da_DK", "code": "DA", "label": "🇩🇰 Dansk" },
     "nl": { "prefix": "/nl", "hreflang": "nl", "htmlLang": "nl", "ogLocale": "nl_NL", "code": "NL", "label": "🇳🇱 Nederlands" },
     "it": { "prefix": "/it", "hreflang": "it", "htmlLang": "it", "ogLocale": "it_IT", "code": "IT", "label": "🇮🇹 Italiano" },
-    "pl": { "prefix": "/pl", "hreflang": "pl", "htmlLang": "pl", "ogLocale": "pl_PL", "code": "PL", "label": "🇵🇱 Polski" }
+    "pl": { "prefix": "/pl", "hreflang": "pl", "htmlLang": "pl", "ogLocale": "pl_PL", "code": "PL", "label": "🇵🇱 Polski" },
+    "ko": { "prefix": "/ko", "hreflang": "ko", "htmlLang": "ko", "ogLocale": "ko_KR", "code": "한국어", "label": "🇰🇷 한국어" }
   },
-  "landingLangs": ["en", "es", "de", "fr", "pt", "ja", "ar", "tr", "zh", "da", "nl", "it", "pl"],
+  "landingLangs": ["en", "es", "de", "fr", "pt", "ja", "ar", "tr", "zh", "da", "nl", "it", "pl", "ko"],
   "latestPosts": ["iphone-duo", "louder-than-max", "eq-settings"],
   "legalPages": ["/privacy", "/terms"]
 }

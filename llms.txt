@@ -60,6 +60,7 @@ Key facts:
 - [Nederlands](https://eqfy.app/nl/)
 - [Italiano](https://eqfy.app/it/)
 - [Polski](https://eqfy.app/pl/)
+- [한국어](https://eqfy.app/ko/)
 
 ## Legal
 - [Privacy Policy](https://eqfy.app/privacy)

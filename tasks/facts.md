@@ -354,4 +354,24 @@ Apple's Polish names (pl-pl pages): Settings › Sounds & Haptics = Ustawienia �
 | Force instrumental · Unlock Premium | Wymuś instrumentalną · Odblokuj Premium |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elektroniczny, Klasyczny, Reggae, Rap, R&B, **Dance** (not Taniec), Akustyczny |
 
+**Korean (ko)** — from the app's own catalog (`Localizable.xcstrings`, ko values) and `ko-kr` Apple pages (**use `support.apple.com/ko-kr/…`; the `/kr/` form 404s or redirects to English**; Spotify help is `support.spotify.com/kr-ko/…`). Tone: polite **해요체**, never "당신". URL prefix `/ko`, `hreflang="ko"`, `<html lang="ko">`, **English slugs** (like zh/ja/ar). Titles ≤ 27 characters (the site adds " | EQfy"; the CJK rule is ≤ 34 in total), descriptions 50–100 characters. Write "iPhone" in titles and text, 아이폰 in descriptions and leads where it is the search word. Decimal point stays ".", `200%` without a space, ranges with "~", dates `2026년 10월 21일`. Brand names stay Latin: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, Premium. **Catalog mistakes — do not copy:** `Balance:` (credit balance) is "밸런스:" (use **크레딧 잔액**); Dance preset = **댄스**.
+Apple's Korean names (ko-kr pages): Settings › Sounds & Haptics = 설정 › **사운드 및 햅틱**; Headphone Safety = 헤드폰 안전성; Reduce Loud Audio = 큰 오디오 소리 줄이기; Voice Memos = **음성 메모**; Files = **파일**; Music Haptics = **음악 햅틱** (손쉬운 사용 › 음악 햅틱); Spatial Audio = **공간 음향** (EQfy's own toggle says 공간 오디오); Sound Check = 사운드 자동 조절; Headphone Accommodations = 오디오 조정; Accessibility › Audio & Visual = 손쉬운 사용 › 오디오 및 시각 효과; head tracking = 머리 추적 (EQfy's own feature: 헤드 트래킹). Apple Music EQ preset names are not listed on any Apple ko page: keep them English.
+| EN (app UI) | ko |
+|---|---|
+| AI Studio | AI 스튜디오 |
+| Volume Boost / Bass Boost | 볼륨 부스트 / 베이스 부스트 |
+| Equalizer · EQ | 이퀄라이저 · EQ |
+| Headphones (tab) / Audio Balance | 헤드폰 / 오디오 밸런스 |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | 공간 오디오 · 3D 오디오 · 3D 소스 · 자동 모션 |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | 리버브 · 리버브 환경 · 리버브 블렌드 · 오디오 모드 |
+| Center (balance) · Custom · Reset | 중앙 · 사용자 정의 · 재설정 |
+| Music Library · Files · Find more | 음악 보관함 · 파일 · 더 찾기 |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | 트랙 선택 · 모든 내 음악 · 최근 · 내 모든 음악 제거 · 재생 목록 |
+| Home · Music · Settings (tabs) | 홈 · 음악 · 설정 |
+| Volume · Bass · Speed · Share (player) | 볼륨 · 베이스 · 속도 · 공유 |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | 음향 효과 · 텍스트 음성 변환 · 노이즈 리듀서 |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | 음성 생성 · 음성 선택 · 오디오 파일 선택 · 노이즈 제거 |
+| Force instrumental · Unlock Premium | 연주곡으로 강제 · 프리미엄 잠금 해제 |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | 록, 재즈, 일렉트로닉, 클래식, 레게, 랩, R&B, 댄스, 어쿠스틱 |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.
