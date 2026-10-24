@@ -435,6 +435,10 @@ Taras (2026-10-24): hold the merges, translate first. Branch `translate-new-post
 - "Music Haptics arrived with iOS 18" is based on Apple's guide being tagged iOS 18, not an explicit Apple statement.
 - App-side catalog issues seen again: ar "Figure 8" uses an Arabic-Indic digit, ar `Balance:` means audio balance, tr `Balance:`.
 
+## Release (2026-10-24): all 8 posts live
+
+PRs #21-#25 merged to `main` in order (each retargeted to `main`), `main` rebuilt with no diff (310 pages, 0 errors), deployed to Cloudflare Pages `louder-volume` from a clean `git archive` (245 files uploaded, `src/` and `tasks/` excluded), live spot checks 200 on posts in en/es/de/ja/ar/pt, `sitemap.xml` lists 309 URLs. IndexNow: `node indexnow.mjs --since 2026-10-23` (81 URLs: 72 posts + 9 blog indexes).
+
 # Localize the site properly (plan: `~/.claude/plans/localize-my-website-properly-agile-falcon.md`)
 
 Taras (2026-10-24): polish the existing languages, make Danish a full language, add ko/it/nl/pl/ru/uk as full languages. Privacy/Terms and screenshots stay English. Switcher keeps flags, Russian without one. Keywords from Ahrefs (fallback: autocomplete). 8 stacked PRs: `l10n-polish` → `lang-da` → `lang-it` → `lang-nl` → `lang-pl` → `lang-ko` → `lang-ru` → `lang-uk`.
