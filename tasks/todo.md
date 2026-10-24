@@ -483,7 +483,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 - [x] pl (Polish)
 - [x] ko (Korean, + CJK tooling)
 - [x] ru (Russian, no flag)
-- [ ] uk (Ukrainian)
+- [x] uk (Ukrainian)
 
 ## Review (Danish, PR `lang-da`)
 
@@ -574,4 +574,41 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Verification:** `node build.mjs && node check.mjs`: 527 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters or mixed Latin/Cyrillic words. Browser at 375 px: all 34 Russian pages have no sideways scroll, `lang="ru"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images. At 1025 px the nav stays on one row (homepage and generated pages). Share images and the homepage hero checked by eye.
 
 **Not verified:** no native Russian reader; Apple's Russian pages disagree with themselves in places (Аудиовизуализация vs «Аудио и видео», «Звук и его источники» vs «Аудио и маршрутизация»; the guide wording was used); Apple Music EQ preset names stay English in parentheses; the app's «Премиум» is written "Premium" like the other languages.
+
+## Review (Ukrainian, PR `lang-uk`)
+
+**Changes:**
+- **Ukrainian is now a full language** at `/uk/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set (🇺🇦 «Українська», button code **UA** because "UK" reads as United Kingdom). `src/site.json`, `index.html`, `src/i18n/uk.json`, `src/landing/uk.json`, `src/content/uk/` (31 posts + `faq.json`), 32 share images, all homepages regenerated. English slugs.
+- **Keywords:** Ukrainian Google autocomplete (hl=uk, gl=ua; no Ahrefs API access). Many Ukrainian searches still autocomplete in Russian, so the posts use natural modern Ukrainian: "як зробити айфон гучніше", "тихий звук айфон", "налаштування еквалайзера", "підсилювач звуку", "створити пісню ші", "озвучка тексту", "видалити фоновий шум", "8d звук". Titles write "iPhone"; "айфон" appears once in a description.
+- **Terms:** app catalog (Ukrainian table in `tasks/facts.md` §8) plus Apple's uk-ua names: **Параметри** for iOS Settings (the app's own tab says «Налаштування»), Звуки і вібровідгуки, Диктофон, Файли, **Вібромузика** (Music Haptics), Просторове аудіо. Apple links point to `uk-ua`; Spotify links to `/ua-uk/` (the plain `/ua/` redirects to English). WHO and Audible are marked «(англійською)».
+- **Style decided once for all Ukrainian files:** typographic ’, no-break spaces before % and units («200 %», «+12 дБ»), «Студія ШІ» with a no-break space (the nav label used to wrap at 1025 px; «Функції» replaced «Можливості» for the same reason), «застосунок» for apps, Dance = «Денс».
+- **Catalog mistakes not copied:** the Dance preset ("Танець") and the credit balance ("Баланс:" → баланс кредитів).
+- **Fonts:** Outfit and Space Mono have no Cyrillic glyphs, so Cyrillic uses the system font (same as Russian; checked).
+
+**Verification:** `node build.mjs && node check.mjs`: 562 pages, 0 errors, 0 warnings, 16 languages. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters (one report mentioned `¤` and a Cyrillic "П" inside "iPhone"; neither is in the files), no mixed Latin/Cyrillic words, no straight apostrophes. Browser at 375 px: all 34 Ukrainian pages have no sideways scroll, `lang="uk"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images. At 1025 px the nav is one row. On a 375×667 phone the 16-language dropdown fits (bottom at 629 px) and scrolls to the last entry.
+
+**Not verified:** no native Ukrainian reader (the translators applied the з/із and в/у euphony rules by hand); Apple's Ukrainian pages name Sound Check «Корекція гучності» in the iPhone guide but «Корекція звуку» in one article; Apple Music EQ preset names stay English in «»; «Premium» is written Latin although the app shows «Преміум».
+
+## Overall review: localize the site properly (2026-10-24)
+
+**Result:** 9 → 16 languages (en + es, de, fr, pt, ja, ar, tr, zh, da, nl, it, pl, ko, ru, uk). Every language has a homepage, blog index, FAQ, 404 page and the 31 posts: 562 pages, 546 sitemap URLs (309 before), 0 errors and 0 warnings from `check.mjs` at the tip. 8 stacked PRs: #27 (polish of the 9 existing languages), #28 da, #29 nl, #30 it, #31 pl (merged by Taras on 2026-10-24), #33 ko, #34 ru, #35 uk (open, synced with `main`, mergeable).
+
+**How it was done:** one PR per language. For each: keyword brief from the market's Google autocomplete, app terms pulled from `Localizable.xcstrings`, 4 translator subagents (loudness posts, tone posts, product posts, UI + homepage + FAQ), a validator that compares every post with the English one (front-matter, placeholders, ids, table/list/link/image counts, slug and length rules), then wiring (`site.json`, hreflang and switcher in `index.html`, `landing-i18n apply`, share images), a browser check at 375 px and 1025 px, and a review section above.
+
+**Deviations from the plan:**
+- **No Ahrefs volumes.** The Ahrefs MCP connects but every Keywords Explorer call (even the free test query) returns "Insufficient plan": the account has no API access. All keywords come from Google autocomplete (hl/gl per market), as for fr/pt/ja/ar before. If API access is added, re-check titles and slugs before deploy.
+- **Apple's names beat the keyword brief** in several languages (Danish Memoer / Haptisk feedback til musik, Dutch Voelbare muzieksignalen, Italian Feedback aptici musica); the text follows Apple and the slugs were renamed to match. Korean Apple pages are `ko-kr`, not `kr`; Spotify help does not exist in Russia.
+- **Order of the stack:** da, nl, it, pl, ko, ru, uk (nl before it because its posts finished first).
+- **Phase A also fixed `render.mjs`** (Chrome exits non-zero after writing the screenshot) and moved the Duo post to localized share cards.
+
+**Deploy checklist (nothing is deployed yet):**
+1. Merge #33, then retarget #34 (and #35) to `main` and merge each; then `git pull`.
+2. `node build.mjs && node check.mjs` on `main`; export with `git archive` and `npx wrangler pages deploy` as in the README; `node indexnow.mjs --since 2026-10-24`.
+3. After deploy: open a missing URL under `/de/` and `/ko/` to confirm Cloudflare serves the per-language 404 (the local server cannot show the nearest-404 fallback); request indexing for the new homepages in Search Console.
+
+**Follow-ups (not done, they need a decision or touch the English source):**
+- **English homepage claims:** "Enjoy boosted, EQ'd audio anywhere — no connection required" (offline only the Volume dial renders, facts.md §2); "Export and share your boosted audio" under "Free to use" and "MP3 Download & Share" (facts.md says not to state whether sharing is free or Premium; the codec is unverified). Each is one English line plus its translation in every homepage.
+- **English posts:** `vs-boom` FAQ "Premium unlocks the other tools" can read as including AI Studio (credits); `remove-background-noise` says "sliders icon" in Voice Memos where Apple says the More (…) button; `slowed-reverb` mentions a "0.8×" song but 0.8× is not a speed step; `iphone-equalizer` calls the tab "Equalizer" (it is "EQ"); `8d-audio` calls "Enable 3D positioning and reverb" a toggle label (it is the subtitle); `ai-song-generator`/`ai-birthday-song` say the "AI Studio tab" (the tab is "AI"); `airpods-bass` uses an older fit-test path; `bluetooth-volume-low` step 6 and `spotify-louder` cite things their linked pages do not say; "Centre" in `ai-sound-effects` and `headphone-balance` is British spelling; the `music-haptics` "arrived with iOS 18" claim is not on Apple's page.
+- **App repo (`Localizable.xcstrings`):** `Balance:` (the credit balance) is translated as audio balance in ar, tr, da, it, nl, pl, ko, ru, uk; the Dance preset is translated as the word "dance" in da ("Dans"), it ("Danza"), nl ("Dans"), pl ("Taniec"), ru ("Танец"), uk ("Танець"); `Custom`→"Costume" and `Rock`→"Rocha" in pt; ru `Реггі`/`Реп` use a Ukrainian letter; nl "Galm omgeving"/"Galm mix" should be one word; pl "Redukcja Szumów" has a stray capital.
+- **Native review:** no native speaker has read any of the 15 non-English languages; Apple's own localized pages contradict themselves on a few names (noted in each review above). The Apple Music EQ preset names (Bass Booster etc.) are not listed on any Apple page outside English, so every language describes them in words with the English name.
 
