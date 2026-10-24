@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>if(/\.github\.io$/.test(location.hostname))location.replace('https://eqfy.app'+location.pathname.replace(/^\/VolumeBoosterWeb/,'')+location.search+location.hash)</script>
+    <title>Пространственное аудио и 3D-звук на iPhone: разбор | EQfy</title>
+    <meta name="description" content="Пространственное аудио и 3D-звук на iPhone: как работают пространственное аудио и Dolby Atmos от Apple и как 3D-аудио EQfy добавляет реверберацию и движение звука.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0A1A0A">
+    <link rel="canonical" href="https://eqfy.app/ru/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="en" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="es" href="https://eqfy.app/es/blog/audio-espacial-3d-iphone/">
+    <link rel="alternate" hreflang="de" href="https://eqfy.app/de/blog/3d-raumklang-iphone/">
+    <link rel="alternate" hreflang="fr" href="https://eqfy.app/fr/blog/audio-3d-iphone-explique/">
+    <link rel="alternate" hreflang="pt" href="https://eqfy.app/pt/blog/audio-3d-iphone-explicado/">
+    <link rel="alternate" hreflang="ja" href="https://eqfy.app/ja/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="ar" href="https://eqfy.app/ar/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/iphone-3d-uzamsal-ses/">
+    <link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="da" href="https://eqfy.app/da/blog/3d-lyd-rumlig-lyd-iphone/">
+    <link rel="alternate" hreflang="nl" href="https://eqfy.app/nl/blog/ruimtelijke-audio-3d-iphone/">
+    <link rel="alternate" hreflang="it" href="https://eqfy.app/it/blog/audio-spaziale-3d-iphone/">
+    <link rel="alternate" hreflang="pl" href="https://eqfy.app/pl/blog/dzwiek-przestrzenny-3d-iphone/">
+    <link rel="alternate" hreflang="ko" href="https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="ru" href="https://eqfy.app/ru/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+
+    <meta property="og:site_name" content="EQfy - Louder Volume">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Пространственное аудио и 3D-звук на iPhone: разбор | EQfy">
+    <meta property="og:description" content="Пространственное аудио и 3D-звук на iPhone: как работают пространственное аудио и Dolby Atmos от Apple и как 3D-аудио EQfy добавляет реверберацию и движение звука.">
+    <meta property="og:url" content="https://eqfy.app/ru/blog/3d-spatial-audio-iphone-explained/">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og/ru-spatial-audio.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Экран «3D пространственное аудио» в EQfy на iPhone: эффект включён, режимы «Реверберация» и «3D-источник» и «Автодвижение»">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Пространственное аудио и 3D-звук на iPhone: разбор | EQfy">
+    <meta name="twitter:description" content="Пространственное аудио и 3D-звук на iPhone: как работают пространственное аудио и Dolby Atmos от Apple и как 3D-аудио EQfy добавляет реверберацию и движение звука.">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og/ru-spatial-audio.jpg">
+    <meta name="apple-itunes-app" content="app-id=6550912161">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="/assets/css/site.css?v=89e8b9e2">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://eqfy.app/ru/blog/3d-spatial-audio-iphone-explained/#article",
+      "headline": "Пространственное аудио и 3D-звук на iPhone: разбор",
+      "description": "Пространственное аудио и 3D-звук на iPhone: как работают пространственное аудио и Dolby Atmos от Apple и как 3D-аудио EQfy добавляет реверберацию и движение звука.",
+      "image": [
+        "https://eqfy.app/assets/images/og/ru-spatial-audio.jpg",
+        "https://eqfy.app/assets/images/blog/iphone-duo/10-3d-audio.webp"
+      ],
+      "datePublished": "2026-10-11",
+      "dateModified": "2026-10-11",
+      "inLanguage": "ru",
+      "mainEntityOfPage": "https://eqfy.app/ru/blog/3d-spatial-audio-iphone-explained/",
+      "keywords": "пространственное аудио и 3D-звук на iPhone",
+      "author": {
+        "@type": "Organization",
+        "name": "EQfy",
+        "url": "https://eqfy.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://eqfy.app/#org",
+        "name": "EQfy",
+        "url": "https://eqfy.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eqfy.app/assets/images/app-icon.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://eqfy.app/ru/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Блог",
+          "item": "https://eqfy.app/ru/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Пространственное аудио и 3D-звук на iPhone: разбор",
+          "item": "https://eqfy.app/ru/blog/3d-spatial-audio-iphone-explained/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Совпадает ли 3D-аудио EQfy с пространственным аудио Apple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. Пространственное аудио Apple — системная функция для поддерживаемого контента, например песен Dolby Atmos в Apple Music. 3D-аудио в EQfy — собственный эффект внутри приложения, с реверберацией в разных помещениях и перемещаемым 3D-источником звука, для песен, которые вы слушаете в EQfy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужны ли AirPods для 3D-звука на iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Для отслеживания движения головы по версии Apple нужны поддерживаемые AirPods. 3D-аудио EQfy работает с любым устройством вывода, а режим «3D-источник» тоже может использовать отслеживание движения головы с поддерживаемыми AirPods, например AirPods Pro или AirPods Max. Движущийся «3D-источник» лучше всего слышен в наушниках; на динамике iPhone лучше подходит режим «Реверберация»."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Может ли EQfy добавить 3D-звук Spotify или YouTube?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет. iOS позволяет EQfy обрабатывать только звук, воспроизводимый внутри EQfy, поэтому 3D-аудио не может изменить Spotify, YouTube, стриминг Apple Music, звонки и другие приложения."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Работает ли 3D-аудио EQfy с песнями из Apple Music?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Не с песнями по подписке Apple Music: они защищены, поэтому воспроизводятся в EQfy, но инструменты улучшения для них недоступны. С 3D-аудио работают купленные или незащищённые песни и импортированные файлы."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="Основная навигация">
+        <div class="nav__inner">
+            <a href="/ru/" class="nav__logo">
+                <span class="nav__logo-icon"><img src="/assets/images/app-icon.png" alt="Значок EQfy" width="36" height="36"></span>
+                EQfy - Louder Volume
+            </a>
+            <ul class="nav__links">
+                <li><a href="/ru/#features" class="nav__link">Возможности</a></li>
+                <li><a href="/ru/#equalizer" class="nav__link">Эквалайзер</a></li>
+                <li><a href="/ru/#ai-audio" class="nav__link">Студия ИИ</a></li>
+                <li><a href="/ru/faq/" class="nav__link">FAQ</a></li>
+                <li><a href="/ru/blog/" class="nav__link" aria-current="page">Блог</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-switcher__btn" data-toggle=".lang-switcher__dropdown" aria-label="Сменить язык">🌐 RU ▾</button>
+                <div class="lang-switcher__dropdown">
+                    <a href="/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="en" lang="en">🇬🇧 English</a>
+                    <a href="/es/blog/audio-espacial-3d-iphone/" class="lang-switcher__option" hreflang="es" lang="es">🇪🇸 Español</a>
+                    <a href="/de/blog/3d-raumklang-iphone/" class="lang-switcher__option" hreflang="de" lang="de">🇩🇪 Deutsch</a>
+                    <a href="/fr/blog/audio-3d-iphone-explique/" class="lang-switcher__option" hreflang="fr" lang="fr">🇫🇷 Français</a>
+                    <a href="/pt/blog/audio-3d-iphone-explicado/" class="lang-switcher__option" hreflang="pt" lang="pt-BR">🇧🇷 Português</a>
+                    <a href="/ja/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="ja" lang="ja">🇯🇵 日本語</a>
+                    <a href="/ar/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="ar" lang="ar">🇸🇦 العربية</a>
+                    <a href="/tr/blog/iphone-3d-uzamsal-ses/" class="lang-switcher__option" hreflang="tr" lang="tr">🇹🇷 Türkçe</a>
+                    <a href="/zh/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="zh" lang="zh-Hans">🇨🇳 简体中文</a>
+                    <a href="/da/blog/3d-lyd-rumlig-lyd-iphone/" class="lang-switcher__option" hreflang="da" lang="da">🇩🇰 Dansk</a>
+                    <a href="/nl/blog/ruimtelijke-audio-3d-iphone/" class="lang-switcher__option" hreflang="nl" lang="nl">🇳🇱 Nederlands</a>
+                    <a href="/it/blog/audio-spaziale-3d-iphone/" class="lang-switcher__option" hreflang="it" lang="it">🇮🇹 Italiano</a>
+                    <a href="/pl/blog/dzwiek-przestrzenny-3d-iphone/" class="lang-switcher__option" hreflang="pl" lang="pl">🇵🇱 Polski</a>
+                    <a href="/ko/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="ko" lang="ko">🇰🇷 한국어</a>
+                    <a href="/ru/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option lang-switcher__option--active" hreflang="ru" lang="ru">Русский</a>
+                </div>
+            </div>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Скачать бесплатно</a>
+            <button class="nav__mobile-toggle" data-toggle=".nav__mobile-menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav__mobile-menu">
+        <ul>
+            <li><a href="/ru/#features">Возможности</a></li>
+            <li><a href="/ru/#equalizer">Эквалайзер</a></li>
+            <li><a href="/ru/#ai-audio">Студия ИИ</a></li>
+            <li><a href="/ru/faq/">FAQ</a></li>
+            <li><a href="/ru/blog/" aria-current="page">Блог</a></li>
+        </ul>
+        <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Скачать бесплатно</a>
+    </div>
+
+    <main class="page">
+        <div class="container">
+        <nav class="breadcrumb" aria-label="Навигационная цепочка"><ol><li><a href="/ru/">Главная</a></li><li><a href="/ru/blog/">Блог</a></li><li aria-current="page">Пространственное аудио и 3D-звук на iPhone: разбор</li></ol></nav>
+        <article>
+            <header class="page__header">
+                <span class="eyebrow">Руководство</span>
+                <h1 class="page__title">Пространственное аудио и 3D-звук на iPhone: разбор</h1>
+                <p class="post-meta"><span>Команда EQfy</span> · <span>Опубликовано <time datetime="2026-10-11">11 октября 2026 г.</time></span> · <span>6 мин. чтения</span></p>
+            </header>
+            <div class="prose">
+<p class="lead">Под пространственным аудио и 3D-звуком на iPhone обычно понимают одно из двух. Пространственное аудио Apple — с песнями Dolby Atmos в Apple Music и отслеживанием движения головы на поддерживаемых AirPods — это системная функция для контента, который её поддерживает. 3D-аудио в EQfy - Louder Volume — другое: эффект внутри приложения, который помещает музыку в виртуальное помещение или двигает её вокруг головы, для песен, которые вы слушаете в EQfy.</p>
+
+<p>Ниже — как работает 3D-звук, краткий разбор пространственного аудио Apple с точными настройками iPhone и сравнение режимов «Реверберация» и «3D-источник» в EQfy.</p>
+
+<h2 id="what-is-3d-audio">Что на самом деле означает «3D-аудио»</h2>
+<p>Обычное стерео размещает звук на линии между левым и правым ухом. 3D-аудио старается разместить звук вокруг вас: спереди, сзади, сверху или внутри пространства, намного большего, чем ваши наушники.</p>
+<p>Мозг определяет положение звука по небольшим различиям между ушами: какое ухо слышит звук раньше, насколько он громок с каждой стороны и как голова и ушные раковины окрашивают звук в зависимости от направления. Звуковое программное обеспечение умеет имитировать эти признаки. Обычно это называют бинауральной обработкой, или обработкой HRTF (head-related transfer function — передаточная функция головы), и лучше всего она работает в наушниках, потому что каждое ухо получает свой сигнал.</p>
+<p>Вторая половина иллюзии — звук помещения. В реальном пространстве вы слышите прямой звук плюс множество отражений от стен, пола и потолка. Реверберация воссоздаёт эти отражения, поэтому «сухая» запись вдруг начинает звучать так, будто играет в зале или соборе.</p>
+
+<h2 id="apple-spatial-audio">Пространственное аудио на iPhone: разбор</h2>
+<p>Когда говорят о пространственном аудио на iPhone, обычно имеют в виду функции Apple. У них две части, и обе зависят от контента и от наушников, которыми вы пользуетесь.</p>
+
+<h3 id="dolby-atmos">Dolby Atmos в Apple Music</h3>
+<p>Dolby Atmos — объектный аудиоформат: вместо микширования только на левый и правый каналы звукорежиссёры могут размещать инструменты вокруг и над слушателем. Если вы подписаны на Apple Music, вы можете слушать избранные песни в формате Dolby Atmos с пространственным аудио. Чтобы проверить настройку:</p>
+<ol>
+  <li>Обновите iPhone до последней версии iOS.</li>
+  <li>Откройте <strong>Настройки › Приложения › Музыка</strong>.</li>
+  <li>В разделе «Звук» нажмите <strong>Dolby Atmos</strong>.</li>
+  <li>Выберите <strong>Автоматически</strong>, <strong>Всегда включено</strong> или <strong>Выключено</strong>.</li>
+</ol>
+<p>В режиме «Автоматически» поддерживаемые песни воспроизводятся в формате Dolby Atmos в Bluetooth-наушниках Apple или Beats и во встроенных динамиках iPhone XS и новее (кроме iPhone SE). Для проводных наушников Apple рекомендует «Всегда включено». У песен с такой поддержкой отображается значок Dolby Atmos. Источник: <a href="https://support.apple.com/ru-ru/109354" target="_blank" rel="noopener">Сведения о формате Dolby Atmos с пространственным аудио в Apple Music</a>.</p>
+
+<h3 id="head-tracking">Пространственное аудио и отслеживание движения головы на AirPods</h3>
+<p>С поддерживаемыми AirPods пространственное аудио может использовать и отслеживание движения головы, поэтому звук кажется исходящим от iPhone, даже когда вы поворачиваете голову. Чтобы изменить режим, наденьте AirPods, откройте Пункт управления, коснитесь элемента управления громкостью и удерживайте его, нажмите <strong>Пространственное аудио</strong> и выберите:</p>
+<ul>
+  <li><strong>Выкл.:</strong> пространственное аудио и отслеживание движения головы выключены.</li>
+  <li><strong>Статично:</strong> пространственное аудио без отслеживания движения головы.</li>
+  <li><strong>Отслеживание головы:</strong> пространственное аудио с отслеживанием движения головы.</li>
+</ul>
+<p>iPhone запоминает этот выбор отдельно для каждого приложения. Apple отмечает, что пространственное аудио доступно не во всех приложениях и не для всего контента: оно работает с поддерживаемыми сериалами, фильмами, песнями и играми, а также со звонками FaceTime. Источник: <a href="https://support.apple.com/ru-ru/guide/airpods/dev00eb7e0a3/web" target="_blank" rel="noopener">Управление пространственным аудио и отслеживанием движения головы на AirPods</a>.</p>
+
+<h2 id="eqfy-3d-audio">3D-аудио в EQfy: эффект внутри приложения</h2>
+<p>3D-аудио в EQfy — это собственный эффект, встроенный в плеер EQfy. Это не пространственное аудио Apple, и оно не превращает песни в миксы Dolby Atmos. Вместо этого оно обрабатывает песню, которую вы слушаете в EQfy, в одном из двух режимов. Найти его можно на вкладке <strong>3D-аудио</strong> плеера, рядом с вкладками «Громкость», «Басы», EQ и «Наушники». Это инструмент Premium.</p>
+
+<figure>
+  <img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" width="700" height="1019" loading="lazy" decoding="async" alt="Вкладка «3D пространственное аудио» в EQfy: эффект включён, кнопки режимов «Реверберация» и «3D-источник» и шаблоны «Автодвижения»">
+  <figcaption>Вкладка «3D-аудио» в EQfy: включите эффект, затем выберите «Реверберация» или «3D-источник».</figcaption>
+</figure>
+
+<h3 id="reverb-mode">Режим «Реверберация»: поместите музыку в помещение</h3>
+<p>Режим «Реверберация» помещает песню в виртуальное пространство. Если вы искали приложение с реверберацией для iPhone, чтобы песни звучали масштабнее, это решение прямо в плеере. Пресетов девять, а ползунок «Смешивание реверберации» задаёт, сколько эффекта вы слышите — от сухого звука до «мокрого».</p>
+<table>
+  <thead>
+    <tr><th>Пресет</th><th>Как звучит</th><th>Попробуйте с</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Small Room</td><td>Короткие близкие отражения; деликатно</td><td>Акустические песни, разговорная речь</td></tr>
+    <tr><td>Medium Room</td><td>Естественная атмосфера комнаты</td><td>Большинство поп- и рок-песен</td></tr>
+    <tr><td>Large Room</td><td>Больше пространства, более длинный «хвост»</td><td>Записи групп, звук как на концерте</td></tr>
+    <tr><td>Medium Hall</td><td>Ощущение концертного зала</td><td>Фортепиано, классика</td></tr>
+    <tr><td>Large Hall</td><td>Большой и просторный, долгое затухание</td><td>Оркестровая музыка, музыка к фильмам</td></tr>
+    <tr><td>Medium Chamber</td><td>Плотные, мягкие отражения</td><td>Вокал, струнные</td></tr>
+    <tr><td>Large Chamber</td><td>Более крупная и насыщенная камера</td><td>Баллады, медленные песни</td></tr>
+    <tr><td>Cathedral</td><td>Очень долгое воздушное затухание</td><td>Хор, эмбиент, музыка для медитации</td></tr>
+    <tr><td>Plate</td><td>Яркая, гладкая реверберация студийного типа</td><td>Поп-вокал, ударные</td></tr>
+  </tbody>
+</table>
+<p>Это отправные точки, а не правила. Реверберация — дело вкуса, поэтому попробуйте несколько пресетов на одной песне и оставьте тот, что нравится.</p>
+
+<h3 id="3d-source-mode">Режим «3D-источник»: двигайте звук вокруг себя</h3>
+<p>«3D-источник» воспринимает песню как источник звука в пространстве вокруг головы. Его можно перетащить в нужное положение (спереди, сзади, слева, справа, вверх или вниз) и вернуть кнопкой «Центральная позиция». Или включить <strong>Автодвижение</strong>, и EQfy сам будет двигать звук по одному из четырёх шаблонов, а скорость регулируется от медленной до быстрой:</p>
+<ul>
+  <li><strong>Билатеральный:</strong> звук скользит слева направо и обратно.</li>
+  <li><strong>Орбита:</strong> звук кружит вокруг головы на уровне ушей.</li>
+  <li><strong>Восьмёрка:</strong> звук описывает вокруг вас траекторию в форме восьмёрки.</li>
+  <li><strong>Дыхание:</strong> звук медленно поднимается и опускается в спокойном темпе.</li>
+</ul>
+<p>Такое движение наиболее убедительно в наушниках, потому что каждое ухо получает свой сигнал. На динамике iPhone обычно лучше подходит режим «Реверберация».</p>
+<p>«3D-источник» умеет использовать и <strong>отслеживание движения головы</strong>. С поддерживаемыми AirPods, такими как AirPods Pro или AirPods Max, EQfy следит за движением вашей головы и меняет то, откуда, как кажется, идёт звук, когда вы поворачиваете голову. В первый раз iPhone спросит, можно ли EQfy использовать данные о движении. В режиме «Реверберация» отслеживание движения головы не используется.</p>
+
+<h2 id="how-to">Как включить 3D-аудио в EQfy</h2>
+<ol>
+  <li>Откройте EQfy и запустите песню из библиотеки или импортированный файл.</li>
+  <li>Откройте плеер и нажмите вкладку <strong>3D-аудио</strong>.</li>
+  <li>Включите переключатель <strong>Пространственное аудио</strong>. Несмотря на название, он управляет собственным эффектом EQfy, а не функцией Apple.</li>
+  <li>В разделе <strong>Режим аудио</strong> выберите <strong>Реверберация</strong> или <strong>3D-источник</strong>.</li>
+  <li>В режиме «Реверберация» выберите пресет и настройте «Смешивание реверберации». В режиме «3D-источник» выберите шаблон «Автодвижения» и скорость или расположите звук сами.</li>
+  <li>Наденьте наушники и несколько раз выключите и включите переключатель, чтобы сравнить.</li>
+</ol>
+
+<h2 id="comparison">Пространственное аудио Apple и 3D-аудио EQfy</h2>
+<table>
+  <thead>
+    <tr><th>Характеристика</th><th>Пространственное аудио / Dolby Atmos от Apple</th><th>3D-аудио EQfy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Что это</td><td>Функция iPhone для поддерживаемого контента и наушников</td><td>Эффект внутри плеера EQfy</td></tr>
+    <tr><td>С чем работает</td><td>Песни Dolby Atmos в Apple Music, поддерживаемые сериалы, фильмы и игры, звонки FaceTime</td><td>Песни, воспроизводимые в EQfy: купленные или незащищённые песни из музыкальной библиотеки и импортированные файлы</td></tr>
+    <tr><td>Основные настройки</td><td>«Выкл.», «Статично» или «Отслеживание головы»; Dolby Atmos «Автоматически», «Всегда включено» или «Выключено»</td><td>9 пресетов реверберации со смешиванием; положение «3D-источника»; 4 шаблона «Автодвижения»</td></tr>
+    <tr><td>Что нужно</td><td>Подписка на Apple Music для песен Atmos; поддерживаемые AirPods для отслеживания движения головы</td><td>Premium в EQfy; для «3D-источника» рекомендуются наушники; для отслеживания движения головы — поддерживаемые AirPods</td></tr>
+  </tbody>
+</table>
+
+<h3 id="use-both">Можно ли использовать оба?</h3>
+<p>Песни по подписке Apple Music защищены. Они воспроизводятся в EQfy, но 3D-аудио и другие инструменты улучшения для них недоступны, потому что iOS не позволяет приложениям обрабатывать защищённый звук. Для песен, которые EQfy может обработать, можно слушать с AirPods как обычно. Поскольку iPhone запоминает выбор пространственного аудио отдельно для каждого приложения, для EQfy в Пункте управления можно выбрать «Выкл.», если хотите услышать эффект EQfy в чистом виде.</p>
+
+<h2 id="tips">Советы для лучшего 3D-звука</h2>
+<ul>
+  <li><strong>Начните деликатно.</strong> Medium Room с низким смешиванием часто звучит естественнее, чем Cathedral на полном «мокром» уровне.</li>
+  <li><strong>Подбирайте режим под устройство вывода.</strong> Для «3D-источника» и «Автодвижения» берите наушники; для «Реверберации» достаточно динамика.</li>
+  <li><strong>Приберите низкие частоты.</strong> Реверберация может сделать басы мутными. Небольшой срез около 200 Гц в <a href="/ru/blog/best-iphone-eq-settings-by-genre/">эквалайзере</a> поможет, а <a href="/ru/blog/boost-bass-on-iphone-speakers/">«Усиление басов»</a> вернёт весомость, если большое помещение «худит» звук.</li>
+  <li><strong>Проверьте левый и правый каналы.</strong> Если одна сторона звучит громче ещё до добавления эффектов, сначала исправьте это с помощью <a href="/ru/blog/left-right-headphone-balance/">баланса левого и правого каналов наушников</a>.</li>
+  <li><strong>Держите комфортную громкость.</strong> Из-за эффектов хочется прибавить звук; разумные уровни описаны в нашем руководстве по <a href="/ru/blog/is-volume-boosting-safe/">безопасному усилению громкости</a>.</li>
+</ul>
+
+<div class="note"><strong>Чего EQfy не умеет:</strong> 3D-аудио работает только со звуком, воспроизводимым внутри EQfy. Оно не может добавить 3D-звук Spotify, YouTube, стримингу Apple Music, звонкам и другим приложениям и недоступно для песен по подписке Apple Music. Это не пространственное аудио Apple, и миксы Dolby Atmos оно не создаёт.</div>
+
+<p>Хотите увидеть остальные инструменты плеера? Загляните на <a href="/ru/#spatial-audio">главную страницу EQfy с 3D-аудио и другими функциями</a>.</p>
+            </div>
+            <section class="post-faq" aria-labelledby="post-faq-title">
+                <h2 id="post-faq-title">Часто задаваемые вопросы</h2>
+                <div class="faq__list">
+<details class="faq__item"><summary class="faq__q">Совпадает ли 3D-аудио EQfy с пространственным аудио Apple?</summary><div class="faq__a"><p>Нет. Пространственное аудио Apple — системная функция для поддерживаемого контента, например песен Dolby Atmos в Apple Music. 3D-аудио в EQfy — собственный эффект внутри приложения, с реверберацией в разных помещениях и перемещаемым 3D-источником звука, для песен, которые вы слушаете в EQfy.</p></div></details>
+<details class="faq__item"><summary class="faq__q">Нужны ли AirPods для 3D-звука на iPhone?</summary><div class="faq__a"><p>Для отслеживания движения головы по версии Apple нужны поддерживаемые AirPods. 3D-аудио EQfy работает с любым устройством вывода, а режим «3D-источник» тоже может использовать отслеживание движения головы с поддерживаемыми AirPods, например AirPods Pro или AirPods Max. Движущийся «3D-источник» лучше всего слышен в наушниках; на динамике iPhone лучше подходит режим «Реверберация».</p></div></details>
+<details class="faq__item"><summary class="faq__q">Может ли EQfy добавить 3D-звук Spotify или YouTube?</summary><div class="faq__a"><p>Нет. iOS позволяет EQfy обрабатывать только звук, воспроизводимый внутри EQfy, поэтому 3D-аудио не может изменить Spotify, YouTube, стриминг Apple Music, звонки и другие приложения.</p></div></details>
+<details class="faq__item"><summary class="faq__q">Работает ли 3D-аудио EQfy с песнями из Apple Music?</summary><div class="faq__a"><p>Не с песнями по подписке Apple Music: они защищены, поэтому воспроизводятся в EQfy, но инструменты улучшения для них недоступны. С 3D-аудио работают купленные или незащищённые песни и импортированные файлы.</p></div></details>
+                </div>
+            </section>
+        </article>
+        <aside class="cta-box" aria-label="Сделайте iPhone громче">
+            <img class="cta-box__icon" src="/assets/images/app-icon.png" alt="Значок приложения EQfy" width="64" height="64" loading="lazy">
+            <p class="cta-box__title">Сделайте iPhone громче</p>
+            <p>Скачайте EQfy - Louder Volume бесплатно в App Store. Требуется iOS 16 или новее.</p>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="btn-primary" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> Загрузить в App Store</a>
+        </aside>
+        <section class="related" aria-labelledby="related-title">
+            <h2 id="related-title">Похожие статьи</h2>
+            <div class="cards">
+            <article class="card">
+                <a class="card__image" href="/ru/blog/slowed-reverb-songs-iphone/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">Руководство</span>
+                    <h3 class="card__title"><a href="/ru/blog/slowed-reverb-songs-iphone/">Slowed reverb на iPhone: как это сделать</a></h3>
+                    <p class="card__text">Slowed reverb на iPhone: замедлите трек и добавьте реверберацию Hall или Cathedral в EQfy. Что это такое, как сделать по шагам и чего ждать от звучания.</p>
+                    <a class="card__more" href="/ru/blog/slowed-reverb-songs-iphone/" aria-label="Читать далее: Slowed reverb на iPhone: как это сделать">Читать далее →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/ru/blog/left-right-headphone-balance/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/09-sound-control.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">Руководство</span>
+                    <h3 class="card__title"><a href="/ru/blog/left-right-headphone-balance/">Баланс звука на iPhone: как выровнять каналы</a></h3>
+                    <p class="card__text">Баланс звука на iPhone: где найти слайдер «Баланс», когда нужно «Моно-аудио» и что делать, если один наушник AirPods звучит громче другого. Простые шаги.</p>
+                    <a class="card__more" href="/ru/blog/left-right-headphone-balance/" aria-label="Читать далее: Баланс звука на iPhone: как выровнять каналы">Читать далее →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/ru/blog/8d-audio-iphone/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">Руководство</span>
+                    <h3 class="card__title"><a href="/ru/blog/8d-audio-iphone/">8D-звук на iPhone: как получить эффект 8D</a></h3>
+                    <p class="card__text">8D-звук на iPhone: включите «3D-источник» в EQfy, выберите «Орбиту» и наденьте наушники. Пошагово: как получить эффект вращения звука и что такое 8D-музыка.</p>
+                    <a class="card__more" href="/ru/blog/8d-audio-iphone/" aria-label="Читать далее: 8D-звук на iPhone: как получить эффект 8D">Читать далее →</a>
+                </div>
+            </article>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span class="footer__logo-icon"><img src="/assets/images/app-icon.png" alt="" width="32" height="32"></span>EQfy - Louder Volume</div>
+                    <p class="footer__tagline">Усилитель громкости, усиление басов и эквалайзер для iPhone. Сделайте каждый трек громче, глубже и чище.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <p class="footer__heading">Возможности</p>
+                        <ul>
+                            <li><a href="/ru/#volume-booster">Усилитель громкости</a></li>
+                            <li><a href="/ru/#equalizer">Усиление басов и эквалайзер</a></li>
+                            <li><a href="/ru/#spatial-audio">3D пространственное аудио</a></li>
+                            <li><a href="/ru/#ai-audio">Студия ИИ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">Ресурсы</p>
+                        <ul>
+                            <li><a href="/ru/blog/">Блог</a></li>
+                            <li><a href="/ru/faq/">FAQ</a></li>
+                            <li><a href="mailto:support@eqfy.app">Поддержка</a></li>
+                            <li><a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" target="_blank" rel="noopener">App Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">Правовая информация</p>
+                        <ul>
+                            <li><a href="/privacy" hreflang="en">Политика конфиденциальности (на английском)</a></li>
+                            <li><a href="/terms" hreflang="en">Условия использования (на английском)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 EQfy. Все права защищены.</span>
+                <span>iPhone, AirPods и App Store являются товарными знаками Apple Inc.</span>
+            </div>
+        </div>
+    </footer>
+<script>
+(function(){var n=document.querySelector('.nav');addEventListener('scroll',function(){n.classList.toggle('nav--scrolled',scrollY>40)},{passive:true});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-toggle]');if(b){document.querySelector(b.getAttribute('data-toggle')).classList.toggle('is-open');return}var d=document.querySelector('.lang-switcher__dropdown');if(d&&!e.target.closest('.lang-switcher'))d.classList.remove('is-open')});})();
+</script>
+</body>
+</html>
