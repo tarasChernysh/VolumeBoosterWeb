@@ -10,7 +10,9 @@
     "download": "Kostenlos laden",
     "changeLanguage": "Sprache ändern",
     "menu": "Menü öffnen",
-    "logoAlt": "EQfy-Icon"
+    "logoAlt": "EQfy-Icon",
+    "main": "Hauptnavigation",
+    "breadcrumb": "Brotkrümelnavigation"
   },
   "footer": {
     "tagline": "Lautstärkeverstärker, Bass-Booster und Equalizer fürs iPhone. Mach jeden Track lauter, satter und klarer.",
@@ -23,8 +25,8 @@
     "support": "Support",
     "appStore": "App Store",
     "legal": "Rechtliches",
-    "privacy": "Datenschutzerklärung",
-    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung (auf Englisch)",
+    "terms": "Nutzungsbedingungen (auf Englisch)",
     "rights": "Alle Rechte vorbehalten.",
     "trademark": "iPhone, AirPods und App Store sind Marken der Apple Inc."
   },
@@ -63,5 +65,15 @@
     "title": "Ratgeber & Neuigkeiten",
     "description": "Tipps für mehr Lautstärke, Klarheit und Hörspaß auf dem iPhone.",
     "all": "Alle Artikel →"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite gibt es nicht.",
+    "lead": "Die Seite, die du suchst, gibt es nicht oder sie wurde verschoben. Versuch es hier:"
+  },
+  "og": {
+    "title": "Mach dein iPhone <em>lauter</em>",
+    "sub": "Lautstärke- und Bass-Booster mit Profi-Equalizer",
+    "pills": ["Bis zu 200 % Lautstärke", "7-Band-Equalizer", "3D-Audio", "KI Studio"]
   }
 }

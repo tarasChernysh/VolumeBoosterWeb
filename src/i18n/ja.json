@@ -10,7 +10,9 @@
     "download": "無料ダウンロード",
     "changeLanguage": "言語を変更",
     "menu": "メニューを開く",
-    "logoAlt": "EQfyアイコン"
+    "logoAlt": "EQfyアイコン",
+    "main": "メインナビゲーション",
+    "breadcrumb": "パンくずリスト"
   },
   "footer": {
     "tagline": "iPhone向けの音量ブースト、低音ブースト、イコライザー。すべての曲をより大きく、より深く、よりクリアに。",
@@ -23,8 +25,8 @@
     "support": "サポート",
     "appStore": "App Store",
     "legal": "法的情報",
-    "privacy": "プライバシーポリシー",
-    "terms": "利用規約",
+    "privacy": "プライバシーポリシー（英語）",
+    "terms": "利用規約（英語）",
     "rights": "無断複写・転載を禁じます。",
     "trademark": "iPhone、AirPods、App StoreはApple Inc.の商標です。"
   },
@@ -60,5 +62,15 @@
     "title": "ガイド＆お知らせ",
     "description": "iPhoneをもっと大きく、クリアに、楽しく聴くためのヒント。",
     "all": "すべての記事 →"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは存在しません。",
+    "lead": "お探しのページは存在しないか、移動した可能性があります。こちらをお試しください："
+  },
+  "og": {
+    "title": "iPhoneの音量を<em>もっと大きく</em>",
+    "sub": "音量・低音ブースターとプロ仕様のイコライザー",
+    "pills": ["音量を最大200%に", "7バンドイコライザー", "3Dオーディオ", "AIスタジオ"]
   }
 }

@@ -10,7 +10,9 @@
     "download": "免费下载",
     "changeLanguage": "切换语言",
     "menu": "打开菜单",
-    "logoAlt": "EQfy图标"
+    "logoAlt": "EQfy图标",
+    "main": "主导航",
+    "breadcrumb": "面包屑导航"
   },
   "footer": {
     "tagline": "适用于iPhone的音量增强器、低音增强器和均衡器。让每首歌更响亮、低音更深沉、声音更清晰。",
@@ -23,8 +25,8 @@
     "support": "支持",
     "appStore": "App Store",
     "legal": "法律信息",
-    "privacy": "隐私政策",
-    "terms": "使用条款",
+    "privacy": "隐私政策（英文）",
+    "terms": "使用条款（英文）",
     "rights": "版权所有。",
     "trademark": "iPhone、AirPods和App Store是Apple Inc.的商标。"
   },
@@ -63,5 +65,15 @@
     "title": "指南与新闻",
     "description": "让iPhone声音更大、更清晰、听起来更有乐趣的实用技巧。",
     "all": "全部文章 →"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "你要找的页面不存在。",
+    "lead": "你要找的页面不存在或已移动。试试这些页面："
+  },
+  "og": {
+    "title": "让iPhone声音<em>更大</em>",
+    "sub": "音量与低音增强，搭配专业均衡器",
+    "pills": ["音量最高200%", "7段均衡器", "3D音频", "人工智能工作室"]
   }
 }

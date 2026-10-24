@@ -120,6 +120,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: none; position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 1001;
     background: var(--bg-card); border: 1px solid var(--border-default); border-radius: var(--radius-md);
     min-width: 150px; padding: 6px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    max-height: calc(100vh - 96px); overflow-y: auto; /* long language lists scroll on small phones */
 }
 .lang-switcher__dropdown.is-open { display: block; }
 .lang-switcher__option { display: block; padding: 8px 12px; font-size: 0.85rem; color: var(--text-secondary); border-radius: var(--radius-sm); }

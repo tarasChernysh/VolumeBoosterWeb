@@ -2,7 +2,7 @@
 // EQfy static site generator — zero dependencies (Node 18+). Usage: `node build.mjs`
 //
 // Reads   src/site.json, src/i18n/<lang>.json, src/content/<lang>/faq.json, src/content/<lang>/blog/<id>.html
-// Writes  <prefix>/blog/**, <prefix>/faq/, 404.html, sitemap.xml, llms.txt
+// Writes  <prefix>/blog/**, <prefix>/faq/, <prefix>/404.html, sitemap.xml, llms.txt
 //         and the "latest posts" block between <!-- blog:latest --> markers in the landing pages.
 // Only the generated folders above are deleted/rewritten; everything else is left untouched.
 
@@ -137,7 +137,10 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-togg
 /**
  * Full HTML page. `alternates` = { lang: url } of this page's translations (drives hreflang + switcher).
  */
-function layout({ lang, title, description, url, alternates, image = site.defaultImage, imageAlt = site.brand, ogType = 'website', jsonld, main, noindex = false, current }) {
+// Default share image of a language: og/<lang>-site.jpg (rendered by src/og/render.mjs), else the English one.
+const siteImage = (lang) => (exists(`/assets/images/og/${lang}-site.jpg`) ? `/assets/images/og/${lang}-site.jpg` : site.defaultImage);
+
+function layout({ lang, title, description, url, alternates, image = siteImage(lang), imageAlt = site.brand, ogType = 'website', jsonld, main, noindex = false, current }) {
   const t = T[lang] || T.en;
   const [iw, ih] = imageSize(image);
   const hreflang = alternates
@@ -196,7 +199,7 @@ ${jsonld ? `    <script type="application/ld+json">\n${ld(jsonld)}\n    </script
     <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
     <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
 
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" aria-label="${esc(t.nav.main)}">
         <div class="nav__inner">
             <a href="${home(lang)}" class="nav__logo">
                 <span class="nav__logo-icon"><img src="${site.logo}" alt="${esc(t.nav.logoAlt)}" width="36" height="36"></span>
@@ -248,8 +251,8 @@ ${main}
                     <div class="footer__column">
                         <p class="footer__heading">${esc(t.footer.legal)}</p>
                         <ul>
-                            <li><a href="/privacy">${esc(t.footer.privacy)}</a></li>
-                            <li><a href="/terms">${esc(t.footer.terms)}</a></li>
+                            <li><a href="/privacy"${lang === 'en' ? '' : ' hreflang="en"'}>${esc(t.footer.privacy)}</a></li>
+                            <li><a href="/terms"${lang === 'en' ? '' : ' hreflang="en"'}>${esc(t.footer.terms)}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -267,7 +270,7 @@ ${SCRIPT}
 }
 
 // ---------- components ----------
-const breadcrumb = (items) => `<nav class="breadcrumb" aria-label="Breadcrumb"><ol>${items.map(([label, u], i) =>
+const breadcrumb = (items, lang) => `<nav class="breadcrumb" aria-label="${esc(T[lang].nav.breadcrumb)}"><ol>${items.map(([label, u], i) =>
   i === items.length - 1 ? `<li aria-current="page">${esc(label)}</li>` : `<li><a href="${u}">${esc(label)}</a></li>`).join('')}</ol></nav>`;
 const breadcrumbLD = (items) => ({
   '@type': 'BreadcrumbList',
@@ -325,7 +328,7 @@ for (const lang of LANGS) {
     const where = post.file;
     const crumbs = [[t.home, home(lang)], [t.nav.blog, blogUrl(lang)], [post.title, url]];
     const postOg = `/assets/images/og/${lang}-${post.id}.jpg`; // rendered by src/og/render.mjs
-    const ogImage = post.ogImage || (exists(postOg) ? postOg : site.defaultImage);
+    const ogImage = post.ogImage || (exists(postOg) ? postOg : siteImage(lang));
     const related = post.related.map((id) => {
       const p = POSTS[lang][id] || fail(`${where}: related post "${id}" not found in ${lang}`);
       return card(p, { heading: 'h3' });
@@ -333,7 +336,7 @@ for (const lang of LANGS) {
     const updated = post.updated !== post.date ? ` · <span>${esc(t.post.updated)} <time datetime="${post.updated}">${fmtDate(lang, post.updated)}</time></span>` : '';
     const main = `    <main class="page">
         <div class="container">
-        ${breadcrumb(crumbs)}
+        ${breadcrumb(crumbs, lang)}
         <article>
             <header class="page__header">
                 <span class="eyebrow">${esc(t.post.categories[post.category])}</span>
@@ -361,7 +364,7 @@ ${related.length ? `        <section class="related" aria-labelledby="related-ti
       {
         '@type': 'BlogPosting', '@id': `${full(url)}#article`, headline: decode(post.title), description: decode(post.description),
         image: [full(ogImage), full(post.image)].filter((v, i, a) => a.indexOf(v) === i),
-        datePublished: post.date, dateModified: post.updated, inLanguage: L[lang].hreflang, mainEntityOfPage: full(url),
+        datePublished: post.date, dateModified: post.updated, inLanguage: L[lang].htmlLang, mainEntityOfPage: full(url),
         ...(post.keyword ? { keywords: post.keyword } : {}),
         author: { '@type': 'Organization', name: site.shortBrand, url: `${O}/` }, publisher: ORG,
       },
@@ -388,7 +391,7 @@ for (const lang of LANGS) {
   const crumbs = [[t.home, home(lang)], [t.nav.blog, url]];
   const main = `    <main class="page">
         <div class="container">
-        ${breadcrumb(crumbs)}
+        ${breadcrumb(crumbs, lang)}
         <header class="page__header page__header--center">
             <span class="eyebrow">${esc(t.blog.eyebrow)}</span>
             <h1 class="page__title">${esc(t.blog.h1)}</h1>
@@ -405,7 +408,7 @@ for (const lang of LANGS) {
     jsonld: {
       '@context': 'https://schema.org',
       '@graph': [
-        { '@type': 'Blog', '@id': `${full(url)}#blog`, name: decode(t.blog.h1), description: decode(t.blog.description), url: full(url), inLanguage: L[lang].hreflang, publisher: ORG },
+        { '@type': 'Blog', '@id': `${full(url)}#blog`, name: decode(t.blog.h1), description: decode(t.blog.description), url: full(url), inLanguage: L[lang].htmlLang, publisher: ORG },
         { '@type': 'ItemList', itemListElement: posts.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: full(postUrl(lang, p.id)), name: decode(p.title) })) },
         breadcrumbLD(crumbs),
       ],
@@ -426,7 +429,7 @@ for (const lang of LANGS) {
   const groups = f.groups.map((g, i) => ({ ...g, id: `topic-${i + 1}` }));
   const main = `    <main class="page">
         <div class="container">
-        ${breadcrumb(crumbs)}
+        ${breadcrumb(crumbs, lang)}
         <header class="page__header page__header--center">
             <span class="eyebrow">${esc(t.faqPage.eyebrow)}</span>
             <h1 class="page__title">${esc(f.h1 || f.title)}</h1>
@@ -446,28 +449,32 @@ ${faqItems(g.items, lang, where)}
     </main>`;
   write(`${url}index.html`, layout({
     lang, title: `${f.title} | ${site.shortBrand}`, description: f.description, url, alternates: faqAlts, main, current: 'faq',
-    jsonld: { '@context': 'https://schema.org', '@graph': [{ ...faqLD(groups.flatMap((g) => g.items), lang, where), '@id': `${full(url)}#faq`, inLanguage: L[lang].hreflang }, breadcrumbLD(crumbs)] },
+    jsonld: { '@context': 'https://schema.org', '@graph': [{ ...faqLD(groups.flatMap((g) => g.items), lang, where), '@id': `${full(url)}#faq`, inLanguage: L[lang].htmlLang }, breadcrumbLD(crumbs)] },
   }));
 }
 addToSitemap(faqAlts, FAQ.en.updated);
 
 // ---------- 404 ----------
-write('404.html', layout({
-  lang: 'en', title: `Page not found | ${site.shortBrand}`, description: 'The page you are looking for does not exist.', url: '/404.html', noindex: true,
-  main: `    <main class="page">
+// One per language: Cloudflare Pages serves the nearest 404.html, so a miss under /de/ gets /de/404.html.
+for (const lang of LANGS) {
+  const t = T[lang];
+  write(`${L[lang].prefix}/404.html`, layout({
+    lang, title: `${t.notFound.title} | ${site.shortBrand}`, description: t.notFound.description, url: `${L[lang].prefix}/404.html`, noindex: true,
+    main: `    <main class="page">
         <div class="container notfound">
             <p class="notfound__code">404</p>
-            <h1 class="page__title">Page not found</h1>
-            <p class="page__lead">The page you’re looking for doesn’t exist or has moved. Try one of these instead:</p>
+            <h1 class="page__title">${esc(t.notFound.title)}</h1>
+            <p class="page__lead">${esc(t.notFound.lead)}</p>
             <div class="notfound__links">
-                <a class="btn-primary" href="/">Home</a>
-                <a class="btn-secondary" href="/blog/">Blog</a>
-                <a class="btn-secondary" href="/faq/">FAQ</a>
+                <a class="btn-primary" href="${home(lang)}">${esc(t.home)}</a>
+                <a class="btn-secondary" href="${blogUrl(lang)}">${esc(t.nav.blog)}</a>
+                <a class="btn-secondary" href="${faqUrl(lang)}">${esc(t.nav.faq)}</a>
             </div>
-            <p class="notfound__links">${site.landingLangs.filter((l) => l !== 'en' && exists(`${L[l].prefix}/index.html`)).map((l) => `<a href="${home(l)}" lang="${L[l].htmlLang}">${L[l].label}</a>`).join(' · ')}</p>
+            <p class="notfound__links">${site.landingLangs.filter((l) => l !== lang && exists(`${home(l)}index.html`)).map((l) => `<a href="${home(l)}" lang="${L[l].htmlLang}">${L[l].label}</a>`).join(' · ')}</p>
         </div>
     </main>`,
-}));
+  }));
+}
 
 // ---------- latest posts on landing pages ----------
 for (const lang of LANGS) {
@@ -548,4 +555,4 @@ ${landing.filter((l) => l !== 'en').map((l) => `- [${L[l].label.replace(/^\S+\s/
 `);
 
 const count = LANGS.reduce((n, l) => n + Object.keys(POSTS[l]).length, 0);
-console.log(`✔ built ${count} posts, ${LANGS.length} blog indexes, ${LANGS.length} FAQ pages (${LANGS.join(', ')}), 404.html, sitemap.xml (${entries.length} URLs), llms.txt`);
+console.log(`✔ built ${count} posts, ${LANGS.length} blog indexes, ${LANGS.length} FAQ pages and 404 pages (${LANGS.join(', ')}), sitemap.xml (${entries.length} URLs), llms.txt`);

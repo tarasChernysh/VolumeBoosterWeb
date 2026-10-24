@@ -10,7 +10,9 @@
     "download": "Télécharger gratuitement",
     "changeLanguage": "Changer de langue",
     "menu": "Ouvrir le menu",
-    "logoAlt": "Icône EQfy"
+    "logoAlt": "Icône EQfy",
+    "main": "Navigation principale",
+    "breadcrumb": "Fil d’Ariane"
   },
   "footer": {
     "tagline": "Boost du volume, boost des basses et égaliseur pour iPhone. Rendez chaque titre plus fort, plus profond et plus clair.",
@@ -23,8 +25,8 @@
     "support": "Assistance",
     "appStore": "App Store",
     "legal": "Mentions légales",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité (en anglais)",
+    "terms": "Conditions d’utilisation (en anglais)",
     "rights": "Tous droits réservés.",
     "trademark": "iPhone, AirPods et App Store sont des marques commerciales d’Apple Inc."
   },
@@ -60,5 +62,15 @@
     "title": "Guides et actualités",
     "description": "Des conseils pour rendre votre iPhone plus fort, plus clair et plus agréable à écouter.",
     "all": "Tous les articles →"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n’existe pas.",
+    "lead": "La page que vous cherchez n’existe pas ou a été déplacée. Essayez plutôt :"
+  },
+  "og": {
+    "title": "Rendez votre iPhone <em>plus fort</em>",
+    "sub": "Booster de volume et de basses avec égaliseur pro",
+    "pills": ["Volume jusqu’à 200 %", "Égaliseur 7 bandes", "Audio 3D", "Studio IA"]
   }
 }

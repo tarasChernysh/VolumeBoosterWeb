@@ -4,7 +4,7 @@
 //   node src/landing-i18n.mjs extract <lang>   → src/landing/<lang>.json   (adds new EN strings with "" values, keeps existing translations)
 //   node src/landing-i18n.mjs apply <lang>     → <lang>/index.html         (index.html with every string translated; markup identical)
 //
-// Strings are text runs between block-level tags. Inline markup inside a run is replaced by {0}, {1}, …
+// Strings are text runs between block-level tags (with a letter or a %). Inline markup inside a run is replaced by {0}, {1}, …
 // tokens that the translation must keep. Also translated: alt / aria-label attributes, SEO meta contents
 // and the app description in the JSON-LD. Run `node build.mjs` afterwards to fill the latest-posts block.
 
@@ -46,7 +46,8 @@ function transform(html, onRun, onAttr) {
     const tags = [];
     let key = inner.map((t) => (t.startsWith('<') ? `{${tags.push(t) - 1}}` : t)).join('');
     key = key.slice(lead.length, key.length - trail.length).replace(/\s+/g, ' ');
-    let res = hasLetters(key.replace(/\{\d+\}/g, '')) && !key.startsWith('🌐') ? onRun(key) : key;
+    const text = key.replace(/\{\d+\}/g, '');
+    let res = (hasLetters(text) || text.includes('%')) && !key.startsWith('🌐') ? onRun(key) : key; // "200%" is written differently per language
     res = res.replace(/\{(\d+)\}/g, (m, i) => tags[+i] ?? m);
     out.push(...run.slice(0, first), lead + res + trail, ...run.slice(last + 1));
     run = [];
@@ -144,6 +145,8 @@ html = html
   })
   .replace(/href="\/faq\/"/g, hasContent ? `href="${pre}/faq/"` : 'href="#faq"')
   .replace(/href="\/blog\/"/g, hasContent ? `href="${pre}/blog/"` : 'href="/blog/" hreflang="en"')
+  .replace(/href="\/(privacy|terms)"/g, 'href="/$1" hreflang="en"') // legal pages are English only
+  .replace(/https:\/\/eqfy\.app\/assets\/images\/og-image\.jpg/g, (m) => (fs.existsSync(path.join(ROOT, `assets/images/og/${lang}-site.jpg`)) ? `https://eqfy.app/assets/images/og/${lang}-site.jpg` : m))
   .replace(/(<a href=")\/(" class="nav__logo">)/, `$1${pre}/$2`)
   .replace(/<div class="lang-switcher__dropdown">[\s\S]*?<\/div>/, (block) => block
     .replace(' lang-switcher__option--active', '')
@@ -164,10 +167,10 @@ html = html.replace(LD, (m, open, json, close) => {
   app.description = tr(app.description);
   app.featureList = tr(app.featureList);
   app.offers.forEach((o) => { o.description = tr(o.description); });
-  app.inLanguage = L.hreflang;
+  app.inLanguage = L.htmlLang;
   app.url = `https://eqfy.app${pre}/`;
   const ws = data['@graph'].find((n) => n['@type'] === 'WebSite');
-  if (ws) ws.inLanguage = L.hreflang;
+  if (ws) ws.inLanguage = L.htmlLang;
   return `${open}\n    ${JSON.stringify(data, null, 4).replace(/\n/g, '\n    ')}\n    ${close}`;
 });
 

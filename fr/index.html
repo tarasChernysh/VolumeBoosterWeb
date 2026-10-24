@@ -17,7 +17,7 @@
     <meta property="og:description" content="Montez le volume jusqu’à 200 %, renforcez les basses et façonnez votre son avec un égaliseur 7 bandes, l’audio 3D et des outils musicaux IA. Gratuit sur iPhone.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://eqfy.app/fr/">
-    <meta property="og:image" content="https://eqfy.app/assets/images/og-image.jpg">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og/fr-site.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="EQfy - Louder Volume : le cadran de Boost du volume réglé sur 140 % sur un iPhone">
@@ -27,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="EQfy - Louder Volume : monter le volume de l’iPhone">
     <meta name="twitter:description" content="Montez le volume jusqu’à 200 %, renforcez les basses et façonnez votre son avec un égaliseur 7 bandes, l’audio 3D et des outils musicaux IA.">
-    <meta name="twitter:image" content="https://eqfy.app/assets/images/og-image.jpg">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og/fr-site.jpg">
     <meta name="twitter:image:alt" content="EQfy - Louder Volume : le cadran de Boost du volume réglé sur 140 % sur un iPhone">
 
     <!-- Apple Smart App Banner -->
@@ -95,7 +95,7 @@
                 "name": "EQfy - Louder Volume",
                 "alternateName": "Volume Booster Sound Amplifier",
                 "url": "https://eqfy.app/fr/",
-                "image": "https://eqfy.app/assets/images/og-image.jpg",
+                "image": "https://eqfy.app/assets/images/og/fr-site.jpg",
                 "operatingSystem": "iOS 16.0 or later",
                 "applicationCategory": "MultimediaApplication",
                 "applicationSubCategory": "Music",
@@ -366,6 +366,7 @@
             border: 1px solid var(--border-default);
             border-radius: var(--radius-md);
             min-width: 140px; padding: 6px;
+            max-height: calc(100vh - 96px); overflow-y: auto;   /* long language lists scroll on small phones */
             box-shadow: 0 12px 40px rgba(0,0,0,0.4);
             z-index: 1001;
         }
@@ -1153,6 +1154,11 @@
         [dir="rtl"] .balance-visual { direction: ltr; }                    /* keep the L channel on the left */
         :lang(ar) * { letter-spacing: 0 !important; }                      /* tracking breaks the joins between Arabic letters */
         :lang(ar) h1, :lang(ar) h2 { line-height: 1.4; }
+
+        /* Script-specific fonts (same stacks as assets/css/site.css) */
+        :lang(zh) body, body:lang(zh) { font-family: 'Outfit', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
+        :lang(ja) body, body:lang(ja) { font-family: 'Outfit', -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, 'Noto Sans JP', sans-serif; }
+        :lang(ar) body, body:lang(ar) { font-family: 'Outfit', -apple-system, 'SF Arabic', 'Geeza Pro', 'Segoe UI', Tahoma, 'Noto Sans Arabic', sans-serif; }
     </style>
 </head>
 <body>
@@ -1184,16 +1190,16 @@
                     🌐 FR ▾
                 </button>
                 <div class="lang-switcher__dropdown">
-                    <a href="/" class="lang-switcher__option" hreflang="en">🇬🇧 English</a>
-                    <a href="/es/" class="lang-switcher__option" hreflang="es">🇪🇸 Español</a>
-                    <a href="/de/" class="lang-switcher__option" hreflang="de">🇩🇪 Deutsch</a>
-                    <a href="/fr/" class="lang-switcher__option lang-switcher__option--active" hreflang="fr">🇫🇷 Français</a>
-                    <a href="/pt/" class="lang-switcher__option" hreflang="pt">🇧🇷 Português</a>
-                    <a href="/ja/" class="lang-switcher__option" hreflang="ja">🇯🇵 日本語</a>
-                    <a href="/ar/" class="lang-switcher__option" hreflang="ar">🇸🇦 العربية</a>
-                    <a href="/tr/" class="lang-switcher__option" hreflang="tr">🇹🇷 Türkçe</a>
-                    <a href="/zh/" class="lang-switcher__option" hreflang="zh">🇨🇳 简体中文</a>
-                    <a href="/da/" class="lang-switcher__option" hreflang="da">🇩🇰 Dansk</a>
+                    <a href="/" class="lang-switcher__option" hreflang="en" lang="en">🇬🇧 English</a>
+                    <a href="/es/" class="lang-switcher__option" hreflang="es" lang="es">🇪🇸 Español</a>
+                    <a href="/de/" class="lang-switcher__option" hreflang="de" lang="de">🇩🇪 Deutsch</a>
+                    <a href="/fr/" class="lang-switcher__option lang-switcher__option--active" hreflang="fr" lang="fr">🇫🇷 Français</a>
+                    <a href="/pt/" class="lang-switcher__option" hreflang="pt" lang="pt-BR">🇧🇷 Português</a>
+                    <a href="/ja/" class="lang-switcher__option" hreflang="ja" lang="ja">🇯🇵 日本語</a>
+                    <a href="/ar/" class="lang-switcher__option" hreflang="ar" lang="ar">🇸🇦 العربية</a>
+                    <a href="/tr/" class="lang-switcher__option" hreflang="tr" lang="tr">🇹🇷 Türkçe</a>
+                    <a href="/zh/" class="lang-switcher__option" hreflang="zh" lang="zh-Hans">🇨🇳 简体中文</a>
+                    <a href="/da/" class="lang-switcher__option" hreflang="da" lang="da">🇩🇰 Dansk</a>
                 </div>
             </div>
             <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener">
@@ -1247,7 +1253,7 @@
                     </div>
                     <div class="hero__stats">
                         <div>
-                            <div class="hero__stat-value">200%</div>
+                            <div class="hero__stat-value">200 %</div>
                             <div class="hero__stat-label">Boost du volume</div>
                         </div>
                         <div>
@@ -1292,7 +1298,7 @@
                         <div class="feature-card__visual">
                             <div class="volume-knob">
                                 <div class="volume-knob__ring" aria-hidden="true"></div>
-                                <span class="volume-knob__value">200%</span>
+                                <span class="volume-knob__value">200 %</span>
                                 <span class="volume-knob__label">Volume</span>
                             </div>
                         </div>
@@ -1462,7 +1468,7 @@
                     <div class="showcase__visual reveal">
                         <div class="volume-knob" style="width:180px;height:180px">
                             <div class="volume-knob__ring" style="width:220px;height:220px" aria-hidden="true"></div>
-                            <span class="volume-knob__value">200%</span>
+                            <span class="volume-knob__value">200 %</span>
                             <span class="volume-knob__label">Boost max.</span>
                         </div>
                     </div>
@@ -1895,8 +1901,8 @@
                     <div class="footer__column">
                         <h3>Mentions légales</h3>
                         <ul>
-                            <li><a href="/privacy">Politique de confidentialité</a></li>
-                            <li><a href="/terms">Conditions d’utilisation</a></li>
+                            <li><a href="/privacy" hreflang="en">Politique de confidentialité (en anglais)</a></li>
+                            <li><a href="/terms" hreflang="en">Conditions d’utilisation (en anglais)</a></li>
                         </ul>
                     </div>
                 </div>

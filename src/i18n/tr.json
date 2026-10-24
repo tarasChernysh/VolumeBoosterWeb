@@ -10,7 +10,9 @@
     "download": "Ücretsiz İndir",
     "changeLanguage": "Dili değiştir",
     "menu": "Menüyü aç",
-    "logoAlt": "EQfy simgesi"
+    "logoAlt": "EQfy simgesi",
+    "main": "Ana menü",
+    "breadcrumb": "Sayfa yolu"
   },
   "footer": {
     "tagline": "iPhone için ses yükseltici, bas güçlendirici ve ekolayzır. Her parçayı daha yüksek, daha derin ve daha net dinle.",
@@ -23,8 +25,8 @@
     "support": "Destek",
     "appStore": "App Store",
     "legal": "Yasal",
-    "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Koşulları",
+    "privacy": "Gizlilik Politikası (İngilizce)",
+    "terms": "Kullanım Koşulları (İngilizce)",
     "rights": "Tüm hakları saklıdır.",
     "trademark": "iPhone, AirPods ve App Store, Apple Inc.’in ticari markalarıdır."
   },
@@ -60,5 +62,15 @@
     "title": "Rehberler ve Haberler",
     "description": "iPhone’unun sesini daha yüksek, daha net ve dinlemesi daha keyifli hale getirmek için ipuçları.",
     "all": "Tüm yazılar →"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığın sayfa yok.",
+    "lead": "Aradığın sayfa yok ya da taşındı. Bunlardan birini dene:"
+  },
+  "og": {
+    "title": "iPhone’unun sesini <em>yükselt</em>",
+    "sub": "Profesyonel ekolayzerli ses ve bas güçlendirici",
+    "pills": ["%200’e kadar ses", "7 bantlı ekolayzer", "3D Ses", "YZ Stüdyo"]
   }
 }
