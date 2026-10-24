@@ -435,6 +435,10 @@ Taras (2026-10-24): hold the merges, translate first. Branch `translate-new-post
 - "Music Haptics arrived with iOS 18" is based on Apple's guide being tagged iOS 18, not an explicit Apple statement.
 - App-side catalog issues seen again: ar "Figure 8" uses an Arabic-Indic digit, ar `Balance:` means audio balance, tr `Balance:`.
 
+## Release (2026-10-24): all 8 posts live
+
+PRs #21-#25 merged to `main` in order (each retargeted to `main`), `main` rebuilt with no diff (310 pages, 0 errors), deployed to Cloudflare Pages `louder-volume` from a clean `git archive` (245 files uploaded, `src/` and `tasks/` excluded), live spot checks 200 on posts in en/es/de/ja/ar/pt, `sitemap.xml` lists 309 URLs. IndexNow: `node indexnow.mjs --since 2026-10-23` (81 URLs: 72 posts + 9 blog indexes).
+
 # Localize the site properly (plan: `~/.claude/plans/localize-my-website-properly-agile-falcon.md`)
 
 Taras (2026-10-24): polish the existing languages, make Danish a full language, add ko/it/nl/pl/ru/uk as full languages. Privacy/Terms and screenshots stay English. Switcher keeps flags, Russian without one. Keywords from DataForSEO MCP (fallback: Keyword Planner / autocomplete). 8 stacked PRs: `l10n-polish` → `lang-da` → `lang-it` → `lang-nl` → `lang-pl` → `lang-ko` → `lang-ru` → `lang-uk`.
@@ -467,6 +471,10 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Verification:** `node build.mjs && node check.mjs`: 318 pages, 0 errors, 0 warnings. In the browser at 375 px: `/de/404.html` is German with German buttons and the other languages listed; `/ar/404.html` is RTL; `/de/` shows `200 %` three times, the footer reads "Datenschutzerklärung (auf Englisch)", and there's no sideways scroll; `/ja/` uses the Japanese font stack and the dropdown scrolls (max-height 716 px). Share images checked by eye for de, ja (もっと大きく on one line), ar (RTL, joined letters), fr, es and the German Duo card.
 
 **Not verified:** the local server can't show Cloudflare's nearest-404 fallback; that is checked after deploy by opening a missing `/de/…` URL. Danish has no share image yet (it comes with Phase B). No native speaker has read the new strings.
+
+## Merge (2026-10-24): PRs #27-#31 to `main`
+
+#27 (`l10n-polish`), #28 (`lang-da`), #29 (`lang-nl`), #30 (`lang-it`) and #31 (`lang-pl`) were merged to `main` in order, each retargeted to `main` first. The only conflict was in this file: #26's "Release (2026-10-24)" section and the Localize section had both been appended at the end. Both are kept, Release first (`b51ab9f`). `main` rebuilt with no diff (457 pages, 0 errors, 0 warnings). **Not deployed yet:** the Cloudflare Pages upload and IndexNow are still to do. This note sits above Phase B + C, not at the end of the file, so `lang-ko` can append its review without hitting the same conflict.
 
 ## Phase B + C: new full languages (one PR each)
 - [x] da (Danish)
