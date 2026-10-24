@@ -437,7 +437,7 @@ Taras (2026-10-24): hold the merges, translate first. Branch `translate-new-post
 
 # Localize the site properly (plan: `~/.claude/plans/localize-my-website-properly-agile-falcon.md`)
 
-Taras (2026-10-24): polish the existing languages, make Danish a full language, add ko/it/nl/pl/ru/uk as full languages. Privacy/Terms and screenshots stay English. Switcher keeps flags, Russian without one. Keywords from Ahrefs (fallback: autocomplete). 8 stacked PRs: `l10n-polish` → `lang-da` → `lang-it` → `lang-nl` → `lang-pl` → `lang-ko` → `lang-ru` → `lang-uk`.
+Taras (2026-10-24): polish the existing languages, make Danish a full language, add ko/it/nl/pl/ru/uk as full languages. Privacy/Terms and screenshots stay English. Switcher keeps flags, Russian without one. Keywords from DataForSEO MCP (fallback: Keyword Planner / autocomplete). 8 stacked PRs: `l10n-polish` → `lang-da` → `lang-it` → `lang-nl` → `lang-pl` → `lang-ko` → `lang-ru` → `lang-uk`.
 
 ## Phase A: polish (PR `l10n-polish`)
 - [x] A1. `render.mjs`: don't abort when Chrome exits non-zero after writing the screenshot
@@ -469,10 +469,32 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Not verified:** the local server can't show Cloudflare's nearest-404 fallback; that is checked after deploy by opening a missing `/de/…` URL. Danish has no share image yet (it comes with Phase B). No native speaker has read the new strings.
 
 ## Phase B + C: new full languages (one PR each)
-- [ ] da (Danish)
+- [x] da (Danish)
 - [ ] it (Italian)
 - [ ] nl (Dutch)
 - [ ] pl (Polish)
 - [ ] ko (Korean, + CJK tooling)
 - [ ] ru (Russian, no flag)
 - [ ] uk (Ukrainian)
+
+## Review (Danish, PR `lang-da`)
+
+**Changes:**
+- **Danish is now a full language** at `/da/`: homepage, blog index, FAQ, 404 and all 31 posts, with Danish in every switcher and hreflang set. `src/site.json` (`da` added to `contentLangs`), `src/i18n/da.json`, `src/content/da/` (31 posts + `faq.json`).
+- **Homepage:** blog, FAQ and post links now go to the Danish pages (they went to `#faq` and the English blog before). The "(engelsk)" notes on the blog link and in 4 FAQ answers are gone. The latest-posts block is filled, and the share image is `og/da-site.jpg`.
+- **Keywords:** the Ahrefs MCP connects, but every Keywords Explorer call (even the free test query) returns "Insufficient plan": the API isn't on the account. So the Danish keywords come from Google autocomplete (hl=da, gl=dk), as for fr/pt/ja/ar. Danes search problems in Danish ("iphone lav lyd", "airpods lav lyd", "skru op for lyden iphone", "lav en sang med ai", "fjern baggrundsstøj på iphone") and some tech terms in English ("equalizer iphone", "slowed reverb"). keyword-map has a DA column; slugs are ASCII (æ→ae, ø→oe, å→aa).
+- **Terms:** from the app's catalog (Danish table in `tasks/facts.md` §8), plus Apple's da-dk names found by the translators: Voice Memos = **Memoer** (not Diktafon), the Files app = **Arkiver** (EQfy's import button says Filer), Settings › **Lyde & haptisk feedback**, Music Haptics = **Haptisk feedback til musik** (the slug was renamed to `haptisk-feedback-musik-iphone` to match), Spatial Audio = **Rumlig lyd**. Apple links point to `da-dk` pages; Spotify links to `dk-da`. All checked to return 200.
+- 32 share images (31 posts + the site image).
+
+**Verification:** `node build.mjs && node check.mjs`: 352 pages, 0 errors, 0 warnings. The validator (scratchpad) passes for all 31 posts: strict-JSON front-matter, same placeholders, same h2/h3 ids, same table/list/link/image counts, slug and length rules. FAQ: 7 groups and 22 items, like English. In the browser at 375 px: all 31 Danish posts have no sideways scroll. Post, blog index, FAQ and 404 are `lang="da"` with Danish dates ("11. oktober 2026") and reading time ("7 min. læsning"), 3 related cards, the FAQ present, no broken images and no links into the English blog. Share images checked by eye.
+
+**Not verified / worth a native reader:**
+- No native Danish speaker has read the text.
+- Apple's Danish pages disagree on some names, e.g. "Formindsk høje lyde" vs "Formindsk høj lyd" and "Lyd og routing" vs "Lyd og rute". The posts follow the AirPods guide.
+- Apple Music's EQ preset names stay English with a Danish gloss (no Apple da page lists them).
+- **English source issues found while translating** (not fixed; they affect all 10 languages):
+  - `slowed-reverb` says "a 0.8× song", but 0.8× isn't one of the app's speed steps (0.75 → 0.85).
+  - `iphone-equalizer` calls the player tab "Equalizer", but it is "EQ".
+  - `airpods-bass` uses the fit-test path Settings › your AirPods, while Apple's current page says Settings › Bluetooth › More info.
+- App catalog issues (app repo): `Balance:` (credits) is translated as audio balance in da as well.
+

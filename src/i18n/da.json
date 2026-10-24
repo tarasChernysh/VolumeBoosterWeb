@@ -1,0 +1,76 @@
+{
+  "dateLocale": "da-DK",
+  "home": "Forside",
+  "nav": {
+    "features": "Funktioner",
+    "equalizer": "Equalizer",
+    "aiStudio": "AI Studio",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Download gratis",
+    "changeLanguage": "Skift sprog",
+    "menu": "Åbn menu",
+    "logoAlt": "EQfy-ikon",
+    "main": "Hovednavigation",
+    "breadcrumb": "Brødkrummesti"
+  },
+  "footer": {
+    "tagline": "Lydforstærker, basforstærker og equalizer til iPhone. Gør hvert nummer højere, dybere og klarere.",
+    "features": "Funktioner",
+    "volumeBooster": "Lydforstærker",
+    "bassEq": "Basforstærker og EQ",
+    "spatial": "3D Spatial Lyd",
+    "aiStudio": "AI Studio",
+    "resources": "Ressourcer",
+    "support": "Support",
+    "appStore": "App Store",
+    "legal": "Juridisk",
+    "privacy": "Privatlivspolitik (engelsk)",
+    "terms": "Brugsvilkår (engelsk)",
+    "rights": "Alle rettigheder forbeholdes.",
+    "trademark": "iPhone, AirPods og App Store er varemærker tilhørende Apple Inc."
+  },
+  "blog": {
+    "title": "EQfy-bloggen: guides til lyd, bas og EQ på iPhone",
+    "description": "Guides og nyheder fra EQfy: gør din iPhone højere, få mere bas, find de bedste EQ-indstillinger, løs lav lyd og få mere ud af dine hovedtelefoner.",
+    "eyebrow": "Guides og nyheder",
+    "h1": "EQfy-bloggen",
+    "lead": "Praktiske guides, der gør din iPhone højere, klarere og sjovere at lytte til – plus nyheder om EQfy-appen."
+  },
+  "post": {
+    "by": "Af EQfy-teamet",
+    "published": "Udgivet",
+    "updated": "Opdateret",
+    "minRead": "{n} min. læsning",
+    "faqTitle": "Ofte stillede spørgsmål",
+    "related": "Relaterede artikler",
+    "readMore": "Læs mere →",
+    "categories": { "guide": "Guide", "news": "Nyheder" }
+  },
+  "faqPage": {
+    "eyebrow": "Hjælpecenter",
+    "jumpTo": "Gå til et emne"
+  },
+  "cta": {
+    "title": "Gør din iPhone højere",
+    "text": "Download EQfy - Louder Volume gratis i App Store. Kræver iOS 16 eller nyere.",
+    "button": "Hent i App Store",
+    "iconAlt": "EQfy-appikon"
+  },
+  "latest": {
+    "eyebrow": "Fra bloggen",
+    "title": "Guides og nyheder",
+    "description": "Tips til at gøre din iPhone højere, klarere og sjovere at lytte til.",
+    "all": "Alle artikler →"
+  },
+  "notFound": {
+    "title": "Siden blev ikke fundet",
+    "description": "Siden, du leder efter, findes ikke.",
+    "lead": "Siden, du leder efter, findes ikke eller er blevet flyttet. Prøv en af disse i stedet:"
+  },
+  "og": {
+    "title": "Gør din iPhone <em>højere</em>",
+    "sub": "Lyd- og basforstærker med pro-equalizer",
+    "pills": ["Op til 200 % lydstyrke", "7-bånds equalizer", "3D-lyd", "AI Studio"]
+  }
+}
