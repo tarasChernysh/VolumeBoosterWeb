@@ -11,7 +11,7 @@
   "rating": { "value": "4.5", "count": "40" },
   "defaultImage": "/assets/images/og-image.jpg",
   "logo": "/assets/images/app-icon.png",
-  "contentLangs": ["en", "es", "de", "fr", "pt", "ja", "ar", "tr", "zh"],
+  "contentLangs": ["en", "es", "de", "fr", "pt", "ja", "ar", "tr", "zh", "da"],
   "langs": {
     "en": { "prefix": "", "hreflang": "en", "htmlLang": "en", "ogLocale": "en_US", "code": "EN", "label": "🇬🇧 English" },
     "es": { "prefix": "/es", "hreflang": "es", "htmlLang": "es", "ogLocale": "es_ES", "code": "ES", "label": "🇪🇸 Español" },

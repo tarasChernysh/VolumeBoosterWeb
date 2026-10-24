@@ -275,4 +275,23 @@ Use these names for in-app features so readers find the same words on screen. Br
 | Force instrumental · Unlock Premium | Forcer instrumental · Déverrouiller Premium |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Électronique, Classique, Reggae, Rap, R&B, Danse, Acoustique |
 
+**Danish (da)** — from the app's own catalog (`Localizable.xcstrings`, da values) and `da-dk` Apple pages. Tone: **du**. URL prefix `/da`, `hreflang="da"`, `<html lang="da">`, ASCII slugs (æ→ae, ø→oe, å→aa). Decimal comma (`0,5×`), `200 %` with a no-break space (U+00A0), »…« quotes. Apple's Danish names (da-dk pages): Settings › Sounds & Haptics = Indstillinger › Lyde & haptisk feedback; Headphone Safety = Sikker brug af hovedtelefoner; Voice Memos = **Memoer** (Danes still search "diktafon"); the Files app = **Arkiver** (EQfy's own import button says "Filer", so write "Filer (appen Arkiver)"). Brand names stay: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, Premium. The Danish homepage already uses Lydforstærker (Volume Booster), Basforstærker og EQ, 3D Spatial Lyd and AI Studio.
+| EN (app UI) | da |
+|---|---|
+| AI Studio | AI Studio |
+| Volume Boost / Bass Boost | Lydforstærkning / Basforstærkning |
+| Equalizer · EQ | Equalizer · EQ |
+| Headphones (tab, `headphones.title`) / Audio Balance | Hovedtelefoner / Lydbalance |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Spatial Lyd · 3D-lyd · 3D-kilde · Automatisk bevægelse |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Rumklang · Rumklangmiljø · Rumklangblanding · Lydtilstand |
+| Center (balance) · Custom · Reset | Center · Brugerdefineret · Nulstil |
+| Music Library · Files · Find more | Musikbibliotek · Filer · Find mere |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Vælg et nummer · Al min musik · Seneste · Fjern al min musik · Afspilningslister |
+| Home · Music · Settings (tabs) | Hjem · Musik · Indstillinger |
+| Volume · Bass · Speed · Share (player) | Lydstyrke · Bas · Hastighed · Del |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Lydeffekter · Tekst til tale · Støjreduktion |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | Generer tale · Vælg stemme · Vælg lydfil · Fjern støj |
+| Force instrumental · Unlock Premium | Tving instrumental · Lås Premium op |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elektronisk, Klassisk, Reggae, Rap, R&B, Dans, Akustisk |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.

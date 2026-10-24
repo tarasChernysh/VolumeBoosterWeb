@@ -1,0 +1,64 @@
+{
+  "title": "EQfy-FAQ: hjælp til lydforstærker og equalizer",
+  "description": "Svar om EQfy - Louder Volume: hvor meget højere lyden bliver, bas og EQ, 3D-lyd, credits i AI Studio, Premium-abonnementet, iPhone Duo og dit privatliv.",
+  "intro": "<p>Hurtige svar om EQfy - Louder Volume, iPhone-appen til højere lyd, dybere bas og musik, der lyder bedre. Kan du ikke finde dit spørgsmål? Skriv til <a href=\"mailto:support@eqfy.app\">support@eqfy.app</a>.</p>",
+  "groups": [
+    {
+      "heading": "Kom godt i gang",
+      "items": [
+        { "q": "Hvad er EQfy - Louder Volume?", "a": "EQfy - Louder Volume er en iPhone-app, der gør den musik, du afspiller i den, højere og fyldigere. Den samler Lydforstærkning op til 200 %, Basforstærkning, en 7-bånds equalizer, lydbalance til hovedtelefoner, 3D-lyd og et AI Studio med et gratis musikbibliotek og en afspiller, der også virker offline. <a href=\"{{home}}\">Se alle funktioner</a>." },
+        { "q": "Er EQfy gratis?", "a": "Ja. EQfy er gratis at downloade, og Lydforstærkning, musikbiblioteket og afspilleren er gratis at bruge. Basforstærkning, equalizeren, lydbalance, 3D-lyd, afspilningshastighed og den haptiske afspiller er en del af det valgfrie Premium-abonnement." },
+        { "q": "Er EQfy den samme app som Volume Booster Sound Amplifier i App Store?", "a": "Ja. I App Store i USA står EQfy - Louder Volume som Volume Booster Sound Amplifier, og navnet kan være et andet i andre lande. Det er den samme app fra udvikleren Taras Chernysh: <a href=\"{{appstore}}\">åbn den i App Store</a>. Apps med lignende navne kommer fra andre udviklere; EQfys app-id i App Store er 6550912161." },
+        { "q": "Hvilke iPhones og sprog understøtter EQfy?", "a": "EQfy er bygget til iPhone og kræver iOS 16 eller nyere. Appen fås på 25 sprog." }
+      ]
+    },
+    {
+      "heading": "Lydstyrke og bas",
+      "items": [
+        { "q": "Hvor meget højere kan EQfy gøre min iPhone?", "a": "Lydforstærkning går fra 100 % til 200 %, hvilket giver op til +12 dB forstærkning oven i iPhonens lydstyrke for sange, der afspilles i EQfy. Brug den med måde. Læs mere i <a href=\"{{post:louder-than-max}}\">Skru op for lyden på iPhone – højere end max</a> og <a href=\"{{post:safe-boosting}}\">Er en lydforstærker sikker?</a>" },
+        { "q": "Virker forstærkningen med iPhonens højttaler og hovedtelefoner?", "a": "Ja. EQfys værktøjer virker på alt, hvad EQfy afspiller, uanset om du lytter via iPhonens højttaler, hovedtelefoner med ledning eller AirPods. Flere tips finder du i <a href=\"{{post:airpods-louder}}\">AirPods lav lyd? Sådan får du højere lydstyrke</a>." },
+        { "q": "Hvorfor kan EQfy ikke forstærke Spotify, YouTube eller opkald?", "a": "Fordi iOS holder apps adskilt fra hinanden (sandboxing), må EQfy kun behandle lyd, der afspilles i EQfy. Appen kan ikke forstærke Spotify, YouTube, streaming fra Apple Music, Netflix, telefon- eller FaceTime-opkald, notifikationer eller systemlydstyrken. Løsninger, der hjælper overalt, finder du i <a href=\"{{post:volume-too-low}}\">iPhone lav lyd</a>." },
+        { "q": "Kan jeg forstærke sange fra Apple Music?", "a": "Sange fra et Apple Music-abonnement og andre beskyttede filer kan afspilles i EQfy, men forbedringsværktøjerne er ikke tilgængelige for dem, fordi iOS ikke tillader apps at behandle beskyttet lyd. Købte eller ubeskyttede sange fra dit musikbibliotek og filer, du importerer fra appen Arkiver, virker med alle værktøjer." },
+        { "q": "Hvordan virker Basforstærkning?", "a": "Basforstærkning giver op til +12 dB med et low-shelf-løft centreret omkring 200 Hz, tilpasset så små iPhone-højttalere rent faktisk kan gengive det. Den er en del af Premium. Se <a href=\"{{post:bass-boost}}\">Mere bas på iPhone</a>." }
+      ]
+    },
+    {
+      "heading": "Lydværktøjer",
+      "items": [
+        { "q": "Hvad indeholder EQfys equalizer?", "a": "Syv bånd (32 Hz, 64 Hz, 200 Hz, 500 Hz, 1 kHz, 4 kHz og 16 kHz) plus forforstærker, 9 forudindstillinger (Rock, Jazz, Elektronisk, Klassisk, Reggae, Rap, R&amp;B, Dans og Akustisk), indstillingen Brugerdefineret og knappen Nulstil. Se <a href=\"{{post:eq-settings}}\">Equalizer-indstillinger til iPhone efter genre</a>." },
+        { "q": "Hvad er 3D-lyd i EQfy?", "a": "Det er en effekt i appen med to tilstande: Rumklang med 9 forudindstillinger af typerne rum, sal og kammer, og 3D-kilde, der flytter lyden rundt om dig med 4 mønstre for Automatisk bevægelse (Bilateral, Kredsløb, Ottetal og Vejrtrækning) og kan bruge hovedregistrering med understøttede AirPods. Det er hverken Apples Rumlig lyd (Spatial Audio) eller Dolby Atmos. <a href=\"{{post:spatial-audio}}\">3D-lyd og rumlig lyd på iPhone forklaret</a> viser forskellen." },
+        { "q": "Kan jeg rette op på, at den ene earbud lyder højere end den anden?", "a": "For sange, der afspilles i EQfy, har fanen Hovedtelefoner en skyder til lydbalance mellem venstre og højre med knappen Center til at nulstille den. Se <a href=\"{{post:headphone-balance}}\">Lydbalance på iPhone: ret venstre og højre lyd</a>." },
+        { "q": "Kan jeg ændre afspilningshastigheden eller eksportere forbedrede sange?", "a": "Ja. Afspilningshastighed (0,5× til 2×) og den haptiske afspiller, der får din iPhone til at vibrere i takt med musikken, er en del af Premium. Du kan gemme og dele den forbedrede lydfil med deleknappen i afspilleren; den indeholder dine indstillinger for hastighed, lydforstærkning, equalizer og bas, men ikke rumklang, 3D-lyd eller balance." }
+      ]
+    },
+    {
+      "heading": "AI Studio",
+      "items": [
+        { "q": "Hvad er der i AI Studio?", "a": "AI Studio har fire værktøjer: Music Generator (komponerer en sang ud fra en tekstprompt, med kontakten Tving instrumental, hvis du vil), Sound Effects (lydeffekter), Text to Speech (tekst til tale) og Noise Reducer (støjreduktion). De kræver alle internetforbindelse. Læs <a href=\"{{post:ai-song-generator}}\">guiden til at lave en sang med AI</a>." },
+        { "q": "Hvordan fungerer AI-credits?", "a": "AI Studio bruger credits, og det gør alle værktøjerne: Music Generator koster 3.000 credits, Sound Effects 250, Text to Speech 500 og Noise Reducer 1.500 pr. påbegyndt minut. Du kan købe creditpakker i appen eller optjene credits i Credit Shop. Credits trækkes først, når et resultat er gemt." }
+      ]
+    },
+    {
+      "heading": "Priser og abonnement",
+      "items": [
+        { "q": "Hvad indeholder Premium?", "a": "Premium låser op for Basforstærkning, 7-bånds equalizeren, lydbalance, 3D-lyd, afspilningshastighed og den haptiske afspiller. Lydforstærkning og musikafspilleren forbliver gratis for alle, og værktøjerne i AI Studio bruger credits." },
+        { "q": "Hvad koster Premium, og er der en gratis prøveperiode?", "a": "Premium er et ugentligt eller årligt abonnement. Prisen vises i din lokale valuta i App Store, før du bekræfter, og den kan variere fra land til land. Udvalgte abonnementer starter med en gratis prøveperiode." },
+        { "q": "Hvordan opsiger jeg mit abonnement?", "a": "Abonnementer faktureres og administreres af Apple. På din iPhone åbner du Indstillinger, trykker på dit navn og derefter på Abonnementer, vælger EQfy-abonnementet og trykker på Annuller abonnement. Apple forklarer trinene i <a href=\"https://support.apple.com/da-dk/118428\" target=\"_blank\" rel=\"noopener\">Opsig et abonnement fra Apple</a>." }
+      ]
+    },
+    {
+      "heading": "Enheder",
+      "items": [
+        { "q": "Understøtter EQfy iPhone Duo?", "a": "Ja. EQfy har understøttet iPhone Duo siden v2.2.23, som udkom den 14. oktober 2026: Appen bruger hele inderskærmen med sidebjælke og layouts i to kolonner, og alle iPhones får en afspiller med to kolonner i liggende format. <a href=\"{{post:iphone-duo}}\">Se, hvad der er nyt</a>." },
+        { "q": "Virker EQfy på iPad?", "a": "EQfy er bygget til iPhone. Du kan installere appen på en iPad, hvor den kører i iPhone-tilstand, men den er ikke designet som en iPad-app." }
+      ]
+    },
+    {
+      "heading": "Privatliv og support",
+      "items": [
+        { "q": "Hvilke data indsamler EQfy?", "a": "EQfy kræver ingen konto. Appen bruger analyse- og annoncetjenester, beder om tilladelse via Apples App Tracking Transparency, før den bruger dit annonce-id, og sender forespørgsler fra AI Studio til en ekstern AI-udbyder til behandling. Alle detaljer står i <a href=\"/privacy\">privatlivspolitikken</a> (på engelsk)." },
+        { "q": "Hvordan kontakter jeg support?", "a": "Skriv til <a href=\"mailto:support@eqfy.app\">support@eqfy.app</a>. Fortæl os din iPhone-model og iOS-version, og beskriv, hvad der skete, så kan vi hjælpe hurtigere." }
+      ]
+    }
+  ]
+}
