@@ -1,0 +1,64 @@
+{
+  "title": "EQfy-FAQ: hulp bij geluidsversterker en equalizer",
+  "description": "Antwoorden over EQfy - Louder Volume: hoeveel harder het geluid wordt, bas en EQ, 3D-audio, credits in AI Studio, Premium, iPhone Duo en je privacy.",
+  "intro": "<p>Snelle antwoorden over EQfy - Louder Volume, de iPhone-app voor harder geluid, meer bas en muziek die beter klinkt. Staat je vraag er niet bij? Mail naar <a href=\"mailto:support@eqfy.app\">support@eqfy.app</a>.</p>",
+  "groups": [
+    {
+      "heading": "Aan de slag",
+      "items": [
+        { "q": "Wat is EQfy - Louder Volume?", "a": "EQfy - Louder Volume is een iPhone-app die de muziek die je erin afspeelt harder en voller maakt. De app combineert Volumeboost tot 200%, Basboost, een 7-bands equalizer, audiobalans voor je koptelefoon, 3D-audio en een AI Studio met een gratis muziekbibliotheek en een speler die ook offline werkt. <a href=\"{{home}}\">Bekijk alle functies</a>." },
+        { "q": "Is EQfy gratis?", "a": "Ja. EQfy is gratis te downloaden, en Volumeboost, de muziekbibliotheek en de speler zijn gratis te gebruiken. Basboost, de equalizer, de audiobalans, 3D-audio, de afspeelsnelheid en de haptische speler horen bij het optionele Premium-abonnement." },
+        { "q": "Is EQfy dezelfde app als Volume Booster Sound Amplifier in de App Store?", "a": "Ja. In de Amerikaanse App Store staat EQfy - Louder Volume vermeld als Volume Booster Sound Amplifier, en in andere landen kan de naam anders zijn. Het is dezelfde app, gemaakt door ontwikkelaar Taras Chernysh: <a href=\"{{appstore}}\">open hem in de App Store</a>. Apps met vergelijkbare namen komen van andere ontwikkelaars; de App Store-ID van EQfy is 6550912161." },
+        { "q": "Welke iPhones en talen ondersteunt EQfy?", "a": "EQfy is gemaakt voor iPhone en vereist iOS 16 of nieuwer. De app is beschikbaar in 25 talen." }
+      ]
+    },
+    {
+      "heading": "Volume en bas",
+      "items": [
+        { "q": "Hoeveel harder kan EQfy mijn iPhone maken?", "a": "Volumeboost gaat van 100% tot 200% en voegt zo tot +12 dB versterking toe bovenop het volume van je iPhone, voor nummers die je in EQfy afspeelt. Gebruik het met mate. Lees meer in <a href=\"{{post:louder-than-max}}\">iPhone geluid harder zetten dan het maximum</a> en <a href=\"{{post:safe-boosting}}\">Is een volume booster veilig?</a>" },
+        { "q": "Werkt de boost met de luidspreker van de iPhone en met een koptelefoon?", "a": "Ja. De tools van EQfy werken op alles wat EQfy afspeelt, of je nu luistert via de luidspreker van je iPhone, een bedrade koptelefoon of AirPods. Meer tips vind je in <a href=\"{{post:airpods-louder}}\">AirPods harder zetten</a>." },
+        { "q": "Waarom kan EQfy Spotify, YouTube of gesprekken niet versterken?", "a": "Omdat iOS apps van elkaar afschermt (sandboxing), mag EQfy alleen audio bewerken die in EQfy wordt afgespeeld. De app kan Spotify, YouTube, streaming via Apple Music, Netflix, telefoon- of FaceTime-gesprekken, meldingen en het systeemvolume niet versterken. Oplossingen die overal helpen, vind je in <a href=\"{{post:volume-too-low}}\">iPhone geluid te zacht</a>." },
+        { "q": "Kan ik nummers uit Apple Music versterken?", "a": "Nummers uit een Apple Music-abonnement en andere beveiligde bestanden worden wel in EQfy afgespeeld, maar de geluidstools zijn er niet voor beschikbaar, omdat iOS apps niet toestaat om beveiligde audio te bewerken. Gekochte of onbeveiligde nummers uit je muziekbibliotheek en bestanden die je uit de Bestanden-app importeert, werken met alle tools." },
+        { "q": "Hoe werkt Basboost?", "a": "Basboost voegt tot +12 dB toe met een low-shelf-filter rond 200 Hz, zo afgestemd dat ook de kleine luidsprekers van een iPhone die bas echt kunnen weergeven. Basboost is onderdeel van Premium. Zie <a href=\"{{post:bass-boost}}\">meer bas op je iPhone</a>." }
+      ]
+    },
+    {
+      "heading": "Geluidstools",
+      "items": [
+        { "q": "Wat zit er in de equalizer van EQfy?", "a": "Zeven banden (32 Hz, 64 Hz, 200 Hz, 500 Hz, 1 kHz, 4 kHz en 16 kHz) plus een voorversterker, 9 presets (Rock, Jazz, Elektronisch, Klassiek, Reggae, Rap, R&amp;B, Dance en Akoestisch), de instelling Aangepast en de knop Resetten. Zie <a href=\"{{post:eq-settings}}\">de beste equalizer-instellingen voor iPhone per genre</a>." },
+        { "q": "Wat is 3D-audio in EQfy?", "a": "Het is een effect in de app met twee modi: Galm, met 9 presets voor kamers, zalen en galmkamers, en 3D-bron, die het geluid met 4 patronen voor Automatische beweging (Bilateraal, Baan, Figuur 8 en Ademhaling) om je heen laat bewegen en met ondersteunde AirPods hoofdtracking kan gebruiken. Het is niet Apples ruimtelijke audio (Spatial Audio) en ook geen Dolby Atmos. <a href=\"{{post:spatial-audio}}\">Ruimtelijke audio en 3D-audio op iPhone uitgelegd</a> laat het verschil zien." },
+        { "q": "Kan ik het verhelpen als het ene oortje harder klinkt dan het andere?", "a": "Voor nummers die je in EQfy afspeelt, heeft het tabblad Koptelefoon een schuifregelaar voor de audiobalans tussen links en rechts, met de knop Midden om hem terug te zetten. Zie <a href=\"{{post:headphone-balance}}\">geluidsbalans aanpassen op je iPhone</a>." },
+        { "q": "Kan ik de afspeelsnelheid aanpassen of verbeterde nummers exporteren?", "a": "Ja. De afspeelsnelheid (0,5× tot 2×) en de haptische speler, die je iPhone op de beat laat trillen, horen bij Premium. Met de deelknop in de speler kun je het verbeterde audiobestand bewaren en delen; daarin zitten je instellingen voor snelheid, volumeboost, equalizer en bas, maar geen galm, 3D-audio of balans." }
+      ]
+    },
+    {
+      "heading": "AI Studio",
+      "items": [
+        { "q": "Wat zit er in AI Studio?", "a": "AI Studio heeft vier tools: Music Generator (componeert een nummer op basis van een tekstprompt, desgewenst met de schakelaar Instrumentaal forceren), Sound Effects (geluidseffecten), Text to Speech (tekst naar spraak) en Noise Reducer (ruisonderdrukking). Voor alle tools heb je een internetverbinding nodig. Lees <a href=\"{{post:ai-song-generator}}\">hoe je een liedje maakt met AI</a>." },
+        { "q": "Hoe werken AI-credits?", "a": "AI Studio werkt met credits, en elke tool verbruikt ze: Music Generator kost 3.000 credits, Sound Effects 250, Text to Speech 500 en Noise Reducer 1.500 per begonnen minuut. Je kunt creditpakketten kopen in de app of credits verdienen in de Credit Shop. Credits worden pas afgeschreven als een resultaat is opgeslagen." }
+      ]
+    },
+    {
+      "heading": "Prijzen en abonnement",
+      "items": [
+        { "q": "Wat zit er in Premium?", "a": "Premium ontgrendelt Basboost, de 7-bands equalizer, de audiobalans, 3D-audio, de afspeelsnelheid en de haptische speler. Volumeboost en de muziekspeler blijven voor iedereen gratis, en de tools in AI Studio werken met credits." },
+        { "q": "Wat kost Premium, en is er een gratis proefperiode?", "a": "Premium is een wekelijks of jaarlijks abonnement. De App Store toont de prijs in je eigen valuta voordat je bevestigt, en die prijs kan per land verschillen. Bij geschikte abonnementen begin je met een gratis proefperiode." },
+        { "q": "Hoe zeg ik mijn abonnement op?", "a": "Abonnementen worden door Apple gefactureerd en beheerd. Open op je iPhone Instellingen, tik op je naam en daarna op “Abonnementen”, kies het EQfy-abonnement en tik op “Annuleer abonnement”. Apple legt de stappen uit in <a href=\"https://support.apple.com/nl-nl/118428\" target=\"_blank\" rel=\"noopener\">Een abonnement van Apple opzeggen</a>." }
+      ]
+    },
+    {
+      "heading": "Apparaten",
+      "items": [
+        { "q": "Ondersteunt EQfy de iPhone Duo?", "a": "Ja. EQfy ondersteunt de iPhone Duo sinds v2.2.23, uitgebracht op 14 oktober 2026: de app gebruikt het volledige binnenscherm met een navigatiekolom en indelingen in twee kolommen, en elke iPhone krijgt in liggende stand een speler in twee kolommen. <a href=\"{{post:iphone-duo}}\">Bekijk wat er nieuw is</a>." },
+        { "q": "Werkt EQfy op de iPad?", "a": "EQfy is gemaakt voor iPhone. Je kunt de app op een iPad installeren, waar hij in iPhone-modus draait, maar hij is niet ontworpen als iPad-app." }
+      ]
+    },
+    {
+      "heading": "Privacy en support",
+      "items": [
+        { "q": "Welke gegevens verzamelt EQfy?", "a": "Voor EQfy heb je geen account nodig. De app gebruikt analyse- en advertentiediensten, vraagt via Apples transparante apptracking (App Tracking Transparency) om toestemming voordat je reclame-ID wordt gebruikt, en stuurt verzoeken uit AI Studio ter verwerking naar een externe AI-aanbieder. Alle details staan in het <a href=\"/privacy\">privacybeleid</a> (in het Engels)." },
+        { "q": "Hoe neem ik contact op met support?", "a": "Mail naar <a href=\"mailto:support@eqfy.app\">support@eqfy.app</a>. Vermeld je iPhone-model en iOS-versie en beschrijf wat er gebeurde, dan kunnen we je sneller helpen." }
+      ]
+    }
+  ]
+}

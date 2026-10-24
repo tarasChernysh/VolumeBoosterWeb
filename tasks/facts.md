@@ -294,4 +294,24 @@ Use these names for in-app features so readers find the same words on screen. Br
 | Force instrumental · Unlock Premium | Tving instrumental · Lås Premium op |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elektronisk, Klassisk, Reggae, Rap, R&B, Dans, Akustisk |
 
+**Dutch (nl)** — from the app's own catalog (`Localizable.xcstrings`, nl values) and `nl-nl` Apple pages. Tone: **je**. URL prefix `/nl`, `hreflang="nl"`, `<html lang="nl">`, ASCII slugs. Decimal comma (`0,5×`), `200%` without a space, “…” quotes. Dutch spelling joins compounds with a brand name by a hyphen (iPhone-geluid, Spotify-geluid, geluidsversterker-app); the `keyword` field keeps that spelling. Brand names stay: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, Premium. **Catalog mistakes — do not copy:** "Dance" preset is "Dans" (use **Dance**); `Balance:` (credit balance) is "Balans:" (use **saldo**); "Galm omgeving"/"Galm mix" should be one word.
+Apple's Dutch names (nl-nl pages): Settings › Sounds & Haptics = Instellingen › **Horen en voelen**; Headphone Safety = Koptelefoonveiligheid; Reduce Loud Audio = Verminder hard geluid; Voice Memos = **Dictafoon**; Files = **Bestanden** (same as EQfy's import button); Music Haptics = **Voelbare muzieksignalen** (under Toegankelijkheid); Spatial Audio = ruimtelijke audio; Sound Check = Geluidscontrole; Headphone Accommodations = Aangepaste koptelefoon; Accessibility › Audio & Visual = Toegankelijkheid › Audio en visueel.
+| EN (app UI) | nl |
+|---|---|
+| AI Studio | AI Studio |
+| Volume Boost / Bass Boost | Volumeboost / Basboost |
+| Equalizer · EQ | Equalizer · EQ |
+| Headphones (tab) / Audio Balance | Koptelefoon / Audiobalans |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Ruimtelijke audio · 3D-audio · 3D-bron · Automatische beweging |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Galm · Galm omgeving · Galm mix · Audiomodus |
+| Center (balance) · Custom · Reset | Midden · Aangepast · Resetten |
+| Music Library · Files · Find more | Muziekbibliotheek · Bestanden · Vind meer |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Kies een nummer · Alle mijn muziek · Recent · Alle mijn muziek verwijderen · Afspeellijsten |
+| Home · Music · Settings (tabs) | Home · Muziek · Instellingen |
+| Volume · Bass · Speed · Share (player) | Volume · Bas · Snelheid · Delen |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Geluidseffecten · Tekst naar spraak · Ruisonderdrukking |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | Spraak genereren · Stem selecteren · Selecteer audiobestand · Ruis verwijderen |
+| Force instrumental · Unlock Premium | Instrumentaal forceren · Premium ontgrendelen |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elektronisch, Klassiek, Reggae, Rap, R&B, **Dance** (not Dans), Akoestisch |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.
