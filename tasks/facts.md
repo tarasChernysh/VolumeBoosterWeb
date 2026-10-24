@@ -374,4 +374,23 @@ Apple's Korean names (ko-kr pages): Settings › Sounds & Haptics = 설정 › *
 | Force instrumental · Unlock Premium | 연주곡으로 강제 · 프리미엄 잠금 해제 |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | 록, 재즈, 일렉트로닉, 클래식, 레게, 랩, R&B, 댄스, 어쿠스틱 |
 
+**Russian (ru)** — from the app's own catalog (`Localizable.xcstrings`, ru values) and `ru-ru` Apple pages. Tone: **вы** (lowercase in running text). URL prefix `/ru`, `hreflang="ru"`, `<html lang="ru">`, **English slugs** (Cyrillic slugs are not allowed). The switcher shows «Русский» **without a flag** (Taras's decision). Decimal comma (`0,5×`), `200 %` with a real no-break space U+00A0 (also before дБ, Гц, кГц, «+12 дБ»), four-digit numbers without a separator (`3000`), five-digit with U+00A0 (`28 000`), «…» quotes. Write "iPhone" in titles and text; "айфон" may appear once in a description or lead (it is the search word). **Spotify help is not available in Russia** (every ru URL redirects to a "not available" page): keep the English `/us/` link and add "(на английском)". Brand names stay Latin: EQfy, EQfy - Louder Volume, App Store, iPhone, iPhone Duo, AirPods, Apple Music, Spotify, Premium. **Catalog mistakes — do not copy:** `Реггі`/`Реп` (use **Регги / Рэп**); the Dance preset "Танец" (use **Dance**); `Balance:` (credit balance) is "Баланс:" (use **баланс кредитов**). The app says **ИИ** (Студия ИИ).
+Apple's Russian names (ru-ru pages): Settings › Sounds & Haptics = Настройки › **Звуки и вибрация**; Headphone Safety = Безопасность наушников; Reduce Loud Audio = Громкое аудио тише; Voice Memos = **Диктофон**; Files = **Файлы**; Music Haptics = **Музыкальные тактильные сигналы** (Универсальный доступ); Spatial Audio = **Пространственное аудио**; Sound Check = Коррекция громкости; Headphone Accommodations = Адаптация наушников; Accessibility › Audio & Visual = Универсальный доступ › Аудиовизуализация; Music EQ off = «Выкл.». Apple Music EQ preset names are not listed on any Apple ru page: describe them in words with the English name in parentheses. The share-image and site fonts (Outfit, Space Mono) have no Cyrillic glyphs, so Cyrillic text falls back to the system font (checked; it renders cleanly).
+| EN (app UI) | ru |
+|---|---|
+| AI Studio | Студия ИИ |
+| Volume Boost / Bass Boost | Усиление громкости / Усиление басов |
+| Equalizer · EQ | Эквалайзер · EQ |
+| Headphones (tab) / Audio Balance | Наушники / Аудиобаланс |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Пространственное аудио · 3D-аудио · 3D-источник · Автодвижение |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Реверберация · Среда реверберации · Смешивание реверберации · Режим аудио |
+| Center (balance) · Custom · Reset | Центр · Пользовательский · Сбросить |
+| Music Library · Files · Find more | Музыкальная библиотека · Файлы · Найти больше |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Выберите трек · Вся моя музыка · Недавние · Удалить всю мою музыку · Плейлисты |
+| Home · Music · Settings (tabs) | Главная · Музыка · Настройки |
+| Volume · Bass · Speed · Share (player) | Громкость · Басы · Скорость · Поделиться |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Звуковые эффекты · Текст в речь · Шумоподавление |
+| Force instrumental · Unlock Premium | Только инструментал · Разблокировать Premium |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Рок, Джаз, Электронный, Классический, Регги, Рэп, R&B, **Dance** (not Танец), Акустический |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.

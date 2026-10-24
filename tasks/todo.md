@@ -474,7 +474,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 - [x] nl (Dutch)
 - [x] pl (Polish)
 - [x] ko (Korean, + CJK tooling)
-- [ ] ru (Russian, no flag)
+- [x] ru (Russian, no flag)
 - [ ] uk (Ukrainian)
 
 ## Review (Danish, PR `lang-da`)
@@ -552,4 +552,18 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Verification:** `node build.mjs && node check.mjs`: 492 pages, 0 errors, 0 warnings (CJK length rules active). Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters or mixed scripts. Browser at 375 px: all 34 Korean pages have no sideways scroll, `lang="ko"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images, and `word-break: keep-all` applies. At 1025 px (narrowest desktop nav) the nav stays on one row on the homepage and the generated pages, including the long «자주 묻는 질문». Share images checked by eye.
 
 **Not verified:** no native Korean reader; the Korean Reverb preset names stay English (not in the catalog); Apple's Korean pages use 음량 where running text says 볼륨 (menu names follow Apple, prose follows search habits); Apple Music EQ preset names stay English; the Duo post adds Apple's cm figures next to the inch sizes.
+
+## Review (Russian, PR `lang-ru`)
+
+**Changes:**
+- **Russian is now a full language** at `/ru/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set (the switcher shows «Русский» with no flag, as decided). `src/site.json`, `index.html`, `src/i18n/ru.json`, `src/landing/ru.json`, `src/content/ru/` (31 posts + `faq.json`), 32 share images, all homepages regenerated. English slugs.
+- **Keywords:** Russian Google autocomplete (hl=ru, gl=ru; no Ahrefs API access). Russians search "как сделать айфон громче", "тихий звук на айфоне", "эквалайзер айфон", "усилитель звука айфон", "создать песню с ии", "нейросеть песня", "озвучка текста", "убрать шум с записи", "8d звук". Titles and text write "iPhone"; "айфон" appears once in a description or lead.
+- **Terms:** app catalog (Russian table in `tasks/facts.md` §8) plus Apple's ru-ru names: Звуки и вибрация, Диктофон, Файлы, Музыкальные тактильные сигналы (Music Haptics), Пространственное аудио. Apple links point to `ru-ru`; WHO links use the Russian pages where they exist.
+- **Spotify is not available in Russia:** every Spotify help URL in `/ru/` and `/ru-ru/` redirects to a "not available" page, so Russian posts keep the English `/us/` link with "(на английском)". Recorded in facts.md.
+- **Catalog mistakes not copied:** `Реггі`/`Реп` (→ Регги/Рэп), the Dance preset ("Танец"), the credit balance ("Баланс:").
+- **Fonts:** Outfit and Space Mono have no Cyrillic glyphs, so Cyrillic falls back to the system font; checked in the share images and on the homepage (it renders cleanly).
+
+**Verification:** `node build.mjs && node check.mjs`: 527 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; no stray characters or mixed Latin/Cyrillic words. Browser at 375 px: all 34 Russian pages have no sideways scroll, `lang="ru"`, 3 related cards and a FAQ on every post, no links into the English blog, no broken images. At 1025 px the nav stays on one row (homepage and generated pages). Share images and the homepage hero checked by eye.
+
+**Not verified:** no native Russian reader; Apple's Russian pages disagree with themselves in places (Аудиовизуализация vs «Аудио и видео», «Звук и его источники» vs «Аудио и маршрутизация»; the guide wording was used); Apple Music EQ preset names stay English in parentheses; the app's «Премиум» is written "Premium" like the other languages.
 
