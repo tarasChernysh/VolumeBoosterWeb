@@ -1,0 +1,76 @@
+{
+  "dateLocale": "nl-NL",
+  "home": "Home",
+  "nav": {
+    "features": "Functies",
+    "equalizer": "Equalizer",
+    "aiStudio": "AI Studio",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Gratis downloaden",
+    "changeLanguage": "Taal wijzigen",
+    "menu": "Menu openen",
+    "logoAlt": "EQfy-icoon",
+    "main": "Hoofdnavigatie",
+    "breadcrumb": "Kruimelpad"
+  },
+  "footer": {
+    "tagline": "Geluidsversterker, basboost en equalizer voor je iPhone. Maak elk nummer harder, voller en helderder.",
+    "features": "Functies",
+    "volumeBooster": "Geluidsversterker",
+    "bassEq": "Basboost en EQ",
+    "spatial": "3D ruimtelijke audio",
+    "aiStudio": "AI Studio",
+    "resources": "Informatie",
+    "support": "Support",
+    "appStore": "App Store",
+    "legal": "Juridisch",
+    "privacy": "Privacybeleid (in het Engels)",
+    "terms": "Gebruiksvoorwaarden (in het Engels)",
+    "rights": "Alle rechten voorbehouden.",
+    "trademark": "iPhone, AirPods en App Store zijn handelsmerken van Apple Inc."
+  },
+  "blog": {
+    "title": "EQfy-blog: iPhone harder zetten, bas- en EQ-tips",
+    "description": "Handleidingen en nieuws van EQfy: zet je iPhone harder, geef de bas een boost, vind de beste EQ-instellingen, los te zacht geluid op en haal meer uit je koptelefoon.",
+    "eyebrow": "Handleidingen en nieuws",
+    "h1": "De EQfy-blog",
+    "lead": "Praktische handleidingen voor meer volume, helderder geluid en meer luisterplezier op je iPhone – plus nieuws over de EQfy-app."
+  },
+  "post": {
+    "by": "Door het EQfy-team",
+    "published": "Gepubliceerd",
+    "updated": "Bijgewerkt",
+    "minRead": "{n} min. leestijd",
+    "faqTitle": "Veelgestelde vragen",
+    "related": "Gerelateerde artikelen",
+    "readMore": "Lees meer →",
+    "categories": { "guide": "Handleiding", "news": "Nieuws" }
+  },
+  "faqPage": {
+    "eyebrow": "Helpcentrum",
+    "jumpTo": "Ga naar een onderwerp"
+  },
+  "cta": {
+    "title": "Zet je iPhone harder",
+    "text": "Download EQfy - Louder Volume gratis in de App Store. Vereist iOS 16 of nieuwer.",
+    "button": "Download in de App Store",
+    "iconAlt": "EQfy-appicoon"
+  },
+  "latest": {
+    "eyebrow": "Uit de blog",
+    "title": "Handleidingen en nieuws",
+    "description": "Tips voor meer volume, helderder geluid en meer luisterplezier op je iPhone.",
+    "all": "Alle artikelen →"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "De pagina die je zoekt, bestaat niet.",
+    "lead": "De pagina die je zoekt, bestaat niet of is verplaatst. Probeer in plaats daarvan een van deze pagina’s:"
+  },
+  "og": {
+    "title": "Zet je iPhone <em>harder</em>",
+    "sub": "Volume- en basboost met een pro-equalizer",
+    "pills": ["Tot 200% volume", "7-bands equalizer", "3D-audio", "AI Studio"]
+  }
+}

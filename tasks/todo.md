@@ -471,7 +471,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 ## Phase B + C: new full languages (one PR each)
 - [x] da (Danish)
 - [ ] it (Italian)
-- [ ] nl (Dutch)
+- [x] nl (Dutch)
 - [ ] pl (Polish)
 - [ ] ko (Korean, + CJK tooling)
 - [ ] ru (Russian, no flag)
@@ -497,4 +497,18 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
   - `iphone-equalizer` calls the player tab "Equalizer", but it is "EQ".
   - `airpods-bass` uses the fit-test path Settings › your AirPods, while Apple's current page says Settings › Bluetooth › More info.
 - App catalog issues (app repo): `Balance:` (credits) is translated as audio balance in da as well.
+
+## Review (Dutch, PR `lang-nl`)
+
+**Changes:**
+- **Dutch is now a full language** at `/nl/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set. `src/site.json` (`langs.nl`, `contentLangs`, `landingLangs`), `index.html` (one hreflang link and one switcher option), `src/i18n/nl.json`, `src/landing/nl.json`, `src/content/nl/` (31 posts + `faq.json`). 32 share images.
+- **Keywords:** Google autocomplete (hl=nl, gl=nl), as for da (Ahrefs has no API access on this account). Dutch searchers type "iPhone geluid harder zetten", "iPhone geluid zacht", "geluidsversterker app", "liedje maken met AI", "achtergrondgeluid verwijderen". Dutch spelling joins brand compounds with a hyphen (iPhone-geluid, geluidsversterker-app), so titles and `keyword` fields use the hyphen; Google treats it as a space.
+- **Terms:** app catalog (Dutch table in `tasks/facts.md` §8) plus Apple's nl-nl names found by the translators: Settings › Sounds & Haptics = **Horen en voelen**, Voice Memos = **Dictafoon**, Files = **Bestanden**, Music Haptics = **Voelbare muzieksignalen** (the slug was renamed to `voelbare-muzieksignalen-iphone` to match), Spatial Audio = ruimtelijke audio. Apple links point to `nl-nl` pages, Spotify links to `/nl/`; all checked to return 200. The WHO pages and Audible have no Dutch version and say "(in het Engels)".
+- **Catalog mistakes not copied:** the "Dance" preset ("Dans") and the credit balance ("Balans:" → saldo).
+
+**Verification:** `node build.mjs && node check.mjs`: 387 pages, 0 errors, 0 warnings. The validator passes for all 31 posts; i18n has the same keys as English; the homepage dictionary has all 181 keys with matching `{n}` tokens; FAQ 7 groups and 22 items. In the browser at 375 px: 34 Dutch pages (31 posts, blog index, FAQ, 404) have no sideways scroll, `lang="nl"`, 3 related cards per post and no links into the English blog. All 20 unique images return 200 (202 of 273 `<img>` tags are lazy-loaded, so a naturalWidth test on off-screen frames is meaningless). The dropdown lists 11 languages and scrolls (max-height 716 px).
+
+**Not verified:** no native Dutch reader; Apple's nl-nl pages disagree with themselves in places (e.g. "Verminder hard geluid" vs "harde geluiden", "Audio en routing" vs "routering"); Apple Music EQ preset names stay English with a Dutch gloss (no Apple page lists them).
+
+**English source issues found while translating** (not fixed here; they affect all languages): the homepage card says "EQ'd audio anywhere — no connection required" but offline the player shows only the Volume dial (facts.md §2); `remove-background-noise` says "sliders icon, then Options" in Voice Memos but Apple's page says the More (…) button; `8d-audio` calls "Enable 3D positioning and reverb" a toggle label (it is the subtitle); `bluetooth-volume-low` step 6 and `spotify-louder` cite claims their linked pages don't make.
 
