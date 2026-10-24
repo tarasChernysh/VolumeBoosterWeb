@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>if(/\.github\.io$/.test(location.hostname))location.replace('https://eqfy.app'+location.pathname.replace(/^\/VolumeBoosterWeb/,'')+location.search+location.hash)</script>
+    <title>iPhone 공간 음향과 3D 오디오 완전 정리 | EQfy</title>
+    <meta name="description" content="아이폰 공간 음향과 3D 오디오의 차이를 정리했어요. Apple 공간 음향과 Dolby Atmos 설정, EQfy의 리버브 룸과 움직이는 3D 사운드 사용법까지 담았어요.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#0A1A0A">
+    <link rel="canonical" href="https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="en" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="es" href="https://eqfy.app/es/blog/audio-espacial-3d-iphone/">
+    <link rel="alternate" hreflang="de" href="https://eqfy.app/de/blog/3d-raumklang-iphone/">
+    <link rel="alternate" hreflang="fr" href="https://eqfy.app/fr/blog/audio-3d-iphone-explique/">
+    <link rel="alternate" hreflang="pt" href="https://eqfy.app/pt/blog/audio-3d-iphone-explicado/">
+    <link rel="alternate" hreflang="ja" href="https://eqfy.app/ja/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="ar" href="https://eqfy.app/ar/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="tr" href="https://eqfy.app/tr/blog/iphone-3d-uzamsal-ses/">
+    <link rel="alternate" hreflang="zh" href="https://eqfy.app/zh/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="da" href="https://eqfy.app/da/blog/3d-lyd-rumlig-lyd-iphone/">
+    <link rel="alternate" hreflang="nl" href="https://eqfy.app/nl/blog/ruimtelijke-audio-3d-iphone/">
+    <link rel="alternate" hreflang="it" href="https://eqfy.app/it/blog/audio-spaziale-3d-iphone/">
+    <link rel="alternate" hreflang="pl" href="https://eqfy.app/pl/blog/dzwiek-przestrzenny-3d-iphone/">
+    <link rel="alternate" hreflang="ko" href="https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/">
+    <link rel="alternate" hreflang="x-default" href="https://eqfy.app/blog/3d-spatial-audio-iphone-explained/">
+
+    <meta property="og:site_name" content="EQfy - Louder Volume">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="iPhone 공간 음향과 3D 오디오 완전 정리 | EQfy">
+    <meta property="og:description" content="아이폰 공간 음향과 3D 오디오의 차이를 정리했어요. Apple 공간 음향과 Dolby Atmos 설정, EQfy의 리버브 룸과 움직이는 3D 사운드 사용법까지 담았어요.">
+    <meta property="og:url" content="https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/">
+    <meta property="og:image" content="https://eqfy.app/assets/images/og/ko-spatial-audio.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="효과가 켜진 iPhone의 EQfy 3D 공간 오디오 화면, 리버브와 3D 소스 모드, 자동 모션">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="iPhone 공간 음향과 3D 오디오 완전 정리 | EQfy">
+    <meta name="twitter:description" content="아이폰 공간 음향과 3D 오디오의 차이를 정리했어요. Apple 공간 음향과 Dolby Atmos 설정, EQfy의 리버브 룸과 움직이는 3D 사운드 사용법까지 담았어요.">
+    <meta name="twitter:image" content="https://eqfy.app/assets/images/og/ko-spatial-audio.jpg">
+    <meta name="apple-itunes-app" content="app-id=6550912161">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Outfit:wght@400;500;600;700;800&display=swap"></noscript>
+    <link rel="stylesheet" href="/assets/css/site.css?v=89e8b9e2">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/#article",
+      "headline": "iPhone 공간 음향과 3D 오디오 완전 정리",
+      "description": "아이폰 공간 음향과 3D 오디오의 차이를 정리했어요. Apple 공간 음향과 Dolby Atmos 설정, EQfy의 리버브 룸과 움직이는 3D 사운드 사용법까지 담았어요.",
+      "image": [
+        "https://eqfy.app/assets/images/og/ko-spatial-audio.jpg",
+        "https://eqfy.app/assets/images/blog/iphone-duo/10-3d-audio.webp"
+      ],
+      "datePublished": "2026-10-11",
+      "dateModified": "2026-10-11",
+      "inLanguage": "ko",
+      "mainEntityOfPage": "https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/",
+      "keywords": "아이폰 공간 음향과 3D 오디오",
+      "author": {
+        "@type": "Organization",
+        "name": "EQfy",
+        "url": "https://eqfy.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://eqfy.app/#org",
+        "name": "EQfy",
+        "url": "https://eqfy.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eqfy.app/assets/images/app-icon.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://eqfy.app/ko/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "블로그",
+          "item": "https://eqfy.app/ko/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "iPhone 공간 음향과 3D 오디오 완전 정리",
+          "item": "https://eqfy.app/ko/blog/3d-spatial-audio-iphone-explained/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "EQfy의 3D 오디오는 Apple 공간 음향과 같은가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. Apple의 공간 음향은 Apple Music의 Dolby Atmos 곡 같은 지원 콘텐츠를 위한 시스템 기능이에요. EQfy의 3D 오디오는 EQfy 안에서 재생하는 곡에 리버브 룸과 움직이는 3D 사운드 소스를 더하는 앱 자체 효과예요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "아이폰 3D 오디오를 들으려면 AirPods이 꼭 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple의 머리 추적에는 지원되는 AirPods이 필요해요. EQfy의 3D 오디오는 어떤 출력으로든 재생되고, 3D 소스 모드에서는 AirPods Pro나 AirPods Max 같은 지원 AirPods으로 헤드 트래킹도 쓸 수 있어요. 움직이는 3D 소스 효과는 헤드폰에서 가장 뚜렷하고, iPhone 스피커에서는 리버브 모드가 가장 잘 어울려요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EQfy로 Spotify나 YouTube에 3D 오디오를 입힐 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아니요. iOS에서는 EQfy가 EQfy 안에서 재생하는 오디오만 처리할 수 있어서, 3D 오디오로 Spotify, YouTube, Apple Music 스트리밍, 통화, 다른 앱의 소리는 바꿀 수 없어요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EQfy 3D 오디오가 Apple Music 곡에도 적용되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple Music 구독 곡에는 적용되지 않아요. 보호된 곡이라 EQfy에서 재생은 되지만 음질 향상 도구는 쓸 수 없어요. 구매한 곡이나 보호되지 않은 곡, 가져온 파일에는 3D 오디오를 쓸 수 있어요."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+
+    <nav class="nav" aria-label="메인 내비게이션">
+        <div class="nav__inner">
+            <a href="/ko/" class="nav__logo">
+                <span class="nav__logo-icon"><img src="/assets/images/app-icon.png" alt="EQfy 아이콘" width="36" height="36"></span>
+                EQfy - Louder Volume
+            </a>
+            <ul class="nav__links">
+                <li><a href="/ko/#features" class="nav__link">기능</a></li>
+                <li><a href="/ko/#equalizer" class="nav__link">이퀄라이저</a></li>
+                <li><a href="/ko/#ai-audio" class="nav__link">AI 스튜디오</a></li>
+                <li><a href="/ko/faq/" class="nav__link">자주 묻는 질문</a></li>
+                <li><a href="/ko/blog/" class="nav__link" aria-current="page">블로그</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-switcher__btn" data-toggle=".lang-switcher__dropdown" aria-label="언어 변경">🌐 한국어 ▾</button>
+                <div class="lang-switcher__dropdown">
+                    <a href="/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="en" lang="en">🇬🇧 English</a>
+                    <a href="/es/blog/audio-espacial-3d-iphone/" class="lang-switcher__option" hreflang="es" lang="es">🇪🇸 Español</a>
+                    <a href="/de/blog/3d-raumklang-iphone/" class="lang-switcher__option" hreflang="de" lang="de">🇩🇪 Deutsch</a>
+                    <a href="/fr/blog/audio-3d-iphone-explique/" class="lang-switcher__option" hreflang="fr" lang="fr">🇫🇷 Français</a>
+                    <a href="/pt/blog/audio-3d-iphone-explicado/" class="lang-switcher__option" hreflang="pt" lang="pt-BR">🇧🇷 Português</a>
+                    <a href="/ja/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="ja" lang="ja">🇯🇵 日本語</a>
+                    <a href="/ar/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="ar" lang="ar">🇸🇦 العربية</a>
+                    <a href="/tr/blog/iphone-3d-uzamsal-ses/" class="lang-switcher__option" hreflang="tr" lang="tr">🇹🇷 Türkçe</a>
+                    <a href="/zh/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option" hreflang="zh" lang="zh-Hans">🇨🇳 简体中文</a>
+                    <a href="/da/blog/3d-lyd-rumlig-lyd-iphone/" class="lang-switcher__option" hreflang="da" lang="da">🇩🇰 Dansk</a>
+                    <a href="/nl/blog/ruimtelijke-audio-3d-iphone/" class="lang-switcher__option" hreflang="nl" lang="nl">🇳🇱 Nederlands</a>
+                    <a href="/it/blog/audio-spaziale-3d-iphone/" class="lang-switcher__option" hreflang="it" lang="it">🇮🇹 Italiano</a>
+                    <a href="/pl/blog/dzwiek-przestrzenny-3d-iphone/" class="lang-switcher__option" hreflang="pl" lang="pl">🇵🇱 Polski</a>
+                    <a href="/ko/blog/3d-spatial-audio-iphone-explained/" class="lang-switcher__option lang-switcher__option--active" hreflang="ko" lang="ko">🇰🇷 한국어</a>
+                </div>
+            </div>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta nav__cta--desktop" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> 무료 다운로드</a>
+            <button class="nav__mobile-toggle" data-toggle=".nav__mobile-menu" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="nav__mobile-menu">
+        <ul>
+            <li><a href="/ko/#features">기능</a></li>
+            <li><a href="/ko/#equalizer">이퀄라이저</a></li>
+            <li><a href="/ko/#ai-audio">AI 스튜디오</a></li>
+            <li><a href="/ko/faq/">자주 묻는 질문</a></li>
+            <li><a href="/ko/blog/" aria-current="page">블로그</a></li>
+        </ul>
+        <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="nav__cta" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> 무료 다운로드</a>
+    </div>
+
+    <main class="page">
+        <div class="container">
+        <nav class="breadcrumb" aria-label="이동 경로"><ol><li><a href="/ko/">홈</a></li><li><a href="/ko/blog/">블로그</a></li><li aria-current="page">iPhone 공간 음향과 3D 오디오 완전 정리</li></ol></nav>
+        <article>
+            <header class="page__header">
+                <span class="eyebrow">가이드</span>
+                <h1 class="page__title">iPhone 공간 음향과 3D 오디오 완전 정리</h1>
+                <p class="post-meta"><span>작성: EQfy 팀</span> · <span>게시일 <time datetime="2026-10-11">2026년 10월 11일</time></span> · <span>7분 읽기</span></p>
+            </header>
+            <div class="prose">
+<p class="lead">아이폰 공간 음향과 3D 오디오는 비슷해 보여도 서로 다른 기능이에요. Apple 공간 음향은 Apple Music의 Dolby Atmos 곡과 지원되는 AirPods의 머리 추적을 아우르는, 지원 콘텐츠를 위한 시스템 기능이에요. EQfy - Louder Volume의 3D 오디오는 EQfy 안에서 재생하는 곡을 가상의 방에 놓거나 머리 주위로 움직이게 하는 앱 자체 효과예요.</p>
+
+<p>아래에서 3D 사운드의 원리, 정확한 iPhone 설정을 담은 Apple 공간 음향 설명, 그리고 EQfy의 리버브 모드와 3D 소스 모드를 비교해 드려요.</p>
+
+<h2 id="what-is-3d-audio">'3D 오디오'란 무엇일까요</h2>
+<p>일반 스테레오는 왼쪽 귀와 오른쪽 귀 사이의 선 위에 소리를 놓아요. 3D 오디오는 앞, 뒤, 위, 또는 헤드폰보다 훨씬 큰 공간 안처럼 사방에 소리를 배치하려고 해요.</p>
+<p>우리 뇌는 두 귀 사이의 작은 차이로 소리의 위치를 파악해요. 어느 쪽 귀에 소리가 먼저 도착하는지, 양쪽에서 얼마나 크게 들리는지, 그리고 머리와 바깥귀가 소리의 방향에 따라 음색을 어떻게 바꾸는지가 단서예요. 오디오 소프트웨어는 이런 단서를 흉내 낼 수 있어요. 보통 바이노럴 또는 HRTF(머리전달함수) 처리라고 부르는데, 양쪽 귀에 각각 다른 신호가 전달되는 헤드폰에서 가장 잘 작동해요.</p>
+<p>공간의 울림은 이 착각의 나머지 절반이에요. 실제 공간에서는 직접음에 더해 벽, 바닥, 천장에서 반사된 소리가 많이 들려요. 리버브는 이 반사음을 재현해서, 잔향이 없는 녹음이 갑자기 홀이나 대성당에서 재생되는 것처럼 느껴지게 해요.</p>
+
+<h2 id="apple-spatial-audio">iPhone 공간 음향 설명</h2>
+<p>iPhone의 공간 음향이라고 하면 보통 Apple의 기능을 말해요. 두 부분으로 나뉘고, 둘 다 콘텐츠와 사용하는 헤드폰에 따라 달라져요.</p>
+
+<h3 id="dolby-atmos">Apple Music의 Dolby Atmos</h3>
+<p>Dolby Atmos는 오브젝트 기반 오디오 형식이에요. 왼쪽과 오른쪽으로만 믹싱하는 대신, 엔지니어가 악기를 청취자의 주위와 위쪽에 배치할 수 있어요. Apple Music을 구독하면 엄선된 노래를 Dolby Atmos 지원 공간 음향으로 들을 수 있어요. 설정을 확인하려면 이렇게 하세요.</p>
+<ol>
+  <li>iPhone을 최신 iOS로 업데이트하세요.</li>
+  <li><strong>설정 › 앱 › 음악</strong>을 여세요.</li>
+  <li>오디오 아래에서 <strong>Dolby Atmos</strong>를 탭하세요.</li>
+  <li><strong>자동</strong>, <strong>항상 켬</strong>, <strong>끔</strong> 중에서 고르세요.</li>
+</ol>
+<p>자동 모드에서는 지원되는 곡이 Apple 또는 Beats Bluetooth 헤드폰과 iPhone XS 이후 모델(iPhone SE 제외)의 내장 스피커에서 Dolby Atmos로 재생돼요. 유선 헤드폰에서는 Apple이 항상 켬을 권장해요. 지원되는 곡에는 Dolby Atmos 배지가 표시돼요. 출처: <a href="https://support.apple.com/ko-kr/109354" target="_blank" rel="noopener">Apple Music의 Dolby Atmos 지원 공간 음향에 관하여</a>.</p>
+
+<h3 id="head-tracking">AirPods의 공간 음향과 머리 추적</h3>
+<p>지원되는 AirPods에서는 공간 음향이 머리 추적도 사용할 수 있어요. 그래서 고개를 돌려도 소리가 iPhone에서 나오는 것처럼 들려요. 바꾸려면 AirPods을 착용하고 제어 센터를 연 다음, 음량 제어를 길게 터치하고 <strong>공간 음향</strong>을 탭해서 아래 중 하나를 고르세요.</p>
+<ul>
+  <li><strong>끔:</strong> 공간 음향과 머리 추적이 모두 꺼져요.</li>
+  <li><strong>고정:</strong> 머리 추적 없이 공간 음향만 켜져요.</li>
+  <li><strong>머리 추적:</strong> 공간 음향과 머리 추적이 모두 켜져요.</li>
+</ul>
+<p>iPhone은 이 선택을 앱마다 따로 저장해요. Apple은 공간 음향이 모든 앱이나 콘텐츠에서 되는 것은 아니라고 안내해요. 지원되는 프로그램, 영화, 노래, 게임과 FaceTime 통화에서 쓸 수 있어요. 출처: <a href="https://support.apple.com/ko-kr/guide/airpods/dev00eb7e0a3/web" target="_blank" rel="noopener">AirPods에서 공간 음향 및 머리 추적 기능 제어하기</a>.</p>
+
+<h2 id="eqfy-3d-audio">EQfy의 3D 오디오: 앱 자체 효과</h2>
+<p>EQfy의 3D 오디오는 EQfy 플레이어에 내장된 자체 효과예요. Apple 공간 음향이 아니고, 곡을 Dolby Atmos 믹스로 바꿔 주지도 않아요. 대신 EQfy에서 재생하는 곡을 두 가지 모드 중 하나로 처리해요. 플레이어에서 볼륨, 베이스, EQ, 헤드폰 옆에 있는 <strong>3D 오디오</strong> 탭에서 찾을 수 있어요. Premium 도구예요.</p>
+
+<figure>
+  <img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" width="700" height="1019" loading="lazy" decoding="async" alt="효과가 켜진 EQfy 3D 공간 오디오 탭, 리버브와 3D 소스 모드 버튼, 자동 모션 패턴">
+  <figcaption>EQfy의 3D 오디오 탭: 효과를 켠 다음 리버브나 3D 소스를 고르세요.</figcaption>
+</figure>
+
+<h3 id="reverb-mode">리버브 모드: 음악을 방 안에 놓기</h3>
+<p>리버브 모드는 곡을 가상의 공간에 놓아요. 곡을 더 웅장하게 만들어 줄 아이폰 리버브 앱을 찾고 있었다면, 플레이어 안에서 바로 해결할 수 있어요. 프리셋은 9가지이고, 리버브 블렌드 슬라이더로 드라이에서 웻까지 효과가 얼마나 들릴지 정해요.</p>
+<table>
+  <thead>
+    <tr><th>프리셋</th><th>소리 특징</th><th>어울리는 음악</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Small Room(작은 방)</td><td>짧고 가까운 반사음, 은은함</td><td>어쿠스틱 곡, 낭독</td></tr>
+    <tr><td>Medium Room(중간 방)</td><td>자연스러운 방의 공간감</td><td>대부분의 팝과 록</td></tr>
+    <tr><td>Large Room(큰 방)</td><td>더 넓은 공간, 더 긴 잔향</td><td>밴드 녹음, 라이브 느낌의 사운드</td></tr>
+    <tr><td>Medium Hall(중간 홀)</td><td>콘서트홀 느낌</td><td>피아노, 클래식</td></tr>
+    <tr><td>Large Hall(큰 홀)</td><td>크고 넓은 공간, 긴 감쇠</td><td>오케스트라, 영화 음악</td></tr>
+    <tr><td>Medium Chamber(중간 챔버)</td><td>촘촘하고 부드러운 반사음</td><td>보컬, 현악기</td></tr>
+    <tr><td>Large Chamber(큰 챔버)</td><td>더 크고 풍성한 챔버</td><td>발라드, 느린 곡</td></tr>
+    <tr><td>Cathedral(대성당)</td><td>매우 길고 탁 트인 감쇠</td><td>합창, 앰비언트, 명상 음악</td></tr>
+    <tr><td>Plate(플레이트)</td><td>밝고 매끄러운 스튜디오식 리버브</td><td>팝 보컬, 드럼</td></tr>
+  </tbody>
+</table>
+<p>이 프리셋은 규칙이 아니라 출발점이에요. 리버브는 취향을 많이 타니, 같은 곡에 프리셋을 몇 가지 써 보고 마음에 드는 것을 고르세요.</p>
+
+<h3 id="3d-source-mode">3D 소스 모드: 소리를 내 주위로 움직이기</h3>
+<p>3D 소스는 곡을 머리 주위 공간의 소리 소스로 다뤄요. 앞, 뒤, 왼쪽, 오른쪽, 위, 아래 위치로 드래그할 수 있고, <strong>중앙 위치</strong>로 되돌릴 수 있어요. 또는 <strong>자동 모션</strong>을 켜서 EQfy가 네 가지 패턴 중 하나로 소리를 대신 움직이게 하고, 느림에서 빠름까지 속도를 조절할 수 있어요.</p>
+<ul>
+  <li><strong>양측성:</strong> 소리가 왼쪽에서 오른쪽으로 갔다가 되돌아와요.</li>
+  <li><strong>궤도:</strong> 소리가 귀 높이에서 머리 주위를 돌아요.</li>
+  <li><strong>8자 모양:</strong> 소리가 내 주위에 8자를 그려요.</li>
+  <li><strong>호흡:</strong> 소리가 편안한 속도로 천천히 올라갔다 내려와요.</li>
+</ul>
+<p>이런 움직임은 양쪽 귀에 각각 다른 신호가 전달되는 헤드폰에서 가장 설득력 있게 들려요. iPhone 스피커에서는 대체로 리버브 모드가 더 나은 선택이에요.</p>
+<p>3D 소스는 <strong>헤드 트래킹</strong>도 쓸 수 있어요. AirPods Pro나 AirPods Max처럼 지원되는 AirPods을 쓰면 EQfy가 머리의 움직임을 따라가고, 고개를 돌릴 때 소리가 나는 위치를 조정해요. 처음 쓸 때는 iPhone이 EQfy가 모션 데이터를 사용해도 되는지 물어봐요. 리버브 모드는 헤드 트래킹을 사용하지 않아요.</p>
+
+<h2 id="how-to">EQfy에서 3D 오디오 켜는 방법</h2>
+<ol>
+  <li>EQfy를 열고 보관함의 곡이나 가져온 파일을 재생하세요.</li>
+  <li>플레이어를 열고 <strong>3D 오디오</strong> 탭을 탭하세요.</li>
+  <li><strong>공간 오디오</strong> 토글을 켜세요. 이름과 달리 이 스위치는 Apple의 공간 음향이 아니라 EQfy 자체 효과를 제어해요.</li>
+  <li><strong>오디오 모드</strong>에서 <strong>리버브</strong>나 <strong>3D 소스</strong>를 고르세요.</li>
+  <li>리버브에서는 프리셋을 고르고 리버브 블렌드를 조절하세요. 3D 소스에서는 자동 모션 패턴과 속도를 고르거나 소리 위치를 직접 정하세요.</li>
+  <li>헤드폰을 끼고 토글을 껐다 켜면서 비교해 보세요.</li>
+</ol>
+
+<h2 id="comparison">Apple 공간 음향과 EQfy 3D 오디오 비교</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>Apple 공간 음향 / Dolby Atmos</th><th>EQfy 3D 오디오</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>정체</td><td>지원되는 콘텐츠와 헤드폰을 위한 iPhone 기능</td><td>EQfy 플레이어 안의 효과</td></tr>
+    <tr><td>적용 대상</td><td>Apple Music의 Dolby Atmos 곡, 지원되는 프로그램·영화·게임, FaceTime 통화</td><td>EQfy에서 재생하는 곡: 음악 보관함에서 구매했거나 보호되지 않은 곡, 가져온 파일</td></tr>
+    <tr><td>주요 조절 항목</td><td>끔, 고정, 머리 추적. Dolby Atmos는 자동, 항상 켬, 끔</td><td>블렌드를 조절하는 리버브 프리셋 9개, 3D 소스 위치, 자동 모션 패턴 4개</td></tr>
+    <tr><td>필요한 것</td><td>Atmos 곡에는 Apple Music 구독, 머리 추적에는 지원되는 AirPods</td><td>EQfy Premium, 3D 소스에는 헤드폰 권장, 헤드 트래킹에는 지원되는 AirPods</td></tr>
+  </tbody>
+</table>
+
+<h3 id="use-both">둘 다 쓸 수 있을까요?</h3>
+<p>Apple Music 구독 곡은 보호되어 있어요. EQfy에서 재생은 되지만, iOS가 앱이 보호된 오디오를 처리하는 것을 허용하지 않기 때문에 3D 오디오와 다른 음질 향상 도구는 쓸 수 없어요. EQfy가 처리할 수 있는 곡이라면 평소처럼 AirPods으로 들으면 돼요. iPhone은 공간 음향 선택을 앱마다 따로 저장하니, EQfy의 효과만 따로 듣고 싶다면 제어 센터에서 EQfy의 공간 음향을 끔으로 바꿔 두세요.</p>
+
+<h2 id="tips">더 나은 3D 사운드를 위한 팁</h2>
+<ul>
+  <li><strong>은은하게 시작하세요.</strong> 블렌드를 낮게 한 Medium Room이 최대 웻의 Cathedral보다 더 자연스럽게 들릴 때가 많아요.</li>
+  <li><strong>출력에 맞는 모드를 고르세요.</strong> 3D 소스와 자동 모션은 헤드폰으로, 리버브는 스피커로 들어도 괜찮아요.</li>
+  <li><strong>저음을 정리하세요.</strong> 리버브는 저음을 탁하게 만들 수 있어요. <a href="/ko/blog/best-iphone-eq-settings-by-genre/">이퀄라이저</a>에서 200 Hz 부근을 조금 줄이면 도움이 되고, 큰 공간 때문에 소리가 얇아졌다면 <a href="/ko/blog/boost-bass-on-iphone-speakers/">베이스 부스트</a>로 무게감을 되찾을 수 있어요.</li>
+  <li><strong>좌우를 확인하세요.</strong> 효과를 더하기 전부터 한쪽이 더 크게 들린다면 <a href="/ko/blog/left-right-headphone-balance/">헤드폰 좌우 밸런스</a>로 먼저 해결하세요.</li>
+  <li><strong>볼륨을 편안하게 유지하세요.</strong> 효과를 쓰면 볼륨을 올리게 되기 쉬워요. <a href="/ko/blog/is-volume-boosting-safe/">안전한 볼륨 부스트 가이드</a>에서 적절한 레벨을 설명해요.</li>
+</ul>
+
+<div class="note"><strong>EQfy가 할 수 없는 것:</strong> 3D 오디오는 EQfy 안에서 재생하는 오디오에서만 작동해요. Spotify, YouTube, Apple Music 스트리밍, 통화, 다른 앱에는 3D 사운드를 더할 수 없고, Apple Music 구독 곡에도 쓸 수 없어요. Apple 공간 음향이 아니며 Dolby Atmos 믹스를 만들지도 않아요.</div>
+
+<p>플레이어의 나머지 도구도 궁금하세요? <a href="/ko/#spatial-audio">EQfy 홈페이지의 3D 오디오와 그 밖의 기능</a>을 살펴보세요.</p>
+            </div>
+            <section class="post-faq" aria-labelledby="post-faq-title">
+                <h2 id="post-faq-title">자주 묻는 질문</h2>
+                <div class="faq__list">
+<details class="faq__item"><summary class="faq__q">EQfy의 3D 오디오는 Apple 공간 음향과 같은가요?</summary><div class="faq__a"><p>아니요. Apple의 공간 음향은 Apple Music의 Dolby Atmos 곡 같은 지원 콘텐츠를 위한 시스템 기능이에요. EQfy의 3D 오디오는 EQfy 안에서 재생하는 곡에 리버브 룸과 움직이는 3D 사운드 소스를 더하는 앱 자체 효과예요.</p></div></details>
+<details class="faq__item"><summary class="faq__q">아이폰 3D 오디오를 들으려면 AirPods이 꼭 필요한가요?</summary><div class="faq__a"><p>Apple의 머리 추적에는 지원되는 AirPods이 필요해요. EQfy의 3D 오디오는 어떤 출력으로든 재생되고, 3D 소스 모드에서는 AirPods Pro나 AirPods Max 같은 지원 AirPods으로 헤드 트래킹도 쓸 수 있어요. 움직이는 3D 소스 효과는 헤드폰에서 가장 뚜렷하고, iPhone 스피커에서는 리버브 모드가 가장 잘 어울려요.</p></div></details>
+<details class="faq__item"><summary class="faq__q">EQfy로 Spotify나 YouTube에 3D 오디오를 입힐 수 있나요?</summary><div class="faq__a"><p>아니요. iOS에서는 EQfy가 EQfy 안에서 재생하는 오디오만 처리할 수 있어서, 3D 오디오로 Spotify, YouTube, Apple Music 스트리밍, 통화, 다른 앱의 소리는 바꿀 수 없어요.</p></div></details>
+<details class="faq__item"><summary class="faq__q">EQfy 3D 오디오가 Apple Music 곡에도 적용되나요?</summary><div class="faq__a"><p>Apple Music 구독 곡에는 적용되지 않아요. 보호된 곡이라 EQfy에서 재생은 되지만 음질 향상 도구는 쓸 수 없어요. 구매한 곡이나 보호되지 않은 곡, 가져온 파일에는 3D 오디오를 쓸 수 있어요.</p></div></details>
+                </div>
+            </section>
+        </article>
+        <aside class="cta-box" aria-label="아이폰 소리를 더 크게">
+            <img class="cta-box__icon" src="/assets/images/app-icon.png" alt="EQfy 앱 아이콘" width="64" height="64" loading="lazy">
+            <p class="cta-box__title">아이폰 소리를 더 크게</p>
+            <p>EQfy - Louder Volume을 App Store에서 무료로 다운로드하세요. iOS 16 이상이 필요해요.</p>
+            <a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" class="btn-primary" target="_blank" rel="noopener"><svg class="icon-apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg> App Store에서 다운로드</a>
+        </aside>
+        <section class="related" aria-labelledby="related-title">
+            <h2 id="related-title">관련 글</h2>
+            <div class="cards">
+            <article class="card">
+                <a class="card__image" href="/ko/blog/slowed-reverb-songs-iphone/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">가이드</span>
+                    <h3 class="card__title"><a href="/ko/blog/slowed-reverb-songs-iphone/">iPhone에서 Slowed Reverb 만들기</a></h3>
+                    <p class="card__text">아이폰에서 slowed reverb 만들기! EQfy로 곡을 느리게 하고 Hall이나 Cathedral 리버브를 더하는 방법과 결과물의 소리 특징을 알려드려요.</p>
+                    <a class="card__more" href="/ko/blog/slowed-reverb-songs-iphone/" aria-label="더 읽기: iPhone에서 Slowed Reverb 만들기">더 읽기 →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/ko/blog/left-right-headphone-balance/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/09-sound-control.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">가이드</span>
+                    <h3 class="card__title"><a href="/ko/blog/left-right-headphone-balance/">iPhone 좌우 밸런스 설정과 해결 방법</a></h3>
+                    <p class="card__text">아이폰 좌우 밸런스 조절법을 알려드려요. 밸런스 슬라이더 위치, 모노 오디오 사용법, AirPods 한쪽만 소리가 클 때의 해결 방법까지 정리했어요.</p>
+                    <a class="card__more" href="/ko/blog/left-right-headphone-balance/" aria-label="더 읽기: iPhone 좌우 밸런스 설정과 해결 방법">더 읽기 →</a>
+                </div>
+            </article>
+            <article class="card">
+                <a class="card__image" href="/ko/blog/8d-audio-iphone/" tabindex="-1" aria-hidden="true"><img src="/assets/images/blog/iphone-duo/10-3d-audio.webp" alt="" width="700" height="1019" loading="lazy" decoding="async"></a>
+                <div class="card__body">
+                    <span class="card__tag">가이드</span>
+                    <h3 class="card__title"><a href="/ko/blog/8d-audio-iphone/">iPhone에서 8D 오디오 만들기</a></h3>
+                    <p class="card__text">아이폰에서 8D 오디오 만들기! EQfy에서 3D 소스를 켜고 궤도 모션을 고른 뒤 헤드폰을 끼면 돼요. 소리가 빙글빙글 도는 효과를 단계별로 알려드려요.</p>
+                    <a class="card__more" href="/ko/blog/8d-audio-iphone/" aria-label="더 읽기: iPhone에서 8D 오디오 만들기">더 읽기 →</a>
+                </div>
+            </article>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo"><span class="footer__logo-icon"><img src="/assets/images/app-icon.png" alt="" width="32" height="32"></span>EQfy - Louder Volume</div>
+                    <p class="footer__tagline">아이폰용 볼륨 부스터, 베이스 부스터, 이퀄라이저. 모든 곡을 더 크고, 더 깊고, 더 선명하게.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <p class="footer__heading">기능</p>
+                        <ul>
+                            <li><a href="/ko/#volume-booster">볼륨 부스터</a></li>
+                            <li><a href="/ko/#equalizer">베이스 부스터와 EQ</a></li>
+                            <li><a href="/ko/#spatial-audio">3D 공간 오디오</a></li>
+                            <li><a href="/ko/#ai-audio">AI 스튜디오</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">리소스</p>
+                        <ul>
+                            <li><a href="/ko/blog/">블로그</a></li>
+                            <li><a href="/ko/faq/">자주 묻는 질문</a></li>
+                            <li><a href="mailto:support@eqfy.app">지원</a></li>
+                            <li><a href="https://apps.apple.com/app/apple-store/id6550912161?pt=122247555&ct=VB%20website&mt=8" target="_blank" rel="noopener">App Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <p class="footer__heading">법적 고지</p>
+                        <ul>
+                            <li><a href="/privacy" hreflang="en">개인정보 처리방침(영어)</a></li>
+                            <li><a href="/terms" hreflang="en">이용 약관(영어)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 EQfy. 모든 권리 보유.</span>
+                <span>iPhone, AirPods, App Store는 Apple Inc.의 상표입니다.</span>
+            </div>
+        </div>
+    </footer>
+<script>
+(function(){var n=document.querySelector('.nav');addEventListener('scroll',function(){n.classList.toggle('nav--scrolled',scrollY>40)},{passive:true});
+document.addEventListener('click',function(e){var b=e.target.closest('[data-toggle]');if(b){document.querySelector(b.getAttribute('data-toggle')).classList.toggle('is-open');return}var d=document.querySelector('.lang-switcher__dropdown');if(d&&!e.target.closest('.lang-switcher'))d.classList.remove('is-open')});})();
+</script>
+</body>
+</html>
