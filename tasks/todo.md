@@ -472,6 +472,10 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 
 **Not verified:** the local server can't show Cloudflare's nearest-404 fallback; that is checked after deploy by opening a missing `/de/…` URL. Danish has no share image yet (it comes with Phase B). No native speaker has read the new strings.
 
+## Merge (2026-10-24): PRs #27-#31 to `main`
+
+#27 (`l10n-polish`), #28 (`lang-da`), #29 (`lang-nl`), #30 (`lang-it`) and #31 (`lang-pl`) were merged to `main` in order, each retargeted to `main` first. The only conflict was in this file: #26's "Release (2026-10-24)" section and the Localize section had both been appended at the end. Both are kept, Release first (`b51ab9f`). `main` rebuilt with no diff (457 pages, 0 errors, 0 warnings). **Not deployed yet:** the Cloudflare Pages upload and IndexNow are still to do. This note sits above Phase B + C, not at the end of the file, so `lang-ko` can append its review without hitting the same conflict.
+
 ## Phase B + C: new full languages (one PR each)
 - [x] da (Danish)
 - [x] it (Italian)
