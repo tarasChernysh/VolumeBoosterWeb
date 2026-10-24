@@ -472,7 +472,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 - [x] da (Danish)
 - [x] it (Italian)
 - [x] nl (Dutch)
-- [ ] pl (Polish)
+- [x] pl (Polish)
 - [ ] ko (Korean, + CJK tooling)
 - [ ] ru (Russian, no flag)
 - [ ] uk (Ukrainian)
@@ -524,4 +524,18 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Verification:** `node build.mjs && node check.mjs`: 422 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English. Browser at 375 px: all 34 Italian pages have no sideways scroll, `lang="it"`, 3 related cards and a FAQ on every post, no links into the English blog, and no broken images; the dropdown lists 12 languages.
 
 **Not verified:** no native Italian reader; the Apple Music preset names; the balance slider letters (assumed S/D); "Credit Shop" stays English (the app has no Italian title for it).
+
+## Review (Polish, PR `lang-pl`)
+
+**Changes:**
+- **Polish is now a full language** at `/pl/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set. `src/site.json`, `index.html`, `src/i18n/pl.json`, `src/landing/pl.json`, `src/content/pl/` (31 posts + `faq.json`), 32 share images, all homepages regenerated with the new switcher entry.
+- **Keywords:** Polish Google autocomplete (hl=pl, gl=pl), as for da/nl/it (no Ahrefs API access). Poles search "jak podgłośnić iPhone", "iPhone cicho gra", "korektor iPhone" and "equalizer iPhone", "jak podgłośnić AirPods", "dźwięk przestrzenny iPhone", "jak stworzyć piosenkę AI", "tekst na mowę", "jak usunąć szum z nagrania". Slugs are ASCII (ą→a, ł→l, ż→z…).
+- **Style (decided once for all Polish files):** "ty" with capitalized Twój/Ci/Ciebie (the app's catalog does), typographic ’ in declined brand names (iPhone’a, iPhone’em — no straight apostrophes left), decimal comma, `200%` without a space, `28 000` with a no-break space, „…” quotes.
+- **Terms:** app catalog (Polish table in `tasks/facts.md` §8) plus Apple's pl-pl names: Dźwięki i haptyka, Dyktafon, Pliki, **Haptyka muzyki**, **Dźwięk przestrzenny**, Wyrównanie dźwięku. Apple links point to `pl-pl`, Spotify links to `/pl/` (the `/pl-pl/` URL redirects to the wrong region); all return 200. WHO and Audible are marked "po angielsku".
+- **Consistency fix:** the Music app EQ "Off" option was written «Wył.» in two posts and «Wyłącz» in another; all now say the option **Wyłącz**, as Apple's pl-pl article the posts cite does. «Wył.» stays only where Apple uses it (Dolby Atmos and Spatial Audio options).
+- **Catalog mistakes not copied:** "Dance" ("Taniec") and the credit balance ("Balans:" → stan kredytów).
+
+**Verification:** `node build.mjs && node check.mjs`: 457 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English; 0 straight apostrophes in declined forms. Browser at 375 px: all 34 Polish pages have no sideways scroll, `lang="pl"`, 3 related cards and a FAQ on every post, no links into the English blog and no broken images; the dropdown lists 13 languages.
+
+**Not verified:** no native Polish reader; Apple's Polish pages disagree with themselves in places (Redukuj głośny dźwięk vs głośne dźwięki, Wyrównanie vs Wyrównywanie dźwięku, Dźwięk i wizualne vs Audio i wizualne); Apple Music EQ preset names stay in words with the English name; "Studio SI" is declined in running text ("w Studiu SI") while the label stays "Studio SI".
 

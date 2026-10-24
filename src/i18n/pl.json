@@ -1,0 +1,76 @@
+{
+  "dateLocale": "pl-PL",
+  "home": "Strona główna",
+  "nav": {
+    "features": "Funkcje",
+    "equalizer": "Korektor",
+    "aiStudio": "Studio SI",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Pobierz za darmo",
+    "changeLanguage": "Zmień język",
+    "menu": "Otwórz menu",
+    "logoAlt": "Ikona EQfy",
+    "main": "Główna nawigacja",
+    "breadcrumb": "Ścieżka nawigacyjna"
+  },
+  "footer": {
+    "tagline": "Wzmacniacz głośności i basów oraz korektor na iPhone’a. Spraw, by każdy utwór brzmiał głośniej, głębiej i wyraźniej.",
+    "features": "Funkcje",
+    "volumeBooster": "Wzmacniacz głośności",
+    "bassEq": "Wzmacniacz basów i korektor",
+    "spatial": "Dźwięk przestrzenny 3D",
+    "aiStudio": "Studio SI",
+    "resources": "Zasoby",
+    "support": "Pomoc",
+    "appStore": "App Store",
+    "legal": "Informacje prawne",
+    "privacy": "Polityka prywatności (po angielsku)",
+    "terms": "Warunki korzystania (po angielsku)",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "trademark": "iPhone, AirPods i App Store są znakami towarowymi Apple Inc."
+  },
+  "blog": {
+    "title": "Blog EQfy: głośność, bas i korektor na iPhonie",
+    "description": "Poradniki i nowości od EQfy: jak podgłośnić iPhone’a, wzmocnić bas, dobrać najlepsze ustawienia korektora, naprawić cichy dźwięk i lepiej wykorzystać słuchawki.",
+    "eyebrow": "Poradniki i nowości",
+    "h1": "Blog EQfy",
+    "lead": "Praktyczne poradniki, dzięki którym Twój iPhone zagra głośniej, wyraźniej i przyjemniej — a do tego nowości o aplikacji EQfy."
+  },
+  "post": {
+    "by": "Zespół EQfy",
+    "published": "Opublikowano",
+    "updated": "Zaktualizowano",
+    "minRead": "{n} min czytania",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "related": "Powiązane artykuły",
+    "readMore": "Czytaj dalej →",
+    "categories": { "guide": "Poradnik", "news": "Nowości" }
+  },
+  "faqPage": {
+    "eyebrow": "Centrum pomocy",
+    "jumpTo": "Przejdź do tematu"
+  },
+  "cta": {
+    "title": "Podgłośnij swojego iPhone’a",
+    "text": "Pobierz EQfy - Louder Volume za darmo z App Store. Wymaga iOS 16 lub nowszego.",
+    "button": "Pobierz z App Store",
+    "iconAlt": "Ikona aplikacji EQfy"
+  },
+  "latest": {
+    "eyebrow": "Z bloga",
+    "title": "Poradniki i nowości",
+    "description": "Porady, dzięki którym Twój iPhone zagra głośniej, wyraźniej i przyjemniej.",
+    "all": "Wszystkie artykuły →"
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "description": "Strona, której szukasz, nie istnieje.",
+    "lead": "Strona, której szukasz, nie istnieje lub została przeniesiona. Zajrzyj na jedną z tych stron:"
+  },
+  "og": {
+    "title": "<em>Podgłośnij</em> swojego iPhone’a",
+    "sub": "Wzmacniacz głośności i basów z profesjonalnym korektorem",
+    "pills": ["Do 200% głośności", "7-pasmowy korektor", "Dźwięk 3D", "Studio SI"]
+  }
+}

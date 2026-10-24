@@ -334,4 +334,24 @@ Apple's Italian names (it-it pages): Settings › Sounds & Haptics = Impostazion
 | Force instrumental · Unlock Premium | Forza strumentale · Sblocca Premium |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elettronico, Classico, Reggae, Rap, R&B, **Dance** (not Danza), Acustico |
 
+**Polish (pl)** — from the app's own catalog (`Localizable.xcstrings`, pl values) and `pl-pl` Apple pages. Tone: **ty**, with Twój/Ci/Ciebie capitalized (the app's catalog does). URL prefix `/pl`, `hreflang="pl"`, `<html lang="pl">`, ASCII slugs (ą→a, ł→l, ż→z…). Decimal comma (`0,5×`), `200%` without a space, 4+ digit numbers with a no-break space (`28 000`; 4-digit prices/credits as `3000`), „…” quotes, typographic apostrophe in declined brand names (**iPhone’a, iPhone’owi, iPhone’em**; never a straight '). The app says **Studio SI** and **Korektor**; readers search AI/equalizer too. **Catalog mistakes — do not copy:** "Dance" preset is "Taniec" (use **Dance**); `Balance:` (credit balance) is "Balans:" (use **stan kredytów**); "Force instrumental" = "Wymuś instrumentalną" is awkward (use it only as the label, with "opcja"); "Redukcja Szumów" has a stray capital.
+Apple's Polish names (pl-pl pages): Settings › Sounds & Haptics = Ustawienia › **Dźwięki i haptyka**; Headphone Safety = Bezpieczne używanie słuchawek; Reduce Loud Audio = Redukuj głośny dźwięk (speaker: Redukuj głośne dźwięki); Voice Memos = **Dyktafon**; Files = **Pliki**; Music Haptics = **Haptyka muzyki** (Dostępność › Haptyka muzyki); Spatial Audio = **Dźwięk przestrzenny** (options Wył. / Ustalone / Ruchy głowy śledzone); Sound Check = Wyrównanie dźwięku; Headphone Accommodations = Dostrajanie słuchawek; Accessibility › Audio & Visual = Dostępność › Dźwięk i wizualne; the Balance slider there is "Wyrównanie". Music app EQ off = opcja **Wyłącz** (Apple's pl-pl 102663 wording). Apple Music EQ preset names (Bass Booster etc.) are not listed on any Apple pl page: describe them in words and give the English name.
+| EN (app UI) | pl |
+|---|---|
+| AI Studio | Studio SI |
+| Volume Boost / Bass Boost | Wzmocnienie głośności / Wzmocnienie basów |
+| Equalizer · EQ | Korektor · EQ |
+| Headphones (tab) / Audio Balance | Słuchawki / Balans audio |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Dźwięk przestrzenny · Dźwięk 3D · Źródło 3D · Automatyczny ruch |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Pogłos · Środowisko pogłosu · Mieszanka pogłosu · Tryb audio |
+| Center (balance) · Custom · Reset | Środek · Niestandardowy · Resetuj |
+| Music Library · Files · Find more | Biblioteka muzyczna · Pliki · Znajdź więcej |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Wybierz utwór · Cała moja muzyka · Ostatnie · Usuń całą moją muzykę · Listy odtwarzania |
+| Home · Music · Settings (tabs) | Start · Muzyka · Ustawienia |
+| Volume · Bass · Speed · Share (player) | Głośność · Bas · Prędkość · Udostępnij |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Efekty dźwiękowe · Zamiana tekstu na mowę · Redukcja szumów |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | Generuj mowę · Wybierz głos · Wybierz plik audio · Usuń szum |
+| Force instrumental · Unlock Premium | Wymuś instrumentalną · Odblokuj Premium |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elektroniczny, Klasyczny, Reggae, Rap, R&B, **Dance** (not Taniec), Akustyczny |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.
