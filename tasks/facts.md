@@ -314,4 +314,24 @@ Apple's Dutch names (nl-nl pages): Settings › Sounds & Haptics = Instellingen 
 | Force instrumental · Unlock Premium | Instrumentaal forceren · Premium ontgrendelen |
 | Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elektronisch, Klassiek, Reggae, Rap, R&B, **Dance** (not Dans), Akoestisch |
 
+**Italian (it)** — from the app's own catalog (`Localizable.xcstrings`, it values) and `it-it` Apple pages. Tone: **tu**. URL prefix `/it`, `hreflang="it"`, `<html lang="it">`, ASCII slugs. Decimal comma (`0,5×`), thousands with a dot (3.000), `200%` without a space, «…» quotes, typographic ’. The app says **IA** (Studio IA, tab "IA"); readers search both IA and AI. **Catalog mistakes — do not copy:** "Dance" preset is "Danza" (use **Dance**); `Balance:` (credit balance) is "Bilanciamento:" (use **saldo crediti**).
+Apple's Italian names (it-it pages): Settings › Sounds & Haptics = Impostazioni › **Suoni e feedback aptico**; Headphone Safety = **Salute dell’udito**; Reduce Loud Audio = Riduci audio intenso; Voice Memos = **Memo Vocali**; Files = **File** (same as EQfy's import button); Music Haptics = **Feedback aptici musica**; Spatial Audio = **Audio spaziale**; Sound Check = Verifica volume; Headphone Accommodations = Regolazioni cuffie; Accessibility › Audio & Visual = Accessibilità › Audio ed effetti visivi. Apple Music EQ preset names (Bass Booster, Bass Reducer, Treble Reducer) are not listed on any Apple it page: describe them in words and give the English name in «».
+| EN (app UI) | it |
+|---|---|
+| AI Studio | Studio IA |
+| Volume Boost / Bass Boost | Potenziamento Volume / Potenziamento Bassi |
+| Equalizer · EQ | Equalizzatore · EQ |
+| Headphones (tab) / Audio Balance | Cuffie / Bilanciamento audio |
+| Spatial Audio (toggle) · 3D Audio · 3D Source · Auto Motion | Audio spaziale · Audio 3D · Sorgente 3D · Movimento automatico |
+| Reverb · Reverb Environment · Reverb Blend · Audio Mode | Riverbero · Ambiente riverbero · Miscela riverbero · Modalità audio |
+| Center (balance) · Custom · Reset | Centro · Personalizzato · Ripristina |
+| Music Library · Files · Find more | Libreria musicale · File · Trova di più |
+| Choose a Track · All My Music · Recent · Remove all my music · Playlists | Scegli un brano · Tutta la mia musica · Recenti · Rimuovi tutta la mia musica · Playlist |
+| Home · Music · Settings (tabs) | Home · Musica · Impostazioni |
+| Volume · Bass · Speed · Share (player) | Volume · Bassi · Velocità · Condividi |
+| Sound Effects · Text to Speech · Noise Reducer (card names are English in the app, glosses only) | Effetti sonori · Da testo a voce · Riduttore di rumore |
+| Generate Speech · Select Voice · Select Audio File · Remove Noise | Genera voce · Seleziona voce · Seleziona file audio · Rimuovi rumore |
+| Force instrumental · Unlock Premium | Forza strumentale · Sblocca Premium |
+| Presets: Rock, Jazz, Electronic, Classical, Reggae, Rap, R&B, Dance, Acoustic | Rock, Jazz, Elettronico, Classico, Reggae, Rap, R&B, **Dance** (not Danza), Acustico |
+
 Tone: es = tú; de = du; tr = sen; zh = 你. Apple's own localized menu names (Settings › …) must match Apple's localized support pages — check support.apple.com/<locale>/… (e.g. es-es, de-de, tr-tr, zh-cn) and link those localized pages instead of the English ones where they exist.
