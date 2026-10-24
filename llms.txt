@@ -58,6 +58,7 @@ Key facts:
 - [简体中文](https://eqfy.app/zh/)
 - [Dansk](https://eqfy.app/da/)
 - [Nederlands](https://eqfy.app/nl/)
+- [Italiano](https://eqfy.app/it/)
 
 ## Legal
 - [Privacy Policy](https://eqfy.app/privacy)

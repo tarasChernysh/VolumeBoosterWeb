@@ -474,7 +474,7 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 
 ## Phase B + C: new full languages (one PR each)
 - [x] da (Danish)
-- [ ] it (Italian)
+- [x] it (Italian)
 - [x] nl (Dutch)
 - [ ] pl (Polish)
 - [ ] ko (Korean, + CJK tooling)
@@ -515,4 +515,17 @@ Taras (2026-10-24): polish the existing languages, make Danish a full language, 
 **Not verified:** no native Dutch reader; Apple's nl-nl pages disagree with themselves in places (e.g. "Verminder hard geluid" vs "harde geluiden", "Audio en routing" vs "routering"); Apple Music EQ preset names stay English with a Dutch gloss (no Apple page lists them).
 
 **English source issues found while translating** (not fixed here; they affect all languages): the homepage card says "EQ'd audio anywhere — no connection required" but offline the player shows only the Volume dial (facts.md §2); `remove-background-noise` says "sliders icon, then Options" in Voice Memos but Apple's page says the More (…) button; `8d-audio` calls "Enable 3D positioning and reverb" a toggle label (it is the subtitle); `bluetooth-volume-low` step 6 and `spotify-louder` cite claims their linked pages don't make.
+
+## Review (Italian, PR `lang-it`)
+
+**Changes:**
+- **Italian is now a full language** at `/it/`: homepage, blog index, FAQ, 404 and all 31 posts, in every switcher and hreflang set. `src/site.json`, `index.html`, `src/i18n/it.json`, `src/landing/it.json`, `src/content/it/` (31 posts + `faq.json`), 32 share images, all homepages regenerated with the new switcher entry.
+- **Keywords:** Italian Google autocomplete (hl=it, gl=it), as for da/nl (no Ahrefs API access). Italians search "aumentare volume iPhone", "volume iPhone basso (anche se al massimo)", "equalizzatore iPhone", "audio spaziale iPhone", "creare canzone con ia", "da testo a voce". The app says IA (Studio IA); the posts use IA, with AI where readers search it.
+- **Terms:** app catalog (Italian table in `tasks/facts.md` §8) plus Apple's it-it names found by the translators: Suoni e feedback aptico, Salute dell'udito, Memo Vocali, File, **Feedback aptici musica** (Music Haptics; the slug was renamed to `feedback-aptici-musica-iphone` to match), Audio spaziale. Apple links point to `it-it`, Spotify to `/it/`; all return 200. WHO and Audible are marked "(in inglese)".
+- **Consistency fix:** two loudness posts wrote the Apple Music presets as «Riduttore bassi / Riduttore alti» from memory while the tone posts described them in words. All posts now describe them and give the English name («Bass Reducer», «Treble Reducer»), because no Apple Italian page lists the preset names.
+- **Catalog mistakes not copied:** "Dance" ("Danza") and the credit balance ("Bilanciamento:" → saldo crediti).
+
+**Verification:** `node build.mjs && node check.mjs`: 422 pages, 0 errors, 0 warnings. Validator: 31/31 posts pass; i18n, homepage dictionary (181 keys, matching `{n}` tokens) and FAQ (7 groups, 22 items) match English. Browser at 375 px: all 34 Italian pages have no sideways scroll, `lang="it"`, 3 related cards and a FAQ on every post, no links into the English blog, and no broken images; the dropdown lists 12 languages.
+
+**Not verified:** no native Italian reader; the Apple Music preset names; the balance slider letters (assumed S/D); "Credit Shop" stays English (the app has no Italian title for it).
 
